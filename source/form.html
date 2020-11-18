@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="" alt="" width="" height="" >
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-navigation">
+            <li class="site-navigation__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#">Направления</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-navigation">
+            <li class="user-navigation__item">
+              <a class="user-navigation__authorization" href="blank.html">Авторизация</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__mail" href="mailto:mail@htmlacademy.ru">
+                <span>mail@htmlacademy.ru</span>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__tel" href="tel:88005558628">
+                <span>8 800 555-86-28</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-media">
+            <li class="social-media__item">
+              <a class="social-media__link social-media__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link social-media__link--vkontakte" href="#">
+                <span class="visually-hidden">VKontakte</span>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link social-media__link--instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__header">Направления</h1>
+    </header>
+
+    <main class="page-main">
+      <section class="profile">
+        <div class="profile__container">
+          <h2 class="profile__header">Профиль путешественника</h2>
+          <div class="profile__info traveler-info">
+            <div class="traveler-info__level">80 level</div>
+            <div class="traveler-info__photo">
+              <img src="" alt="" width="10" height="10">
+            </div>
+            <input class="traveler-info__change-photo" type="file">
+            <div class="traveller-info__tags tags">
+              <label class="tags__header" for="hashtags">Тэги</label>
+              <textarea class="tags__text" id="hashtags">#бургер #бар #футбол #концерт #крафт</textarea>
+            </div>
+            <fieldset class="traveller-info__transport transport">
+              <legend class="transport-header">Транспорт</legend>
+              <ul class="transport__travel-way travel-way-list">
+                <li class="travel-way-list__item">
+                  <label><input class="visually-hidden travel-way-list__tag" type="checkbox" name="plane">Авиаперелёт</label>
+
+                  <a class="travel-way-list__tag--plane" href="#">
+                    <svg width="10" height="10"></svg>
+                    <span class="visually-hidden tooltip-text">Авиаперелёт</span>
+                  </a>
+                </li>
+                <li class="travel-way-list__item"></li>
+                  <a class="travel-way-list__tag--car" href="#">
+                    <svg width="10" height="10"></svg>
+                    <span class="visually-hidden tooltip-text">Автотранспорт</span>
+                  </a>
+                <li class="travel-way-list__item"></li>
+                  <a class="travel-way-list__tag--cycle" href="#">
+                    <svg width="10" height="10"></svg>
+                    <span class="visually-hidden tooltip-text">Велосипед</span>
+                  </a>
+                <li class="travel-way-list__item">
+                  <a class="travel-way-list__tag--walk" href="#">
+                    <svg width="10" height="10"></svg>
+                    <span class="visually-hidden tooltip-text">Пешком</span>
+                  </a>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
+      <section class="traveler-plans">
+        <div class="traveler-plans__container">
+          <h2 class="traveler-plans__header">Мои планы:</h2>
+          <ol class="traveler-plans__list direction">
+            <li class="direction__item">
+              <div class="direction__card">
+                <h3 class="direction__name">Франция, Италия</h3>
+                <p class="direction__companions-number">3 попутчика</p>
+                <p class="direction__dates"><time datetime="03-26">26 мар</time> - <time datetime="03-29">29 мар</time></p>
+                <a href="#" class="direction__link-change">Изменить</a>
+              </div>
+            </li>
+            <li class="direction__item">
+              <div class="direction__card">
+                <h3 class="direction__name">Таиланд, Индонезия</h3>
+                <p class="direction__companions-number">1 попутчик</p>
+                <p class="direction__dates"><time datetime="07-01">1 июл</time> - <time datetime="07-15">15 июл</time></p>
+                <a href="#" class="direction__link-change">Изменить</a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="add-plan">
+        <div class="add-plan__container">
+          <h2 class="add-plan__header">Добавить план:</h2>
+          <ol class="add-plan__order order-list order-slider">
+            <li class="order-list__item order-list__item--dates order-slider__item stay-period">
+              <h3 class="stay-period__title">Шаг 1. <br> Даты пребывания</h3>
+              <p class="stay-period__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <label>Ищу попутчиков:<input></label>
+              <label>Длительность:<input></label>
+              <label><input type="checkbox" value="Можно с детьми"> Можно с детьми</label>
+              <div class="stay-period__calendar calendar">
+                <div class="calendar__month-slider">
+                  <p class="calendar__month-year">Март 2019</p>
+                  <button class="calendar__control--back" type="button" aria-label="Переключить на предыдущий месяц">
+                    <svg width="10" height="10"></svg>
+                  </button>
+                  <button class="calendar__control--forward" type="button" aria-label="Переключить на следующий месяц">
+                    <svg width="10" height="10"></svg>
+                  </button>
+                </div>
+                <table class="calendar__table">
+                  <tr class="calendar__table-row">
+                    <th class="calendar__table-head">П</th>
+                    <th class="calendar__table-head">В</th>
+                    <th class="calendar__table-head">С</th>
+                    <th class="calendar__table-head">Ч</th>
+                    <th class="calendar__table-head">П</th>
+                    <th class="calendar__table-head">С</th>
+                    <th class="calendar__table-head">В</th>
+                  </tr>
+                  <tr class="calendar__table-row">
+                    <td class="calendar__table-data">23</td>
+                    <td class="calendar__table-data">24</td>
+                    <td class="calendar__table-data">25</td>
+                    <td class="calendar__table-data">26</td>
+                    <td class="calendar__table-data">27</td>
+                    <td class="calendar__table-data">28</td>
+                    <td class="calendar__table-data">1</td>
+                  </tr>
+                  <tr class="calendar__table-row">
+                    <td class="calendar__table-data">2</td>
+                    <td class="calendar__table-data">3</td>
+                    <td class="calendar__table-data">4</td>
+                    <td class="calendar__table-data">5</td>
+                    <td class="calendar__table-data">6</td>
+                    <td class="calendar__table-data">7</td>
+                    <td class="calendar__table-data">8</td>
+                  </tr>
+                  <tr class="calendar__table-row">
+                    <td class="calendar__table-data">9</td>
+                    <td class="calendar__table-data">10</td>
+                    <td class="calendar__table-data">11</td>
+                    <td class="calendar__table-data">12</td>
+                    <td class="calendar__table-data">13</td>
+                    <td class="calendar__table-data">14</td>
+                    <td class="calendar__table-data">15</td>
+                  </tr>
+                  <tr class="calendar__table-row">
+                    <td class="calendar__table-data">16</td>
+                    <td class="calendar__table-data">17</td>
+                    <td class="calendar__table-data">18</td>
+                    <td class="calendar__table-data">19</td>
+                    <td class="calendar__table-data">20</td>
+                    <td class="calendar__table-data">21</td>
+                    <td class="calendar__table-data">22</td>
+                  </tr>
+                  <tr class="calendar__table-row">
+                    <td class="calendar__table-data">23</td>
+                    <td class="calendar__table-data">24</td>
+                    <td class="calendar__table-data">25</td>
+                    <td class="calendar__table-data">26</td>
+                    <td class="calendar__table-data">27</td>
+                    <td class="calendar__table-data">28</td>
+                    <td class="calendar__table-data">29</td>
+                  </tr>
+                  <tr class="calendar__table-row">
+                    <td class="calendar__table-data">30</td>
+                    <td class="calendar__table-data">31</td>
+                    <td class="calendar__table-data">1</td>
+                    <td class="calendar__table-data">2</td>
+                    <td class="calendar__table-data">3</td>
+                    <td class="calendar__table-data">4</td>
+                    <td class="calendar__table-data">5</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="order-slider__next-step" type="button">Следующий шаг</button>
+            </li>
+            <li class="order-list__item order-list__item--route slider__item">
+              <h3 class="order-list__title">Шаг 2. <br> Маршрут</h3>
+
+            </li>
+            <li class="order-list__item order-list__item--fun slider__item">
+              <h3 class="order-list__title">Шаг 3. <br> Развлечения</h3>
+
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__logo">
+        <img class="page-footer__img" src="" alt="" width="10" height="10">
+      </p>
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="page-footer__social social-media"> <!--Не уверен насколько можно повторять реализацию социальных сетей от хэдера-->
+        <li class="social-media__item">
+          <a class="social-media__link social-media__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg width="10" height="10"></svg>
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link social-media__link--vkontakte" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+            <svg width="10" height="10"></svg>
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link social-media__link--instagram" href="#">
+            <span class="visually-hidden">Инстаграмм</span>
+            <svg width="10" height="10"></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTMLAcademy</span>
+          <svg width="10" height="10"></svg>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
