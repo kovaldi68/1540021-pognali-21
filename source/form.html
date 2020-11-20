@@ -137,29 +137,29 @@
                 <h3 class="steps__title">Шаг 1. Даты пребывания</h3>
                 <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <div class="steps__content stay-period">
-                  <div class="stay-period__companions trip-set">
-                    <label class="trip-set__pick">Ищу попутчиков:<input></label>
-                    <button class="trip-set__button button count-button--less" type="button" aria-label="Уменьшить количество на 1"></button>
-                    <button class="trip-set__button button count-button--more" type="button" aria-label="Увеличить количество на 1"></button>
+                  <div class="stay-period__companions trip-input">
+                    <label class="trip-input__pick">Ищу попутчиков:<input type="number" value="2"></label>
+                    <button class="trip-input__button button count-button--less" type="button" aria-label="Уменьшить количество на 1"></button>
+                    <button class="trip-input__button button count-button--more" type="button" aria-label="Увеличить количество на 1"></button>
                   </div>
-                  <div class="stay-period__duration trip-set">
-                    <label class="trip-set__pick">Длительность:<input></label>
-                    <button class="trip-set_button button count-button--less" type="button" aria-label="Уменьшить количество на 1"></button>
-                    <button class="trip-set__button button count-button--more" type="button" aria-label="Увеличить количество на 1"></button>
+                  <div class="stay-period__duration trip-input">
+                    <label class="trip-input__pick">Длительность:<input type="number" value="3"></label>
+                    <button class="trip-input_button button count-button--less" type="button" aria-label="Уменьшить количество на 1"></button>
+                    <button class="trip-input__button button count-button--more" type="button" aria-label="Увеличить количество на 1"></button>
                   </div>
-                  <div class="stay-period__acceptance-checkbox">
-                    <label>
-                      <input type="checkbox" value="Можно с детьми">
-                      <span>Можно с детьми</span>
+                  <div class="stay-period__accept-checkbox accept-checkbox">
+                    <label class="accept-checkbox__ticket">
+                      <input class="accept-checkbox__box" type="checkbox">
+                      <span class="accept-checkbox__text">Можно с детьми</span>
                     </label>
                   </div>
                   <div class="stay-period__calendar calendar">
-                    <div class="calendar__month-slider">
-                      <p class="calendar__month-year">Март 2019</p>
-                      <button class="calendar__control--back button" type="button" aria-label="Переключить на предыдущий месяц">
+                    <div class="calendar__slider">
+                      <p class="calendar__date">Март 2019</p>
+                      <button class="calendar__control calendar__control--back button" type="button" aria-label="Переключить на предыдущий месяц">
                         <svg width="9" height="18"></svg>
                       </button>
-                      <button class="calendar__control--forward button" type="button" aria-label="Переключить на следующий месяц">
+                      <button class="calendar__control calendar__control--forward button" type="button" aria-label="Переключить на следующий месяц">
                         <svg width="9" height="18"></svg>
                       </button>
                     </div>
@@ -238,39 +238,25 @@
                 <div class="steps__content track">
                   <ul class="track__list">
                     <li class="track__item">
-                      <div class="track__place">
-                        <label class="visually-hidden" aria-label="Выбрана страна Босния и Герцеговина">
-                          <input class="track__pick" type="button" value="Босния и Герцеговина">
-                        </label>
-                        <div class="track__flag">
-                          <svg width="35" height="24" aria-label="Флаг Боснии и Герцеговины"></svg>
-                        </div>
-                        <button class="track__button button close-button close-button--first" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button button pick-button" type="button">Босния и Герцеговина</button>
+                      <div class="track__flag">
+                        <svg width="35" height="24" aria-label="Флаг Боснии и Герцеговины"></svg>
                       </div>
+                      <button class="track__button button close-button close-button--first" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item">
-                      <div class="track__place">
-                        <label class="visually-hidden" aria-label="Выбрана страна Чехия">
-                          <input class="track__pick" type="button" value="Чехия">
-                        </label>
-                        <div class="track__flag">
-                          <svg width="35" height="24" aria-label="Флаг Чехии"></svg>
-                        </div>
-                        <button class="track__button button close-button close-button--first" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button button pick-button" type="button"">Чехия</button>
+                      <div class="track__flag">
+                        <svg width="35" height="24" aria-label="Флаг Чехии"></svg>
                       </div>
+                      <button class="track__button button close-button close-button--first" type="button" aria-label="Удалить из списка"></button>
                     </li>
-                    <li class="track__item">
-                      <div class="track__choose-place">
-                        <label class="visually-hidden" aria-label="Выберите страну">
-                          <input class="track__pick-button" type="button" name="" value="Выберите страну">
-                        </label>
-                        <button class="track__button button close-button close-button--first" type="button" aria-label="Удалить из списка"></button>
-                      </div>
+                    <li class="track__item track__item--choose">
+                      <button class="track__button button pick-button" type="button"">Выберите страну</button>
+                      <button class="track__button button close-button close-button--first" type="button" aria-label="Удалить из списка"></button>
                     </li>
-                    <li class="track__item">
-                      <div class="track__add-place">
-                        <button class="track__button button add-button" type="button">Добавить страну</button>
-                      </div>
+                    <li class="track__item track__item--add">
+                      <button class="track__button button add-button" type="button">Добавить страну</button>
                     </li>
                   </ul>
                 </div>
@@ -296,7 +282,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="steps__button button button--secondary" type="button">Отправить</button>
+                <button class="steps__button button button--secondary" type="submit">Отправить</button>
                 <button class="steps__button button button--third" type="button">На шаг назад</button>
               </li>
             </ol>
