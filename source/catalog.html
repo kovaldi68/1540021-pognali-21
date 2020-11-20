@@ -61,66 +61,64 @@
   <main class="page-main">
     <h1 class="page-main__title">Попутчики</h1>
     <section class="country-filter">
-      <div class="country-filter__collapsed">
+      <div class="country-filter__inner country-filter__inner--expanded">
         <span class="country-filter__title">Фильтрация по странам</span>
         <button class="country-filter__button button button--dotted" type="button" aria-label="Открыть/закрыть фильтр по странам"></button>
-      </div>
-      <div class="country-filter__expanded">
         <ul class="country-filter__continents continents">
           <li class="continents__item">Европа</li>
           <li class="continents__item">Азия</li>
           <li class="continents__item">Америка</li>
           <li class="continents__item">Острова</li>
         </ul>
-        <table class="country-filter__table">
-          <tr class="country-filter__table-row">
-            <td class="country-filter__table-cell">А</td>
-            <td class="country-filter__table-cell">Б</td>
-            <td class="country-filter__table-cell">В</td>
-            <td class="country-filter__table-cell">Г</td>
-            <td class="country-filter__table-cell">Д</td>
+        <table class="country-filter__table alphabet">
+          <tr class="alphabet__table-row">
+            <td class="alphabet__table-cell">А</td>
+            <td class="alphabet__table-cell">Б</td>
+            <td class="alphabet__table-cell">В</td>
+            <td class="alphabet__table-cell">Г</td>
+            <td class="alphabet__table-cell">Д</td>
           </tr>
-          <tr class="country-filter__table-row">
-            <td class="country-filter__table-cell">Е</td>
-            <td class="country-filter__table-cell">З</td>
-            <td class="country-filter__table-cell">И</td>
-            <td class="country-filter__table-cell">К</td>
-            <td class="country-filter__table-cell">Л</td>
+          <tr class="alphabet__table-row">
+            <td class="alphabet__table-cell">Е</td>
+            <td class="alphabet__table-cell">З</td>
+            <td class="alphabet__table-cell">И</td>
+            <td class="alphabet__table-cell">К</td>
+            <td class="alphabet__table-cell">Л</td>
           </tr>
-          <tr class="country-filter__table-row">
-            <td class="country-filter__table-cell">М</td>
-            <td class="country-filter__table-cell">Н</td>
-            <td class="country-filter__table-cell">О</td>
-            <td class="country-filter__table-cell">П</td>
-            <td class="country-filter__table-cell">Р</td>
+          <tr class="alphabet__table-row">
+            <td class="alphabet__table-cell">М</td>
+            <td class="alphabet__table-cell">Н</td>
+            <td class="alphabet__table-cell">О</td>
+            <td class="alphabet__table-cell">П</td>
+            <td class="alphabet__table-cell">Р</td>
           </tr>
-          <tr class="country-filter__table-row">
-            <td class="country-filter__table-cell">С</td>
-            <td class="country-filter__table-cell">Т</td>
-            <td class="country-filter__table-cell">У</td>
-            <td class="country-filter__table-cell">Ф</td>
-            <td class="country-filter__table-cell">Х</td>
+          <tr class="alphabet__table-row">
+            <td class="alphabet__table-cell">С</td>
+            <td class="alphabet__table-cell">Т</td>
+            <td class="alphabet__table-cell">У</td>
+            <td class="alphabet__table-cell">Ф</td>
+            <td class="alphabet__table-cell">Х</td>
           </tr>
-          <tr class="country-filter__table-row">
-            <td class="country-filter__table-cell">Ч</td>
-            <td class="country-filter__table-cell">Ш</td>
-            <td class="country-filter__table-cell">Щ</td>
-            <td class="country-filter__table-cell">Э</td>
-            <td class="country-filter__table-cell">Ю</td>
+          <tr class="alphabet__table-row">
+            <td class="alphabet__table-cell">Ч</td>
+            <td class="alphabet__table-cell">Ш</td>
+            <td class="alphabet__table-cell">Щ</td>
+            <td class="alphabet__table-cell">Э</td>
+            <td class="alphabet__table-cell">Ю</td>
           </tr>
         </table>
-        <ul class="country-filter__list">
-          <li class="country-filter__item">Австралия</li>
-          <li class="country-filter__item">Австрия</li>
-          <li class="country-filter__item">Азербайджан</li>
-          <li class="country-filter__item">Албания</li>
-          <li class="country-filter__item">Алжир</li>
-          <li class="country-filter__item">Ангола</li>
-          <li class="country-filter__item">Андорра</li>
-          <li class="country-filter__item">Антигуа и Барбуда</li>
-          <li class="country-filter__item">Аргентина</li>
-          <li class="country-filter__item">Армения</li>
-          <li class="country-filter__item">Афганистан</li>
+        <ul class="country-filter__list state-names">
+          <li class="state-names__item">Австралия</li>
+          <li class="state-names__item">Австрия</li>
+          <li class="state-names__item">Азербайджан</li>
+          <li class="state-names__item">Албания</li>
+          <li class="state-names__item">Алжир</li>
+          <li class="state-names__item">Ангола</li>
+          <li class="state-names__item">Андорра</li>
+          <li class="state-names__item">Антигуа и Барбуда</li>
+          <li class="state-names__item">Аргентина</li>
+          <li class="state-names__item">Армения</li>
+          <li class="state-names__item">Афганистан</li>
         </ul>
         <button class="country-filter__button button button--close" type="button">Свернуть</button>
       </div>
@@ -130,18 +128,18 @@
       <div class="companion-filter__item">
         <h3 class="companion-filter__heading">Хобби</h3>
         <div class="companion-filter__wrapper">
-          <ul class="hobbies-checkbox">
-            <li class="hobbies-checkbox__item">
-                <input class="visually-hidden hobbies-checkbox__tag" type="checkbox" name="Спортзал" value="Спортзал" id="sports">
-                <label class="hobbies-checkbox__label" for="sports">Спортзал</label>
+          <ul class="companion-filter__list filter-checkbox">
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Спортзал" value="Спортзал" id="sports">
+                <label class="filter-checkbox__label" for="sports">Спортзал</label>
             </li>
-            <li class="hobbies-checkbox__item">
-                <input class="visually-hidden hobbies-checkbox__tag" type="checkbox" name="Кальян" value="Кальян" id="hookah">
-                <label class="hobbies-checkbox__label" for="hookah">Кальян</label>
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Кальян" value="Кальян" id="hookah">
+                <label class="filter-checkbox__label" for="hookah">Кальян</label>
             </li>
-            <li class="hobbies-checkbox__item">
-                <input class="visually-hidden hobbies-checkbox__tag" type="checkbox" name="Диван" value="Диван" id="sofa">
-                <label class="hobbies-checkbox__label" for="sofa">Диван</label>
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Диван" value="Диван" id="sofa">
+                <label class="filter-checkbox__label" for="sofa">Диван</label>
             </li>
           </ul>
         </div>
@@ -149,18 +147,18 @@
       <div class="companion-filter__item">
         <h3 class="companion-filter__heading">Музыка</h3>
         <div class="companion-filter__wrapper">
-          <ul class="music-checkbox">
-            <li class="music-checkbox__item">
-                <input class="visually-hidden music-checkbox__tag" type="checkbox" name="Тяжелый рок" value="Тяжелый рок" id="hard-rock">
-                <label class="music-checkbox__label" for="hard-rock">Тяжелый рок</label>
+          <ul class="companion-filter__list">
+            <li class="filter-checkbox__item filter-checkbox">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Тяжелый рок" value="Тяжелый рок" id="hard-rock">
+                <label class="filter-checkbox__label" for="hard-rock">Тяжелый рок</label>
             </li>
-            <li class="music-checkbox__item">
-                <input class="visually-hidden music-checkbox__tag" type="checkbox" name="Русский рэп" value="Русский рэп" id="russian-rap">
-                <label class="music-checkbox__label" for="russian-rap">Русский рэп</label>
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Русский рэп" value="Русский рэп" id="russian-rap">
+                <label class="filter-checkbox__label" for="russian-rap">Русский рэп</label>
             </li>
-            <li class="music-checkbox__item">
-                <input class="visually-hidden music-checkbox__tag" type="checkbox" name="Евродэнс" value="Евродэнс" id="eurodance">
-                <label class="music-checkbox__label" for="eurodance">Евродэнс</label>
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Евродэнс" value="Евродэнс" id="eurodance">
+                <label class="filter-checkbox__label" for="eurodance">Евродэнс</label>
             </li>
           </ul>
         </div>
@@ -168,18 +166,18 @@
       <div class="companion-filter__item">
         <h3 class="companion-filter__heading">Еда</h3>
         <div class="companion-filter__wrapper">
-          <ul class="food-checkbox">
-            <li class="food-checkbox__item">
-                <input class="visually-hidden food-checkbox__tag" type="checkbox" name="Мясоед" value="Мясоед" id="meat">
-                <label class="food-checkbox__label" for="meat">Мясоед</label>
+          <ul class="companion-filter__list filter-checkbox">
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Мясоед" value="Мясоед" id="meat">
+                <label class="filter-checkbox__label" for="meat">Мясоед</label>
             </li>
-            <li class="food-checkbox__item">
-                <input class="visually-hidden food-checkbox__tag" type="checkbox" name="Сидит на ПП" value="Сидит на ПП" id="healthy">
-                <label class="food-checkbox__label" for="healthy">Сидит на ПП</label>
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Сидит на ПП" value="Сидит на ПП" id="healthy">
+                <label class="filter-checkbox__label" for="healthy">Сидит на ПП</label>
             </li>
-            <li class="food-checkbox__item">
-                <input class="visually-hidden food-checkbox__tag" type="checkbox" name="Веган-сыроед" value="Веган-сыроед" id="vegan">
-                <label class="food-checkbox__label" for="vegan">Веган-сыроед</label>
+            <li class="filter-checkbox__item">
+                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Веган-сыроед" value="Веган-сыроед" id="vegan">
+                <label class="filter-checkbox__label" for="vegan">Веган-сыроед</label>
             </li>
           </ul>
         </div>
@@ -187,25 +185,25 @@
       <div class="companion-filter__item ">
         <h3 class="companion-filter__heading">Транспорт</h3>
         <div class="companion-filter__wrapper">
-          <ul class="transport-checkbox">
-            <li class="transport-checkbox__item">
+          <ul class="companion-filter__list filter-icon-checkbox">
+            <li class="filter-icon-checkbox__item">
               <label class="visually-hidden" aria-label="Выбрать Авиаперелёт">
-                <input class="visually-hidden transport-checkbox__tag" type="checkbox" name="plane">
+                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="plane">
               </label>
             </li>
-            <li class="transport-checkbox__item">
+            <li class="filter-icon-checkbox__item">
               <label class="visually-hidden" aria-label="Выбрать Автотранспорт">
-                <input class="visually-hidden transport-checkbox__tag" type="checkbox" name="car">
+                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="car">
               </label>
             </li>
-            <li class="transport-checkbox__item">
+            <li class="filter-icon-checkbox__item">
               <label class="visually-hidden  aria-label="Выбрать Велосипед"">
-                <input class="visually-hidden transport-checkbox__tag" type="checkbox" name="cycle">
+                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="cycle">
               </label>
             </li>
-            <li class="transport-checkbox__item">
+            <li class="filter-icon-checkbox__item">
               <label class="visually-hidden" aria-label="Выбрать Пешком">
-                <input class="visually-hidden transport-checkbox__tag" type="checkbox" name="walk">
+                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="walk">
               </label>
             </li>
           </ul>
@@ -214,18 +212,20 @@
       <div class="companion-filter__item">
         <h3 class="companion-filter__heading">Левел</h3>
         <div class="companion-filter__wrapper">
-          <div class="level-range">
-            <div class="level-range-controls">
-              <input class="level-range__min-level" type="number" name="min-level" value="0">
-              <input class="level-range__max-level" type="number" name="max-level" value="100">
+          <div class="companion-filter__controls level-range">
+            <label class="level-range__ticket">
+              <input class="level-range__input level-range__input--min" type="number" name="min" value="30">
+            </label>
+            <label class="level-range__ticket">
+              <input class="level-range__input level-range__input--max" type="number" name="max" value="100">
+            </label>
+          </div>
+          <div class="companion-filter__controls range">
+            <div class="range__scale">
+              <div class="range__bar" style="width: 50%; margin-left: 5%"></div>
             </div>
-            <div class="level-range__controls">
-              <div class="level-range__scale">
-                <div class="level-range__bar" style="width: 50%; margin-left: 5%"></div>
-              </div>
-              <div id="element-toggle-min" class="level-range__toggle toggle toggle-min" tabindex="0" style="left: 5%" aria-label="Ползунок минимального левела"></div>
-              <div id="element-toggle-max" class="level-range__toggle toggle toggle-max" tabindex="0" style="left: 50%" aria-label="Ползунок максимального левела"></div>
-            </div>
+            <div id="element-toggle-min" class="range__toggle toggle toggle-min" tabindex="0" style="left: 5%" aria-label="Ползунок минимального левела"></div>
+            <div id="element-toggle-max" class="range__toggle toggle toggle-max" tabindex="0" style="left: 50%" aria-label="Ползунок максимального левела"></div>
           </div>
         </div>
       </div>
@@ -235,217 +235,217 @@
       <h2 class="visually-hidden">Результаты поиска</h2>
       <ul class="result__list">
         <li class="result__item">
-          <div class="result__card subject">
-            <img class="subject__photo" src="" width="70" height="70" alt="Девушка купается в море">
-            <span class="subject__name">Таня Фирсова</span>
-            <a class="subject__likes likes" href="#">
-              <div class="likes__icon">
-                <svg width="30" height="30"></svg>
-              </div>
-              <span class="likes__count">1,5</span>
-              <span class="likes__millions">М</span>
+          <div class="result__card user-card">
+            <a class="user-card__photo" href="#">
+              <img src="" width="70" height="70" alt="Девушка купается в море">
             </a>
-            <ul class="subject__tag-list">
-              <li class="subject__tag">#ЗОЖ</li>
-              <li class="subject__tag">#ПП</li>
-              <li class="subject__tag">#Фитнес</li>
-              <li class="subject__tag">#пляж</li>
-              <li class="subject__tag">#авокадо</li>
-              <li class="subject__tag">#смузи</li>
+            <span class="user-card__name">Таня Фирсова</span>
+            <div class="user-card__likes likes" href="#">
+              <svg class="likes__icon" width="30" height="30"></svg>
+              <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
+              <span class="likes__count">1,5 М</span>
+            </div>
+            <ul class="user-card__tag-list hashtags">
+              <li class="hashtags__item">#ЗОЖ</li>
+              <li class="hashtags__item">#ПП</li>
+              <li class="hashtags__item">#Фитнес</li>
+              <li class="hashtags__item">#пляж</li>
+              <li class="hashtags__item">#авокадо</li>
+              <li class="hashtags__item">#смузи</li>
             </ul>
-            <div class="subject__states states">
-              <span class="subject__heading">хочет посетить:</span>
+            <div class="user-card__states states">
+              <span class="user-card__heading">хочет посетить:</span>
               <ul class="states__list">
                 <li class="states__item">Шри-Ланка</li>
                 <li class="states__item">Таиланд</li>
                 <li class="states__item">Сейшелы</li>
               </ul>
             </div>
-            <div class="subject__transportation">
-              <span class="subject__heading">транспорт:</span>
-              <ul class="subject__travel-way transport">
+            <div class="user-card__transportation">
+              <span class="user-card__heading">транспорт:</span>
+              <ul class="user-card__travel-way transport transport--rounded">
                 <li class="transport__item">
-                  <svg class="transport__icon--plane" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--plane" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Авиаперелёт</span>
                 </li>
                 <li class="transport__item">
-                <svg class="transport__icon--car" width="10" height="10"></svg>
+                <svg class="transport__icon transport__icon--car" width="10" height="10"></svg>
                 <span class="visually-hidden tooltip-text">Автотранспорт</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--cycle" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--cycle" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Велосипед</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--walk" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--walk" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Пешком</span>
                 </li>
               </ul>
             </div>
-            <div class="subject__level level level--secondary">
-              <span class="subject__heading">левел:</span>
+            <div class="user-card__level level level--secondary">
+              <span class="user-card__heading">левел:</span>
               <span>99</span>
             </div>
-            <button class="subject__button button button--secondary">Позвать!</button>
+            <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </div>
         </li>
         <li class="result__item">
-          <div class="result__card subject">
-            <img class="subject__photo" src="" width="70" height="70" alt="Молодой человек в шапке и солнцезащитных очках">
-            <span class="subject__name">Петя Демин</span>
-            <a class="subject__likes likes" href="#">
-              <div class="likes__icon">
-                <svg width="30" height="30"></svg>
-              </div>
-              <span class="likes__count">1500</span>
-              <span class="visually-hidden likes__millions">М</span>
+          <div class="result__card user-card">
+            <a class="user-card__photo" href="#">
+              <img src="" width="70" height="70" alt="Молодой человек в шапке и солнцезащитных очках">
             </a>
-            <ul class="subject__tag-list">
-              <li class="subject__tag">#бургер</li>
-              <li class="subject__tag">#бар</li>
-              <li class="subject__tag">#футбол</li>
-              <li class="subject__tag">#концерт</li>
-              <li class="subject__tag">#крафт</li>
+            <span class="user-card__name">Петя Демин</span>
+            <div class="user-card__likes likes" href="#">
+              <svg class="likes__icon" width="30" height="30"></svg>
+              <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
+              <span class="likes__count">1500</span>
+            </div>
+            <ul class="user-card__tag-list hashtags">
+              <li class="hashtags__item">#бургер</li>
+              <li class="hashtags__item">#бар</li>
+              <li class="hashtags__item">#футбол</li>
+              <li class="hashtags__item">#концерт</li>
+              <li class="hashtags__item">#крафт</li>
             </ul>
-            <div class="subject__states states">
-              <span class="subject__heading">хочет посетить:</span>
+            <div class="user-card__states states">
+              <span class="user-card__heading">хочет посетить:</span>
               <ul class="states__list">
                 <li class="states__item">Бельгия</li>
                 <li class="states__item">Чехия</li>
               </ul>
             </div>
-            <div class="subject__transportation">
-              <span class="subject__heading">транспорт:</span>
-              <ul class="subject__travel-way transport">
+            <div class="user-card__transportation">
+              <span class="user-card__heading">транспорт:</span>
+              <ul class="user-card__travel-way transport transport--rounded">
                 <li class="transport__item">
-                  <svg class="transport__icon--plane" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--plane" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Авиаперелёт</span>
                 </li>
                 <li class="transport__item">
-                <svg class="transport__icon--car" width="10" height="10"></svg>
+                <svg class="transport__icon transport__icon--car" width="10" height="10"></svg>
                 <span class="visually-hidden tooltip-text">Автотранспорт</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--cycle" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--cycle" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Велосипед</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--walk" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--walk" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Пешком</span>
                 </li>
               </ul>
             </div>
-            <div class="subject__level level level--secondary">
-              <span class="subject__heading">левел:</span>
+            <div class="user-card__level level level--secondary">
+              <span class="user-card__heading">левел:</span>
               <span>80</span>
             </div>
-            <button class="subject__button button button--secondary">Позвать!</button>
+            <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </div>
         </li>
         <li class="result__item">
-          <div class="result__card subject">
-            <img class="subject__photo" src="" width="70" height="70" alt="Молодой человек с татуировками сидит на крыше машины">
-            <span class="subject__name">Марк Смолов</span>
-            <a class="subject__likes likes" href="#">
-              <div class="likes__icon">
-                <svg width="30" height="30"></svg>
-              </div>
-              <span class="likes__count">170</span>
-              <span class="visually-hidden likes__millions">М</span>
+          <div class="result__card user-card">
+            <a class="user-card__photo" href="#">
+              <img src="" width="70" height="70" alt="Молодой человек с татуировками сидит на крыше машины">
             </a>
-            <ul class="subject__tag-list">
-              <li class="subject__tag">#рэп</li>
-              <li class="subject__tag">#тату</li>
-              <li class="subject__tag">#хайпбист</li>
-              <li class="subject__tag">#кроссовки</li>
-              <li class="subject__tag">#суприм</li>
+            <span class="user-card__name">Марк Смолов</span>
+            <div class="user-card__likes likes" href="#">
+              <svg class="likes__icon" width="30" height="30"></svg>
+              <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
+              <span class="likes__count">170</span>
+            </div>
+            <ul class="user-card__tag-list hashtags">
+              <li class="hashtags__item">#рэп</li>
+              <li class="hashtags__item">#тату</li>
+              <li class="hashtags__item">#хайпбист</li>
+              <li class="hashtags__item">#кроссовки</li>
+              <li class="hashtags__item">#суприм</li>
             </ul>
-            <div class="subject__states states">
-              <span class="subject__heading">хочет посетить:</span>
+            <div class="user-card__states states">
+              <span class="user-card__heading">хочет посетить:</span>
               <ul class="states__list">
                 <li class="states__item">США</li>
                 <li class="states__item">Австралия</li>
                 <li class="states__item">Доминика</li>
               </ul>
             </div>
-            <div class="subject__transportation">
-              <span class="subject__heading">транспорт:</span>
-              <ul class="subject__travel-way transport">
+            <div class="user-card__transportation">
+              <span class="user-card__heading">транспорт:</span>
+              <ul class="user-card__travel-way transport transport--rounded">
                 <li class="transport__item">
-                  <svg class="transport__icon--plane" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--plane" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Авиаперелёт</span>
                 </li>
                 <li class="transport__item">
-                <svg class="transport__icon--car" width="10" height="10"></svg>
+                <svg class="transport__icon transport__icon--car" width="10" height="10"></svg>
                 <span class="visually-hidden tooltip-text">Автотранспорт</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--cycle" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--cycle" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Велосипед</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--walk" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--walk" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Пешком</span>
                 </li>
               </ul>
             </div>
-            <div class="subject__level level level--secondary">
-              <span class="subject__heading">левел:</span>
+            <div class="user-card__level level level--secondary">
+              <span class="user-card__heading">левел:</span>
               <span>25</span>
             </div>
-            <button class="subject__button button button--secondary">Позвать!</button>
+            <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </div>
         </li>
         <li class="result__item">
-          <div class="result__card subject">
-            <img class="subject__photo" src="" width="70" height="70" alt="Молодой человек с татуировками сидит на крыше машины">
-            <span class="subject__name">Лариса Роговая</span>
-            <a class="subject__likes likes" href="#">
-              <div class="likes__icon">
-                <svg width="30" height="30"></svg>
-              </div>
-              <span class="likes__count">23</span>
-              <span class="visually-hidden likes__millions">М</span>
+          <div class="result__card user-card">
+            <a class="user-card__photo" href="#">
+              <img src="" width="70" height="70" alt="Молодая девушка в деловом костюме">
             </a>
-            <ul class="subject__tag-list">
-              <li class="subject__tag">#образование</li>
-              <li class="subject__tag">#карьера</li>
-              <li class="subject__tag">#учеба</li>
-              <li class="subject__tag">#линкедин</li>
+            <span class="user-card__name">Лариса Роговая</span>
+            <div class="user-card__likes likes" href="#">
+              <svg class="likes__icon" width="30" height="30"></svg>
+              <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
+              <span class="likes__count">23</span>
+            </div>
+            <ul class="user-card__tag-list hashtags">
+              <li class="hashtags__item">#образование</li>
+              <li class="hashtags__item">#карьера</li>
+              <li class="hashtags__item">#учеба</li>
+              <li class="hashtags__item">#линкедин</li>
             </ul>
-            <div class="subject__states states">
-              <span class="subject__heading">хочет посетить:</span>
+            <div class="user-card__states states">
+              <span class="user-card__heading">хочет посетить:</span>
               <ul class="states__list">
                 <li class="states__item">Великобритания</li>
-                <li class="states__item">Германия</li>
+                <li class="states__item">германия</li>
               </ul>
             </div>
-            <div class="subject__transportation">
-              <span class="subject__heading">транспорт:</span>
-              <ul class="subject__travel-way transport">
+            <div class="user-card__transportation">
+              <span class="user-card__heading">транспорт:</span>
+              <ul class="user-card__travel-way transport transport--rounded">
                 <li class="transport__item">
-                  <svg class="transport__icon--plane" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--plane" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Авиаперелёт</span>
                 </li>
                 <li class="transport__item">
-                <svg class="transport__icon--car" width="10" height="10"></svg>
+                <svg class="transport__icon transport__icon--car" width="10" height="10"></svg>
                 <span class="visually-hidden tooltip-text">Автотранспорт</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--cycle" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--cycle" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Велосипед</span>
                 </li>
                 <li class="transport__item">
-                  <svg class="transport__icon--walk" width="10" height="10"></svg>
+                  <svg class="transport__icon transport__icon--walk" width="10" height="10"></svg>
                   <span class="visually-hidden tooltip-text">Пешком</span>
                 </li>
               </ul>
             </div>
-            <div class="subject__level level level--secondary">
-              <span class="subject__heading">левел:</span>
+            <div class="user-card__level level level--secondary">
+              <span class="user-card__heading">левел:</span>
               <span>50</span>
             </div>
-            <button class="subject__button button button--secondary">Позвать!</button>
+            <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </div>
         </li>
       </ul>
