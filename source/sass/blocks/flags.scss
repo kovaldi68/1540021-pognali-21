@@ -1,0 +1,7 @@
+.flags {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 145px;
+}

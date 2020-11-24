@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html class="" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
         <img src="" alt="Логотип сайта Погнали" width="96" height="15">
@@ -104,25 +106,25 @@
       <section class="plans">
         <div class="plans__container">
           <h2 class="plans__title">Мои планы:</h2>
-          <ol class="plans__list direction">
-            <li class="direction__item">
-              <div class="direction__card">
-                <h3 class="direction__name">Франция, Италия</h3>
-                <p class="direction__fellow-number">3 попутчика</p>
-                <p class="direction__dates">
+          <ol class="plans__list journey">
+            <li class="journey__item">
+              <div class="journey__card">
+                <h3 class="journey__name">Франция, Италия</h3>
+                <p class="journey__fellow-number">3 попутчика</p>
+                <p class="journey__dates">
                   <time datetime="03-26">26 мар</time> - <time datetime="03-29">29 мар</time>
                 </p>
-                <a href="#" class="direction__change">Изменить</a>
+                <a href="#" class="journey__change">Изменить</a>
               </div>
             </li>
-            <li class="direction__item">
-              <div class="direction__card">
-                <h3 class="direction__name">Таиланд, Индонезия</h3>
-                <p class="direction__fellow-number">1 попутчик</p>
-                <p class="direction__dates">
+            <li class="journey__item">
+              <div class="journey__card">
+                <h3 class="journey__name">Таиланд, Индонезия</h3>
+                <p class="journey__fellow-number">1 попутчик</p>
+                <p class="journey__dates">
                   <time datetime="07-01">1 июл</time> - <time datetime="07-15">15 июл</time>
                 </p>
-                <a href="#" class="direction__change">Изменить</a>
+                <a href="#" class="journey__change">Изменить</a>
               </div>
             </li>
           </ol>
@@ -330,55 +332,55 @@
 
 <div class="track__dropdown dropdown">
   <span class="drowdown__title">Выберите страну</span>
-    <table class="dropdown__table">
-      <tr class="dropdown__table-row">
-        <td class="dropdown__table-cell">А</td>
-        <td class="dropdown__table-cell">Б</td>
-        <td class="dropdown__table-cell">В</td>
-        <td class="dropdown__table-cell">Г</td>
-        <td class="dropdown__table-cell">Д</td>
+    <table class="dropdown__alphabet alphabet">
+      <tr class="alphabet__table-row">
+        <td class="alphabet__table-cell">А</td>
+        <td class="alphabet__table-cell">Б</td>
+        <td class="alphabet__table-cell">В</td>
+        <td class="alphabet__table-cell">Г</td>
+        <td class="alphabet__table-cell">Д</td>
       </tr>
-      <tr class="dropdown__table-row">
-        <td class="dropdown__table-cell">Е</td>
-        <td class="dropdown__table-cell">З</td>
-        <td class="dropdown__table-cell">И</td>
-        <td class="dropdown__table-cell">К</td>
-        <td class="dropdown__table-cell">Л</td>
+      <tr class="alphabet__table-row">
+        <td class="alphabet__table-cell">Е</td>
+        <td class="alphabet__table-cell">З</td>
+        <td class="alphabet__table-cell">И</td>
+        <td class="alphabet__table-cell">К</td>
+        <td class="alphabet__table-cell">Л</td>
       </tr>
-      <tr class="dropdown__table-row">
-        <td class="dropdown__table-cell">М</td>
-        <td class="dropdown__table-cell">Н</td>
-        <td class="dropdown__table-cell">О</td>
-        <td class="dropdown__table-cell">П</td>
-        <td class="dropdown__table-cell">Р</td>
+      <tr class="alphabet__table-row">
+        <td class="alphabet__table-cell">М</td>
+        <td class="alphabet__table-cell">Н</td>
+        <td class="alphabet__table-cell">О</td>
+        <td class="alphabet__table-cell">П</td>
+        <td class="alphabet__table-cell">Р</td>
       </tr>
-      <tr class="dropdown__table-row">
-        <td class="dropdown__table-cell">С</td>
-        <td class="dropdown__table-cell">Т</td>
-        <td class="dropdown__table-cell">У</td>
-        <td class="dropdown__table-cell">Ф</td>
-        <td class="dropdown__table-cell">Х</td>
+      <tr class="alphabet__table-row">
+        <td class="alphabet__table-cell">С</td>
+        <td class="alphabet__table-cell">Т</td>
+        <td class="alphabet__table-cell">У</td>
+        <td class="alphabet__table-cell">Ф</td>
+        <td class="alphabet__table-cell">Х</td>
       </tr>
-      <tr class="dropdown__table-row">
-        <td class="dropdown__table-cell">Ч</td>
-        <td class="dropdown__table-cell">Ш</td>
-        <td class="dropdown__table-cell">Щ</td>
-        <td class="dropdown__table-cell">Э</td>
-        <td class="dropdown__table-cell">Ю</td>
+      <tr class="alphabet__table-row">
+        <td class="alphabet__table-cell">Ч</td>
+        <td class="alphabet__table-cell">Ш</td>
+        <td class="alphabet__table-cell">Щ</td>
+        <td class="alphabet__table-cell">Э</td>
+        <td class="alphabet__table-cell">Ю</td>
       </tr>
     </table>
-    <ul class="dropdown__list">
-      <li class="dropdown__item">Австралия</li>
-      <li class="dropdown__item">Австрия</li>
-      <li class="dropdown__item">Азербайджан</li>
-      <li class="dropdown__item">Албания</li>
-      <li class="dropdown__item">Алжир</li>
-      <li class="dropdown__item">Ангола</li>
-      <li class="dropdown__item">Андорра</li>
-      <li class="dropdown__item">Антигуа и Барбуда</li>
-      <li class="dropdown__item">Аргентина</li>
-      <li class="dropdown__item">Армения</li>
-      <li class="dropdown__item">Афганистан</li>
+    <ul class="dropdown__list state-names">
+      <li class="state-names__item">Австралия</li>
+      <li class="state-names__item">Австрия</li>
+      <li class="state-names__item">Азербайджан</li>
+      <li class="state-names__item">Албания</li>
+      <li class="state-names__item">Алжир</li>
+      <li class="state-names__item">Ангола</li>
+      <li class="state-names__item">Андорра</li>
+      <li class="state-names__item">Антигуа и Барбуда</li>
+      <li class="state-names__item">Аргентина</li>
+      <li class="state-names__item">Армения</li>
+      <li class="state-names__item">Афганистан</li>
     </ul>
     <button class="dropdown__button button close-button close-button--secondary" type="button" aria-label="Закрыть форму"></button>
   </form>

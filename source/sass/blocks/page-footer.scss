@@ -1,0 +1,21 @@
+.page-footer {
+  background-color: $white-basic;
+  padding-top: 38px;
+  padding-bottom: 19px;
+}
+
+.page-footer__img {
+  margin: auto;
+  margin-bottom: 31px;
+}
+
+.page-footer .page-footer__social {
+  margin-bottom: 51px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

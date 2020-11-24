@@ -1,0 +1,50 @@
+.feedback {
+  padding-top: 105px;
+  padding-bottom: 29px;
+  background-color: $blue-dark-main;
+}
+
+.feedback__title {
+  margin: 0;
+  color: $orange-special;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 19px;
+  text-align: center;
+}
+
+.feedback__text {
+  color: $white-basic;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.feedback__registration-form {
+  margin-bottom: 29px;
+}
+
+.feedback__registration-auth-link {
+  color: $yellow-main;
+  border-bottom: 0.5px solid $yellow-main;
+  display: inline-block;
+  line-height: 0.85;
+}
+
+.feedback__auth-text {
+  color: $white-basic;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feedback__contacts {
+  margin-left: 61px;
+}
+
+.feedback__contacts a {
+  display: block;
+  color: $yellow-main;
+  font-weight: 700;
+}

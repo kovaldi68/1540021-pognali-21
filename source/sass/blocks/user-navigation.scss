@@ -1,0 +1,39 @@
+.user-navigation {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 53px;
+}
+
+.user-navigation__authorization {
+  display:block;
+  color: $blue-dark-main;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 270px;
+  background-color: $yellow-main;
+  border-radius: 25px;
+  margin-bottom: 66px;
+}
+
+.user-navigation__tel,
+.user-navigation__mail {
+  color: $blue-dark-main;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.user-navigation--promo {
+  flex-direction: row-reverse;
+  margin-bottom: 28px;
+}
+
+.user-navigation__authorization--promo {
+  width: 190px;
+  margin-bottom: 0;
+}

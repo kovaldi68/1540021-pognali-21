@@ -1,0 +1,46 @@
+.tariffs {
+  padding-top: 106px;
+  padding-bottom: 38px;
+  background-color: $grey-mobile;
+}
+
+.tariffs__title {
+  margin: 0;
+  margin-bottom: 56px;
+  color: $orange-special;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.tariffs__list {
+  @include list-reset;
+  margin-bottom: 46px;
+}
+
+.tariffs__item {
+  color: $grey-special;
+  font-weight: 300;
+  line-height: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.tariffs__item:first-child {
+  margin-bottom: 32px;
+}
+
+.tariffs__item:nth-child(2) {
+  margin-bottom: 29px;
+}
+
+.tariffs__service {
+  margin-bottom: 6px;
+}
+
+.tariffs__link {
+  color: $blue-light-business;
+  font-weight: 700;
+  line-height: 16px;
+}
