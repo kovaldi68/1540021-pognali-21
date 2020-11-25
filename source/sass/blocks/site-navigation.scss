@@ -1,0 +1,16 @@
+.site-navigation {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.site-navigation__item a {
+  color: $blue-dark-main;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+}

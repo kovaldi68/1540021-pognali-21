@@ -1,0 +1,31 @@
+.title {
+  margin: 0;
+
+  &--small {
+    color: $orange-special;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--medium {
+    color: $orange-special;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &--large {
+    color: $blue-light-buttons;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &--largest {
+    color: $blue-light-buttons;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

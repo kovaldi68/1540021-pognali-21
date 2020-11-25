@@ -1,0 +1,16 @@
+.flags {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 230px;
+  margin: 0 auto;
+}
+
+.flags__item {
+  margin-right: 20px;
+}
+
+.flags__item:last-child {
+  margin-right: 0;
+}

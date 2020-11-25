@@ -1,0 +1,35 @@
+.tariffs {
+  padding-top: 106px;
+  padding-bottom: 38px;
+  background-color: $grey-mobile;
+}
+
+.tariffs__title {
+  margin-bottom: 56px;
+}
+
+.tariffs__list {
+  @include list-reset;
+  margin-bottom: 46px;
+}
+
+.tariffs__item {
+  color: $grey-special;
+  font-weight: 300;
+  line-height: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tariffs__service {
+  margin-bottom: 6px;
+}
+
+.tariffs__link {
+  color: $blue-light-business;
+  font-weight: 700;
+  line-height: 16px;
+}

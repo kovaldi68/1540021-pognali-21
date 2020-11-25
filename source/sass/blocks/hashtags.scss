@@ -1,0 +1,14 @@
+.hashtags {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 188px;
+  justify-content: center;
+}
+
+.hashtags__item {
+  color: $grey-special;
+  line-height: 18px;
+  text-align: center;
+}
