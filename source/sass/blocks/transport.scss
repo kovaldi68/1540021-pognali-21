@@ -2,6 +2,15 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 120px;
+  justify-content: center;
+  width: 230px;
+  margin: 0 auto;
+}
+
+.transport__item {
+  margin-right: 13px;
+}
+
+.transport__item:last-child {
+  margin-right: 0;
 }

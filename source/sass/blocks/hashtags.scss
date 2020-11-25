@@ -2,6 +2,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
   width: 188px;
   justify-content: center;
 }
@@ -11,4 +12,3 @@
   line-height: 18px;
   text-align: center;
 }
-

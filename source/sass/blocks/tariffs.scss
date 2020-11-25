@@ -5,12 +5,7 @@
 }
 
 .tariffs__title {
-  margin: 0;
   margin-bottom: 56px;
-  color: $orange-special;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
 }
 
 .tariffs__list {
@@ -25,14 +20,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-.tariffs__item:first-child {
-  margin-bottom: 32px;
-}
-
-.tariffs__item:nth-child(2) {
-  margin-bottom: 29px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .tariffs__service {

@@ -1,8 +1,8 @@
 .page-header {
   color: $white-basic;
   background-color: $blue-dark-main;
-}
 
-.page-header--opened {
-  background-color: $white-basic;
+  &--opened {
+    background-color: $white-basic;
+  }
 }

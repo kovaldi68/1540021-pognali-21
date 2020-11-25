@@ -7,13 +7,14 @@
 @import "../sass/general/global.scss";
 
 // blocks
+@import "../sass/blocks/title.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/socials.scss";
 @import "../sass/blocks/about-service.scss";
 @import "../sass/blocks/accept-checkbox.scss";
 @import "../sass/blocks/action-order.scss";
 @import "../sass/blocks/add-plan.scss";
 @import "../sass/blocks/alphabet.scss";
-@import "../sass/blocks/begin.scss";
-@import "../sass/blocks/button.scss";
 @import "../sass/blocks/calendar.scss";
 @import "../sass/blocks/companion-filter.scss";
 @import "../sass/blocks/companions.scss";
@@ -48,7 +49,6 @@
 @import "../sass/blocks/review-quote.scss";
 @import "../sass/blocks/route.scss";
 @import "../sass/blocks/site-navigation.scss";
-@import "../sass/blocks/socials.scss";
 @import "../sass/blocks/state-names.scss";
 @import "../sass/blocks/states.scss";
 @import "../sass/blocks/steps.scss";
