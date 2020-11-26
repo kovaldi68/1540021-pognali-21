@@ -1,0 +1,62 @@
+.transport-checkbox {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.transport-checkbox__item {
+  margin-right: 1px;
+}
+
+.transport-checkbox__item:last-child {
+  margin-right: 0;
+}
+
+.transport-checkbox__label {
+  &--plane::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background: $white-basic url("../../img/transport-icon-plane.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+  }
+
+  &--car::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background: $white-basic url("../../img/transport-icon-bus.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+  }
+
+  &--cycle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    background: $white-basic url("../../img/transport-icon-bicycle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 50%;
+  }
+
+  &--walk::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background: $white-basic url("../../img/transport-icon-run.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+  }
+}

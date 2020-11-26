@@ -1,0 +1,19 @@
+.tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tags__heading {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.tags__text {
+  resize: none;
+  border: 1px solid $grey-border;
+  border-radius: 10px;
+  background-color: $grey-basic-form;
+  color: rgba($grey-special, 0.6);
+  text-align: center;
+}

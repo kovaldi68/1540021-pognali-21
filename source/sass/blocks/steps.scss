@@ -1,0 +1,19 @@
+.steps {
+  @include list-reset;
+}
+
+.steps__item {
+  margin-bottom: 10px;
+  background-color: $white-basic;
+  padding: 24px 25px;
+  border-radius: 10px;
+}
+
+.steps__title {
+  margin-bottom: 16px;
+}
+
+.steps__description {
+  margin-bottom: 22px;
+  color: $grey-special;
+}

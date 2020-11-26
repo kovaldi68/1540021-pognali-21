@@ -1,0 +1,20 @@
+.profile__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__photo {
+  border-radius: 50%;
+}
+
+.profile__level {
+  margin-right: 35px;
+}
+
+.profile__button {
+  background-color: $grey-dark-form;
+  min-width: 270px;
+  margin-bottom: 33px;
+}

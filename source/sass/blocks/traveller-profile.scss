@@ -12,7 +12,6 @@
 
 .traveller-profile__name {
   margin: 0;
-  color: $blue-light-buttons;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -22,6 +21,7 @@
 .traveller-profile__photo {
   display: block;
   margin: 0;
+  border-radius: 10px;
 }
 
 .traveller-profile__level {

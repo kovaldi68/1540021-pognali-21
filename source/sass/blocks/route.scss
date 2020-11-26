@@ -1,0 +1,29 @@
+.route__list {
+  @include list-reset;
+}
+
+.route__item {
+  margin-bottom: 27px;
+}
+
+.route__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.route__description {
+  color: $grey-special;
+  width: 220px;
+  height: 220px;
+  resize: none;
+  border: 1px solid $grey-border;
+  border-radius: 4px;
+  padding: 10px 14px;
+}
+
+.steps__button {
+  width: 220px;
+}
