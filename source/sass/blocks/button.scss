@@ -8,17 +8,6 @@
   padding: 0;
   cursor: pointer;
 
-  &--secondary {
-    color: $blue-dark-main;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 30px;
-    text-align: center;
-    padding: 12px 10px 8px 10px;
-    background-color: $yellow-main;
-    border-radius: 25px;
-  }
-
   &--primary {
     color: $blue-decor-items;
     font-weight: 700;
@@ -28,5 +17,26 @@
     padding: 22px 22px 22px 23px;
     background-color: $yellow-main;
     border-radius: 10px;
+  }
+
+  &--secondary {
+    color: $blue-light-text;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 10px 8px 10px;
+    background-color: $yellow-main;
+    border-radius: 25px;
+  }
+
+  &--third {
+    color: $blue-light-text;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }

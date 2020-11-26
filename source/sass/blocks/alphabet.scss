@@ -1,0 +1,14 @@
+.alphabet {
+  border-collapse: collapse;
+  width: 220px;
+}
+
+.alphabet__table-cell {
+  width: 43px;
+  height: 41px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid $grey-border;
+}

@@ -1,0 +1,11 @@
+.state-names {
+  @include list-reset;
+  width: 220px;
+  border: 1px solid $grey-border;
+  border-top: none;
+  padding: 20px 19px;
+}
+
+.state-names__item {
+  color: $grey-special;
+}

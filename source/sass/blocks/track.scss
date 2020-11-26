@@ -1,0 +1,67 @@
+.track__list {
+  @include list-reset;
+}
+
+.track__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.track__button {
+  color: $blue-light-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.track__flag {
+  border: 1px solid $grey-border;
+  border-left: none;
+  border-radius: 4px;
+  padding: 8px;
+  width: 52px;
+}
+
+.track__flag img {
+  display: block;
+  margin: 0;
+}
+
+.track__item .pick-button {
+  width: 168px;
+  border: 1px solid $grey-border;
+  border-radius: 4px;
+  padding: 12px 10px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.track__item .pick-button::after {
+  content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+	height: 46px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
+	pointer-events: none;
+}
+
+.track__item--choose .pick-button {
+  width: 220px;
+  border: 1px solid $grey-border;
+  border-radius: 4px;
+  padding: 12px 10px;
+}
+
+.add-button {
+  border-radius: 4px;
+  padding: 12px 10px;
+  min-width: 220px;
+  border: none;
+  background-color: $grey-basic;
+}

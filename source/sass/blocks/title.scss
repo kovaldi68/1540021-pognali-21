@@ -2,7 +2,7 @@
   margin: 0;
 
   &--small {
-    color: $orange-special;
+    color: $blue-light-text;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -16,16 +16,20 @@
   }
 
   &--large {
-    color: $blue-light-buttons;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
   }
 
-  &--largest {
-    color: $blue-light-buttons;
+  &--larger {
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  &--largest {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
   }
 }
