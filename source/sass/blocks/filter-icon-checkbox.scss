@@ -1,0 +1,45 @@
+.filter-icon-checkbox {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.filter-icon-checkbox__item {
+  margin-right: 1px;
+}
+
+.filter-icon-checkbox__item:last-child {
+  margin-right: 0;
+}
+
+.filter-icon-checkbox__label {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  &--plane {
+    background: $white-basic url("../../img/transport-icon-plane.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--car {
+    background: $white-basic url("../../img/transport-icon-bus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--cycle {
+    background: $white-basic url("../../img/transport-icon-bicycle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--walk {
+    background: $white-basic url("../../img/transport-icon-run.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,20 @@
+.country-filter {
+  background-color: $grey-decor;
+}
+
+
+.country-filter__inner {
+  &--expanded {
+    padding: 22px 25px 28px 25px;
+  }
+}
+
+.country-filter__title {
+  line-height: 18px;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 18px;
+  padding-left: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}

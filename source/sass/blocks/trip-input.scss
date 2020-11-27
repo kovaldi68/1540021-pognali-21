@@ -17,7 +17,7 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
-  padding: 14px;
+  padding: 14px 90px;
   text-align: center;
   border: 1px solid $grey-border;
   border-radius: 4px;
@@ -41,7 +41,7 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    background-image: url(../../img/minus-icon.svg);
+    background-image: url("../../img/minus-icon.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -57,7 +57,7 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    background-image: url(../../img/plus-icon.svg);
+    background-image: url("../../img/plus-icon.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }

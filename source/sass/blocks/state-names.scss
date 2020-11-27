@@ -4,6 +4,11 @@
   border: 1px solid $grey-border;
   border-top: none;
   padding: 20px 19px;
+
+  &--second {
+    border: none;
+    padding: 14px 0;
+  }
 }
 
 .state-names__item {

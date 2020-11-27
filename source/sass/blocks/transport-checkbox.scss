@@ -14,49 +14,32 @@
 }
 
 .transport-checkbox__label {
-  &--plane::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 33px;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  &--plane {
     background: $white-basic url("../../img/transport-icon-plane.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
+    background-position: center;
   }
 
-  &--car::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 33px;
+  &--car {
     background: $white-basic url("../../img/transport-icon-bus.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
+    background-position: center;
   }
 
-  &--cycle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 33px;
-    height: 33px;
+  &--cycle {
     background: $white-basic url("../../img/transport-icon-bicycle.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    border-radius: 50%;
+    background-position: center;
   }
 
-  &--walk::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 33px;
+  &--walk {
     background: $white-basic url("../../img/transport-icon-run.svg");
     background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
+    background-position: center;
   }
 }

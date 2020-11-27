@@ -1,0 +1,21 @@
+.result {
+  background-color: $grey-basic;
+  padding-bottom: 75px;
+}
+
+.result__list {
+  @include list-reset;
+  margin-bottom: 20px;
+}
+
+.result__item {
+  margin-bottom: 10px;
+}
+
+.result__item:last-child {
+  margin-bottom: 0;
+}
+
+.result__button {
+  min-width: 270px;
+}

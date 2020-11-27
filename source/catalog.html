@@ -7,247 +7,255 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="" alt="Логотип сайта Погнали" width="96" height="15">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть или закрыть меню"></button>
-      <div class="main-nav__container container">
-        <ul class="main-nav__site site-navigation">
-          <li class="site-navigation__item">
-            <a href="#">О сервисе</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#">Направления</a>
-          </li>
-          <li class="site-navigation__item">
-            <a href="#">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user user-navigation">
-          <li class="user-navigation__item">
-            <a class="user-navigation__authorization" href="blank.html">Авторизация</a>
-          </li>
-          <li class="user-navigation__item">
-            <a class="user-navigation__tel" href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="user-navigation__item">
-            <a class="user-navigation__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="main-nav__social socials">
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
-              <svg width="11" height="21"></svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--vkontakte" href="#">
-              <span class="visually-hidden">VKontakte</span>
-              <svg width="23" height="12"></svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--instagram" href="#">
-              <span class="visually-hidden">Instagram</span>
-              <svg width="18" height="18"></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="page-header page-header--opened">
+    <div class="page-header__container container">
+      <a class="page-header__logo">
+        <img src="img/logo-pognali-mobile.svg" alt="Логотип сайта Погнали" width="96" height="15">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__site site-navigation">
+            <li class="site-navigation__item">
+              <a href="index.html">О сервисе</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user user-navigation">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--auth" href="blank.html">Авторизация</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link button user-navigation__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="main-nav__social socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <svg width="11" height="21" viewBox="0 0 14 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.53 27.75H2.71V14.85H0V8.47H2.63C2.43 5.58 2.93 3.47 4.15 2.03C4.73171 1.39087 5.44042 0.8802 6.23079 0.530647C7.02116 0.181094 7.87578 0.000357734 8.74 0L13.52 0V6.15H9.76C9.53848 6.90214 9.4538 7.68794 9.51 8.47H13.51V14.85H9.51L9.53 27.75ZM4.22 26.25H8V13.35H12V10H8V9.24C8 7.24 8 5.45 9 4.78L9.19 4.65H12V1.5H8.78C8.12565 1.49154 7.47682 1.62071 6.87559 1.87911C6.27436 2.13752 5.73416 2.5194 5.29 3C4.29 4.23 3.88 6.29 4.19 9.14L4.29 9.97H1.5V13.35H4.22V26.25Z" fill="#192144"/>
+                  </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vkontakte" href="#">
+                <span class="visually-hidden">VKontakte</span>
+                <svg width="23" height="12" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.9461 15.7775C23.2083 15.761 22.4891 15.5431 21.8661 15.1475C21.2157 14.7079 20.6184 14.1945 20.0861 13.6175C19.6461 13.1775 18.9161 12.4375 18.6361 12.4375C18.3561 12.4375 18.1561 13.3575 18.1661 14.0075C18.1703 14.4562 18.0021 14.8894 17.6961 15.2175C17.3481 15.5018 16.9234 15.6758 16.4761 15.7175H14.5561C11.7965 15.6568 9.15414 14.59 7.12606 12.7175C3.44606 9.34753 0.286063 2.90753 0.156063 2.62753C0.0320633 2.39361 -0.0198655 2.12821 0.00683068 1.86481C0.0335268 1.6014 0.137651 1.35181 0.306063 1.14753C0.687199 0.829675 1.16985 0.659328 1.66606 0.667532H5.74606H5.86606C6.20364 0.716784 6.52722 0.835995 6.81606 1.01753C7.08788 1.1998 7.30552 1.45198 7.44606 1.74753C7.87724 2.6706 8.37175 3.56273 8.92606 4.41753C10.2361 6.41753 10.8161 6.87753 11.0261 6.97753C11.2597 6.03979 11.324 5.06788 11.2161 4.10753C11.2511 3.67014 11.179 3.2308 11.0061 2.82753C10.7865 2.65191 10.5169 2.55038 10.2361 2.53753L9.50606 1.84753C9.36606 1.18753 10.0961 0.617532 10.6061 0.397532C11.6238 0.0786297 12.6916 -0.0501836 13.7561 0.017532H14.4661C15.1881 -0.00127074 15.9099 0.0658674 16.6161 0.217532C18.3161 0.577532 18.2561 1.94753 18.1861 3.52753C18.1861 3.98753 18.1361 4.52753 18.1361 5.14753C18.1361 5.29753 18.1361 5.45753 18.1361 5.62753C18.0967 6.06289 18.1271 6.50174 18.2261 6.92753C19.0586 6.23108 19.7597 5.39116 20.2961 4.44753C20.875 3.55527 21.3832 2.61908 21.8161 1.64753C21.9479 1.34025 22.1739 1.08272 22.4614 0.912012C22.7489 0.741299 23.0832 0.666204 23.4161 0.697532H27.6961C27.8224 0.685471 27.9497 0.685471 28.0761 0.697532C29.0761 0.697532 29.6661 0.987532 29.9061 1.54753C30.1461 2.10753 30.0761 3.20753 27.5461 6.15753L26.5461 7.28753C26.0616 7.75797 25.6443 8.29301 25.3061 8.87753C25.6848 9.30811 26.1147 9.69093 26.5861 10.0175C27.7353 10.8835 28.7468 11.9186 29.5861 13.0875C29.7829 13.3148 29.9117 13.593 29.9576 13.8901C30.0036 14.1873 29.965 14.4914 29.8461 14.7675C29.6365 15.0734 29.3561 15.3241 29.0288 15.4982C28.7014 15.6723 28.3368 15.7647 27.9661 15.7675L24.1761 15.8175L23.9461 15.7775ZM18.6361 10.9375C19.5361 10.9375 20.3161 11.7275 21.1461 12.5575C21.5944 13.0471 22.0977 13.4833 22.6461 13.8575C23.0607 14.1333 23.5481 14.2795 24.0461 14.2775H24.1461L27.9461 14.2275C28.1335 14.2168 28.317 14.1692 28.4861 14.0875L28.3861 13.9275C27.6291 12.8959 26.7263 11.9797 25.7061 11.2075C24.5161 10.2075 23.9061 9.73753 23.8361 8.96753C23.7661 8.19753 24.3261 7.52753 25.4461 6.25753L26.4461 5.14753C27.2903 4.28639 27.9834 3.28908 28.4961 2.19753C28.2729 2.1843 28.0492 2.1843 27.8261 2.19753H23.4561C23.377 2.17986 23.2951 2.17986 23.2161 2.19753C22.7532 3.25898 22.2012 4.27929 21.5661 5.24753C19.6761 8.06753 18.7861 8.44753 18.1561 8.44753C17.9607 8.44753 17.7684 8.39945 17.5961 8.30753C16.5961 7.73753 16.5961 6.46753 16.6561 5.54753C16.6561 5.39753 16.6561 5.24753 16.6561 5.11753C16.6561 4.46753 16.6561 3.90753 16.7061 3.42753C16.7861 1.74753 16.7061 1.73753 16.3261 1.64753C15.7138 1.52655 15.09 1.4729 14.4661 1.48753H13.7761C13.1411 1.47441 12.5061 1.50784 11.8761 1.58753C11.9715 1.65784 12.0558 1.74212 12.1261 1.83753C12.5385 2.48787 12.7442 3.24794 12.7161 4.01753C12.8461 5.66753 12.7761 7.81753 11.7161 8.33753C11.5284 8.42537 11.3233 8.4698 11.1161 8.46753C10.1861 8.46753 9.26606 7.58753 7.69606 5.20753C7.09358 4.29624 6.5556 3.34392 6.08606 2.35753L6.00606 2.25753C5.90508 2.20606 5.79736 2.16903 5.68606 2.14753H1.68606H1.61606C2.20606 3.36753 5.00606 8.76753 8.13606 11.5975C9.89364 13.2122 12.1708 14.1451 14.5561 14.2275H16.4061C16.5004 14.2074 16.5914 14.1737 16.6761 14.1275C16.6761 14.1275 16.6761 14.1275 16.6761 14.0375C16.6761 13.7675 16.6761 11.4375 18.2561 11.0375C18.3784 10.9894 18.5059 10.9558 18.6361 10.9375Z" fill="#192144"/>
+                  </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--instagram" href="#">
+                <span class="visually-hidden">Instagram</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.2802 2.40094C18.4252 2.40347 19.5225 2.85943 20.3321 3.66904C21.1417 4.47865 21.5977 5.57598 21.6002 6.72094V17.2809C21.5977 18.4259 21.1417 19.5232 20.3321 20.3328C19.5225 21.1424 18.4252 21.5984 17.2802 21.6009H6.7202C5.57691 21.5959 4.48204 21.1388 3.6745 20.3295C2.86696 19.5201 2.41233 18.4242 2.4098 17.2809V6.72094C2.41233 5.57764 2.86696 4.48175 3.6745 3.67241C4.48204 2.86308 5.57691 2.406 6.7202 2.40094H17.2802ZM17.2802 0.960938H6.7202C5.19256 0.960938 3.72748 1.56779 2.64727 2.648C1.56706 3.72821 0.960205 5.19329 0.960205 6.72094L0.960205 17.2809C0.960205 18.8086 1.56706 20.2737 2.64727 21.3539C3.72748 22.4341 5.19256 23.0409 6.7202 23.0409H17.2802C18.8078 23.0409 20.2729 22.4341 21.3531 21.3539C22.4333 20.2737 23.0402 18.8086 23.0402 17.2809V6.72094C23.0402 5.19329 22.4333 3.72821 21.3531 2.648C20.2729 1.56779 18.8078 0.960938 17.2802 0.960938V0.960938Z" fill="#192144"/>
+                  <path d="M12.0093 7.75642C12.8504 7.75642 13.6727 8.00584 14.372 8.47314C15.0714 8.94045 15.6165 9.60464 15.9384 10.3817C16.2603 11.1588 16.3445 12.0139 16.1804 12.8389C16.0163 13.6639 15.6112 14.4216 15.0165 15.0164C14.4217 15.6112 13.6639 16.0162 12.839 16.1803C12.014 16.3444 11.1589 16.2602 10.3818 15.9383C9.60472 15.6164 8.94052 15.0713 8.47321 14.3719C8.00591 13.6726 7.75649 12.8503 7.75649 12.0092C7.75522 11.4504 7.86436 10.8968 8.07764 10.3802C8.29091 9.8637 8.60412 9.39437 8.99928 8.99921C9.39444 8.60405 9.86377 8.29084 10.3803 8.07756C10.8969 7.86429 11.4504 7.75515 12.0093 7.75642ZM12.0093 6.31641C10.883 6.31451 9.78137 6.64678 8.84393 7.27115C7.90649 7.89553 7.17533 8.78396 6.74299 9.82402C6.31064 10.8641 6.19653 12.009 6.4151 13.1139C6.63368 14.2189 7.17511 15.2341 7.97088 16.0312C8.76664 16.8283 9.78099 17.3715 10.8855 17.5919C11.9901 17.8124 13.1352 17.7002 14.176 17.2696C15.2168 16.839 16.1065 16.1093 16.7324 15.173C17.3584 14.2366 17.6925 13.1356 17.6925 12.0092C17.6938 11.2621 17.5477 10.522 17.2626 9.8314C16.9776 9.14077 16.5592 8.51313 16.0313 7.98438C15.5035 7.45563 14.8765 7.03615 14.1864 6.74994C13.4962 6.46373 12.7564 6.31641 12.0093 6.31641Z" fill="#192144"/>
+                  <path d="M17.9043 7.41264C18.6148 7.41264 19.1907 6.8367 19.1907 6.12624C19.1907 5.41578 18.6148 4.83984 17.9043 4.83984C17.1939 4.83984 16.6179 5.41578 16.6179 6.12624C16.6179 6.8367 17.1939 7.41264 17.9043 7.41264Z" fill="#192144"/>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Попутчики</h1>
+    <div class="page-main__container">
+      <h1 class="page-main__title title title--larger">Попутчики</h1>
+    </div>
     <section class="country-filter">
-      <div class="country-filter__inner country-filter__inner--expanded">
-        <span class="country-filter__title">Фильтрация по странам</span>
-        <button class="country-filter__button button button--dotted" type="button" aria-label="Открыть/закрыть фильтр по странам"></button>
-        <ul class="country-filter__continents continents">
-          <li class="continents__item">Европа</li>
-          <li class="continents__item">Азия</li>
-          <li class="continents__item">Америка</li>
-          <li class="continents__item">Острова</li>
-        </ul>
-        <table class="country-filter__table alphabet">
-          <tr class="alphabet__table-row">
-            <td class="alphabet__table-cell">А</td>
-            <td class="alphabet__table-cell">Б</td>
-            <td class="alphabet__table-cell">В</td>
-            <td class="alphabet__table-cell">Г</td>
-            <td class="alphabet__table-cell">Д</td>
-          </tr>
-          <tr class="alphabet__table-row">
-            <td class="alphabet__table-cell">Е</td>
-            <td class="alphabet__table-cell">З</td>
-            <td class="alphabet__table-cell">И</td>
-            <td class="alphabet__table-cell">К</td>
-            <td class="alphabet__table-cell">Л</td>
-          </tr>
-          <tr class="alphabet__table-row">
-            <td class="alphabet__table-cell">М</td>
-            <td class="alphabet__table-cell">Н</td>
-            <td class="alphabet__table-cell">О</td>
-            <td class="alphabet__table-cell">П</td>
-            <td class="alphabet__table-cell">Р</td>
-          </tr>
-          <tr class="alphabet__table-row">
-            <td class="alphabet__table-cell">С</td>
-            <td class="alphabet__table-cell">Т</td>
-            <td class="alphabet__table-cell">У</td>
-            <td class="alphabet__table-cell">Ф</td>
-            <td class="alphabet__table-cell">Х</td>
-          </tr>
-          <tr class="alphabet__table-row">
-            <td class="alphabet__table-cell">Ч</td>
-            <td class="alphabet__table-cell">Ш</td>
-            <td class="alphabet__table-cell">Щ</td>
-            <td class="alphabet__table-cell">Э</td>
-            <td class="alphabet__table-cell">Ю</td>
-          </tr>
-        </table>
-        <ul class="country-filter__list state-names">
-          <li class="state-names__item">Австралия</li>
-          <li class="state-names__item">Австрия</li>
-          <li class="state-names__item">Азербайджан</li>
-          <li class="state-names__item">Албания</li>
-          <li class="state-names__item">Алжир</li>
-          <li class="state-names__item">Ангола</li>
-          <li class="state-names__item">Андорра</li>
-          <li class="state-names__item">Антигуа и Барбуда</li>
-          <li class="state-names__item">Аргентина</li>
-          <li class="state-names__item">Армения</li>
-          <li class="state-names__item">Афганистан</li>
-        </ul>
-        <button class="country-filter__button button button--close" type="button">Свернуть</button>
+      <div class="country-filter__container container">
+        <div class="country-filter__inner country-filter__inner--expanded">
+          <span class="country-filter__title">Фильтрация по странам:</span>
+          <button class="country-filter__button button button--dotted" type="button" aria-label="Открыть/закрыть фильтр по странам"></button>
+          <ul class="country-filter__continents continents">
+            <li class="continents__item continents__item--active">Европа</li>
+            <li class="continents__item">Азия</li>
+            <li class="continents__item">Америка</li>
+            <li class="continents__item">Острова</li>
+          </ul>
+          <table class="country-filter__table alphabet">
+            <tr class="alphabet__table-row">
+              <td class="alphabet__table-cell alphabet__table-cell--chosen-second">А</td>
+              <td class="alphabet__table-cell">Б</td>
+              <td class="alphabet__table-cell">В</td>
+              <td class="alphabet__table-cell">Г</td>
+              <td class="alphabet__table-cell">Д</td>
+            </tr>
+            <tr class="alphabet__table-row">
+              <td class="alphabet__table-cell">Е</td>
+              <td class="alphabet__table-cell">З</td>
+              <td class="alphabet__table-cell">И</td>
+              <td class="alphabet__table-cell">К</td>
+              <td class="alphabet__table-cell">Л</td>
+            </tr>
+            <tr class="alphabet__table-row">
+              <td class="alphabet__table-cell">М</td>
+              <td class="alphabet__table-cell">Н</td>
+              <td class="alphabet__table-cell">О</td>
+              <td class="alphabet__table-cell">П</td>
+              <td class="alphabet__table-cell">Р</td>
+            </tr>
+            <tr class="alphabet__table-row">
+              <td class="alphabet__table-cell">С</td>
+              <td class="alphabet__table-cell">Т</td>
+              <td class="alphabet__table-cell">У</td>
+              <td class="alphabet__table-cell">Ф</td>
+              <td class="alphabet__table-cell">Х</td>
+            </tr>
+            <tr class="alphabet__table-row">
+              <td class="alphabet__table-cell">Ч</td>
+              <td class="alphabet__table-cell">Ш</td>
+              <td class="alphabet__table-cell">Щ</td>
+              <td class="alphabet__table-cell">Э</td>
+              <td class="alphabet__table-cell">Ю</td>
+            </tr>
+          </table>
+          <ul class="country-filter__list state-names state-names--second">
+            <li class="state-names__item">Австралия</li>
+            <li class="state-names__item">Австрия</li>
+            <li class="state-names__item">Азербайджан</li>
+            <li class="state-names__item">Албания</li>
+            <li class="state-names__item">Алжир</li>
+            <li class="state-names__item">Ангола</li>
+            <li class="state-names__item">Андорра</li>
+            <li class="state-names__item">Антигуа и Барбуда</li>
+            <li class="state-names__item">Аргентина</li>
+            <li class="state-names__item">Армения</li>
+            <li class="state-names__item">Афганистан</li>
+          </ul>
+          <button class="country-filter__button button button--close" type="button">Свернуть</button>
+        </div>
       </div>
     </section>
     <form class="companion-filter" method="get" action="https://echo.htmlacademy.ru">
-      <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-      <div class="companion-filter__item">
-        <h3 class="companion-filter__heading">Хобби</h3>
-        <div class="companion-filter__wrapper">
-          <ul class="companion-filter__list filter-checkbox">
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Спортзал" value="Спортзал" id="sports">
-                <label class="filter-checkbox__label" for="sports">Спортзал</label>
-            </li>
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Кальян" value="Кальян" id="hookah">
-                <label class="filter-checkbox__label" for="hookah">Кальян</label>
-            </li>
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Диван" value="Диван" id="sofa">
-                <label class="filter-checkbox__label" for="sofa">Диван</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="companion-filter__item">
-        <h3 class="companion-filter__heading">Музыка</h3>
-        <div class="companion-filter__wrapper">
-          <ul class="companion-filter__list filter-checkbox">
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Тяжелый рок" value="Тяжелый рок" id="hard-rock">
-                <label class="filter-checkbox__label" for="hard-rock">Тяжелый рок</label>
-            </li>
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Русский рэп" value="Русский рэп" id="russian-rap">
-                <label class="filter-checkbox__label" for="russian-rap">Русский рэп</label>
-            </li>
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Евродэнс" value="Евродэнс" id="eurodance">
-                <label class="filter-checkbox__label" for="eurodance">Евродэнс</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="companion-filter__item">
-        <h3 class="companion-filter__heading">Еда</h3>
-        <div class="companion-filter__wrapper">
-          <ul class="companion-filter__list filter-checkbox">
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Мясоед" value="Мясоед" id="meat">
-                <label class="filter-checkbox__label" for="meat">Мясоед</label>
-            </li>
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Сидит на ПП" value="Сидит на ПП" id="healthy">
-                <label class="filter-checkbox__label" for="healthy">Сидит на ПП</label>
-            </li>
-            <li class="filter-checkbox__item">
-                <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Веган-сыроед" value="Веган-сыроед" id="vegan">
-                <label class="filter-checkbox__label" for="vegan">Веган-сыроед</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="companion-filter__item ">
-        <h3 class="companion-filter__heading">Транспорт</h3>
-        <div class="companion-filter__wrapper">
-          <ul class="companion-filter__list filter-icon-checkbox">
-            <li class="filter-icon-checkbox__item">
-              <label class="visually-hidden" aria-label="Выбрать Авиаперелёт">
-                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="plane">
-              </label>
-            </li>
-            <li class="filter-icon-checkbox__item">
-              <label class="visually-hidden" aria-label="Выбрать Автотранспорт">
-                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="car">
-              </label>
-            </li>
-            <li class="filter-icon-checkbox__item">
-              <label class="visually-hidden  aria-label="Выбрать Велосипед"">
-                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="cycle">
-              </label>
-            </li>
-            <li class="filter-icon-checkbox__item">
-              <label class="visually-hidden" aria-label="Выбрать Пешком">
-                <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="walk">
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="companion-filter__item">
-        <h3 class="companion-filter__heading">Левел</h3>
-        <div class="companion-filter__wrapper">
-          <div class="companion-filter__controls level-range">
-            <label class="level-range__ticket">
-              <input class="level-range__input level-range__input--min" type="number" name="min" value="30">
-            </label>
-            <label class="level-range__ticket">
-              <input class="level-range__input level-range__input--max" type="number" name="max" value="100">
-            </label>
+      <div class="companion-filter__container container">
+        <div class="companion-filter__body">
+          <h2 class="companion-filter__title title">Подберите идеального попутчика</h2>
+          <div class="companion-filter__item">
+            <h3 class="companion-filter__heading">Хобби</h3>
+            <ul class="companion-filter__list filter-checkbox">
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Спортзал" value="Спортзал" id="sports">
+                  <label class="filter-checkbox__label" for="sports">Спортзал</label>
+              </li>
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Кальян" value="Кальян" id="hookah">
+                  <label class="filter-checkbox__label" for="hookah">Кальян</label>
+              </li>
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Диван" value="Диван" id="sofa">
+                  <label class="filter-checkbox__label" for="sofa">Диван</label>
+              </li>
+            </ul>
           </div>
-          <div class="companion-filter__controls range">
-            <div class="range__scale">
-              <div class="range__bar" style="width: 50%; margin-left: 5%"></div>
+          <div class="companion-filter__item">
+            <h3 class="companion-filter__heading">Музыка</h3>
+            <ul class="companion-filter__list filter-checkbox">
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Тяжелый рок" value="Тяжелый рок" id="hard-rock">
+                  <label class="filter-checkbox__label" for="hard-rock">Тяжелый рок</label>
+              </li>
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Русский рэп" value="Русский рэп" id="russian-rap">
+                  <label class="filter-checkbox__label" for="russian-rap">Русский рэп</label>
+              </li>
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Евродэнс" value="Евродэнс" id="eurodance">
+                  <label class="filter-checkbox__label" for="eurodance">Евродэнс</label>
+              </li>
+            </ul>
+          </div>
+          <div class="companion-filter__item">
+            <h3 class="companion-filter__heading">Еда</h3>
+            <ul class="companion-filter__list filter-checkbox">
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Мясоед" value="Мясоед" id="meat">
+                  <label class="filter-checkbox__label" for="meat">Мясоед</label>
+              </li>
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Сидит на ПП" value="Сидит на ПП" id="healthy">
+                  <label class="filter-checkbox__label" for="healthy">Сидит на ПП</label>
+              </li>
+              <li class="filter-checkbox__item">
+                  <input class="visually-hidden filter-checkbox__tag" type="checkbox" name="Веган-сыроед" value="Веган-сыроед" id="vegan">
+                  <label class="filter-checkbox__label" for="vegan">Веган-сыроед</label>
+              </li>
+            </ul>
+          </div>
+          <div class="companion-filter__item ">
+            <h3 class="companion-filter__heading">Транспорт</h3>
+            <ul class="companion-filter__list filter-icon-checkbox">
+              <li class="filter-icon-checkbox__item">
+                <label class="filter-icon-checkbox__label filter-icon-checkbox__label--plane" aria-label="Выбрать Авиаперелёт">
+                  <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="plane">
+                </label>
+              </li>
+              <li class="filter-icon-checkbox__item">
+                <label class="filter-icon-checkbox__label filter-icon-checkbox__label--car" aria-label="Выбрать Автотранспорт">
+                  <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="car">
+                </label>
+              </li>
+              <li class="filter-icon-checkbox__item">
+                <label class="filter-icon-checkbox__label filter-icon-checkbox__label--cycle"  aria-label="Выбрать Велосипед">
+                  <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="cycle">
+                </label>
+              </li>
+              <li class="filter-icon-checkbox__item">
+                <label class="filter-icon-checkbox__label filter-icon-checkbox__label--walk" aria-label="Выбрать Пешком">
+                  <input class="visually-hidden filter-icon-checkbox__tag" type="checkbox" name="walk">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="companion-filter__item">
+            <h3 class="companion-filter__heading">Левел</h3>
+            <div class="companion-filter__controls level-range">
+              <label class="level-range__ticket">
+                <input class="level-range__input level-range__input--min" type="number" name="min" value="30">
+              </label>
+              <label class="level-range__ticket">
+                <input class="level-range__input level-range__input--max" type="number" name="max" value="100">
+              </label>
             </div>
-            <div id="element-toggle-min" class="range__toggle toggle toggle-min" tabindex="0" style="left: 5%" aria-label="Ползунок минимального левела"></div>
-            <div id="element-toggle-max" class="range__toggle toggle toggle-max" tabindex="0" style="left: 50%" aria-label="Ползунок максимального левела"></div>
+            <div class="companion-filter__controls range">
+              <div class="range__scale">
+                <div class="range__bar" style="width: 50%; margin-left: 5%"></div>
+              </div>
+              <div id="element-toggle-min" class="range__toggle toggle toggle-min" tabindex="0" style="left: 5%" aria-label="Ползунок минимального левела"></div>
+              <div id="element-toggle-max" class="range__toggle toggle toggle-max" tabindex="0" style="left: 50%" aria-label="Ползунок максимального левела"></div>
+            </div>
           </div>
+          <button class="companion-filter__button button button--secondary" type="submit" formaction="https://echo.htmlacademy.ru">Показать</button>
         </div>
       </div>
-      <button class="companion-filter__button button button--secondary" type="submit" formaction="https://echo.htmlacademy.ru">Показать</button>
     </form>
     <section class="result">
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <ul class="result__list">
-        <li class="result__item">
-          <div class="result__card user-card">
+      <div class="result__container container">
+        <ul class="result__list">
+          <li class="result__item user-card">
             <a class="user-card__photo" href="#">
-              <img src="" width="70" height="70" alt="Девушка купается в море">
+              <img src="img/firsova-catalog-photo.jpg" width="70" height="70" alt="Девушка купается в море">
             </a>
-            <span class="user-card__name">Таня Фирсова</span>
+            <span class="user-card__name title--small">Таня Фирсова</span>
             <div class="user-card__likes likes" href="#">
               <svg class="likes__icon" width="30" height="30"></svg>
               <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
-              <span class="likes__count">1,5 М</span>
+              <span class="likes__count">1,5 м</span>
             </div>
-            <ul class="user-card__tag-list hashtags">
+            <ul class="user-card__tag-list hashtags hashtags--left">
               <li class="hashtags__item">#ЗОЖ</li>
               <li class="hashtags__item">#ПП</li>
               <li class="hashtags__item">#Фитнес</li>
@@ -256,7 +264,7 @@
               <li class="hashtags__item">#смузи</li>
             </ul>
             <div class="user-card__states states">
-              <span class="user-card__heading">хочет посетить:</span>
+              <span class="states__heading">хочет посетить:</span>
               <ul class="states__list">
                 <li class="states__item">Шри-Ланка</li>
                 <li class="states__item">Таиланд</li>
@@ -289,20 +297,18 @@
               <span>99</span>
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
-          </div>
-        </li>
-        <li class="result__item">
-          <div class="result__card user-card">
+          </li>
+          <li class="result__item user-card">
             <a class="user-card__photo" href="#">
-              <img src="" width="70" height="70" alt="Молодой человек в шапке и солнцезащитных очках">
+              <img src="img/demin-catalog-photo.jpg" width="70" height="70" alt="Молодой человек в шапке и солнцезащитных очках">
             </a>
-            <span class="user-card__name">Петя Демин</span>
+            <span class="user-card__name title--small">Петя Демин</span>
             <div class="user-card__likes likes" href="#">
               <svg class="likes__icon" width="30" height="30"></svg>
               <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
               <span class="likes__count">1500</span>
             </div>
-            <ul class="user-card__tag-list hashtags">
+            <ul class="user-card__tag-list hashtags hashtags--left">
               <li class="hashtags__item">#бургер</li>
               <li class="hashtags__item">#бар</li>
               <li class="hashtags__item">#футбол</li>
@@ -342,20 +348,18 @@
               <span>80</span>
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
-          </div>
-        </li>
-        <li class="result__item">
-          <div class="result__card user-card">
+          </li>
+          <li class="result__item user-card">
             <a class="user-card__photo" href="#">
-              <img src="" width="70" height="70" alt="Молодой человек с татуировками сидит на крыше машины">
+              <img src="img/smolov-catalog-photo.jpg" width="70" height="70" alt="Молодой человек с татуировками сидит на крыше машины">
             </a>
-            <span class="user-card__name">Марк Смолов</span>
+            <span class="user-card__name title--small">Марк Смолов</span>
             <div class="user-card__likes likes" href="#">
               <svg class="likes__icon" width="30" height="30"></svg>
               <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
               <span class="likes__count">170</span>
             </div>
-            <ul class="user-card__tag-list hashtags">
+            <ul class="user-card__tag-list hashtags hashtags--left">
               <li class="hashtags__item">#рэп</li>
               <li class="hashtags__item">#тату</li>
               <li class="hashtags__item">#хайпбист</li>
@@ -396,20 +400,18 @@
               <span>25</span>
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
-          </div>
-        </li>
-        <li class="result__item">
-          <div class="result__card user-card">
+          </li>
+          <li class="result__item user-card">
             <a class="user-card__photo" href="#">
-              <img src="" width="70" height="70" alt="Молодая девушка в деловом костюме">
+              <img src="img/rogovaya-catalog-photo.jpg" width="70" height="70" alt="Молодая девушка в деловом костюме">
             </a>
-            <span class="user-card__name">Лариса Роговая</span>
+            <span class="user-card__name title--small">Лариса Роговая</span>
             <div class="user-card__likes likes" href="#">
               <svg class="likes__icon" width="30" height="30"></svg>
               <button class="likes__button button" type="button" aria-label="Поставить лайк пользователю"></button>
               <span class="likes__count">23</span>
             </div>
-            <ul class="user-card__tag-list hashtags">
+            <ul class="user-card__tag-list hashtags hashtags--left">
               <li class="hashtags__item">#образование</li>
               <li class="hashtags__item">#карьера</li>
               <li class="hashtags__item">#учеба</li>
@@ -448,32 +450,31 @@
               <span>50</span>
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
-          </div>
-        </li>
-      </ul>
-      <a class="result__button button more-result" href="#">Показать ещё</a>
-      <div class="result__pagination pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item">
-            <a href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a href="#">4</a>
           </li>
         </ul>
-        <div class="result__pages result-controls">
-          <a class="result-controls__button button button--backward">
-            <svg width="13" height="20"></svg>
-          </a>
-          <a class="result-controls__button button button--forward">
-            <svg width="13" height="20"></svg>
-          </a>
+        <a class="result__button button button--third" href="#">Показать ещё</a>
+        <div class="result__pagination pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item pagination__item--current">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+          </ul>
+          <div class="pagination__flip result-controls">
+            <a class="pagination-controls__button button button--backward">
+            </a>
+            <a class="pagination-controls__button button button--forward">
+              <svg width="13" height="20"></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -482,35 +483,48 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <p class="page-footer__logo">
-        <img class="page-footer__img" src="" alt="" width="10" height="10">
+        <img class="page-footer__img" src="img/logo-pognali-mobile-blue.svg" alt="Логотип сайта Погнали" width="96" height="15">
       </p>
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="page-footer__social socials socials--colored">
         <li class="socials__item">
           <a class="socials__link socials__link--facebook" href="#">
             <span class="visually-hidden">Фейсбук</span>
-            <svg width="45" height="45"></svg>
+            <svg width="45" height="45" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="31" cy="31" r="31" fill="#FFD74B"/>
+              <path d="M33.53 44.75H26.71V31.85H24V25.47H26.63C26.43 22.58 26.93 20.47 28.15 19.03C28.7317 18.3909 29.4404 17.8802 30.2308 17.5306C31.0212 17.1811 31.8758 17.0004 32.74 17H37.52V23.15H33.76C33.5385 23.9021 33.4538 24.6879 33.51 25.47H37.51V31.85H33.51L33.53 44.75ZM28.22 43.25H32V30.35H36V27H32V26.24C32 24.24 32 22.45 33 21.78L33.19 21.65H36V18.5H32.78C32.1256 18.4915 31.4768 18.6207 30.8756 18.8791C30.2744 19.1375 29.7342 19.5194 29.29 20C28.29 21.23 27.88 23.29 28.19 26.14L28.29 26.97H25.5V30.35H28.22V43.25Z" fill="#192144"/>
+              </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--vkontakte" href="#">
             <span class="visually-hidden">ВКонтакте</span>
-            <svg width="45" height="45"></svg>
+            <svg width="45" height="45" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="31" cy="31" r="31" fill="#FFD74B"/>
+              <path d="M39.9461 38.7775C39.2083 38.761 38.4891 38.5431 37.8661 38.1475C37.2157 37.7079 36.6184 37.1945 36.0861 36.6175C35.6461 36.1775 34.9161 35.4375 34.6361 35.4375C34.3561 35.4375 34.1561 36.3575 34.1661 37.0075C34.1703 37.4562 34.0021 37.8894 33.6961 38.2175C33.3481 38.5018 32.9234 38.6758 32.4761 38.7175H30.5561C27.7965 38.6568 25.1541 37.59 23.1261 35.7175C19.4461 32.3475 16.2861 25.9075 16.1561 25.6275C16.0321 25.3936 15.9801 25.1282 16.0068 24.8648C16.0335 24.6014 16.1377 24.3518 16.3061 24.1475C16.6872 23.8297 17.1698 23.6593 17.6661 23.6675H21.7461H21.8661C22.2036 23.7168 22.5272 23.836 22.8161 24.0175C23.0879 24.1998 23.3055 24.452 23.4461 24.7475C23.8772 25.6706 24.3717 26.5627 24.9261 27.4175C26.2361 29.4175 26.8161 29.8775 27.0261 29.9775C27.2597 29.0398 27.324 28.0679 27.2161 27.1075C27.2511 26.6701 27.179 26.2308 27.0061 25.8275C26.7865 25.6519 26.5169 25.5504 26.2361 25.5375L25.5061 24.8475C25.3661 24.1875 26.0961 23.6175 26.6061 23.3975C27.6238 23.0786 28.6916 22.9498 29.7561 23.0175H30.4661C31.1881 22.9987 31.9099 23.0659 32.6161 23.2175C34.3161 23.5775 34.2561 24.9475 34.1861 26.5275C34.1861 26.9875 34.1361 27.5275 34.1361 28.1475C34.1361 28.2975 34.1361 28.4575 34.1361 28.6275C34.0967 29.0629 34.1271 29.5017 34.2261 29.9275C35.0586 29.2311 35.7597 28.3912 36.2961 27.4475C36.875 26.5553 37.3832 25.6191 37.8161 24.6475C37.9479 24.3403 38.1739 24.0827 38.4614 23.912C38.7489 23.7413 39.0832 23.6662 39.4161 23.6975H43.6961C43.8224 23.6855 43.9497 23.6855 44.0761 23.6975C45.0761 23.6975 45.6661 23.9875 45.9061 24.5475C46.1461 25.1075 46.0761 26.2075 43.5461 29.1575L42.5461 30.2875C42.0616 30.758 41.6443 31.293 41.3061 31.8775C41.6848 32.3081 42.1147 32.6909 42.5861 33.0175C43.7353 33.8835 44.7468 34.9186 45.5861 36.0875C45.7829 36.3148 45.9117 36.593 45.9576 36.8901C46.0036 37.1873 45.965 37.4914 45.8461 37.7675C45.6365 38.0734 45.3561 38.3241 45.0288 38.4982C44.7014 38.6723 44.3368 38.7647 43.9661 38.7675L40.1761 38.8175L39.9461 38.7775ZM34.6361 33.9375C35.5361 33.9375 36.3161 34.7275 37.1461 35.5575C37.5944 36.0471 38.0977 36.4833 38.6461 36.8575C39.0607 37.1333 39.5481 37.2795 40.0461 37.2775H40.1461L43.9461 37.2275C44.1335 37.2168 44.317 37.1692 44.4861 37.0875L44.3861 36.9275C43.6291 35.8959 42.7263 34.9797 41.7061 34.2075C40.5161 33.2075 39.9061 32.7375 39.8361 31.9675C39.7661 31.1975 40.3261 30.5275 41.4461 29.2575L42.4461 28.1475C43.2903 27.2864 43.9834 26.2891 44.4961 25.1975C44.2729 25.1843 44.0492 25.1843 43.8261 25.1975H39.4561C39.377 25.1799 39.2951 25.1799 39.2161 25.1975C38.7532 26.259 38.2012 27.2793 37.5661 28.2475C35.6761 31.0675 34.7861 31.4475 34.1561 31.4475C33.9607 31.4475 33.7684 31.3995 33.5961 31.3075C32.5961 30.7375 32.5961 29.4675 32.6561 28.5475C32.6561 28.3975 32.6561 28.2475 32.6561 28.1175C32.6561 27.4675 32.6561 26.9075 32.7061 26.4275C32.7861 24.7475 32.7061 24.7375 32.3261 24.6475C31.7138 24.5265 31.09 24.4729 30.4661 24.4875H29.7761C29.1411 24.4744 28.5061 24.5078 27.8761 24.5875C27.9715 24.6578 28.0558 24.7421 28.1261 24.8375C28.5385 25.4879 28.7442 26.2479 28.7161 27.0175C28.8461 28.6675 28.7761 30.8175 27.7161 31.3375C27.5284 31.4254 27.3233 31.4698 27.1161 31.4675C26.1861 31.4675 25.2661 30.5875 23.6961 28.2075C23.0936 27.2962 22.5556 26.3439 22.0861 25.3575L22.0061 25.2575C21.9051 25.2061 21.7974 25.169 21.6861 25.1475H17.6861H17.6161C18.2061 26.3675 21.0061 31.7675 24.1361 34.5975C25.8936 36.2122 28.1708 37.1451 30.5561 37.2275H32.4061C32.5004 37.2074 32.5914 37.1737 32.6761 37.1275C32.6761 37.1275 32.6761 37.1275 32.6761 37.0375C32.6761 36.7675 32.6761 34.4375 34.2561 34.0375C34.3784 33.9894 34.5059 33.9558 34.6361 33.9375Z" fill="#192144"/>
+            </svg>
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--instagram" href="#">
             <span class="visually-hidden">Инстаграмм</span>
-            <svg width="45" height="45"></svg>
+            <svg width="45" height="45" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="31" cy="31" r="31" fill="#FFD74B"/>
+              <path d="M36.2802 21.4009C37.4252 21.4035 38.5225 21.8594 39.3321 22.669C40.1417 23.4786 40.5977 24.576 40.6002 25.7209V36.2809C40.5977 37.4259 40.1417 38.5232 39.3321 39.3328C38.5225 40.1424 37.4252 40.5984 36.2802 40.6009H25.7202C24.5769 40.5959 23.482 40.1388 22.6745 39.3295C21.867 38.5201 21.4123 37.4242 21.4098 36.2809V25.7209C21.4123 24.5776 21.867 23.4817 22.6745 22.6724C23.482 21.8631 24.5769 21.406 25.7202 21.4009H36.2802ZM36.2802 19.9609H25.7202C24.1926 19.9609 22.7275 20.5678 21.6473 21.648C20.5671 22.7282 19.9602 24.1933 19.9602 25.7209V36.2809C19.9602 37.8086 20.5671 39.2737 21.6473 40.3539C22.7275 41.4341 24.1926 42.0409 25.7202 42.0409H36.2802C37.8078 42.0409 39.2729 41.4341 40.3531 40.3539C41.4333 39.2737 42.0402 37.8086 42.0402 36.2809V25.7209C42.0402 24.1933 41.4333 22.7282 40.3531 21.648C39.2729 20.5678 37.8078 19.9609 36.2802 19.9609V19.9609Z" fill="#192144"/>
+              <path d="M31.0093 26.7564C31.8504 26.7564 32.6727 27.0058 33.372 27.4731C34.0714 27.9404 34.6165 28.6046 34.9384 29.3817C35.2603 30.1588 35.3445 31.0139 35.1804 31.8389C35.0163 32.6639 34.6112 33.4216 34.0165 34.0164C33.4217 34.6112 32.6639 35.0162 31.839 35.1803C31.014 35.3444 30.1589 35.2602 29.3818 34.9383C28.6047 34.6164 27.9405 34.0713 27.4732 33.3719C27.0059 32.6726 26.7565 31.8503 26.7565 31.0092C26.7552 30.4504 26.8644 29.8968 27.0776 29.3802C27.2909 28.8637 27.6041 28.3944 27.9993 27.9992C28.3944 27.604 28.8638 27.2908 29.3803 27.0776C29.8969 26.8643 30.4504 26.7551 31.0093 26.7564ZM31.0093 25.3164C29.883 25.3145 28.7814 25.6468 27.8439 26.2712C26.9065 26.8955 26.1753 27.784 25.743 28.824C25.3106 29.8641 25.1965 31.009 25.4151 32.1139C25.6337 33.2189 26.1751 34.2341 26.9709 35.0312C27.7666 35.8283 28.781 36.3715 29.8855 36.5919C30.9901 36.8124 32.1352 36.7002 33.176 36.2696C34.2168 35.839 35.1065 35.1093 35.7324 34.173C36.3584 33.2366 36.6925 32.1356 36.6925 31.0092C36.6938 30.2621 36.5477 29.522 36.2626 28.8314C35.9776 28.1408 35.5592 27.5131 35.0313 26.9844C34.5035 26.4556 33.8765 26.0361 33.1864 25.7499C32.4962 25.4637 31.7564 25.3164 31.0093 25.3164Z" fill="#192144"/>
+              <path d="M36.9043 26.4126C37.6148 26.4126 38.1907 25.8367 38.1907 25.1262C38.1907 24.4158 37.6148 23.8398 36.9043 23.8398C36.1939 23.8398 35.6179 24.4158 35.6179 25.1262C35.6179 25.8367 36.1939 26.4126 36.9043 26.4126Z" fill="#192144"/>
+            </svg>
           </a>
         </li>
       </ul>
-      <p class="page-footer__copyright">
-        Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTMLAcademy</span>
-          <svg width="27" height="33"></svg>
-        </a>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#192144"/>
+          </svg>
+        </div>
       </p>
     </div>
   </footer>

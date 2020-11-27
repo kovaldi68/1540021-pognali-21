@@ -11,4 +11,14 @@
   line-height: 18px;
   text-align: center;
   border: 1px solid $grey-border;
+
+  &--chosen {
+    background-color: $grey-basic;
+  }
+
+  &--chosen-second {
+    color: $white-basic;
+    background-color: $blue-light-text;
+    border: 1px solid $blue-light-text;
+  }
 }
