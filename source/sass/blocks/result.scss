@@ -10,10 +10,10 @@
 
 .result__item {
   margin-bottom: 10px;
-}
 
-.result__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .result__button {

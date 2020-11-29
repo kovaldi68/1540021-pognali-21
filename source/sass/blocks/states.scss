@@ -14,10 +14,10 @@
   text-transform: uppercase;
   margin-bottom: 12px;
   padding-left: 40px;
-}
 
-.states__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .states__heading {

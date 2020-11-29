@@ -71,14 +71,14 @@
   </header>
 
   <main class="page-main">
-    <div class="page-main__container">
-      <h1 class="page-main__title title title--larger">Попутчики</h1>
-    </div>
+    <section class="page-main__heading">
+      <h1 class="page-main__title container title title--larger">Попутчики</h1>
+    </section>
     <section class="country-filter">
       <div class="country-filter__container container">
         <div class="country-filter__inner country-filter__inner--expanded">
           <span class="country-filter__title">Фильтрация по странам:</span>
-          <button class="country-filter__button button button--dotted" type="button" aria-label="Открыть/закрыть фильтр по странам"></button>
+          <button class="country-filter__button button button--icon" type="button" aria-label="Открыть/закрыть фильтр по странам"></button>
           <ul class="country-filter__continents continents">
             <li class="continents__item continents__item--active">Европа</li>
             <li class="continents__item">Азия</li>
@@ -135,8 +135,13 @@
             <li class="state-names__item">Армения</li>
             <li class="state-names__item">Афганистан</li>
           </ul>
-          <button class="country-filter__button button button--close" type="button">Свернуть</button>
         </div>
+        <button class="country-filter__button button button" type="button">
+          <span>
+
+          </span>
+          <span>Свернуть</span>
+        </button>
       </div>
     </section>
     <form class="companion-filter" method="get" action="https://echo.htmlacademy.ru">
@@ -246,8 +251,10 @@
       <div class="result__container container">
         <ul class="result__list">
           <li class="result__item user-card">
-            <a class="user-card__photo" href="#">
-              <img src="img/firsova-catalog-photo.jpg" width="70" height="70" alt="Девушка купается в море">
+            <a class="user-card__image" href="#">
+              <div class="user-card__photo">
+                <img src="img/firsova-catalog-photo.jpg" width="70" height="70" alt="Девушка купается в море">
+              </div>
             </a>
             <span class="user-card__name title--small">Таня Фирсова</span>
             <div class="user-card__likes likes" href="#">
@@ -455,10 +462,10 @@
         <a class="result__button button button--third" href="#">Показать ещё</a>
         <div class="result__pagination pagination">
           <ul class="pagination__list">
-            <li class="pagination__item pagination__item--current">
+            <li class="pagination__item">
               <a class="pagination__link" href="#">1</a>
             </li>
-            <li class="pagination__item">
+            <li class="pagination__item pagination__item--current">
               <a class="pagination__link" href="#">2</a>
             </li>
             <li class="pagination__item">
@@ -469,9 +476,9 @@
             </li>
           </ul>
           <div class="pagination__flip result-controls">
-            <a class="pagination-controls__button button button--backward">
+            <a class="pagination-controls__button pagination-controls__button--prev button">
             </a>
-            <a class="pagination-controls__button button button--forward">
+            <a class="pagination-controls__button pagination-controls__button--next button">
               <svg width="13" height="20"></svg>
             </a>
           </div>

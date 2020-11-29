@@ -2,36 +2,28 @@
   @include list-reset;
 }
 
-.filter-checkbox__item {
-  padding-left: 27px;
-}
-
 .filter-checkbox__label {
   color: $black-basic;
   font-size: 15px;
   line-height: 20px;
   position: relative;
+  padding-left: 27px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-color: $white-basic;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
-.filter-checkbox__label::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 0;
-  left: -27px;
-  background-color: $white-basic;
-  border-radius: 4px;
-}
-
-.filter-checkbox__tag:checked + .filter-checkbox__label::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 13px;
-  top: 0;
-  left: -27px;
+.filter-checkbox__tag:checked + .filter-checkbox__label::before {
   background-image: url("../../img/right-filter-checkbox.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }

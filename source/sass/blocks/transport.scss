@@ -15,10 +15,10 @@
   margin-right: 13px;
   width: 32px;
   height: 32px;
-}
 
-.transport__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .transport--rounded .transport__item {

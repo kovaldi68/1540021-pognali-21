@@ -1,11 +1,11 @@
 .country-filter {
   background-color: $grey-decor;
+  padding-bottom: 28px;
 }
-
 
 .country-filter__inner {
   &--expanded {
-    padding: 22px 25px 28px 25px;
+    padding: 22px 25px 0 25px;
   }
 }
 
@@ -17,4 +17,15 @@
   padding-left: 2px;
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+
+.country-filter__button {
+  color: $blue-dark-main;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 12px 40px 10px;
+  background-color: $grey-close-button;
+  border-radius: 20px;
+  width: 100%;
 }

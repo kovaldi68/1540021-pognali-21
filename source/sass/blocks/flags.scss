@@ -9,8 +9,8 @@
 
 .flags__item {
   margin-right: 20px;
-}
 
-.flags__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }

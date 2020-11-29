@@ -6,12 +6,14 @@
   grid-template-columns: 84px 84px 52px;
 }
 
-.user-card__photo {
+.user-card__img {
   margin-left: -2px;
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.user-card__photo img {
+.user-card__photo {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 

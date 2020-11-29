@@ -25,40 +25,25 @@
 
 .trip-input__pick::-webkit-outer-spin-button,
 .trip-input__pick::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
-.button {
-  &--less {
-    position: absolute;
-    top: 50px;
-    left: 23px;
-  }
+.trip-input__button {
+  position: absolute;
+  top: 27px;
+  width: 46px;
+  height: 46px;
+  background-position: center center;
+  background-repeat: no-repeat;
 
-  &--less::before {
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+  &--less {
+    left: 0;
     background-image: url("../../img/minus-icon.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 
   &--more {
-    position: absolute;
-    top: 50px;
-    right: 23px;
-  }
-
-  &--more::after {
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
+    right: 0;
     background-image: url("../../img/plus-icon.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 }

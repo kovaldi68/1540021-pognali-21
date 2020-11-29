@@ -14,7 +14,7 @@
     font-size: 18px;
     line-height: 18px;
     text-align: center;
-    padding: 22px 22px 22px 23px;
+    padding: 22px;
     background-color: $yellow-main;
     border-radius: 10px;
   }
@@ -31,48 +31,12 @@
     border-radius: 25px;
   }
 
-  &--third {
+  &--opacity {
     color: $blue-light-text;
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-  }
-
-  &--close {
-    color: $blue-dark-main;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 12px 83px 10px 109px;
-    background-color: $grey-close-button;
-    border-radius: 20px;
-    min-width: 270px;
-    margin-left: -25px;
-  }
-
-  &--backward {
-    width: 135px;
-    height: 51px;
-    background: $white-basic url("../../img/page-arrow.svg");
-    background-position: 63px 17px;
-    background-repeat: no-repeat;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: 1px solid $grey-basic;
-  }
-
-  &--forward {
-    width: 135px;
-    height: 51px;
-    background: $white-basic url("../../img/page-arrow.svg");
-    background-position: 63px 14px;
-    background-repeat: no-repeat;
-    transform: rotate(-180deg);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-right: 1px solid $grey-basic;
   }
 }

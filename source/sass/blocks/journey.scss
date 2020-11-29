@@ -7,10 +7,10 @@
   margin-bottom: 10px;
   background-color: $white-basic;
   border-radius: 10px;
-}
 
-.journey__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .journey__name {
