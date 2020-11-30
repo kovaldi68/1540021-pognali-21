@@ -5,6 +5,12 @@
   margin: 0 auto;
   width: 188px;
   justify-content: center;
+  margin-left: 5px;
+
+  &--left {
+    justify-content: flex-start;
+    margin-bottom: 16px;
+  }
 }
 
 .hashtags__item {

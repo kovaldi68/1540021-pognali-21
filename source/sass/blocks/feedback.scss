@@ -32,13 +32,13 @@
   border: none;
   padding: 22px 141px 22px 25px;
   width: 220px;
-}
 
-.feedback__field::placeholder {
-  color: rgba($grey-special, 0.3);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
+  &::placeholder {
+    color: rgba($grey-special, 0.3);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .feedback__button {

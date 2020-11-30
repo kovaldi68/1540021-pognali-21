@@ -7,56 +7,34 @@
 
 .transport-checkbox__item {
   margin-right: 1px;
-}
 
-.transport-checkbox__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .transport-checkbox__label {
-  &--plane::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    background: $white-basic url("../../img/transport-icon-plane.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $white-basic;
+
+  &--plane {
+    background-image: url("../../img/transport-icon-plane.svg");
   }
 
-  &--car::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    background: $white-basic url("../../img/transport-icon-bus.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
+  &--car {
+    background-image: url("../../img/transport-icon-bus.svg");
   }
 
-  &--cycle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 33px;
-    height: 33px;
-    background: $white-basic url("../../img/transport-icon-bicycle.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    border-radius: 50%;
+  &--cycle {
+    background-image: url("../../img/transport-icon-bicycle.svg");
   }
 
-  &--walk::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    background: $white-basic url("../../img/transport-icon-run.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 50%;
+  &--walk {
+    background-image: url("../../img/transport-icon-run.svg");
   }
 }

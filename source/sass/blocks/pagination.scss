@@ -1,0 +1,45 @@
+.pagination__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pagination__item {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--current {
+    background-color: $yellow-main;
+  }
+}
+
+.pagination__link {
+  color: $blue-light-text;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.pagination-controls__button {
+  width: 135px;
+  height: 51px;
+  background: $white-basic url("../../img/page-arrow.svg");
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid $grey-basic;
+  background-position: calc(50% + 10px) center;
+
+  &--next {
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,29 @@
+.states {
+  margin-left: 5px;
+  padding-bottom: 12px;
+}
+
+.states__list {
+  @include list-reset;
+}
+
+.states__item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-left: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.states__heading {
+  display: inline-block;
+  color: $grey-special;
+  font-size: 15px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}

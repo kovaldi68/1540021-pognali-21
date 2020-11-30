@@ -41,14 +41,14 @@
 
 .track__item .pick-button::after {
   content: "";
-	text-align: right;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 80%;
-	height: 46px;
-	background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
-	pointer-events: none;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  width: 52px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
+  pointer-events: none;
 }
 
 .track__item--choose .pick-button {

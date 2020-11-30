@@ -26,8 +26,8 @@
 
 .companions__item {
   margin-bottom: 9px;
-}
 
-.companions__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -17,13 +17,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__site site-navigation">
               <li class="site-navigation__item">
-                <a href="#">О сервисе</a>
+                <a href="index.html">О сервисе</a>
               </li>
               <li class="site-navigation__item">
-                <a href="#">Направления</a>
+                <a href="form.html">Направления</a>
               </li>
               <li class="site-navigation__item">
-                <a href="#">Попутчики</a>
+                <a href="catalog.html">Попутчики</a>
               </li>
             </ul>
             <ul class="main-nav__user user-navigation">
@@ -92,25 +92,25 @@
               <ul class="transfer__transport transport-checkbox">
                 <li class="transport-checkbox__item">
                   <label class="transport-checkbox__label transport-checkbox__label--plane" aria-label="Выбрать Авиаперелёт">
-                    <input class=" transport-checkbox__tag transport-checkbox__tag--plane" type="checkbox" name="plane">
+                    <input class="transport-checkbox__tag transport-checkbox__tag--plane" type="checkbox" name="plane">
                     <span class="visually-hidden">Авиаперелёт</span>
                   </label>
                 </li>
                 <li class="transport-checkbox__item">
                   <label class="transport-checkbox__label transport-checkbox__label--car" aria-label="Выбрать Автотранспорт">
-                    <input class=" transport-checkbox__tag transport-checkbox__tag--car" type="checkbox" name="car">
+                    <input class="transport-checkbox__tag transport-checkbox__tag--car" type="checkbox" name="car">
                     <span class="visually-hidden">Автотранспорт</span>
                   </label>
                 </li>
                 <li class="transport-checkbox__item">
                   <label class="transport-checkbox__label transport-checkbox__label--cycle" aria-label="Выбрать Велосипед">
-                    <input class=" transport-checkbox__tag transport-checkbox__tag--cycle" type="checkbox" name="cycle">
+                    <input class="transport-checkbox__tag transport-checkbox__tag--cycle" type="checkbox" name="cycle">
                     <span class="visually-hidden">Велосипед</span>
                   </label>
                 </li>
                 <li class="transport-checkbox__item">
                   <label class="transport-checkbox__label transport-checkbox__label--walk" aria-label="Выбрать Пешком">
-                    <input class=" transport-checkbox__tag transport-checkbox__tag--walk" type="checkbox" name="walk">
+                    <input class="transport-checkbox__tag transport-checkbox__tag--walk" type="checkbox" name="walk">
                     <span class="visually-hidden">Пешком</span>
                   </label>
                 </li>
@@ -154,14 +154,14 @@
                   <div class="stay-period__companions trip-input">
                     <label class="trip-input__label" for="ppl-num">Ищу попутчиков:</label>
                     <input class="trip-input__pick" type="number" value="2" id="ppl-num">
-                    <button class="trip-input__button button button--less" type="button" aria-label="Уменьшить количество на 1"></button>
-                    <button class="trip-input__button button button--more" type="button" aria-label="Увеличить количество на 1"></button>
+                    <button class="trip-input__button trip-input__button--less button button--less" type="button" aria-label="Уменьшить количество на 1"></button>
+                    <button class="trip-input__button trip-input__button--more button button--more" type="button" aria-label="Увеличить количество на 1"></button>
                   </div>
                   <div class="stay-period__duration trip-input">
                     <label class="trip-input__label" for="duration">Длительность:</label>
                     <input class="trip-input__pick" type="number" value="3" id="duration">
-                    <button class="trip-input_button button button--less" type="button" aria-label="Уменьшить количество на 1"></button>
-                    <button class="trip-input__button button button--more" type="button" aria-label="Увеличить количество на 1"></button>
+                    <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1"></button>
+                    <button class="trip-input__button trip-input__button--more button" type="button" aria-label="Увеличить количество на 1"></button>
                   </div>
                   <div class="stay-period__accept-checkbox accept-checkbox">
                     <label class="accept-checkbox__ticket">
@@ -172,12 +172,8 @@
                   <div class="stay-period__calendar calendar">
                     <div class="calendar__slider">
                       <p class="calendar__date title title--small">Март 2019
-                        <button class="calendar__control calendar__control--back button" type="button" aria-label="Переключить на предыдущий месяц">
-                          <svg width="9" height="18"></svg>
-                        </button>
-                        <button class="calendar__control calendar__control--forward button" type="button" aria-label="Переключить на следующий месяц">
-                          <svg width="9" height="18"></svg>
-                        </button>
+                        <button class="calendar__control calendar__control--back button" type="button" aria-label="Переключить на предыдущий месяц"></button>
+                        <button class="calendar__control calendar__control--forward button" type="button" aria-label="Переключить на следующий месяц"></button>
                       </p>
                     </div>
                     <table class="calendar__table">

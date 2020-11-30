@@ -14,7 +14,7 @@
     font-size: 18px;
     line-height: 18px;
     text-align: center;
-    padding: 22px 22px 22px 23px;
+    padding: 22px;
     background-color: $yellow-main;
     border-radius: 10px;
   }
@@ -31,7 +31,7 @@
     border-radius: 25px;
   }
 
-  &--third {
+  &--opacity {
     color: $blue-light-text;
     font-weight: 700;
     font-size: 17px;
