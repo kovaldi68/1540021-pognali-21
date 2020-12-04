@@ -12,3 +12,39 @@
   text-align: center;
   margin: 0 auto 245px auto;
 }
+
+.promo__nav-list {
+  @include list-reset;
+  margin-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse ;
+}
+
+.promo__auth {
+  padding: 5px 10px;
+  display: block;
+  color: $blue-dark-main;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 190px;
+  background-color: $yellow-main;
+  border-radius: 25px;
+}
+
+.promo__nav-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  &--mail {
+    background-image: url("../../img/icon-mail-btn.svg");
+  }
+
+  &--tel {
+    background-image: url("../../img/icon-phone-btn.svg");
+  }
+}
