@@ -36,3 +36,11 @@
   font-weight: 500;
   line-height: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .countries__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+}

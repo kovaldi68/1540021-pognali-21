@@ -3,8 +3,21 @@
   padding-bottom: 29px;
 }
 
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-bottom: 211px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .promo__slogan {
-  max-width: 238px;
+  width: 238px;
   color: $white-basic;
   font-weight: 700;
   font-size: 36px;
@@ -13,12 +26,41 @@
   margin: 0 auto 245px auto;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__slogan {
+    width: 383px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 86px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__slogan {
+    width: 418px;
+    text-align: left;
+    margin: 0 548px 101px 67px;
+  }
+}
+
 .promo__nav-list {
   @include list-reset;
   margin-bottom: 28px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse ;
+  flex-direction: row-reverse;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__nav-list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__nav-list {
+    display: none;
+  }
 }
 
 .promo__auth {

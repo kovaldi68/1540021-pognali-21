@@ -4,3 +4,15 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .socials {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    display: none;
+  }
+}

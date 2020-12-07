@@ -33,3 +33,62 @@
   font-weight: 700;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    padding-top: 135px;
+    padding-bottom: 85px;
+  }
+
+  .tariffs__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 93px;
+    text-align: center;
+  }
+
+  .tariffs__item {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 90px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .tariffs__service {
+    margin-bottom: 0;
+  }
+
+  .tariffs__link {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    padding-top: 175px;
+    padding-bottom: 187px;
+  }
+
+  .tariffs__title {
+    margin-bottom: 153px;
+  }
+
+  .tariffs__item {
+    padding-left: 90px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-left: 69px;
+    margin-right: 73px;
+  }
+
+  .tariffs__link {
+    margin-left: 69px;
+    margin-right: 73px;
+    padding-left: 90px;
+  }
+}

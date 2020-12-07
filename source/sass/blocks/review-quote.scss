@@ -1,6 +1,21 @@
 .review-quote {
   color: $white-basic;
   margin: 0;
+  width: 161px;
+}
+
+@media (min-width: $tablet-width) {
+  .review-quote {
+    width: 264px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-quote {
+    margin-left: 0;
+    margin-right: 23px;
+  }
 }
 
 .review-quote__text {
@@ -8,9 +23,24 @@
   margin-bottom: 17px;
 }
 
+@media (min-width: $tablet-width) {
+  .review-quote__text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 45px;
+  }
+}
+
 .review-quote__author {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .review-quote__author {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

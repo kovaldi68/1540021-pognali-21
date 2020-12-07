@@ -4,16 +4,16 @@
   padding: 0 25px;
 }
 
-// @media (min-width: $tablet-width) {
-//   .container {
-//     width: 768px;
-//     padding: 0 40px;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    padding: 0 40px;
+  }
+}
 
-// @media (min-width: $desktop-width) {
-//   .container {
-//     width: 1440px;
-//     padding: 0 60px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1440px;
+    padding: 0 60px;
+  }
+}

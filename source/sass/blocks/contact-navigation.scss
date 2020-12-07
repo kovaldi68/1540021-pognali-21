@@ -60,3 +60,9 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contact-navigation__link {
+    padding-left: 91px;
+  }
+}
