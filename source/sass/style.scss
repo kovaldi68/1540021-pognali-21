@@ -7,8 +7,9 @@
 @import "../sass/general/global.scss";
 
 // blocks
-@import "../sass/blocks/title.scss";
 @import "../sass/blocks/button.scss";
+@import "..//sass/blocks/container.scss";
+@import "../sass/blocks/title.scss";
 @import "../sass/blocks/socials.scss";
 @import "../sass/blocks/about-service.scss";
 @import "../sass/blocks/accept-checkbox.scss";
@@ -19,7 +20,6 @@
 @import "../sass/blocks/companion-filter.scss";
 @import "../sass/blocks/companions.scss";
 @import "../sass/blocks/contact-navigation.scss";
-@import "..//sass/blocks/container.scss";
 @import "../sass/blocks/continents.scss";
 @import "../sass/blocks/countries.scss";
 @import "../sass/blocks/country-filter.scss";

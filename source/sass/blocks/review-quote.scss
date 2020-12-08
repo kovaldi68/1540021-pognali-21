@@ -4,31 +4,9 @@
   width: 161px;
 }
 
-@media (min-width: $tablet-width) {
-  .review-quote {
-    width: 264px;
-    margin-left: 32px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .review-quote {
-    margin-left: 0;
-    margin-right: 23px;
-  }
-}
-
 .review-quote__text {
   font-weight: 300;
   margin-bottom: 17px;
-}
-
-@media (min-width: $tablet-width) {
-  .review-quote__text {
-    font-size: 28px;
-    line-height: 33px;
-    margin-bottom: 45px;
-  }
 }
 
 .review-quote__author {
@@ -39,6 +17,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review-quote {
+    width: 264px;
+    margin-left: 32px;
+  }
+
+  .review-quote__text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review-quote {
+    margin-left: 0;
+    margin-right: 23px;
+    margin-top: 111px;
+  }
+
   .review-quote__author {
     font-size: 21px;
     line-height: 25px;

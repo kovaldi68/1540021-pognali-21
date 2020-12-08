@@ -30,8 +30,11 @@
 
 .feedback__field {
   border: none;
-  padding: 22px 141px 22px 25px;
+  padding: 22px 25px;
   width: 220px;
+  height: 62px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   &::placeholder {
     color: rgba($grey-special, 0.3);
@@ -56,16 +59,130 @@
   margin-bottom: 30px;
 }
 
-.feedback__contacts {
-  margin-left: 61px;
-}
-
 .feedback__link {
   display: block;
+  padding-left: 61px;
   color: $yellow-main;
   font-weight: 700;
+  text-transform: uppercase;
 
-  &--mail {
-    text-transform: uppercase;
+  &--tel {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding-top: 133px;
+    padding-bottom: 77px;
+  }
+
+  .feedback__container {
+    padding: 0 76px;
+  }
+
+  .feedback__title {
+    margin-bottom: 59px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .feedback__text {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 65px;
+  }
+
+  .feedback__form {
+    margin-bottom: 60px;
+  }
+
+  .feedback__field {
+    padding: 40px 36px;
+    width: 536px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .feedback__button {
+    right: 0;
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .feedback__auth-text {
+    margin-bottom: 64px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .feedback__link {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 90px;
+
+    &--tel {
+      margin-bottom: 39px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding-top: 208px;
+    padding-bottom: 103px;
+  }
+
+  .feedback__container {
+    padding: 0 133px;
+  }
+
+  .feedback__title {
+    margin-bottom: 57px;
+  }
+
+  .feedback__text {
+    margin-bottom: 60px;
+  }
+
+  .feedback__form {
+    margin-bottom: 70px;
+  }
+
+  .feedback__field {
+    width: 850px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .feedback__button {
+    width: 324px;
+  }
+
+  .feedback__auth-text {
+    margin-bottom: 77px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .feedback__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feedback__link {
+    &--tel {
+      margin-bottom: 0;
+      margin-right: 110px;
+    }
   }
 }
