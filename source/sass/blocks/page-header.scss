@@ -1,8 +1,29 @@
 .page-header {
   color: $white-basic;
   background-color: $blue-dark-main;
+  padding-top: 27px;
+  padding-bottom: 41px;
 
   &--opened {
     background-color: $white-basic;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 45px;
+    padding-bottom: 91px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 47px;
+    padding-bottom: 91px;
+  }
+
+  .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
