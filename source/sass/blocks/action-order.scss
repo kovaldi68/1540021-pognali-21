@@ -1,5 +1,5 @@
 .action-order {
-  background-color: $blue-dark-main;
+  width: 100%;
 }
 
 .action-order__list {
@@ -14,22 +14,67 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 22px 96px 22px 24px;
+
+  &:nth-child(4n+1) {
+    background-color: $orange-special;
+  }
+
+  &:nth-child(4n+2) {
+    background-color: $yellow-darken;
+  }
+
+  &:nth-child(4n+3) {
+    background-color: $yellow-dark;
+  }
+
+  &:nth-child(4n+4) {
+    background-color: $yellow-main;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
-.action-order__item:nth-child(4n+1) {
-  background-color: $orange-special;
+@media (min-width: $tablet-width) {
+  .action-order__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .action-order__item {
+    padding: 22px 96px 61px 24px;
+
+    &:nth-child(odd) {
+      width: calc(50% + 25px);
+    }
+
+    &:nth-child(even) {
+      width: 50%;
+      margin-left: -25px;
+    }
+  }
 }
 
-.action-order__item:nth-child(4n+2) {
-  background-color: $yellow-darken;
-}
+@media (min-width: $desktop-width) {
+  .action-order__item {
+    padding: 22px 96px 30px 24px;
 
-.action-order__item:nth-child(4n+3) {
-  background-color: $yellow-dark;
-}
+    &:nth-child(4n+1) {
+      width: calc(25% + 15px);
+    }
 
-.action-order__item:nth-child(4n+4) {
-  background-color: $yellow-main;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+    &:nth-child(4n+2) {
+      width: calc(25% + 45px);
+      margin-left: -30px;
+    }
+
+    &:nth-child(4n+3) {
+      width: calc(25% + 45px);
+      margin-left: -30px;
+    }
+
+    &:nth-child(4n+4) {
+      width: calc(25% - 15px);
+      margin-left: -30px;
+    }
+  }
 }

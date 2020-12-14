@@ -1,6 +1,6 @@
 .about-service {
   padding-top: 72px;
-  padding-bottom: 20px;
+  padding-bottom: 82px;
   background-color: $blue-dark-main;
 }
 
@@ -16,5 +16,76 @@
   &--bold {
     margin: 0;
     font-weight: 700;
+  }
+}
+
+.about-service__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-service {
+    padding-top: 41px;
+    padding-bottom: 89px;
+    background-color: $blue-dark;
+  }
+
+  .about-service__container {
+    padding-left: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-service__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 40px;
+    grid-column: 1/2;
+  }
+
+  .about-service__text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 31px;
+    grid-column: 1/2;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 52px;
+    }
+  }
+
+  .about-service__button {
+    display: inline-flex;
+    grid-column: 1/2;
+    width: 275px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-service {
+    padding-top: 132px;
+    padding-bottom: 163px;
+    background-color: $blue-dark-main;
+  }
+
+  .about-service__container {
+    display: grid;
+    grid-template-columns: 690px auto;
+    padding-left: 130px;
+  }
+
+  .about-service__title {
+    margin-bottom: 57px;
+  }
+
+  .about-service__text {
+    margin-bottom: 41px;
+
+    &--bold {
+      width: 425px;
+      margin-bottom: 85px;
+    }
   }
 }

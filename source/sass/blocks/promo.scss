@@ -1,14 +1,46 @@
 .promo {
   background-color: $blue-dark-basic;
+  padding-top: 60px;
   padding-bottom: 29px;
 }
 
 .promo__slogan {
-  max-width: 238px;
+  width: 238px;
   color: $white-basic;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   margin: 0 auto 245px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-top: 72px;
+    padding-bottom: 96px;
+  }
+
+  .promo__slogan {
+    width: 399px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 86px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-bottom: 123px;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promo__slogan {
+    width: 418px;
+    text-align: left;
+    margin: 99px 548px 101px 67px;
+  }
 }

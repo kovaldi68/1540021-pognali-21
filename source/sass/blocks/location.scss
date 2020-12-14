@@ -8,15 +8,15 @@
 }
 
 .location__text {
-  margin-left: 61px;
+  padding-left: 61px;
   margin-bottom: 32px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .location__route {
-  display: inline-block;
   border: 3px solid $blue-dark-main;
+  padding: 19px;
 }
 
 .location__map {
@@ -26,4 +26,52 @@
   background-image: url("../../img/background-map.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .location__address {
+    padding-top: 124px;
+    padding-bottom: 84px;
+  }
+
+  .location__container {
+    padding: 0 75px;
+  }
+
+  .location__text {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 94px;
+    margin-bottom: 62px;
+  }
+
+  .location__route {
+    border: 3px solid $blue-dark-main;
+    padding: 26px 74px 24px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__address {
+    padding-top: 121px;
+    padding-bottom: 61px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .location__container {
+    padding: 0 135px;
+  }
+
+  .location__text {
+    padding-left: 121px;
+    margin-bottom: 0;
+    margin-right: 147px;
+  }
+
+  .location__route {
+    padding: 26px 33px 24px 33px;
+    width: 324px;
+  }
 }

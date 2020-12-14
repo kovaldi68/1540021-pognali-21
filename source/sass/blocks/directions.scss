@@ -13,3 +13,68 @@
   color: $grey-special;
   font-weight: 300;
 }
+
+@media (min-width: $tablet-width) {
+  .directions {
+    padding-top: 149px;
+    padding-bottom: 80px;
+  }
+
+  .directions__container {
+    padding: 0 75px;
+  }
+
+  .directions__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 58px;
+  }
+
+  .directions__text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 104px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .directions {
+    padding-top: 249px;
+    padding-bottom: 138px;
+  }
+
+  .directions__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 60px;
+    padding-left: 130px;
+    padding-right: 60px;
+  }
+
+  .directions__title {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-bottom: 58px;
+    margin-left: 110px;
+  }
+
+  .directions__text {
+    max-width: 378px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-bottom: 98px;
+    margin-left: 110px;
+  }
+
+  .directions__list {
+    grid-row: 1/4;
+    grid-column: 1/2;
+  }
+
+  .directions__button {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 275px;
+    margin-left: 110px;
+  }
+}

@@ -5,16 +5,21 @@
 
 .countries__item {
   margin-bottom: 10px;
+  border-radius: 10px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.countries__photo {
+  width: 270px;
+  height: 110px;
+}
+
 .countries__data {
+  flex-grow: 1;
   background-color: $white-basic;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .countries__name {
@@ -35,4 +40,23 @@
   color: rgba($blue-dark-basic, 0.3);
   font-weight: 500;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .countries {
+    margin-bottom: 46px;
+  }
+
+  .countries__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries {
+    margin-bottom: 0;
+  }
 }
