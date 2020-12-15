@@ -1,3 +1,72 @@
 .level {
-  margin-bottom: 14px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.level__text {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.level__number {
+  color: $blue-dark-basic;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  margin-bottom: 5px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: -5px;
+    width: 51px;
+    height: 1px;
+    background-color: rgba($grey-special, 0.3);
+  }
+}
+
+.level__word {
+  color: $grey-special;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.level svg {
+  width: 100px;
+  height: 100px;
+}
+
+.level__background {
+  fill: none;
+  stroke-width: 3px;
+  stroke: transparent;
+}
+
+.level__progress {
+  fill: none;
+  stroke-width: 3px;
+  stroke: $orange-special;
+  stroke-linecap: round;
+  stroke-dasharray: 288;
+  stroke-dashoffset: 60;
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+          animation: show-level 2s ease-in-out;
+}
+
+@keyframes show-level {
+  from {
+    stroke-dashoffset: 288;
+  }
+  to {
+    stroke-dashoffset: 60;
+  }
 }

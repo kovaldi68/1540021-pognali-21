@@ -2,18 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  line-height: 18px;
+  margin-bottom: 18px;
 }
 
 .tags__heading {
   font-weight: 700;
-  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .tags__text {
   resize: none;
   border: 1px solid $grey-border;
   border-radius: 10px;
-  background-color: $grey-basic-form;
+  background-color: $grey-basic;
   color: rgba($grey-special, 0.6);
-  text-align: center;
+  line-height: 18px;
+  padding: 26px;
+  width: 100%;
 }

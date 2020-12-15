@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border: 1px solid $grey-border;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .transport-checkbox__item {
