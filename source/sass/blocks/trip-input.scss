@@ -1,6 +1,4 @@
 .trip-input {
-  margin: 0 auto;
-  margin-bottom: 20px;
   position: relative;
 }
 
@@ -9,6 +7,7 @@
   line-height: 16px;
   display: inline-block;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .trip-input__pick {
@@ -17,10 +16,11 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
-  padding: 14px 90px;
+  padding: 13px 90px 12px 90px;
   text-align: center;
   border: 1px solid $grey-border;
   border-radius: 4px;
+  position: relative;
 }
 
 .trip-input__pick::-webkit-outer-spin-button,
@@ -31,11 +31,11 @@
 
 .trip-input__button {
   position: absolute;
-  top: 27px;
-  width: 46px;
-  height: 46px;
+  width: 43px;
+  height: 43px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 14px 14px;
 
   &--less {
     left: 0;
@@ -45,5 +45,60 @@
   &--more {
     right: 0;
     background-image: url("../../img/plus-icon.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .trip-input {
+    padding-top: 25px;
+    border-top: 1px solid $grey-lines;
+  }
+
+  .trip-input__label {
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 24px;
+  }
+
+  .trip-input__pick {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 22px 90px;
+  }
+
+  .trip-input__button {
+    width: 70px;
+    height: 70px;
+    background-size: 20px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .trip-input {
+    padding-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .trip-input__pick {
+    width: 180px;
+    padding: 22px 70px;
+  }
+
+  .trip-input__label {
+    width: 164px;
+    margin-bottom: 0;
+    margin-right: 57px;
+  }
+
+  .trip-input__button {
+    &--less {
+      left: 222px;
+    }
+
+    &--more {
+      left: 331px;
+    }
   }
 }

@@ -8,3 +8,22 @@
   color: $blue-light-text;
   margin-bottom: 29px;
 }
+
+@media (min-width: $tablet-width) {
+  .add-plan {
+    padding-top: 53px;
+    padding-bottom: 119px;
+  }
+
+  .add-plan__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .add-plan__title {
+    margin-left: 70px;
+  }
+}

@@ -15,6 +15,8 @@
 }
 
 .route__description {
+  font-size: 16px;
+  line-height: 22px;
   color: $grey-special;
   width: 220px;
   height: 220px;
@@ -26,4 +28,46 @@
 
 .steps__button {
   width: 220px;
+}
+
+@media (min-width: $tablet-width) {
+  .route__list {
+    padding-top: 36px;
+  }
+
+  .route__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 53px;
+  }
+
+  .route__name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding-right: 109px;
+    margin-bottom: 38px;
+  }
+
+  .route__description {
+    font-size: 20px;
+    line-height: 23px;
+    width: 500px;
+    padding: 18px 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route__list {
+    padding-top: 80px;
+  }
+
+  .route__description {
+    font-size: 20px;
+    line-height: 20px;
+    width: 730px;
+    padding: 26px 22px;
+  }
 }

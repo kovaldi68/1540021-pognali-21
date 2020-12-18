@@ -3,3 +3,25 @@
   padding-top: 54px;
   padding-bottom: 63px;
 }
+
+@media (min-width: $tablet-width) {
+  .traveller-settings {
+    padding-bottom: 89px;
+    padding-top: 126px;
+  }
+
+  .traveller-settings__container {
+    padding: 0 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .traveller-settings {
+    padding-bottom: 122px;
+    padding-top: 129px;
+  }
+
+  .traveller-settings__container {
+    padding: 0 124px;
+  }
+}

@@ -1,10 +1,24 @@
 .accept-checkbox {
-  margin-bottom: 27px;
   position: relative;
 }
 
 .accept-checkbox__text {
   font-size: 15px;
   line-height: 15px;
-  margin-left: 39px;
+  padding-left: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .accept-checkbox {
+    padding-top: 56px;
+    border-top: 1px solid $grey-lines;
+  }
+
+  .accept-checkbox__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-left: 59px;
+  }
 }

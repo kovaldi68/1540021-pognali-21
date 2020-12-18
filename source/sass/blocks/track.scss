@@ -1,3 +1,7 @@
+.track {
+  margin-bottom: 25px;
+}
+
 .track__list {
   @include list-reset;
 }
@@ -5,7 +9,12 @@
 .track__item {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .track__button {
@@ -64,4 +73,62 @@
   min-width: 220px;
   border: none;
   background-color: $grey-basic;
+}
+
+@media (min-width: $tablet-width) {
+  .track {
+    margin-bottom: 50px;
+  }
+
+  .track_list {
+    padding-top: 42px;
+  }
+
+  .track__item .pick-button {
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: flex-start;
+    width: 369px;
+    padding: 22px 10px 26px 10px;
+    margin-right: 52px;
+  }
+
+  .track__flag {
+    width: 70px;
+    height: 47px;
+    border: none;
+    padding: 0;
+    margin-right: 25px;
+  }
+
+  .add-button {
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: flex-start;
+    width: 369px;
+    padding: 22px 10px 26px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .track {
+    margin-bottom: 58px;
+  }
+
+  .track_list {
+    padding-top: 62px;
+  }
+
+  .track__item .pick-button {
+    width: 730px;
+    margin-right: 85px;
+  }
+
+  .track__flag {
+    margin-right: 88px;
+  }
+
+  .add-button {
+    width: 730px;
+  }
 }

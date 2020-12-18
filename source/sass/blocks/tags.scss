@@ -4,12 +4,17 @@
   align-items: center;
   width: 100%;
   line-height: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+  position: relative;
 }
 
 .tags__heading {
   font-weight: 700;
   text-transform: uppercase;
+  padding: 6px 17px;
+  background-color: $grey-basic;
+  position: absolute;
+  top: -15px;
 }
 
 .tags__text {
@@ -21,4 +26,22 @@
   line-height: 18px;
   padding: 26px;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .tags {
+    margin-bottom: 0;
+  }
+
+  .tags__heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 4px 18px 9px 18px;
+    transform: translateY(95px);
+  }
+
+  .tags__text {
+    padding: 34px 40px 23px 40px;
+  }
 }

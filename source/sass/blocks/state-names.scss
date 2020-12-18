@@ -12,5 +12,23 @@
 }
 
 .state-names__item {
+  margin-bottom: 5px;
   color: $grey-special;
+}
+
+@media (min-width: $tablet-width) {
+  .state-names {
+    margin-top: 70px;
+    font-size: 20px;
+    line-height: 20px;
+    border: none;
+  }
+
+  .state-names__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

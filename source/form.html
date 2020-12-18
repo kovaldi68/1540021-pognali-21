@@ -71,7 +71,7 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__container">   <!-- охоже на костыль? может и стоило объединить с хэдером -->
+      <div class="page-main__container">
         <h1 class="page-main__title title title--larger">Направления</h1>
       </div>
       <section class="traveller-settings">
@@ -91,41 +91,41 @@
               </div>
               <div class="profile__photo">
                 <img class="profile__img" src="img/demin-profile-photo.jpg" alt="Фото в профиле попутчика" width="100" height="100">
-              </dv>
-            </div>
-            <a class="profile__button button button--secondary" href="#">Сменить фото</a>
-            <div class="profile__tags tags">
-              <label class="tags__heading" for="hashtag">Тэги</label>
-              <textarea class="tags__text" rows="2" id="hashtag" name="fun-list">#бургер #бар #футбол #концерт #крафт</textarea>
-            </div>
-            <div class="profile__transport transfer">
-              <h3 class="transfer__heading">Транспорт</h3>
-              <ul class="transfer__transport transport-checkbox">
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--plane" aria-label="Выбрать Авиаперелёт">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--plane" type="checkbox" name="plane">
-                    <span class="visually-hidden">Авиаперелёт</span>
-                  </label>
-                </li>
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--car" aria-label="Выбрать Автотранспорт">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--car" type="checkbox" name="car">
-                    <span class="visually-hidden">Автотранспорт</span>
-                  </label>
-                </li>
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--cycle" aria-label="Выбрать Велосипед">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--cycle" type="checkbox" name="cycle">
-                    <span class="visually-hidden">Велосипед</span>
-                  </label>
-                </li>
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--walk" aria-label="Выбрать Пешком">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--walk" type="checkbox" name="walk">
-                    <span class="visually-hidden">Пешком</span>
-                  </label>
-                </li>
-              </ul>
+              </div>
+              <a class="profile__button button button--secondary" href="#">Сменить фото</a>
+              <div class="profile__tags tags">
+                <label class="tags__heading" for="hashtag">Тэги</label>
+                <textarea class="tags__text" rows="2" id="hashtag" name="fun-list">#бургер #бар #футбол #концерт #крафт</textarea>
+              </div>
+              <div class="profile__transport transfer">
+                <h3 class="transfer__heading">Транспорт</h3>
+                <ul class="transfer__transport transport-checkbox">
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--plane" aria-label="Выбрать Авиаперелёт">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--plane" type="checkbox" name="plane">
+                      <span class="visually-hidden">Авиаперелёт</span>
+                    </label>
+                  </li>
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--car" aria-label="Выбрать Автотранспорт">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--car" type="checkbox" name="car">
+                      <span class="visually-hidden">Автотранспорт</span>
+                    </label>
+                  </li>
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--cycle" aria-label="Выбрать Велосипед">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--cycle" type="checkbox" name="cycle">
+                      <span class="visually-hidden">Велосипед</span>
+                    </label>
+                  </li>
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--walk" aria-label="Выбрать Пешком">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--walk" type="checkbox" name="walk">
+                      <span class="visually-hidden">Пешком</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </div>
           </form>
         </div>
@@ -160,7 +160,7 @@
             <ol class="add-plan__order steps">
               <li class="steps__item">
                 <h3 class="steps__title title title--small">Шаг 1.<br> Даты пребывания</h3>
-                <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <div class="steps__content stay-period">
                   <div class="stay-period__companions trip-input">
                     <label class="trip-input__label" for="ppl-num">Ищу попутчиков:</label>
@@ -176,7 +176,7 @@
                   </div>
                   <div class="stay-period__accept-checkbox accept-checkbox">
                     <label class="accept-checkbox__ticket">
-                      <input class="visually-hidden accept-checkbox__box" type="checkbox">
+                      <input class="accept-checkbox__box visually-hidden" type="checkbox">
                       <span class="accept-checkbox__text">Можно с детьми</span>
                     </label>
                   </div>
@@ -189,13 +189,34 @@
                     </div>
                     <table class="calendar__table">
                       <tr class="calendar__table-row">
-                        <th class="calendar__table-head">П</th>
-                        <th class="calendar__table-head">В</th>
-                        <th class="calendar__table-head">С</th>
-                        <th class="calendar__table-head">Ч</th>
-                        <th class="calendar__table-head">П</th>
-                        <th class="calendar__table-head">С</th>
-                        <th class="calendar__table-head">В</th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">П</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Пн</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">В</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Вт</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">С</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Ср</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">Ч</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Чт</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">П</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Пт</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">С</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Сб</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__table-title calendar__table-title--mobile">В</span>
+                          <span class="calendar__table-title calendar__table-title--desktop">Вс</span>
+                        </th>
                       </tr>
                       <tr class="calendar__table-row">
                         <td class="calendar__table-cell calendar__table-cell--disabled">23</td>
@@ -264,14 +285,14 @@
                     <li class="track__item">
                       <button class="track__button button pick-button" type="button">Босния и Герцеговина</button>
                       <div class="track__flag">
-                        <img src="img/bosnia-flag-icon.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                        <img src="img/bosnia-flag-icon.png" alt="Флаг Боснии и Герцеговины">
                       </div>
                       <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item">
                       <button class="track__button button pick-button" type="button"">Чехия</button>
                       <div class="track__flag">
-                        <img src="img/czechia-flag-icon.png" width="35" height="24" aria-label="Флаг Чехии">
+                        <img src="img/czechia-flag-icon.png" alt="Флаг Чехии">
                       </div>
                       <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
                     </li>
@@ -285,7 +306,7 @@
                   </ul>
                 </div>
                 <button class="steps__button button button--secondary" type="button">Следующий шаг</button>
-                <button class="steps__button button button--third" type="button">На шаг назад</button>
+                <button class="steps__button button steps__button--back" type="button">На шаг назад</button>
               </li>
               <li class="steps__item">
                 <h3 class="steps__title title title--small">Шаг 3.<br> Развлечения</h3>
@@ -303,7 +324,7 @@
                   </ul>
                 </div>
                 <button class="steps__button button button--secondary" type="submit">Отправить</button>
-                <button class="steps__button button button--third" type="button">На шаг назад</button>
+                <button class="steps__button button steps__button--back" type="button">На шаг назад</button>
               </li>
             </ol>
           </form>
@@ -363,11 +384,13 @@
 </html>
 
 
-<div class="track__dropdown dropdown">
+<div class="track__dropdown dropdown"> <!-- попытался сделать через флексы его, но наверное всё же здесь подойдут гриды -->
   <div class="dropdown__container container">
     <form class="dropdown__form">
-      <span class="dropdown__title">Выберите страну</span>
       <table class="dropdown__alphabet alphabet">
+        <tr class="alphabet__table-row">
+          <th class="alphabet__table-title" colspan="5">Выберите страну</th>
+        </tr>
         <tr class="alphabet__table-row">
           <td class="alphabet__table-cell alphabet__table-cell--chosen">А</td>
           <td class="alphabet__table-cell">Б</td>

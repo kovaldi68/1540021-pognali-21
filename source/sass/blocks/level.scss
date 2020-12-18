@@ -57,16 +57,45 @@
   stroke-linecap: round;
   stroke-dasharray: 288;
   stroke-dashoffset: 60;
-          transform: rotate(-90deg);
-          transform-origin: 50% 50%;
-          animation: show-level 2s ease-in-out;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  animation: show-level 2s ease-in-out;
 }
 
 @keyframes show-level {
   from {
     stroke-dashoffset: 288;
   }
+
   to {
     stroke-dashoffset: 60;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .level {
+    width: 94px;
+    height: 94px;
+  }
+
+  .level__text {
+    left: 27px;
+  }
+
+  .level svg {
+    width: 94px;
+    height: 94px;
+  }
+
+  .level__background {
+    r: 42px;
+    cx: 47px;
+    cy: 47px;
+  }
+
+  .level__progress {
+    r: 42px;
+    cx: 47px;
+    cy: 47px;
   }
 }

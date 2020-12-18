@@ -6,6 +6,7 @@
 }
 
 .profile__photo {
+  overflow: hidden;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -24,4 +25,44 @@
   font-size: 20px;
   line-height: 18px;
   padding: 11px 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 51px;
+  }
+
+  .profile__photo {
+    width: 94px;
+    height: 94px;
+    margin-left: auto;
+    margin-bottom: 0;
+    grid-column: 3/4;
+    border-radius: 10px;
+  }
+
+  .profile__level {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    margin-right: auto;
+  }
+
+  .profile__transport {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-shrink: 3;
+  }
+
+  .profile__tags {
+    grid-column: 1/4;
+  }
+
+  .profile__button {
+    margin-bottom: 0;
+    grid-column: 1/4;
+    border-radius: 10px;
+    padding: 21px 10px;
+  }
 }

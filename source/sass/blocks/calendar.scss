@@ -8,10 +8,9 @@
 
 .calendar__control {
   position: absolute;
-  top: 12px;
   width: 15px;
   height: 21px;
-  background-image: url("../../img/arrow-back-icon.svg");
+  background-image: url("../../img/arrow-back-icon-mobile.svg");
   background-position: center center;
   background-repeat: no-repeat;
 
@@ -44,6 +43,12 @@
   }
 }
 
+.calendar__table-title {
+  &--desktop {
+    display: none;
+  }
+}
+
 .calendar__table-cell {
   margin: 0;
   padding: 7px 8px;
@@ -66,5 +71,50 @@
   &--enabled {
     font-weight: 500;
     background-color: $grey-basic;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__date {
+    padding: 27px 62px 23px 62px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 39px;
+  }
+
+  .calendar__control {
+    width: 30px;
+    height: 36px;
+    background-image: url("../../img/arrow-back-icon-tablet.svg");
+  }
+
+  .calendar__table-title {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  .calendar__table-head {
+    padding-bottom: 9px;
+  }
+
+  .calendar__table-cell {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 25px 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__date {
+    margin-bottom: 18px;
+  }
+
+  .calendar__table-head {
+    padding-bottom: 19px;
   }
 }
