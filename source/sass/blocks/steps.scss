@@ -4,8 +4,8 @@
 
 .steps__item {
   margin-bottom: 10px;
-  background-color: $white-basic;
   padding: 24px 25px;
+  background-color: $white-basic;
   border-radius: 10px;
 }
 
@@ -35,33 +35,33 @@
   }
 
   .steps__title {
+    margin-bottom: 34px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 34px;
   }
 
   .steps__description {
-    font-size: 20px;
-    line-height: 24px;
     width: 505px;
     margin-bottom: 38px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .steps__button {
+    justify-content: flex-start;
     width: 286px;
+    padding: 29px 33px 27px 33px;
     font-size: 24px;
     line-height: 24px;
-    padding: 29px 33px 27px 33px;
-    justify-content: flex-start;
-    border-radius: 20px;
     text-transform: none;
+    border-radius: 20px;
 
     &--back {
+      justify-content: flex-end;
       width: 247px;
       font-weight: 700;
       font-size: 24px;
       line-height: 22px;
-      justify-content: flex-end;
     }
   }
 }

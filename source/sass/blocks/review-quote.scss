@@ -1,12 +1,12 @@
 .review-quote {
-  color: $white-basic;
-  margin: 0;
   width: 161px;
+  margin: 0;
+  color: $white-basic;
 }
 
 .review-quote__text {
-  font-weight: 300;
   margin-bottom: 17px;
+  font-weight: 300;
 }
 
 .review-quote__author {
@@ -23,9 +23,9 @@
   }
 
   .review-quote__text {
+    margin-bottom: 45px;
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 45px;
   }
 }
 

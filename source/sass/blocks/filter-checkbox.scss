@@ -3,20 +3,20 @@
 }
 
 .filter-checkbox__label {
-  color: $black-basic;
-  font-size: 15px;
-  line-height: 20px;
   position: relative;
   padding-left: 27px;
+  font-size: 15px;
+  line-height: 20px;
+  color: $black-basic;
   cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
-    width: 18px;
-    height: 18px;
     top: 0;
     left: 0;
+    width: 18px;
+    height: 18px;
     background-color: $white-basic;
     border-radius: 4px;
     background-position: center;

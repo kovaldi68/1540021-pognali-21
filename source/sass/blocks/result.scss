@@ -1,6 +1,6 @@
 .result {
-  background-color: $grey-basic;
   padding-bottom: 75px;
+  background-color: $grey-basic;
 }
 
 .result__list {
@@ -17,5 +17,5 @@
 }
 
 .result__button {
-  min-width: 270px;
+  width: 270px;
 }

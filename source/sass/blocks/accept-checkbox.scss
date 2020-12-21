@@ -3,18 +3,18 @@
 }
 
 .accept-checkbox__text {
+  padding-left: 40px;
   font-size: 15px;
   line-height: 15px;
-  padding-left: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .accept-checkbox__text {
+    padding-left: 59px;
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    padding-left: 59px;
   }
 }
 

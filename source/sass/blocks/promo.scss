@@ -1,36 +1,36 @@
 .promo {
-  background-color: $blue-dark-basic;
   padding-bottom: 29px;
+  background-color: $blue-dark-basic;
 }
 
 .promo__slogan {
   width: 238px;
-  color: $white-basic;
+  margin: 0 auto 245px auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  margin: 0 auto 245px auto;
+  color: $white-basic;
 }
 
 .promo__nav-list {
   @include list-reset;
-  margin-bottom: 28px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  margin-bottom: 28px;
 }
 
 .promo__auth {
-  padding: 5px 10px;
   display: block;
-  color: $blue-dark-main;
+  padding: 5px 10px;
+  width: 190px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  width: 190px;
+  color: $blue-dark-main;
   background-color: $yellow-main;
   border-radius: 25px;
 }
@@ -41,7 +41,7 @@
   height: 40px;
 
   &--mail {
-    background-image: url("../../img/icon-mail-btn.svg");
+    background-image: url(("../../img/icon-mail-btn.svg"));
   }
 
   &--tel {
@@ -56,9 +56,9 @@
 
   .promo__slogan {
     width: 383px;
+    margin-bottom: 86px;
     font-size: 60px;
     line-height: 70px;
-    margin-bottom: 86px;
   }
 
   .promo__nav-list {
@@ -74,8 +74,8 @@
 
   .promo__slogan {
     width: 418px;
-    text-align: left;
     margin: 99px 548px 101px 67px;
+    text-align: left;
   }
 
   .promo__nav-list {

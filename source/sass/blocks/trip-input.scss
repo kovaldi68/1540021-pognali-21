@@ -3,24 +3,24 @@
 }
 
 .trip-input__label {
-  font-weight: 500;
-  line-height: 16px;
   display: inline-block;
   margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
 .trip-input__pick {
-  color: $blue-light-text;
+  position: relative;
   width: 100%;
+  padding: 13px 90px 12px 90px;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
-  padding: 13px 90px 12px 90px;
   text-align: center;
+  color: $blue-light-text;
   border: 1px solid $grey-border;
   border-radius: 4px;
-  position: relative;
 }
 
 .trip-input__pick::-webkit-outer-spin-button,
@@ -55,15 +55,15 @@
   }
 
   .trip-input__label {
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: 18px;
-    margin-bottom: 24px;
   }
 
   .trip-input__pick {
+    padding: 22px 90px;
     font-size: 20px;
     line-height: 20px;
-    padding: 22px 90px;
   }
 
   .trip-input__button {
@@ -75,10 +75,10 @@
 
 @media (min-width: $desktop-width) {
   .trip-input {
-    padding-top: 56px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 56px;
     border-top: none;
   }
 

@@ -20,13 +20,13 @@
 }
 
 .contact-navigation__link {
-  padding-left: 61px;
-  color: $blue-dark-main;
-  font-weight: 700;
-  line-height: 18px;
   position: relative;
   display: inline-block;
+  padding-left: 61px;
+  font-weight: 700;
+  line-height: 18px;
   text-transform: uppercase;
+  color: $blue-dark-main;
 
   &--tel {
     position: relative;

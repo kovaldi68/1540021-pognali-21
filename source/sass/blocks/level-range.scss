@@ -4,15 +4,15 @@
 }
 
 .level-range__input {
+  width: 110px;
+  padding: 13px 43px 8px 43px;
+  margin-bottom: 21px;
   color: $blue-light-text;
   font-weight: 500;
   font-size: 14px;
   line-height: 13px;
   text-align: center;
   border: 1px solid $grey-border;
-  padding: 13px 43px 8px 43px;
-  width: 110px;
-  margin-bottom: 21px;
 
   &--min {
     border-top-left-radius: 4px;

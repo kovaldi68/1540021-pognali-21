@@ -1,9 +1,9 @@
 .calendar__date {
+  position: relative;
   padding: 11px 62px;
   text-align: center;
   border-top: 1px solid $grey-calendar;
   border-bottom: 1px solid $grey-calendar;
-  position: relative;
 }
 
 .calendar__control {
@@ -27,29 +27,29 @@
 .calendar__table {
   margin: 0 auto;
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 22px;
+  border-collapse: collapse;
   table-layout: fixed;
 }
 
 .calendar__table-head {
-  font-weight: 400;
-  color: $grey-special;
-  text-align: center;
   width: 14%;
+  font-weight: 400;
+  text-align: center;
+  color: $grey-special;
 
   &:nth-last-child(-n+2) {
     color: $orange-cell;
   }
 }
 
-.calendar__table-title {
+.calendar__title {
   &--desktop {
     display: none;
   }
 }
 
-.calendar__table-cell {
+.calendar__cell {
   margin: 0;
   padding: 7px 8px;
   border: 1px solid $grey-calendar;
@@ -62,8 +62,8 @@
   }
 
   &--chosen {
-    color: $white-basic;
     font-weight: 500;
+    color: $white-basic;
     background-color: $blue-light-text;
     box-shadow: inset 0 0 0 2px $orange-cell;
   }
@@ -76,10 +76,10 @@
 
 @media (min-width: $tablet-width) {
   .calendar__date {
+    margin-bottom: 39px;
     padding: 27px 62px 23px 62px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 39px;
   }
 
   .calendar__control {
@@ -88,7 +88,7 @@
     background-image: url("../../img/arrow-back-icon-tablet.svg");
   }
 
-  .calendar__table-title {
+  .calendar__title {
     &--mobile {
       display: none;
     }
@@ -102,10 +102,10 @@
     padding: 0 0 7px 0;
   }
 
-  .calendar__table-cell {
+  .calendar__cell {
+    padding: 25px 15px;
     font-size: 18px;
     line-height: 18px;
-    padding: 25px 15px;
   }
 }
 

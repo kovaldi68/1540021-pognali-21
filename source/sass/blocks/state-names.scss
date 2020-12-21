@@ -1,12 +1,12 @@
 .state-names {
   @include list-reset;
+  padding: 20px 19px;
   border: 1px solid $grey-border;
   border-top: none;
-  padding: 20px 19px;
 
   &--second {
-    border: none;
     padding: 14px 0;
+    border: none;
   }
 }
 
@@ -17,11 +17,11 @@
 
 @media (min-width: $tablet-width) {
   .state-names {
+    padding: 37px 23px 33px 26px;
     font-size: 20px;
     line-height: 20px;
     border: none;
     border-left: 1px solid rgba($grey-calendar, 0.5);
-    padding: 37px 23px 33px 26px;
   }
 
   .state-names__item {

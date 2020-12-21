@@ -1,12 +1,12 @@
 .transport-checkbox {
   @include list-reset;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  padding: 16px 50px 15px 50px;
   border: 1px solid $grey-border;
   border-radius: 10px;
-  padding: 16px 50px 15px 50px;
 }
 
 .transport-checkbox__item {
@@ -25,10 +25,10 @@
   display: inline-block;
   width: 33px;
   height: 33px;
-  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $white-basic;
+  border-radius: 50%;
 
   &--plane {
     background-image: url("../../img/transport-icon-plane.svg");

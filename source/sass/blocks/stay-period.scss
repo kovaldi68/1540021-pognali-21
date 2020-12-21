@@ -43,9 +43,9 @@
 
 @media (min-width: $desktop-width) {
   .stay-period {
-    border-top: 1px solid $grey-lines;
     flex-direction: row;
     align-items: center;
+    border-top: 1px solid $grey-lines;
   }
 
   .stay-period__input {

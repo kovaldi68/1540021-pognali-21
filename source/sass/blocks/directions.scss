@@ -10,8 +10,8 @@
 
 .directions__text {
   margin-bottom: 60px;
-  color: $grey-special;
   font-weight: 300;
+  color: $grey-special;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,21 +26,21 @@
   }
 
   .directions__title {
-    font-size: 45px;
-    line-height: 45px;
     margin-bottom: 57px;
     margin-left: 33px;
     margin-right: 33px;
+    font-size: 45px;
+    line-height: 45px;
   }
 
   .directions__text {
     grid-row: 2/3;
     grid-column: 1/3;
-    font-size: 28px;
-    line-height: 33px;
     margin-bottom: 104px;
     margin-left: 33px;
     margin-right: 33px;
+    font-size: 28px;
+    line-height: 33px;
   }
 
   .directions__list {
@@ -92,9 +92,9 @@
     grid-row: 3/4;
     grid-column: 2/3;
     margin-left: 142px;
-    max-width: 275px;
+    width: 275px;
+    padding: 28px 22px;
     font-size: 24px;
     line-height: 24px;
-    padding: 28px 22px;
   }
 }

@@ -1,6 +1,6 @@
 .country-filter {
-  background-color: $grey-decor;
   padding-bottom: 28px;
+  background-color: $grey-decor;
 }
 
 .country-filter__inner {
@@ -12,12 +12,12 @@
 }
 
 .country-filter__title {
-  line-height: 18px;
-  font-weight: 700;
   display: inline-block;
   padding-bottom: 18px;
   padding-left: 2px;
   margin-bottom: 15px;
+  line-height: 18px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -26,14 +26,14 @@
 }
 
 .country-filter__button {
-  color: $blue-dark-main;
+  padding: 12px 40px 10px;
+  width: 100%;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 12px 40px 10px;
+  color: $blue-dark-main;
   background-color: $grey-close-button;
   border-radius: 20px;
-  width: 100%;
 
   &--icon {
     position: absolute;

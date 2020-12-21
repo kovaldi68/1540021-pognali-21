@@ -18,20 +18,20 @@
 }
 
 .track__button {
-  color: $blue-light-text;
+  justify-content: flex-start;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  color: $blue-light-text;
   text-transform: uppercase;
-  justify-content: flex-start;
 }
 
 .track__flag {
+  width: 52px;
+  padding: 8px;
   border: 1px solid $grey-border;
   border-left: none;
   border-radius: 4px;
-  padding: 8px;
-  width: 52px;
 }
 
 .track__flag img {
@@ -40,38 +40,38 @@
 }
 
 .track__item .pick-button {
+  position: relative;
   width: 168px;
+  padding: 12px 10px;
+  overflow: hidden;
   border: 1px solid $grey-border;
   border-radius: 4px;
-  padding: 12px 10px;
-  position: relative;
-  overflow: hidden;
   white-space: nowrap;
 }
 
 .track__item .pick-button::after {
   content: "";
-  text-align: right;
   position: absolute;
   bottom: 2px;
   right: 5px;
   width: 52px;
   height: 90%;
+  text-align: right;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
   pointer-events: none;
 }
 
 .track__item--choose .pick-button {
   width: 220px;
+  padding: 12px 10px;
   border: 1px solid $grey-border;
   border-radius: 4px;
-  padding: 12px 10px;
 }
 
 .add-button {
-  border-radius: 4px;
-  padding: 12px 10px;
   min-width: 220px;
+  padding: 12px 10px;
+  border-radius: 4px;
   border: none;
   background-color: $grey-basic;
 }
@@ -86,28 +86,28 @@
   }
 
   .track__item .pick-button {
-    font-size: 20px;
-    line-height: 20px;
     justify-content: flex-start;
     width: 369px;
-    padding: 22px 10px 26px 10px;
     margin-right: 52px;
+    padding: 22px 10px 26px 10px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .track__flag {
     width: 70px;
     height: 47px;
-    border: none;
     padding: 0;
     margin-right: 25px;
+    border: none;
   }
 
   .add-button {
-    font-size: 20px;
-    line-height: 20px;
     justify-content: flex-start;
     width: 369px;
     padding: 22px 10px 26px 10px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

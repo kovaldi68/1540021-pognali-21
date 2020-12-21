@@ -8,12 +8,12 @@
 }
 
 .states__item {
+  margin-bottom: 12px;
+  padding-left: 40px;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  padding-left: 40px;
 
   &:last-child {
     margin-bottom: 0;
@@ -22,8 +22,8 @@
 
 .states__heading {
   display: inline-block;
-  color: $grey-special;
+  margin-bottom: 16px;
   font-size: 15px;
   line-height: 16px;
-  margin-bottom: 16px;
+  color: $grey-special;
 }
