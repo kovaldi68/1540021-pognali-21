@@ -5,8 +5,11 @@
   padding-bottom: 12px;
   color: $white-basic;
   background-color: $blue-dark-main;
+  padding-top: 19px;
 
   &--opened {
+    padding-top: 27px;
+    padding-bottom: 41px;
     background-color: $white-basic;
   }
 }

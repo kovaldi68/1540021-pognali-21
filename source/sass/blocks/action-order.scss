@@ -1,5 +1,5 @@
 .action-order {
-  background-color: $blue-dark-main;
+  width: 100%;
 }
 
 .action-order__list {
@@ -41,14 +41,40 @@
   }
 
   .action-order__item {
-    width: 344px;
     padding: 22px 96px 61px 24px;
+
+    &:nth-child(odd) {
+      width: calc(50% + 25px);
+    }
+
+    &:nth-child(even) {
+      width: 50%;
+      margin-left: -25px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .action-order__item {
-    width: 315px;
     padding: 22px 96px 30px 24px;
+
+    &:nth-child(4n+1) {
+      width: calc(25% + 15px);
+    }
+
+    &:nth-child(4n+2) {
+      width: calc(25% + 45px);
+      margin-left: -30px;
+    }
+
+    &:nth-child(4n+3) {
+      width: calc(25% + 45px);
+      margin-left: -30px;
+    }
+
+    &:nth-child(4n+4) {
+      width: calc(25% - 15px);
+      margin-left: -30px;
+    }
   }
 }

@@ -1,7 +1,6 @@
 .review-quote {
   width: 161px;
-  margin: 0;
-  color: $white-basic;
+  margin-bottom: 29px;
 }
 
 .review-quote__text {
@@ -20,6 +19,7 @@
   .review-quote {
     width: 264px;
     margin-left: 32px;
+    margin-bottom: 211px;
   }
 
   .review-quote__text {
@@ -29,11 +29,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .review-quote {
-    margin-left: 0;
-    margin-right: 23px;
-    margin-top: 111px;
+    margin: 111px 23px 0 0;
   }
 
   .review-quote__author {

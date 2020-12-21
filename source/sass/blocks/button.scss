@@ -9,14 +9,21 @@
   cursor: pointer;
 
   &--primary {
-    padding: 22px;
+    color: $blue-light-text;
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    text-align: center;
-    color: $blue-decor-items;
+    justify-content: flex-start;
+    padding: 22px;
     background-color: $yellow-main;
     border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+      padding: 29px 74px 27px 33px;
+    }
   }
 
   &--secondary {
