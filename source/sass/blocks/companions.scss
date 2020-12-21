@@ -10,12 +10,12 @@
 
 .companions__text {
   margin-bottom: 25px;
-  color: $white-basic;
   font-weight: 300;
+  color: $white-basic;
 
   &--bold {
-    font-weight: 700;
     margin-bottom: 54px;
+    font-weight: 700;
   }
 }
 
@@ -43,9 +43,9 @@
   }
 
   .companions__title {
+    margin-bottom: 55px;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 55px;
   }
 
   .companions__text {
@@ -104,9 +104,9 @@
     margin-bottom: 42px;
 
     &--bold {
-      margin-bottom: 85px;
       grid-row: 3/4;
       grid-column: 1/2;
+      margin-bottom: 85px;
     }
   }
 

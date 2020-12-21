@@ -1,17 +1,16 @@
 .calendar__date {
+  position: relative;
   padding: 11px 62px;
   text-align: center;
   border-top: 1px solid $grey-calendar;
   border-bottom: 1px solid $grey-calendar;
-  position: relative;
 }
 
 .calendar__control {
   position: absolute;
-  top: 12px;
   width: 15px;
   height: 21px;
-  background-image: url("../../img/arrow-back-icon.svg");
+  background-image: url("../../img/arrow-back-icon-mobile.svg");
   background-position: center center;
   background-repeat: no-repeat;
 
@@ -28,23 +27,29 @@
 .calendar__table {
   margin: 0 auto;
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 22px;
+  border-collapse: collapse;
   table-layout: fixed;
 }
 
 .calendar__table-head {
-  font-weight: 400;
-  color: $grey-special;
-  text-align: center;
   width: 14%;
+  font-weight: 400;
+  text-align: center;
+  color: $grey-special;
 
   &:nth-last-child(-n+2) {
     color: $orange-cell;
   }
 }
 
-.calendar__table-cell {
+.calendar__title {
+  &--desktop {
+    display: none;
+  }
+}
+
+.calendar__cell {
   margin: 0;
   padding: 7px 8px;
   border: 1px solid $grey-calendar;
@@ -57,8 +62,8 @@
   }
 
   &--chosen {
-    color: $white-basic;
     font-weight: 500;
+    color: $white-basic;
     background-color: $blue-light-text;
     box-shadow: inset 0 0 0 2px $orange-cell;
   }
@@ -66,5 +71,50 @@
   &--enabled {
     font-weight: 500;
     background-color: $grey-basic;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__date {
+    margin-bottom: 39px;
+    padding: 27px 62px 23px 62px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .calendar__control {
+    width: 30px;
+    height: 36px;
+    background-image: url("../../img/arrow-back-icon-tablet.svg");
+  }
+
+  .calendar__title {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  .calendar__table-head {
+    padding: 0 0 7px 0;
+  }
+
+  .calendar__cell {
+    padding: 25px 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__date {
+    margin-bottom: 18px;
+  }
+
+  .calendar__table-head {
+    padding-bottom: 19px;
   }
 }

@@ -1,0 +1,64 @@
+.stay-period {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.stay-period__input {
+  margin-bottom: 20px;
+
+  &--duration {
+    margin-bottom: 28px;
+  }
+}
+
+.stay-period__accept-checkbox {
+  margin-bottom: 28px;
+}
+
+.stay-period__calendar {
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .stay-period__input {
+    margin-bottom: 34px;
+
+    &--duration {
+      margin-bottom: 60px;
+      order: 2;
+    }
+  }
+
+  .stay-period__accept-checkbox {
+    margin-bottom: 34px;
+    order: 1;
+  }
+
+  .stay-period__calendar {
+    margin-bottom: 47px;
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stay-period {
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid $grey-lines;
+  }
+
+  .stay-period__input {
+    width: 50%;
+  }
+
+  .stay-period__accept-checkbox {
+    width: 50%;
+    text-align: right;
+  }
+
+  .stay-period__calendar {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+}

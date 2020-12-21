@@ -15,8 +15,11 @@
 }
 
 .location__route {
+  display: inline-block;
+  width: 100%;
+  padding: 19px 22px;
+  text-align: left;
   border: 3px solid $blue-dark-main;
-  padding: 19px;
 }
 
 .location__map {
@@ -39,25 +42,27 @@
   }
 
   .location__text {
+    margin-bottom: 62px;
+    padding-left: 94px;
     font-size: 28px;
     line-height: 28px;
-    padding-left: 94px;
-    margin-bottom: 62px;
   }
 
   .location__route {
-    border: 3px solid $blue-dark-main;
-    padding: 26px 74px 24px 33px;
+    padding: 28px 22px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .location__address {
-    padding-top: 121px;
-    padding-bottom: 61px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 121px;
+    padding-bottom: 61px;
   }
 
   .location__container {
@@ -71,7 +76,7 @@
   }
 
   .location__route {
-    padding: 26px 33px 24px 33px;
     width: 324px;
+    padding: 28px 22px;
   }
 }

@@ -11,8 +11,8 @@
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
-  line-height: 50px;
   padding: 10px;
+  line-height: 50px;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
@@ -23,10 +23,10 @@
 }
 
 .pagination__link {
-  color: $blue-light-text;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
+  color: $blue-light-text;
 }
 
 .pagination-controls__button {

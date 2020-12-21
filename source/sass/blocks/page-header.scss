@@ -1,4 +1,8 @@
 .page-header {
+  position: relative;
+  z-index: 5;
+  padding-top: 20px;
+  padding-bottom: 12px;
   color: $white-basic;
   background-color: $blue-dark-main;
   padding-top: 19px;
@@ -10,27 +14,20 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    padding-top: 40px;
-    padding-bottom: 0;
-
-    &--opened {
-      padding-top: 45px;
-      padding-bottom: 91px;
-      background-color: $white-basic;
-    }
-  }
+.page-header__logo {
+  display: block;
+  width: 96px;
+  height: 15px;
+  margin-bottom: 60px;
 }
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    padding-top: 45px;
-    padding-bottom: 0;
-  }
+.page-header__title {
+  color: $white-basic;
+}
 
-  .page-header__container {
-    display: flex;
-    flex-wrap: wrap;
+@media (min-width: $tablet-width) {
+  .page-header__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 }

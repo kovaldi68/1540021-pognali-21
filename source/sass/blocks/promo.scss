@@ -1,17 +1,16 @@
 .promo {
-  background-color: $blue-dark-basic;
-  padding-top: 60px;
   padding-bottom: 29px;
+  background-color: $blue-dark-basic;
 }
 
 .promo__slogan {
   width: 238px;
-  color: $white-basic;
+  margin: 0 auto 245px auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  margin: 0 auto 245px auto;
+  color: $white-basic;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +23,6 @@
     width: 399px;
     font-size: 60px;
     line-height: 70px;
-    margin-bottom: 86px;
   }
 }
 
@@ -40,7 +38,7 @@
 
   .promo__slogan {
     width: 418px;
-    text-align: left;
     margin: 99px 548px 101px 67px;
+    text-align: left;
   }
 }

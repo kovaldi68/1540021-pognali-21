@@ -12,7 +12,7 @@
         <a class="page-header__logo">
           <img src="img/logo-pognali-mobile.svg" alt="Логотип сайта Погнали" width="96" height="15">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__site site-navigation">
@@ -26,15 +26,26 @@
                 <a href="catalog.html">Попутчики</a>
               </li>
             </ul>
-            <ul class="main-nav__user user-navigation">
-              <li class="user-navigation__item">
-                <a class="user-navigation__link user-navigation__link--auth" href="blank.html">Авторизация</a>
+            <ul class="main-nav__user user-list">
+              <li class="user-list__item">
+                <a class="user-list__auth" href="blank.html">Авторизация</a>
               </li>
-              <li class="user-navigation__item">
-                <a class="user-navigation__link button user-navigation__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+              <li class="user-list__item user-list__item--promo">
+                <a class="user-list__mail" href="mailto:mail@htmlacademy.ru">
+                  <span class="visually-hidden">mail@htmlacademy.ru</span>
+                </a>
               </li>
-              <li class="user-navigation__item">
-                <a class="user-navigation__link user-navigation__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <li class="user-list__item user-list__item--promo">
+                <a class="user-list__tel" href="tel:88005558628">
+                  <span class="visually-hidden">8 800 555-86-28</span></a>
+              </li>
+            </ul>
+            <ul class="main-nav__contact contact-navigation">
+              <li class="contact-navigation__item">
+                <a class="contact-navigation__link contact-navigation__link--tel" href="tel:88005558628">8 800 555-86-28</a>
+              </li>
+              <li class="contact-navigation__item">
+                <a class="contact-navigation__link contact-navigation__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
             </ul>
             <ul class="main-nav__social socials">
@@ -67,54 +78,66 @@
             </ul>
           </div>
         </nav>
+        <h1 class="page-header__title title title--larger">Направления</h1>
       </div>
     </header>
 
     <main class="page-main">
-      <div class="page-main__container">   <!-- охоже на костыль? может и стоило объединить с хэдером -->
-        <h1 class="page-main__title title title--larger">Направления</h1>
-      </div>
       <section class="traveller-settings">
         <div class="traveller-settings__container container">
           <h2 class="visually-hidden">Профиль путешественника</h2>
           <form class="traveller-settings__form profile">
             <div class="profile__info">
-              <div class="profile__level level level--secondary">80 level</div>
-              <img class="profile__photo" src="img/demin-profile-photo.jpg" alt="Фото в профиле попутчика" width="100" height="100">
-            </div>
-            <a class="profile__button button button--secondary" href="#">Сменить фото</a>
-            <div class="profile__tags tags">
-              <label class="tags__heading" for="hashtag">Тэги</label>
-              <textarea class="tags__text" rows="3" id="hashtag" name="fun-list">#бургер #бар #футбол #концерт #крафт</textarea>
-            </div>
-            <div class="profile__transport transfer">
-              <h3 class="transfer__heading">Транспорт</h3>
-              <ul class="transfer__transport transport-checkbox">
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--plane" aria-label="Выбрать Авиаперелёт">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--plane" type="checkbox" name="plane">
-                    <span class="visually-hidden">Авиаперелёт</span>
-                  </label>
-                </li>
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--car" aria-label="Выбрать Автотранспорт">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--car" type="checkbox" name="car">
-                    <span class="visually-hidden">Автотранспорт</span>
-                  </label>
-                </li>
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--cycle" aria-label="Выбрать Велосипед">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--cycle" type="checkbox" name="cycle">
-                    <span class="visually-hidden">Велосипед</span>
-                  </label>
-                </li>
-                <li class="transport-checkbox__item">
-                  <label class="transport-checkbox__label transport-checkbox__label--walk" aria-label="Выбрать Пешком">
-                    <input class="transport-checkbox__tag transport-checkbox__tag--walk" type="checkbox" name="walk">
-                    <span class="visually-hidden">Пешком</span>
-                  </label>
-                </li>
-              </ul>
+              <div class="profile__level level">
+                <div class="level__text">
+                  <span class="level__number">80</span>
+                  <span class="level__word">level</span>
+                </div>
+                <svg>
+                  <circle class="level__progress" cx="50" cy="50" r="45"></circle>
+                </svg>
+              </div>
+              <div class="profile__photo">
+                <img class="profile__img" src="img/demin-profile-photo.jpg" alt="Фото в профиле попутчика" width="100" height="100">
+              </div>
+              <div class="profile__button-wrap">
+                <a class="profile__button button button--secondary" href="#">
+                  <span>Сменить</span>&ensp;фото
+                </a>
+              </div>
+              <div class="profile__tags tags">
+                <label class="tags__heading" for="hashtag">Тэги</label>
+                <textarea class="tags__text" rows="2" id="hashtag" name="fun-list">#бургер #бар #футбол #концерт #крафт</textarea>
+              </div>
+              <div class="profile__transport transfer">
+                <h3 class="transfer__heading">Транспорт</h3>
+                <ul class="transfer__transport transport-checkbox">
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--plane" aria-label="Выбрать Авиаперелёт">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--plane" type="checkbox" name="plane">
+                      <span class="visually-hidden">Авиаперелёт</span>
+                    </label>
+                  </li>
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--car" aria-label="Выбрать Автотранспорт">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--car" type="checkbox" name="car">
+                      <span class="visually-hidden">Автотранспорт</span>
+                    </label>
+                  </li>
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--cycle" aria-label="Выбрать Велосипед">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--cycle" type="checkbox" name="cycle">
+                      <span class="visually-hidden">Велосипед</span>
+                    </label>
+                  </li>
+                  <li class="transport-checkbox__item">
+                    <label class="transport-checkbox__label transport-checkbox__label--walk" aria-label="Выбрать Пешком">
+                      <input class="transport-checkbox__tag transport-checkbox__tag--walk" type="checkbox" name="walk">
+                      <span class="visually-hidden">Пешком</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </div>
           </form>
         </div>
@@ -125,19 +148,23 @@
           <ol class="plans__list journey">
             <li class="journey__item">
               <h3 class="journey__name">Франция, Италия</h3>
-              <p class="journey__fellow-number">3 попутчика</p>
-              <p class="journey__dates">
-                <time datetime="03-26">26 мар</time> - <time datetime="03-29">29 мар</time>
-              </p>
-              <a href="#" class="journey__change">Изменить</a>
+              <div class="journey__options">
+                <p class="journey__fellow-number">3 попутчика</p>
+                <p class="journey__dates">
+                  <time datetime="03-26">26 мар</time> - <time datetime="03-29">29 мар</time>
+                </p>
+                <a href="#" class="journey__change">Изменить</a>
+              </div>
             </li>
             <li class="journey__item">
               <h3 class="journey__name">Таиланд, Индонезия</h3>
-              <p class="journey__fellow-number">1 попутчик</p>
-              <p class="journey__dates">
-                <time datetime="07-01">1 июл</time> - <time datetime="07-15">15 июл</time>
-              </p>
-              <a href="#" class="journey__change">Изменить</a>
+              <div class="journey__options">
+                <p class="journey__fellow-number">1 попутчик</p>
+                <p class="journey__dates">
+                  <time datetime="07-01">1 июл</time> - <time datetime="07-15">15 июл</time>
+                </p>
+                <a href="#" class="journey__change">Изменить</a>
+              </div>
             </li>
           </ol>
         </div>
@@ -145,19 +172,31 @@
       <section class="add-plan">
         <div class="add-plan__container container">
           <h2 class="add-plan__title title title--medium">Добавить план:</h2>
+          <ul class="add-plan__indicator indicator">
+            <li class="indicator__item"></li>
+            <li class="indicator__item"></li>
+            <li class="indicator__item"></li>
+          </ul>
           <form class="add-plan__form">
             <ol class="add-plan__order steps">
               <li class="steps__item">
-                <h3 class="steps__title title title--small">Шаг 1.<br> Даты пребывания</h3>
-                <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <div class="steps__heading">
+                  <h3 class="steps__title title title--small">Шаг 1.<br> Даты пребывания</h3>
+                  <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                  <ul class="add-plan__indicator indicator indicator--inner">
+                    <li class="indicator__item">Даты</li>
+                    <li class="indicator__item">Маршрут</li>
+                    <li class="indicator__item">Развлечения</li>
+                  </ul>
+                </div>
                 <div class="steps__content stay-period">
-                  <div class="stay-period__companions trip-input">
+                  <div class="stay-period__input trip-input">
                     <label class="trip-input__label" for="ppl-num">Ищу попутчиков:</label>
                     <input class="trip-input__pick" type="number" value="2" id="ppl-num">
                     <button class="trip-input__button trip-input__button--less button button--less" type="button" aria-label="Уменьшить количество на 1"></button>
                     <button class="trip-input__button trip-input__button--more button button--more" type="button" aria-label="Увеличить количество на 1"></button>
                   </div>
-                  <div class="stay-period__duration trip-input">
+                  <div class="stay-period__input stay-period__input--duration trip-input">
                     <label class="trip-input__label" for="duration">Длительность:</label>
                     <input class="trip-input__pick" type="number" value="3" id="duration">
                     <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1"></button>
@@ -165,7 +204,7 @@
                   </div>
                   <div class="stay-period__accept-checkbox accept-checkbox">
                     <label class="accept-checkbox__ticket">
-                      <input class="visually-hidden accept-checkbox__box" type="checkbox">
+                      <input class="accept-checkbox__box visually-hidden" type="checkbox">
                       <span class="accept-checkbox__text">Можно с детьми</span>
                     </label>
                   </div>
@@ -178,67 +217,88 @@
                     </div>
                     <table class="calendar__table">
                       <tr class="calendar__table-row">
-                        <th class="calendar__table-head">П</th>
-                        <th class="calendar__table-head">В</th>
-                        <th class="calendar__table-head">С</th>
-                        <th class="calendar__table-head">Ч</th>
-                        <th class="calendar__table-head">П</th>
-                        <th class="calendar__table-head">С</th>
-                        <th class="calendar__table-head">В</th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">П</span>
+                          <span class="calendar__title calendar__title--desktop">Пн</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">В</span>
+                          <span class="calendar__title calendar__title--desktop">Вт</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">С</span>
+                          <span class="calendar__title calendar__title--desktop">Ср</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">Ч</span>
+                          <span class="calendar__title calendar__title--desktop">Чт</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">П</span>
+                          <span class="calendar__title calendar__title--desktop">Пт</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">С</span>
+                          <span class="calendar__title calendar__title--desktop">Сб</span>
+                        </th>
+                        <th class="calendar__table-head">
+                          <span class="calendar__title calendar__title--mobile">В</span>
+                          <span class="calendar__title calendar__title--desktop">Вс</span>
+                        </th>
                       </tr>
                       <tr class="calendar__table-row">
-                        <td class="calendar__table-cell calendar__table-cell--disabled">23</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">24</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">25</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">26</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">27</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">28</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">1</td>
+                        <td class="calendar__cell calendar__cell--disabled">23</td>
+                        <td class="calendar__cell calendar__cell--disabled">24</td>
+                        <td class="calendar__cell calendar__cell--disabled">25</td>
+                        <td class="calendar__cell calendar__cell--disabled">26</td>
+                        <td class="calendar__cell calendar__cell--disabled">27</td>
+                        <td class="calendar__cell calendar__cell--disabled">28</td>
+                        <td class="calendar__cell calendar__cell--disabled">1</td>
                       </tr>
                       <tr class="calendar__table-row">
-                        <td class="calendar__table-cell calendar__table-cell--disabled">2</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">3</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">4</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">5</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">6</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">7</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">8</td>
+                        <td class="calendar__cell calendar__cell--disabled">2</td>
+                        <td class="calendar__cell calendar__cell--disabled">3</td>
+                        <td class="calendar__cell calendar__cell--disabled">4</td>
+                        <td class="calendar__cell calendar__cell--disabled">5</td>
+                        <td class="calendar__cell calendar__cell--disabled">6</td>
+                        <td class="calendar__cell calendar__cell--disabled">7</td>
+                        <td class="calendar__cell calendar__cell--disabled">8</td>
                       </tr>
                       <tr class="calendar__table-row">
-                        <td class="calendar__table-cell calendar__table-cell--disabled">9</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">10</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">11</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">12</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">13</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">14</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">15</td>
+                        <td class="calendar__cell calendar__cell--disabled">9</td>
+                        <td class="calendar__cell calendar__cell--disabled">10</td>
+                        <td class="calendar__cell calendar__cell--disabled">11</td>
+                        <td class="calendar__cell calendar__cell--disabled">12</td>
+                        <td class="calendar__cell calendar__cell--disabled">13</td>
+                        <td class="calendar__cell calendar__cell--disabled">14</td>
+                        <td class="calendar__cell calendar__cell--disabled">15</td>
                       </tr>
                       <tr class="calendar__table-row">
-                        <td class="calendar__table-cell calendar__table-cell--disabled">16</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">17</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">18</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">19</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">20</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">21</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">22</td>
+                        <td class="calendar__cell calendar__cell--disabled">16</td>
+                        <td class="calendar__cell calendar__cell--disabled">17</td>
+                        <td class="calendar__cell calendar__cell--disabled">18</td>
+                        <td class="calendar__cell calendar__cell--disabled">19</td>
+                        <td class="calendar__cell calendar__cell--disabled">20</td>
+                        <td class="calendar__cell calendar__cell--disabled">21</td>
+                        <td class="calendar__cell calendar__cell--disabled">22</td>
                       </tr>
                       <tr class="calendar__table-row">
-                        <td class="calendar__table-cell calendar__table-cell--disabled">23</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">24</td>
-                        <td class="calendar__table-cell calendar__table-cell--disabled">25</td>
-                        <td class="calendar__table-cell calendar__table-cell--chosen">26</td>
-                        <td class="calendar__table-cell calendar__table-cell--chosen">27</td>
-                        <td class="calendar__table-cell calendar__table-cell--chosen">28</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">29</td>
+                        <td class="calendar__cell calendar__cell--disabled">23</td>
+                        <td class="calendar__cell calendar__cell--disabled">24</td>
+                        <td class="calendar__cell calendar__cell--disabled">25</td>
+                        <td class="calendar__cell calendar__cell--chosen">26</td>
+                        <td class="calendar__cell calendar__cell--chosen">27</td>
+                        <td class="calendar__cell calendar__cell--chosen">28</td>
+                        <td class="calendar__cell calendar__cell--enabled">29</td>
                       </tr>
                       <tr class="calendar__table-row">
-                        <td class="calendar__table-cell calendar__table-cell--enabled">30</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">31</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">1</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">2</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">3</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">4</td>
-                        <td class="calendar__table-cell calendar__table-cell--enabled">5</td>
+                        <td class="calendar__cell calendar__cell--enabled">30</td>
+                        <td class="calendar__cell calendar__cell--enabled">31</td>
+                        <td class="calendar__cell calendar__cell--enabled">1</td>
+                        <td class="calendar__cell calendar__cell--enabled">2</td>
+                        <td class="calendar__cell calendar__cell--enabled">3</td>
+                        <td class="calendar__cell calendar__cell--enabled">4</td>
+                        <td class="calendar__cell calendar__cell--enabled">5</td>
                       </tr>
                     </table>
                   </div>
@@ -246,27 +306,92 @@
                 <button class="steps__button button button--secondary" type="button">Следующий шаг</button>
               </li>
               <li class="steps__item">
-                <h3 class="steps__title title title--small">Шаг 2.<br> Маршрут</h3>
-                <p class="steps__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                <div class="steps__heading">
+                  <h3 class="steps__title title title--small">Шаг 2.<br> Маршрут</h3>
+                  <ul class="add-plan__indicator indicator indicator--inner">
+                    <li class="indicator__item">Даты</li>
+                    <li class="indicator__item">Маршрут</li>
+                    <li class="indicator__item">Развлечения</li>
+                  </ul>
+                  <p class="steps__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                </div>
                 <div class="steps__content track">
                   <ul class="track__list">
                     <li class="track__item">
                       <button class="track__button button pick-button" type="button">Босния и Герцеговина</button>
                       <div class="track__flag">
-                        <img src="img/bosnia-flag-icon.png" width="35" height="24" alt="Флаг Боснии и Герцеговины">
+                        <img src="img/bosnia-flag-icon.png" alt="Флаг Боснии и Герцеговины">
                       </div>
                       <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item">
                       <button class="track__button button pick-button" type="button"">Чехия</button>
                       <div class="track__flag">
-                        <img src="img/czechia-flag-icon.png" width="35" height="24" aria-label="Флаг Чехии">
+                        <img src="img/czechia-flag-icon.png" alt="Флаг Чехии">
                       </div>
                       <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item track__item--choose">
                       <button class="track__button button pick-button" type="button"">Выберите страну</button>
                       <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <div class="track__dropdown dropdown">
+                        <form class="dropdown__form">
+                          <h2 class="dropdown__title title">Выберите страну</h2>
+                          <div class="dropdown__wrapper">
+                            <table class="dropdown__alphabet alphabet">
+                              <tr class="alphabet__table-row">
+                                <td class="alphabet__table-cell alphabet__table-cell--chosen">А</td>
+                                <td class="alphabet__table-cell">Б</td>
+                                <td class="alphabet__table-cell">В</td>
+                                <td class="alphabet__table-cell">Г</td>
+                                <td class="alphabet__table-cell">Д</td>
+                              </tr>
+                              <tr class="alphabet__table-row">
+                                <td class="alphabet__table-cell">Е</td>
+                                <td class="alphabet__table-cell">З</td>
+                                <td class="alphabet__table-cell">И</td>
+                                <td class="alphabet__table-cell">К</td>
+                                <td class="alphabet__table-cell">Л</td>
+                              </tr>
+                              <tr class="alphabet__table-row">
+                                <td class="alphabet__table-cell">М</td>
+                                <td class="alphabet__table-cell">Н</td>
+                                <td class="alphabet__table-cell">О</td>
+                                <td class="alphabet__table-cell">П</td>
+                                <td class="alphabet__table-cell">Р</td>
+                              </tr>
+                              <tr class="alphabet__table-row">
+                                <td class="alphabet__table-cell">С</td>
+                                <td class="alphabet__table-cell">Т</td>
+                                <td class="alphabet__table-cell">У</td>
+                                <td class="alphabet__table-cell">Ф</td>
+                                <td class="alphabet__table-cell">Х</td>
+                              </tr>
+                              <tr class="alphabet__table-row">
+                                <td class="alphabet__table-cell">Ч</td>
+                                <td class="alphabet__table-cell">Ш</td>
+                                <td class="alphabet__table-cell">Щ</td>
+                                <td class="alphabet__table-cell">Э</td>
+                                <td class="alphabet__table-cell">Ю</td>
+                              </tr>
+                            </table>
+                          </div>
+                          <ul class="dropdown__list state-names">
+                            <li class="state-names__item">Австралия</li>
+                            <li class="state-names__item">Австрия</li>
+                            <li class="state-names__item">Азербайджан</li>
+                            <li class="state-names__item">Албания</li>
+                            <li class="state-names__item">Алжир</li>
+                            <li class="state-names__item">Ангола</li>
+                            <li class="state-names__item">Андорра</li>
+                            <li class="state-names__item">Антигуа и Барбуда</li>
+                            <li class="state-names__item">Аргентина</li>
+                            <li class="state-names__item">Армения</li>
+                            <li class="state-names__item">Афганистан</li>
+                          </ul>
+                          <button class="dropdown__button button" type="button" aria-label="Закрыть форму"></button>
+                        </form>
+                      </div>
                     </li>
                     <li class="track__item track__item--add">
                       <button class="track__button button add-button" type="button">Добавить страну</button>
@@ -274,11 +399,18 @@
                   </ul>
                 </div>
                 <button class="steps__button button button--secondary" type="button">Следующий шаг</button>
-                <button class="steps__button button button--third" type="button">На шаг назад</button>
+                <button class="steps__button button steps__button--back" type="button">На шаг назад</button>
               </li>
               <li class="steps__item">
-                <h3 class="steps__title title title--small">Шаг 3.<br> Развлечения</h3>
-                <p class="steps__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                <div class="steps__heading">
+                  <h3 class="steps__title title title--small">Шаг 3.<br> Развлечения</h3>
+                  <p class="steps__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  <ul class="add-plan__indicator indicator indicator--inner">
+                    <li class="indicator__item">Даты</li>
+                    <li class="indicator__item">Маршрут</li>
+                    <li class="indicator__item">Развлечения</li>
+                  </ul>
+                </div>
                 <div class="steps__content route">
                   <ul class="route__list">
                     <li class="route__item">
@@ -292,7 +424,7 @@
                   </ul>
                 </div>
                 <button class="steps__button button button--secondary" type="submit">Отправить</button>
-                <button class="steps__button button button--third" type="button">На шаг назад</button>
+                <button class="steps__button button steps__button--back" type="button">На шаг назад</button>
               </li>
             </ol>
           </form>
@@ -310,7 +442,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--facebook" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg width="45" height="45" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="31" cy="31" r="31" fill="#FFD74B"/>
                 <path d="M33.53 44.75H26.71V31.85H24V25.47H26.63C26.43 22.58 26.93 20.47 28.15 19.03C28.7317 18.3909 29.4404 17.8802 30.2308 17.5306C31.0212 17.1811 31.8758 17.0004 32.74 17H37.52V23.15H33.76C33.5385 23.9021 33.4538 24.6879 33.51 25.47H37.51V31.85H33.51L33.53 44.75ZM28.22 43.25H32V30.35H36V27H32V26.24C32 24.24 32 22.45 33 21.78L33.19 21.65H36V18.5H32.78C32.1256 18.4915 31.4768 18.6207 30.8756 18.8791C30.2744 19.1375 29.7342 19.5194 29.29 20C28.29 21.23 27.88 23.29 28.19 26.14L28.29 26.97H25.5V30.35H28.22V43.25Z" fill="#192144"/>
                 </svg>
@@ -319,7 +451,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="#">
               <span class="visually-hidden">ВКонтакте</span>
-              <svg width="45" height="45" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="31" cy="31" r="31" fill="#FFD74B"/>
                 <path d="M39.9461 38.7775C39.2083 38.761 38.4891 38.5431 37.8661 38.1475C37.2157 37.7079 36.6184 37.1945 36.0861 36.6175C35.6461 36.1775 34.9161 35.4375 34.6361 35.4375C34.3561 35.4375 34.1561 36.3575 34.1661 37.0075C34.1703 37.4562 34.0021 37.8894 33.6961 38.2175C33.3481 38.5018 32.9234 38.6758 32.4761 38.7175H30.5561C27.7965 38.6568 25.1541 37.59 23.1261 35.7175C19.4461 32.3475 16.2861 25.9075 16.1561 25.6275C16.0321 25.3936 15.9801 25.1282 16.0068 24.8648C16.0335 24.6014 16.1377 24.3518 16.3061 24.1475C16.6872 23.8297 17.1698 23.6593 17.6661 23.6675H21.7461H21.8661C22.2036 23.7168 22.5272 23.836 22.8161 24.0175C23.0879 24.1998 23.3055 24.452 23.4461 24.7475C23.8772 25.6706 24.3717 26.5627 24.9261 27.4175C26.2361 29.4175 26.8161 29.8775 27.0261 29.9775C27.2597 29.0398 27.324 28.0679 27.2161 27.1075C27.2511 26.6701 27.179 26.2308 27.0061 25.8275C26.7865 25.6519 26.5169 25.5504 26.2361 25.5375L25.5061 24.8475C25.3661 24.1875 26.0961 23.6175 26.6061 23.3975C27.6238 23.0786 28.6916 22.9498 29.7561 23.0175H30.4661C31.1881 22.9987 31.9099 23.0659 32.6161 23.2175C34.3161 23.5775 34.2561 24.9475 34.1861 26.5275C34.1861 26.9875 34.1361 27.5275 34.1361 28.1475C34.1361 28.2975 34.1361 28.4575 34.1361 28.6275C34.0967 29.0629 34.1271 29.5017 34.2261 29.9275C35.0586 29.2311 35.7597 28.3912 36.2961 27.4475C36.875 26.5553 37.3832 25.6191 37.8161 24.6475C37.9479 24.3403 38.1739 24.0827 38.4614 23.912C38.7489 23.7413 39.0832 23.6662 39.4161 23.6975H43.6961C43.8224 23.6855 43.9497 23.6855 44.0761 23.6975C45.0761 23.6975 45.6661 23.9875 45.9061 24.5475C46.1461 25.1075 46.0761 26.2075 43.5461 29.1575L42.5461 30.2875C42.0616 30.758 41.6443 31.293 41.3061 31.8775C41.6848 32.3081 42.1147 32.6909 42.5861 33.0175C43.7353 33.8835 44.7468 34.9186 45.5861 36.0875C45.7829 36.3148 45.9117 36.593 45.9576 36.8901C46.0036 37.1873 45.965 37.4914 45.8461 37.7675C45.6365 38.0734 45.3561 38.3241 45.0288 38.4982C44.7014 38.6723 44.3368 38.7647 43.9661 38.7675L40.1761 38.8175L39.9461 38.7775ZM34.6361 33.9375C35.5361 33.9375 36.3161 34.7275 37.1461 35.5575C37.5944 36.0471 38.0977 36.4833 38.6461 36.8575C39.0607 37.1333 39.5481 37.2795 40.0461 37.2775H40.1461L43.9461 37.2275C44.1335 37.2168 44.317 37.1692 44.4861 37.0875L44.3861 36.9275C43.6291 35.8959 42.7263 34.9797 41.7061 34.2075C40.5161 33.2075 39.9061 32.7375 39.8361 31.9675C39.7661 31.1975 40.3261 30.5275 41.4461 29.2575L42.4461 28.1475C43.2903 27.2864 43.9834 26.2891 44.4961 25.1975C44.2729 25.1843 44.0492 25.1843 43.8261 25.1975H39.4561C39.377 25.1799 39.2951 25.1799 39.2161 25.1975C38.7532 26.259 38.2012 27.2793 37.5661 28.2475C35.6761 31.0675 34.7861 31.4475 34.1561 31.4475C33.9607 31.4475 33.7684 31.3995 33.5961 31.3075C32.5961 30.7375 32.5961 29.4675 32.6561 28.5475C32.6561 28.3975 32.6561 28.2475 32.6561 28.1175C32.6561 27.4675 32.6561 26.9075 32.7061 26.4275C32.7861 24.7475 32.7061 24.7375 32.3261 24.6475C31.7138 24.5265 31.09 24.4729 30.4661 24.4875H29.7761C29.1411 24.4744 28.5061 24.5078 27.8761 24.5875C27.9715 24.6578 28.0558 24.7421 28.1261 24.8375C28.5385 25.4879 28.7442 26.2479 28.7161 27.0175C28.8461 28.6675 28.7761 30.8175 27.7161 31.3375C27.5284 31.4254 27.3233 31.4698 27.1161 31.4675C26.1861 31.4675 25.2661 30.5875 23.6961 28.2075C23.0936 27.2962 22.5556 26.3439 22.0861 25.3575L22.0061 25.2575C21.9051 25.2061 21.7974 25.169 21.6861 25.1475H17.6861H17.6161C18.2061 26.3675 21.0061 31.7675 24.1361 34.5975C25.8936 36.2122 28.1708 37.1451 30.5561 37.2275H32.4061C32.5004 37.2074 32.5914 37.1737 32.6761 37.1275C32.6761 37.1275 32.6761 37.1275 32.6761 37.0375C32.6761 36.7675 32.6761 34.4375 34.2561 34.0375C34.3784 33.9894 34.5059 33.9558 34.6361 33.9375Z" fill="#192144"/>
               </svg>
@@ -328,7 +460,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--instagram" href="#">
               <span class="visually-hidden">Инстаграмм</span>
-              <svg width="45" height="45" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="31" cy="31" r="31" fill="#FFD74B"/>
                 <path d="M36.2802 21.4009C37.4252 21.4035 38.5225 21.8594 39.3321 22.669C40.1417 23.4786 40.5977 24.576 40.6002 25.7209V36.2809C40.5977 37.4259 40.1417 38.5232 39.3321 39.3328C38.5225 40.1424 37.4252 40.5984 36.2802 40.6009H25.7202C24.5769 40.5959 23.482 40.1388 22.6745 39.3295C21.867 38.5201 21.4123 37.4242 21.4098 36.2809V25.7209C21.4123 24.5776 21.867 23.4817 22.6745 22.6724C23.482 21.8631 24.5769 21.406 25.7202 21.4009H36.2802ZM36.2802 19.9609H25.7202C24.1926 19.9609 22.7275 20.5678 21.6473 21.648C20.5671 22.7282 19.9602 24.1933 19.9602 25.7209V36.2809C19.9602 37.8086 20.5671 39.2737 21.6473 40.3539C22.7275 41.4341 24.1926 42.0409 25.7202 42.0409H36.2802C37.8078 42.0409 39.2729 41.4341 40.3531 40.3539C41.4333 39.2737 42.0402 37.8086 42.0402 36.2809V25.7209C42.0402 24.1933 41.4333 22.7282 40.3531 21.648C39.2729 20.5678 37.8078 19.9609 36.2802 19.9609V19.9609Z" fill="#192144"/>
                 <path d="M31.0093 26.7564C31.8504 26.7564 32.6727 27.0058 33.372 27.4731C34.0714 27.9404 34.6165 28.6046 34.9384 29.3817C35.2603 30.1588 35.3445 31.0139 35.1804 31.8389C35.0163 32.6639 34.6112 33.4216 34.0165 34.0164C33.4217 34.6112 32.6639 35.0162 31.839 35.1803C31.014 35.3444 30.1589 35.2602 29.3818 34.9383C28.6047 34.6164 27.9405 34.0713 27.4732 33.3719C27.0059 32.6726 26.7565 31.8503 26.7565 31.0092C26.7552 30.4504 26.8644 29.8968 27.0776 29.3802C27.2909 28.8637 27.6041 28.3944 27.9993 27.9992C28.3944 27.604 28.8638 27.2908 29.3803 27.0776C29.8969 26.8643 30.4504 26.7551 31.0093 26.7564ZM31.0093 25.3164C29.883 25.3145 28.7814 25.6468 27.8439 26.2712C26.9065 26.8955 26.1753 27.784 25.743 28.824C25.3106 29.8641 25.1965 31.009 25.4151 32.1139C25.6337 33.2189 26.1751 34.2341 26.9709 35.0312C27.7666 35.8283 28.781 36.3715 29.8855 36.5919C30.9901 36.8124 32.1352 36.7002 33.176 36.2696C34.2168 35.839 35.1065 35.1093 35.7324 34.173C36.3584 33.2366 36.6925 32.1356 36.6925 31.0092C36.6938 30.2621 36.5477 29.522 36.2626 28.8314C35.9776 28.1408 35.5592 27.5131 35.0313 26.9844C34.5035 26.4556 33.8765 26.0361 33.1864 25.7499C32.4962 25.4637 31.7564 25.3164 31.0093 25.3164Z" fill="#192144"/>
@@ -344,69 +476,9 @@
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#192144"/>
             </svg>
-          </div>
-        </p>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
 </html>
-
-
-<div class="track__dropdown dropdown">
-  <div class="dropdown__container container">
-    <form class="dropdown__form">
-      <span class="dropdown__title">Выберите страну</span>
-      <table class="dropdown__alphabet alphabet">
-        <tr class="alphabet__table-row">
-          <td class="alphabet__table-cell alphabet__table-cell--chosen">А</td>
-          <td class="alphabet__table-cell">Б</td>
-          <td class="alphabet__table-cell">В</td>
-          <td class="alphabet__table-cell">Г</td>
-          <td class="alphabet__table-cell">Д</td>
-        </tr>
-        <tr class="alphabet__table-row">
-          <td class="alphabet__table-cell">Е</td>
-          <td class="alphabet__table-cell">З</td>
-          <td class="alphabet__table-cell">И</td>
-          <td class="alphabet__table-cell">К</td>
-          <td class="alphabet__table-cell">Л</td>
-        </tr>
-        <tr class="alphabet__table-row">
-          <td class="alphabet__table-cell">М</td>
-          <td class="alphabet__table-cell">Н</td>
-          <td class="alphabet__table-cell">О</td>
-          <td class="alphabet__table-cell">П</td>
-          <td class="alphabet__table-cell">Р</td>
-        </tr>
-        <tr class="alphabet__table-row">
-          <td class="alphabet__table-cell">С</td>
-          <td class="alphabet__table-cell">Т</td>
-          <td class="alphabet__table-cell">У</td>
-          <td class="alphabet__table-cell">Ф</td>
-          <td class="alphabet__table-cell">Х</td>
-        </tr>
-        <tr class="alphabet__table-row">
-          <td class="alphabet__table-cell">Ч</td>
-          <td class="alphabet__table-cell">Ш</td>
-          <td class="alphabet__table-cell">Щ</td>
-          <td class="alphabet__table-cell">Э</td>
-          <td class="alphabet__table-cell">Ю</td>
-        </tr>
-      </table>
-      <ul class="dropdown__list state-names">
-        <li class="state-names__item">Австралия</li>
-        <li class="state-names__item">Австрия</li>
-        <li class="state-names__item">Азербайджан</li>
-        <li class="state-names__item">Албания</li>
-        <li class="state-names__item">Алжир</li>
-        <li class="state-names__item">Ангола</li>
-        <li class="state-names__item">Андорра</li>
-        <li class="state-names__item">Антигуа и Барбуда</li>
-        <li class="state-names__item">Аргентина</li>
-        <li class="state-names__item">Армения</li>
-        <li class="state-names__item">Афганистан</li>
-      </ul>
-      <button class="dropdown__button button close-button close-button--secondary" type="button" aria-label="Закрыть форму">Закрыть</button>
-    </form>
-  </div>
-</div>

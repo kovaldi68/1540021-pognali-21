@@ -1,17 +1,15 @@
 .alphabet {
   border-collapse: collapse;
-  width: 220px;
+  table-layout: fixed;
 }
 
 .alphabet__table-cell {
-  width: 43px;
-  height: 41px;
+  padding: 11px 10px;
+  box-sizing: border-box;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  padding: 10px;
-  border: 1px solid $grey-border;
 
   &--chosen {
     background-color: $grey-basic;
@@ -21,5 +19,29 @@
     color: $white-basic;
     background-color: $blue-light-text;
     border: 1px solid $blue-light-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .alphabet__table-cell {
+    padding: 27px 21px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--chosen {
+      color: $white-basic;
+      background-color: $blue-light-text;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .alphabet {
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
+
+  .alphabet__table-cell {
+    padding: 24px 23px;
   }
 }

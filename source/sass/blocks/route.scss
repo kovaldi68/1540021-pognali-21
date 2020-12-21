@@ -7,23 +7,67 @@
 }
 
 .route__name {
+  display: inline-block;
+  margin-bottom: 18px;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  display: inline-block;
-  margin-bottom: 18px;
 }
 
 .route__description {
-  color: $grey-special;
   width: 220px;
   height: 220px;
+  padding: 10px 14px;
+  font-size: 16px;
+  line-height: 22px;
   resize: none;
+  color: $grey-special;
   border: 1px solid $grey-border;
   border-radius: 4px;
-  padding: 10px 14px;
 }
 
 .steps__button {
   width: 220px;
+}
+
+@media (min-width: $tablet-width) {
+  .route__list {
+    padding-top: 36px;
+  }
+
+  .route__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 53px;
+  }
+
+  .route__name {
+    width: 100%;
+    margin-bottom: 38px;
+    padding-right: 109px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .route__description {
+    width: 500px;
+    padding: 18px 19px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route__list {
+    padding-top: 80px;
+  }
+
+  .route__description {
+    width: 730px;
+    padding: 26px 22px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

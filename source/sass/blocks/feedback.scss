@@ -10,37 +10,37 @@
 }
 
 .feedback__text {
-  color: $white-basic;
+  margin-bottom: 29px;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 29px;
+  color: $white-basic;
 }
 
 .feedback__text-link {
-  color: $yellow-main;
-  border-bottom: 0.5px solid $yellow-main;
   display: inline-block;
   line-height: 0.85;
+  color: $yellow-main;
+  border-bottom: 0.5px solid $yellow-main;
 }
 
 .feedback__form {
-  margin-bottom: 29px;
   position: relative;
+  margin-bottom: 29px;
 }
 
 .feedback__field {
-  border: none;
   padding: 22px 25px;
   width: 220px;
   height: 62px;
+  border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
   &::placeholder {
-    color: rgba($grey-special, 0.3);
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
+    color: rgba($grey-special, 0.3);
   }
 }
 
@@ -53,18 +53,18 @@
 }
 
 .feedback__auth-text {
-  color: $white-basic;
+  margin-bottom: 30px;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 30px;
+  color: $white-basic;
 }
 
 .feedback__link {
   display: block;
   padding-left: 61px;
-  color: $yellow-main;
   font-weight: 700;
   text-transform: uppercase;
+  color: $yellow-main;
 
   &--tel {
     margin-bottom: 23px;
@@ -88,9 +88,9 @@
   }
 
   .feedback__text {
+    margin-bottom: 65px;
     font-size: 28px;
     line-height: 32px;
-    margin-bottom: 65px;
   }
 
   .feedback__form {
@@ -122,9 +122,9 @@
   }
 
   .feedback__link {
+    padding-left: 90px;
     font-size: 28px;
     line-height: 28px;
-    padding-left: 90px;
 
     &--tel {
       margin-bottom: 39px;

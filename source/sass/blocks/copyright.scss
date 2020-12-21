@@ -1,4 +1,16 @@
 .copyright__text {
-  color: $grey-special;
   line-height: 16px;
+  color: $grey-special;
+}
+
+.copyright__link {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 23px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
