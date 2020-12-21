@@ -4,15 +4,15 @@
   flex-direction: column;
 }
 
-.stay-period__companions {
+.stay-period__input {
   margin-bottom: 20px;
+
+  &--duration {
+    margin-bottom: 28px;
+  }
 }
 
 .stay-period__accept-checkbox {
-  margin-bottom: 28px;
-}
-
-.stay-period__duration {
   margin-bottom: 28px;
 }
 
@@ -21,18 +21,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .stay-period__companions {
+  .stay-period__input {
     margin-bottom: 34px;
+
+    &--duration {
+      margin-bottom: 60px;
+      order: 2;
+    }
   }
 
   .stay-period__accept-checkbox {
     margin-bottom: 34px;
     order: 1;
-  }
-
-  .stay-period__duration {
-    margin-bottom: 60px;
-    order: 2;
   }
 
   .stay-period__calendar {
@@ -43,24 +43,22 @@
 
 @media (min-width: $desktop-width) {
   .stay-period {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid $grey-lines;
+    flex-direction: row;
+    align-items: center;
   }
 
-  .stay-period__companions {
-    grid-column: 1/2;
+  .stay-period__input {
+    width: 50%;
   }
 
   .stay-period__accept-checkbox {
-    grid-column: 2/3;
-  }
-
-  .stay-period__duration {
-    grid-column: 1/2;
+    width: 50%;
+    text-align: right;
   }
 
   .stay-period__calendar {
-    grid-column: 1/3;
+    width: 100%;
     margin-bottom: 57px;
   }
 }

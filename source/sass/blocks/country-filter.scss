@@ -4,8 +4,10 @@
 }
 
 .country-filter__inner {
+  position: relative;
+
   &--expanded {
-    padding: 22px 25px 0 25px;
+    padding: 40px 25px 0 25px;
   }
 }
 
@@ -19,6 +21,10 @@
   text-transform: uppercase;
 }
 
+.country-filter__table {
+  width: 100%;
+}
+
 .country-filter__button {
   color: $blue-dark-main;
   font-weight: 700;
@@ -28,4 +34,14 @@
   background-color: $grey-close-button;
   border-radius: 20px;
   width: 100%;
+
+  &--icon {
+    position: absolute;
+    top: 40px;
+    right: 32px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background-color: transparent;
+  }
 }

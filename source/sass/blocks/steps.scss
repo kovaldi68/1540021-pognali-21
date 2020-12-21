@@ -57,6 +57,7 @@
     text-transform: none;
 
     &--back {
+      width: 247px;
       font-weight: 700;
       font-size: 24px;
       line-height: 22px;
@@ -79,5 +80,13 @@
   .steps__description {
     width: 581px;
     margin-bottom: 55px;
+  }
+
+  .steps__button {
+    margin-right: 462px;
+
+    &--back {
+      margin-right: 0;
+    }
   }
 }

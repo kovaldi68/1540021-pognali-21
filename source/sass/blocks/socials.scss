@@ -5,14 +5,28 @@
   justify-content: center;
 }
 
+.socials__item {
+  width: 45px;
+  height: 45px;
+}
+
 @media (min-width: $tablet-width) {
   .socials {
     justify-content: flex-start;
+  }
+
+  .socials__item {
+    width: 62px;
+    height: 62px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .socials {
     display: none;
+
+    &--colored {
+      display: flex;
+    }
   }
 }

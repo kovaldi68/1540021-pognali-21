@@ -1,20 +1,6 @@
 .alphabet {
   border-collapse: collapse;
-  width: 220px;
   table-layout: fixed;
-}
-
-.alphabet__table-title {
-  background-color: $blue-light-text;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  color: $white-basic;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding: 14px 17px;
-  text-align: left;
 }
 
 .alphabet__table-cell {
@@ -38,21 +24,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .alphabet {
-    width: 369px;
-  }
-
   .alphabet__table-cell {
     padding: 27px 21px;
     font-size: 20px;
     line-height: 20px;
-  }
 
-  .alphabet__table-title {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 25px 24px;
-    width: 369px;
+    &--chosen {
+      color: $white-basic;
+      background-color: $blue-light-text;
+    }
   }
 }
 
@@ -60,5 +40,9 @@
   .alphabet {
     border-collapse: separate;
     border-spacing: 15px;
+  }
+
+  .alphabet__table-cell {
+    padding: 24px 23px;
   }
 }

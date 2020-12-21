@@ -22,6 +22,12 @@
   }
 
   .traveller-settings__container {
-    padding: 0 124px;
+    padding: 0 60px 0 124px;
+  }
+
+  .traveller-settings__form {
+    position: relative;
+    margin-top: -320px;
+    z-index: 10;
   }
 }

@@ -1,8 +1,30 @@
 .page-header {
   color: $white-basic;
   background-color: $blue-dark-main;
+  position: relative;
+  z-index: 5;
+  padding-top: 20px;
+  padding-bottom: 12px;
 
   &--opened {
     background-color: $white-basic;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  width: 96px;
+  height: 15px;
+  margin-bottom: 60px;
+}
+
+.page-header__title {
+  color: $white-basic;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__title {
+    font-size: 60px;
+    line-height: 60px;
   }
 }
