@@ -4,6 +4,10 @@
 
 .route__item {
   margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .route__name {

@@ -1,16 +1,20 @@
 .user-card {
   display: grid;
   grid-template-columns: 84px 84px 52px;
+  grid-template-areas:
+    "photo name name"
+    "photo likes likes"
+    "tags tags tags"
+    "states states states"
+    "transport transport level"
+    "button button button";
   padding: 15px 20px 23px 20px;
   background-color: $white-basic;
   border-radius: 20px;
 }
 
-.user-card__img {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 2;
-  grid-column-end: 2;
+.user-card__image {
+  grid-area: photo;
   margin-left: -2px;
 }
 
@@ -29,52 +33,152 @@
 }
 
 .user-card__name {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 3;
+  grid-area: name;
   margin-bottom: 12px;
 }
 
 .user-card__likes {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 3;
+  grid-area: likes;
 }
 
 .user-card__tag-list {
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 2;
+  grid-area: tags;
 }
 
 .user-card__states {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 3;
+  grid-area: states;
 }
 
 .user-card__transportation {
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-row-end: 5;
-  grid-column-end: 3;
+  grid-area: transport;
   margin-left: 5px;
 }
 
 .user-card__level {
-  grid-row-start: 4;
-  grid-column-start: 3;
-  grid-row-end: 5;
-  grid-column-end: 4;
+  grid-area: level;
 }
 
 .user-card__button {
-  grid-row-start: 5;
-  grid-column-start: 1;
-  grid-row-end: 6;
-  grid-column-end: 4;
+  grid-area: button;
+}
+
+@media (min-width: $tablet-width) {
+  .user-card {
+    grid-template-columns: 190px 150px 150px 80px;
+    grid-template-areas:
+      "photo name name transport"
+      "photo tags tags transport"
+      "photo button likes level"
+      "states states states states";
+    padding: 33px 25px 26px 35px;
+  }
+
+  .user-card__image {
+    margin-left: 0;
+  }
+
+  .user-card__photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+
+  .user-card__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .user-card__heading {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 16px;
+    color: $grey-special;
+  }
+
+  .user-card__likes {
+    grid-area: likes;
+  }
+
+  .user-card__tag-list {
+    grid-area: tags;
+  }
+
+  .user-card__states {
+    grid-area: states;
+  }
+
+  .user-card__transportation {
+    grid-area: transport;
+
+    span {
+      display: none;
+    }
+  }
+
+  .user-card__level {
+    grid-area: level;
+  }
+
+  .user-card__button {
+    grid-area: button;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-card {
+    grid-template-columns: 285px 204px 186px 166px 110px;
+    grid-template-areas:
+      "photo name name states ."
+      "photo tags tags states ."
+      "photo button likes transport level";
+    padding: 0;
+  }
+
+  .user-card__image {
+    margin-left: 0;
+  }
+
+  .user-card__photo {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+
+  .user-card__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .user-card__heading {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 16px;
+    color: $grey-special;
+  }
+
+  .user-card__likes {
+    grid-area: likes;
+  }
+
+  .user-card__tag-list {
+    grid-area: tags;
+  }
+
+  .user-card__states {
+    grid-area: states;
+  }
+
+  .user-card__transportation {
+    grid-area: transport;
+  }
+
+  .user-card__level {
+    grid-area: level;
+  }
+
+  .user-card__button {
+    grid-area: button;
+  }
 }

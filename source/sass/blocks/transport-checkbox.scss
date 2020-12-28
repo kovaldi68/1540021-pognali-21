@@ -17,10 +17,6 @@
   }
 }
 
-.transport-checkbox__tag {
-  visibility: hidden;
-}
-
 .transport-checkbox__label {
   display: inline-block;
   width: 33px;
@@ -31,19 +27,19 @@
   border-radius: 50%;
 
   &--plane {
-    background-image: url("../../img/transport-icon-plane.svg");
+    background-image: url("../img/transport-icon-plane.svg");
   }
 
   &--car {
-    background-image: url("../../img/transport-icon-bus.svg");
+    background-image: url("../img/transport-icon-bus.svg");
   }
 
   &--cycle {
-    background-image: url("../../img/transport-icon-bicycle.svg");
+    background-image: url("../img/transport-icon-bicycle.svg");
   }
 
   &--walk {
-    background-image: url("../../img/transport-icon-run.svg");
+    background-image: url("../img/transport-icon-run.svg");
   }
 }
 

@@ -22,6 +22,10 @@
   }
 }
 
+.alphabet__list {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .alphabet__table-cell {
     padding: 27px 21px;
@@ -39,6 +43,11 @@
   .alphabet {
     border-collapse: separate;
     border-spacing: 15px;
+  }
+
+  .alphabet__list {
+    @include list-reset;
+    display: block;
   }
 
   .alphabet__table-cell {

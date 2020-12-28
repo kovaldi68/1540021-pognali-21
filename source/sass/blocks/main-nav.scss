@@ -1,13 +1,3 @@
-.main-nav {
-  padding-top: 76px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    padding-top: 98px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .main-nav {
     display: flex;

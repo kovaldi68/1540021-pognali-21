@@ -25,5 +25,33 @@
 }
 
 .filter-checkbox__tag:checked + .filter-checkbox__label::before {
-  background-image: url("../../img/right-filter-checkbox.svg");
+  background-image: url("../../img/tick.svg");
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-checkbox__item {
+    width: 33%;
+  }
+
+  .filter-checkbox__label {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-checkbox {
+    display: block;
+  }
+
+  .filter-checkbox__item {
+    width: auto;
+  }
 }

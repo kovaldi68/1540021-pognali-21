@@ -31,11 +31,13 @@
 
 .trip-input__button {
   position: absolute;
+  bottom: 0;
   width: 43px;
   height: 43px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 14px 14px;
+
 
   &--less {
     left: 0;

@@ -4,6 +4,7 @@
 }
 
 .countries__item {
+  overflow: hidden;
   margin-bottom: 10px;
   border-radius: 10px;
 
@@ -15,6 +16,12 @@
 .countries__photo {
   width: 270px;
   height: 110px;
+}
+
+.countries__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .countries__data {
@@ -52,6 +59,11 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     border-radius: 20px;
+  }
+
+  .countries__photo {
+    width: 186px;
+    height: 142px;
   }
 }
 

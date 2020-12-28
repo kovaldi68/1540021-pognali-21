@@ -32,3 +32,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .state-names {
+    &--second {
+      display: none;
+    }
+  }
+}

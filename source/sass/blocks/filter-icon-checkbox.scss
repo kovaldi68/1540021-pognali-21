@@ -38,3 +38,10 @@
     background-image: url("../../img/transport-icon-run.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .filter-icon-checkbox__label {
+    width: 43px;
+    height: 43px;
+  }
+}

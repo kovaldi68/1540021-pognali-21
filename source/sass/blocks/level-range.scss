@@ -5,8 +5,7 @@
 
 .level-range__input {
   width: 110px;
-  padding: 13px 43px 8px 43px;
-  margin-bottom: 21px;
+  padding: 13px 15px 8px 15px;
   color: $blue-light-text;
   font-weight: 500;
   font-size: 14px;
@@ -29,4 +28,16 @@
 .level-range__input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .level-range__input {
+    width: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .level-range__input {
+    width: 96px;
+  }
 }

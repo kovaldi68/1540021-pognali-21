@@ -45,3 +45,14 @@
     background-color: transparent;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .country-filter {
+    margin-bottom: 48px;
+  }
+
+  .country-filter__container {
+    width: auto;
+    padding: 0;
+  }
+}
