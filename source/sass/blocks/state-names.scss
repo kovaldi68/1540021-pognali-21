@@ -4,7 +4,7 @@
   border: 1px solid $grey-border;
   border-top: none;
 
-  &--second {
+  &--catalog {
     padding: 14px 0;
     border: none;
   }
@@ -22,6 +22,17 @@
     line-height: 20px;
     border: none;
     border-left: 1px solid rgba($grey-calendar, 0.5);
+
+    &--catalog {
+      padding: 0;
+      font-size: 20px;
+      line-height: 30px;
+
+      .state-names__item {
+        margin: 0;
+      }
+
+    }
   }
 
   .state-names__item {
@@ -35,7 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .state-names {
-    &--second {
+    &--catalog {
       display: none;
     }
   }
