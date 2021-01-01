@@ -4,8 +4,25 @@
   background-color: $grey-mobile;
 }
 
+.tariffs__container {
+  position: relative;
+
+  &::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .tariffs__title {
   margin-bottom: 56px;
+  width: 107px;
 }
 
 .tariffs__list {
@@ -29,6 +46,7 @@
 }
 
 .tariffs__link {
+  display: block;
   font-weight: 700;
   line-height: 16px;
   color: $blue-light-business;
@@ -37,11 +55,12 @@
 @media (min-width: $tablet-width) {
   .tariffs {
     padding-top: 135px;
-    padding-bottom: 85px;
+    padding-bottom: 45px;
   }
 
   .tariffs__title {
     margin-bottom: 93px;
+    width: auto;
     font-size: 45px;
     line-height: 45px;
     text-align: center;
@@ -62,9 +81,23 @@
   }
 
   .tariffs__link {
+    position: relative;
+    margin-bottom: 40px;
     padding-left: 90px;
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      content:"";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 68px;
+      height: 68px;
+      background-image: url("../../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 

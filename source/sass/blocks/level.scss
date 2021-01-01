@@ -42,6 +42,16 @@
     background-color: rgba($grey-special, 0.3);
   }
 
+
+
+  &--primary {
+    color: $white-basic;
+
+    &::after {
+      background-color: $white-basic;
+    }
+  }
+
   &--third {
     font-size: 24px;
     line-height: 24px;
@@ -57,6 +67,10 @@
   font-size: 18px;
   line-height: 18px;
   color: $grey-special;
+
+  &--primary {
+    color: $white-basic;
+  }
 
   &--third {
     display: none;
@@ -78,6 +92,10 @@
   stroke-width: 3px;
   stroke: transparent;
 
+  &--primary {
+    fill: rgba($black-basic, 0.6)
+  }
+
   &--third {
     r: 21px;
     cx: 23px;
@@ -95,6 +113,10 @@
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
   animation: show-level 2s ease-in-out;
+
+  &--primary {
+    stroke-width: 4px;
+  }
 
   &--third {
     r: 21px;

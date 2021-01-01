@@ -60,6 +60,7 @@
 }
 
 .feedback__link {
+  position: relative;
   display: block;
   padding-left: 61px;
   font-weight: 700;
@@ -68,6 +69,38 @@
 
   &--tel {
     margin-bottom: 23px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 45px;
+      height: 45px;
+      background-color: $blue-dark-icon;
+      background-image: url("../../img/contacts-phone.svg");
+      background-size: 18px 17px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+    }
+  }
+
+  &--mail {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 45px;
+      height: 45px;
+      background-color: $blue-dark-icon;
+      background-image: url("../../img/contacts-mail.svg");
+      background-size: 19px 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+    }
   }
 }
 
