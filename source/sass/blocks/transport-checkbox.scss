@@ -24,22 +24,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $white-basic;
+  background-size: 17px 16px;
   border-radius: 50%;
 
   &--plane {
-    background-image: url("../img/transport-icon-plane.svg");
+    background-image: url("../img/plane.svg");
   }
 
   &--car {
-    background-image: url("../img/transport-icon-bus.svg");
+    background-image: url("../img/bus.svg");
   }
 
   &--cycle {
-    background-image: url("../img/transport-icon-bicycle.svg");
+    background-image: url("../img/bike.svg");
   }
 
   &--walk {
-    background-image: url("../img/transport-icon-run.svg");
+    background-image: url("../img/run.svg");
   }
 }
 
@@ -55,5 +56,6 @@
   .transport-checkbox__label {
     width: 43px;
     height: 43px;
+    background-size: 23px 22px;
   }
 }

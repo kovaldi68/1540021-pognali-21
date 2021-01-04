@@ -3,7 +3,14 @@
   width: 100px;
   height: 100px;
 
-  &--third {
+  &--index {
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &--catalog {
     width: 46px;
     height: 46px;
   }
@@ -18,7 +25,7 @@
   left: 30px;
   text-align: center;
 
-  &--third {
+  &--catalog {
     top: 11px;
     left: 11px;
   }
@@ -42,9 +49,7 @@
     background-color: rgba($grey-special, 0.3);
   }
 
-
-
-  &--primary {
+  &--index {
     color: $white-basic;
 
     &::after {
@@ -52,7 +57,7 @@
     }
   }
 
-  &--third {
+  &--catalog {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 0;
@@ -68,11 +73,11 @@
   line-height: 18px;
   color: $grey-special;
 
-  &--primary {
+  &--index {
     color: $white-basic;
   }
 
-  &--third {
+  &--catalog {
     display: none;
   }
 }
@@ -81,9 +86,9 @@
   width: 100px;
   height: 100px;
 
-  &--third {
-    width: 45px;
-    height: 45px;
+  &--catalog {
+    width: 46px;
+    height: 46px;
   }
 }
 
@@ -92,11 +97,11 @@
   stroke-width: 3px;
   stroke: transparent;
 
-  &--primary {
-    fill: rgba($black-basic, 0.6)
+  &--index {
+    fill: rgba($black-basic, 0.6);
   }
 
-  &--third {
+  &--catalog {
     r: 21px;
     cx: 23px;
     cy: 23px;
@@ -108,30 +113,20 @@
   stroke-width: 3px;
   stroke: $orange-special;
   stroke-linecap: round;
-  stroke-dasharray: 288px;
+  stroke-dasharray: 288;
   stroke-dashoffset: 60;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
   animation: show-level 2s ease-in-out;
 
-  &--primary {
+  &--index {
     stroke-width: 4px;
   }
 
-  &--third {
+  &--catalog {
     r: 21px;
     cx: 23px;
     cy: 23px;
-  }
-}
-
-@keyframes show-level {
-  from {
-    stroke-dashoffset: 288;
-  }
-
-  to {
-    stroke-dashoffset: 60;
   }
 }
 
@@ -139,26 +134,73 @@
   .level {
     width: 94px;
     height: 94px;
+
+    svg {
+      width: 94px;
+      height: 94px;
+    }
+
+    &--catalog {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   .level__text {
     left: 27px;
+
+    &--catalog {
+      top: 11px;
+      left: 11px;
+    }
   }
 
-  .level svg {
-    width: 94px;
-    height: 94px;
+  .level__number {
+    &--catalog {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 39px;
+        left: -5px;
+        width: 51px;
+        height: 1px;
+        background-color: rgba($grey-special, 0.3);
+      }
+    }
+  }
+
+  .level__word {
+    display: block;
+  }
+
+  .level__graph {
+    &--catalog {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   .level__background {
     r: 42px;
     cx: 47px;
     cy: 47px;
+
+    &--catalog {
+      r: 21px;
+      cx: 23px;
+      cy: 23px;
+    }
   }
 
   .level__progress {
     r: 42px;
     cx: 47px;
     cy: 47px;
+
+    &--catalog {
+      r: 21px;
+      cx: 23px;
+      cy: 23px;
+    }
   }
 }

@@ -1,6 +1,6 @@
 .user-card {
   display: grid;
-  grid-template-columns: 84px 84px 52px;
+  grid-template-columns: 70px 1fr auto;
   grid-template-areas:
     "photo name name"
     "photo likes likes"
@@ -16,12 +16,20 @@
 .user-card__image {
   grid-area: photo;
   margin-left: -2px;
+  margin-bottom: 13px;
 }
 
 .user-card__photo {
+  overflow: hidden;
   width: 70px;
   height: 70px;
   border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .user-card__heading {
@@ -64,7 +72,7 @@
 
 @media (min-width: $tablet-width) {
   .user-card {
-    grid-template-columns: 190px 150px 150px 80px;
+    grid-template-columns: 219px 1fr 1fr auto;
     grid-template-areas:
       "photo name name transport"
       "photo tags tags transport"
@@ -122,6 +130,7 @@
 
   .user-card__button {
     grid-area: button;
+    align-self: center;
   }
 }
 

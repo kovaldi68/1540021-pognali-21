@@ -31,6 +31,9 @@
   .transport {
     &--rounded {
       flex-direction: column;
+      align-items: flex-end;
+      width: auto;
+      margin: 0;
     }
   }
 }

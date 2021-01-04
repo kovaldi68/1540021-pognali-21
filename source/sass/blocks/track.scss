@@ -11,6 +11,37 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .pick-button {
+    position: relative;
+    width: 168px;
+    padding: 12px 10px;
+    overflow: hidden;
+    border: 1px solid $grey-border;
+    border-radius: 4px;
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 5px;
+      width: 52px;
+      height: 90%;
+      text-align: right;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
+      pointer-events: none;
+    }
+
+    &--choose {
+      .pick-button {
+        width: 220px;
+        padding: 12px 10px;
+        border: 1px solid $grey-border;
+        border-radius: 4px;
+      }
+    }
+  }
 }
 
 .track__button {
@@ -35,35 +66,6 @@
   margin: 0;
 }
 
-.track__item .pick-button {
-  position: relative;
-  width: 168px;
-  padding: 12px 10px;
-  overflow: hidden;
-  border: 1px solid $grey-border;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.track__item .pick-button::after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  right: 5px;
-  width: 52px;
-  height: 90%;
-  text-align: right;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
-  pointer-events: none;
-}
-
-.track__item--choose .pick-button {
-  width: 220px;
-  padding: 12px 10px;
-  border: 1px solid $grey-border;
-  border-radius: 4px;
-}
-
 .add-button {
   min-width: 220px;
   padding: 12px 10px;
@@ -77,13 +79,19 @@
     padding-top: 42px;
   }
 
-  .track__item .pick-button {
-    justify-content: flex-start;
-    width: 369px;
-    margin-right: 52px;
-    padding: 22px 10px 26px 10px;
-    font-size: 20px;
-    line-height: 20px;
+  .track__item {
+    .pick-button {
+      justify-content: flex-start;
+      width: 369px;
+      margin-right: 52px;
+      padding: 22px 10px 26px 10px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--choose {
+      position: relative;
+    }
   }
 
   .track__flag {
@@ -92,6 +100,11 @@
     padding: 0;
     margin-right: 25px;
     border: none;
+  }
+
+  .track__dropdown {
+    position: absolute;
+    top: 70px;
   }
 
   .add-button {
