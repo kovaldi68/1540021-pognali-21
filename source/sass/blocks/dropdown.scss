@@ -7,6 +7,7 @@
 
 .dropdown__wrapper {
   width: 100%;
+  background-color: $white-basic;
 }
 
 .dropdown__alphabet {
@@ -34,29 +35,33 @@
 
 .dropdown__list {
   width: 100%;
+  background-color: $white-basic;
 }
 
 @media (min-width: $tablet-width) {
   .dropdown {
     display: flex;
     flex-wrap: wrap;
-    width: 578px;
+    width: 579px;
+    box-shadow: none;
   }
 
   .dropdown__title {
-    width: 64%;
+    width: 369px;
     padding: 25px 24px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .dropdown__wrapper {
-    width: 64%;
+    width: 369px;
     padding: 35px 80px 33px 27px;
+    box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   }
 
   .dropdown__list {
-    width: 36%;
+    width: auto;
+    box-shadow: 16px 2px 16px rgba(212, 217, 235, 0.25);
   }
 }
 

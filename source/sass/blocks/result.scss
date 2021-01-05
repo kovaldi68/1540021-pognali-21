@@ -19,3 +19,16 @@
 .result__button {
   width: 270px;
 }
+
+@media (min-width: $desktop-width) {
+  .result {
+    width: 951px;
+    margin-right: 84px;
+  }
+
+  .result__container {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,47 +1,132 @@
 .country-filter {
-  padding-bottom: 28px;
   background-color: $grey-decor;
 }
 
 .country-filter__inner {
   position: relative;
+  padding: 42px 5px 17px 25px;
 
   &--expanded {
-    padding: 40px 25px 0 25px;
+    padding-bottom: 28px;
+
+    .country-filter__continents,
+    .country-filter__list,
+    .country-filter__button {
+      display: block;
+    }
+
+    .country-filter__table {
+      display: table;
+    }
+
+    .country-filter__title {
+      margin-bottom: 35px;
+      margin-right: 19px;
+    }
   }
 }
 
 .country-filter__title {
   display: inline-block;
-  padding-bottom: 18px;
   padding-left: 2px;
-  margin-bottom: 15px;
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.country-filter__table {
-  width: 100%;
+.country-filter__continents {
+  margin-bottom: 21px;
 }
 
 .country-filter__button {
-  padding: 12px 40px 10px;
+  padding: 10px 40px 9px;
   width: 100%;
   font-weight: 700;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $blue-dark-main;
   background-color: $grey-close-button;
   border-radius: 20px;
+}
 
-  &--icon {
-    position: absolute;
-    top: 40px;
-    right: 32px;
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    background-color: transparent;
+.country-filter__toggle {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.country-filter__continents,
+.country-filter__table,
+.country-filter__list,
+.country-filter__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .country-filter__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 123px 32px 56px 32px;
+
+    .country-filter__table,
+    .country-filter__list,
+    .country-filter__button {
+      display: none;
+    }
+
+    &--expanded {
+      padding-bottom: 79px;
+
+      .country-filter__list,
+      .country-filter__button {
+        display: block;
+      }
+
+      .country-filter__table {
+        display: table;
+      }
+
+      .country-filter__continents {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .country-filter__title {
+    display: none;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .country-filter__button {
+    font-size: 20px;
+    padding: 40px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-filter {
+    background-color: $grey-basic;
+  }
+
+  .country-filter__inner {
+    padding: 114px 0 56px 0;
+
+    &--expanded {
+      padding-bottom: 102px;
+    }
+
+    .country-filter__list {
+      display: none;
+    }
+  }
+
+  .country-filter__title {
+    display: inline;
+    margin-right: 30px;
   }
 }

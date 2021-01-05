@@ -1,0 +1,15 @@
+.page-main {
+  background-color: $grey-basic;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    &--catalog {
+      .page-main__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

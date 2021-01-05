@@ -4,7 +4,7 @@
   border: 1px solid $grey-border;
   border-top: none;
 
-  &--second {
+  &--catalog {
     padding: 14px 0;
     border: none;
   }
@@ -17,11 +17,21 @@
 
 @media (min-width: $tablet-width) {
   .state-names {
-    padding: 37px 23px 33px 26px;
+    padding: 37px 28px 33px 26px;
     font-size: 20px;
     line-height: 20px;
     border: none;
     border-left: 1px solid rgba($grey-calendar, 0.5);
+
+    &--catalog {
+      padding: 0;
+      font-size: 20px;
+      line-height: 30px;
+
+      .state-names__item {
+        margin: 0;
+      }
+    }
   }
 
   .state-names__item {
@@ -29,6 +39,14 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .state-names {
+    &--catalog {
+      display: none;
     }
   }
 }

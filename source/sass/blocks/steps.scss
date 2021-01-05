@@ -18,6 +18,10 @@
   color: $grey-special;
 }
 
+.steps__content {
+  margin-bottom: 22px;
+}
+
 .steps__button {
   &--back {
     font-weight: 700;
@@ -45,6 +49,10 @@
     margin-bottom: 38px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .steps__content {
+    margin-bottom: 48px;
   }
 
   .steps__button {
@@ -80,6 +88,10 @@
   .steps__description {
     width: 581px;
     margin-bottom: 55px;
+  }
+
+  .steps__content {
+    margin-bottom: 57px;
   }
 
   .steps__button {

@@ -3,6 +3,16 @@
   background-color: $blue-dark-basic;
 }
 
+.promo__container {
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-position: 80px 128px, 0 -94px;
+  background-repeat: no-repeat;
+}
+
+.promo__review {
+  margin-bottom: 29px;
+}
+
 .promo__slogan {
   width: 238px;
   margin: 0 auto 245px auto;
@@ -17,9 +27,22 @@
   .promo {
     padding-top: 72px;
     padding-bottom: 96px;
+    background-color: $blue-dark;
+  }
+
+  .promo__container {
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
+    background-position: 285px 242px, center 220px;
+    background-repeat: no-repeat;
+  }
+
+  .promo__review {
+    margin-left: 32px;
+    margin-bottom: 211px;
   }
 
   .promo__slogan {
+    margin-bottom: 86px;
     width: 399px;
     font-size: 60px;
     line-height: 70px;
@@ -29,11 +52,19 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding-bottom: 123px;
+    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../../img/globe-back-desktop@1x.jpg");
+    background-position: center bottom, center center;
+    background-repeat: no-repeat;
   }
 
   .promo__container {
     display: flex;
     flex-wrap: wrap;
+    background-image: none;
+  }
+
+  .promo__review {
+    margin: 111px 23px 0 0;
   }
 
   .promo__slogan {

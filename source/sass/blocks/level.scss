@@ -2,6 +2,18 @@
   position: relative;
   width: 100px;
   height: 100px;
+
+  &--index {
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &--catalog {
+    width: 46px;
+    height: 46px;
+  }
 }
 
 .level__text {
@@ -12,6 +24,11 @@
   top: 19px;
   left: 30px;
   text-align: center;
+
+  &--catalog {
+    top: 11px;
+    left: 11px;
+  }
 }
 
 .level__number {
@@ -31,17 +48,64 @@
     height: 1px;
     background-color: rgba($grey-special, 0.3);
   }
+
+  &--index {
+    color: $white-basic;
+
+    &::after {
+      background-color: $white-basic;
+    }
+  }
+
+  &--catalog {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .level__word {
   font-size: 18px;
   line-height: 18px;
   color: $grey-special;
+
+  &--index {
+    color: $white-basic;
+  }
+
+  &--catalog {
+    display: none;
+  }
 }
 
-.level svg {
+.level__graph {
   width: 100px;
   height: 100px;
+
+  &--catalog {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.level__background {
+  fill: none;
+  stroke-width: 3px;
+  stroke: transparent;
+
+  &--index {
+    fill: rgba($black-basic, 0.6);
+  }
+
+  &--catalog {
+    r: 21px;
+    cx: 23px;
+    cy: 23px;
+  }
 }
 
 .level__progress {
@@ -54,15 +118,15 @@
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
   animation: show-level 2s ease-in-out;
-}
 
-@keyframes show-level {
-  from {
-    stroke-dashoffset: 288;
+  &--index {
+    stroke-width: 4px;
   }
 
-  to {
-    stroke-dashoffset: 60;
+  &--catalog {
+    r: 21px;
+    cx: 23px;
+    cy: 23px;
   }
 }
 
@@ -70,26 +134,73 @@
   .level {
     width: 94px;
     height: 94px;
+
+    svg {
+      width: 94px;
+      height: 94px;
+    }
+
+    &--catalog {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   .level__text {
     left: 27px;
+
+    &--catalog {
+      top: 11px;
+      left: 11px;
+    }
   }
 
-  .level svg {
-    width: 94px;
-    height: 94px;
+  .level__number {
+    &--catalog {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 39px;
+        left: -5px;
+        width: 51px;
+        height: 1px;
+        background-color: rgba($grey-special, 0.3);
+      }
+    }
+  }
+
+  .level__word {
+    display: block;
+  }
+
+  .level__graph {
+    &--catalog {
+      width: 46px;
+      height: 46px;
+    }
   }
 
   .level__background {
     r: 42px;
     cx: 47px;
     cy: 47px;
+
+    &--catalog {
+      r: 21px;
+      cx: 23px;
+      cy: 23px;
+    }
   }
 
   .level__progress {
     r: 42px;
     cx: 47px;
     cy: 47px;
+
+    &--catalog {
+      r: 21px;
+      cx: 23px;
+      cy: 23px;
+    }
   }
 }

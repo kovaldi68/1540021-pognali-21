@@ -7,8 +7,9 @@
 @import "../sass/general/global.scss";
 
 // blocks
+@import "../sass/blocks/animations.scss";
 @import "../sass/blocks/button.scss";
-@import "..//sass/blocks/container.scss";
+@import "../sass/blocks/container.scss";
 @import "../sass/blocks/title.scss";
 @import "../sass/blocks/socials.scss";
 @import "../sass/blocks/about-service.scss";
@@ -38,6 +39,7 @@
 @import "../sass/blocks/likes.scss";
 @import "../sass/blocks/location.scss";
 @import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/user-list.scss";
 @import "../sass/blocks/page.scss";
 @import "../sass/blocks/page-footer.scss";
 @import "../sass/blocks/page-header.scss";
@@ -66,5 +68,4 @@
 @import "../sass/blocks/traveller-settings.scss";
 @import "../sass/blocks/trip-input.scss";
 @import "../sass/blocks/user-card.scss";
-@import "../sass/blocks/user-list.scss";
 @import "../sass/blocks/visually-hidden.scss";

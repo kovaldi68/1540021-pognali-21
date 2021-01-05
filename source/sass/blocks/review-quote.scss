@@ -1,6 +1,6 @@
 .review-quote {
   width: 161px;
-  margin-bottom: 29px;
+  color: $white-basic;
 }
 
 .review-quote__text {
@@ -18,8 +18,6 @@
 @media (min-width: $tablet-width) {
   .review-quote {
     width: 264px;
-    margin-left: 32px;
-    margin-bottom: 211px;
   }
 
   .review-quote__text {
@@ -30,10 +28,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .review-quote {
-    margin: 111px 23px 0 0;
-  }
-
   .review-quote__author {
     font-size: 21px;
     line-height: 25px;

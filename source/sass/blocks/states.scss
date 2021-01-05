@@ -27,3 +27,20 @@
   line-height: 16px;
   color: $grey-special;
 }
+
+@media (min-width: $tablet-width) {
+  .states__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .states__list {
+    flex-direction: column;
+  }
+
+  .states__heading {
+    display: none;
+  }
+}

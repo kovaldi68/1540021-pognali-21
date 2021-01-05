@@ -1,6 +1,5 @@
 .continents {
   @include list-reset;
-  margin-bottom: 21px;
   font-weight: 700;
   line-height: 18px;
 }
@@ -16,5 +15,28 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .continents {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .continents__item {
+    margin-right: 28px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .continents__item {
+    margin-right: 32px;
   }
 }

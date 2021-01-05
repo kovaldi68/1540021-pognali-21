@@ -26,3 +26,22 @@
   background-color: $grey-basic;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .transport {
+    &--rounded {
+      flex-direction: column;
+      align-items: flex-end;
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport {
+    &--rounded {
+      flex-direction: row;
+    }
+  }
+}
