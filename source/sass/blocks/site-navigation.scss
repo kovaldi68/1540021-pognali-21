@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 51px;
 }
 
 .site-navigation__item {
@@ -38,7 +37,7 @@
   .site-navigation {
     flex-direction: row;
     align-items: center;
-    padding-left: 145px;
+    justify-content: flex-start;
     margin-bottom: 0;
   }
 

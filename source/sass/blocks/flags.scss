@@ -3,11 +3,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 230px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .flags__item {
+  width: 35px;
+  height: 24px;
   margin-right: 20px;
 
   &:last-child {

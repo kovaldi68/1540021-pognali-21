@@ -2,10 +2,8 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   width: 188px;
   justify-content: center;
-  margin-left: 5px;
 
   &--left {
     justify-content: flex-start;
@@ -14,7 +12,20 @@
 }
 
 .hashtags__item {
+  margin-right: 4px;
   color: $grey-special;
   line-height: 18px;
   text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hashtags {
+    font-size: 20px;
+    line-height: 23px;
+    width: 223px;
+  }
 }

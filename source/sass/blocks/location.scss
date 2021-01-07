@@ -62,6 +62,19 @@
     padding-left: 94px;
     font-size: 28px;
     line-height: 28px;
+
+    &::before {
+      top: 50%;
+      left: 0;
+      width: 68px;
+      height: 68px;
+      background-size: 32px 32px;
+      transform: translateY(-50%);
+    }
+
+    br {
+      display: none;
+    }
   }
 
   .location__route {
@@ -79,16 +92,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .location__container {
+    padding: 0 135px;
+  }
+
   .location__address {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 121px;
     padding-bottom: 61px;
-  }
-
-  .location__container {
-    padding: 0 135px;
+    align-items: center;
   }
 
   .location__text {
