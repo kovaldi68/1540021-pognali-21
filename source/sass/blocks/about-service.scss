@@ -5,6 +5,7 @@
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  @include section-border;
 }
 
 .about-service__container {
@@ -57,7 +58,7 @@
       height: 212px;
       background-color: $blue-decor-items;
       border-radius: 20px;
-      z-index: 5;
+      z-index: -1;
     }
 
     &::after {
@@ -69,7 +70,7 @@
       height: 548px;
       background-image: url("../../img/about-tablet@1x.png");
       background-repeat: no-repeat;
-      z-index: 5;
+      z-index: -1;
     }
   }
 
@@ -77,7 +78,6 @@
     position: relative;
     margin-bottom: 40px;
     grid-column: 1/2;
-    z-index: 10;
   }
 
   .about-service__text {
@@ -87,7 +87,6 @@
     font-size: 28px;
     line-height: 33px;
     grid-column: 1/2;
-    z-index: 10;
 
     &--bold {
       font-size: 21px;
@@ -101,7 +100,6 @@
     grid-column: 1/2;
     position: relative;
     width: 275px;
-    z-index: 10;
   }
 }
 

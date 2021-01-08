@@ -1,10 +1,13 @@
 .location {
+  margin-top: -32px;
   background-color: $yellow-main;
+  @include section-border;
 }
 
 .location__address {
-  padding-top: 63px;
-  padding-bottom: 35px;
+  padding: 63px 25px 35px 25px;
+  background-color: $yellow-main;
+  @include section-border;
 }
 
 .location__text {
@@ -40,6 +43,7 @@
 
 .location__map {
   margin: 0 auto;
+  margin-top: -52px;
   width: 320px;
   height: 424px;
   background-image: url("../../img/map-mobile@1x.jpg");
@@ -48,13 +52,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .location__address {
-    padding-top: 124px;
-    padding-bottom: 84px;
+  .location {
+    margin-top: -54px;
   }
 
-  .location__container {
-    padding: 0 75px;
+  .location__address {
+    padding: 124px 75px 84px 75px;
   }
 
   .location__text {
@@ -92,16 +95,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .location__container {
-    padding: 0 135px;
+  .location {
+    margin-top: -61px;
   }
 
   .location__address {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 121px;
-    padding-bottom: 61px;
+    justify-content: space-between;
+    padding: 121px 135px 61px 283px;
     align-items: center;
   }
 
