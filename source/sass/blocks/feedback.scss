@@ -1,7 +1,9 @@
 .feedback {
+  margin-top: -33px;
   padding-top: 105px;
   padding-bottom: 29px;
   background-color: $blue-dark-main;
+  @include section-border;
 }
 
 .feedback__title {
@@ -50,6 +52,10 @@
   right: 10px;
   width: 60px;
   height: 62px;
+
+  span {
+    display: none;
+  }
 }
 
 .feedback__auth-text {
@@ -99,6 +105,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
+    margin-top: -57px;
     padding-top: 133px;
     padding-bottom: 77px;
   }
@@ -117,6 +124,14 @@
     margin-bottom: 65px;
     font-size: 28px;
     line-height: 32px;
+
+    br {
+      display: none;
+    }
+
+    .tablet {
+      display: block;
+    }
   }
 
   .feedback__form {
@@ -144,6 +159,10 @@
     margin-bottom: 64px;
     font-size: 28px;
     line-height: 30px;
+
+    br {
+      display: none;
+    }
   }
 
   .feedback__link {
@@ -151,14 +170,35 @@
     font-size: 28px;
     line-height: 28px;
 
+    &::before {
+      top: 50%;
+      left: 0;
+      width: 68px;
+      height: 68px;
+      transform: translateY(-50%);
+    }
+
     &--tel {
       margin-bottom: 39px;
+
+      &::before {
+        background-image: url("../../img/contacts-phone.svg");
+        background-size: 28px 26px;
+      }
+    }
+
+    &--mail {
+      &::before {
+        background-image: url("../../img/contacts-mail.svg");
+        background-size: 28px 19px;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
+    margin-top: -99px;
     padding-top: 208px;
     padding-bottom: 103px;
   }
@@ -190,7 +230,11 @@
   }
 
   .feedback__button {
-    padding: 41px 165px 40px 165px;
+    padding: 41px 289px 40px 42px;
+
+    span {
+      display: inline;
+    }
   }
 
   .feedback__auth-text {

@@ -1,54 +1,99 @@
 .directions {
+  margin-top: -30px;
   padding-top: 101px;
   padding-bottom: 34px;
   background-color: $grey-basic;
+  @include section-border;
 }
 
 .directions__title {
+  padding-left: 25px;
   margin-bottom: 19px;
 }
 
 .directions__text {
+  padding-left: 25px;
   margin-bottom: 60px;
+  width: 216px;
   font-weight: 300;
   color: $grey-special;
 }
 
 @media (min-width: $tablet-width) {
   .directions {
+    margin-top: -76px;
     padding-top: 149px;
     padding-bottom: 80px;
   }
 
   .directions__container {
+    position: relative;
     padding: 0 75px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 40px;
+      width: 288px;
+      height: 574px;
+      background-image: url("../../img/flags-back@1x.png");
+      background-repeat: no-repeat;
+    }
   }
 
   .directions__title {
+    position: relative;
+    margin-bottom: 58px;
+    padding-left: 0;
     font-size: 45px;
     line-height: 45px;
-    margin-bottom: 58px;
   }
 
   .directions__text {
+    position: relative;
+    margin-bottom: 104px;
+    padding-left: 0;
+    width: 378px;
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 104px;
+  }
+
+  .directions__list {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -38px;
+      left: -35px;
+      width: 140px;
+      height: 140px;
+      background-color: $grey-decor;
+      border-radius: 20px;
+      z-index: -1;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .directions {
+    margin-top: -88px;
     padding-top: 249px;
     padding-bottom: 138px;
   }
 
   .directions__container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     padding-left: 130px;
-    padding-right: 60px;
+    padding-right: 130px;
+
+    &::before {
+      top: -73px;
+      right: 60px;
+    }
   }
 
   .directions__title {
@@ -69,6 +114,11 @@
   .directions__list {
     grid-row: 1/4;
     grid-column: 1/2;
+
+    &::before {
+      top: -70px;
+      left: -70px;
+    }
   }
 
   .directions__button {

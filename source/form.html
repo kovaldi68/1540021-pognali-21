@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--opened">
+    <header class="page-header page-header--opened page-header--nojs">
       <div class="page-header__container container">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img src="img/logo-mobile-blue@1x.png" alt="Логотип сайта Погнали" width="96" height="15">
         </a>
-        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
+        <button class="page-header__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
+        <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__site site-navigation">
             <li class="site-navigation__item">
               <a href="index.html">О сервисе</a>
@@ -76,7 +76,7 @@
             </a>
           </li>
         </ul>
-        <h1 class="page-header__title title title--larger">Направления</h1>
+        <h1 class="page-header__title title">Направления</h1>
       </div>
     </header>
 
@@ -86,14 +86,14 @@
           <h2 class="visually-hidden">Профиль путешественника</h2>
           <form class="traveller-settings__form profile">
             <div class="profile__info">
-              <div class="profile__level level">
-                <div class="level__text">
-                  <span class="level__number">80</span>
-                  <span class="level__word">level</span>
+              <div class="profile__level level level--form">
+                <div class="level__text level__text--form">
+                  <span class="level__number level__number--form">80</span>
+                  <span class="level__word level__word--form">level</span>
                 </div>
                 <svg>
-                  <circle class="level__background" cx="50" cy="50" r="45"></circle>
-                  <circle class="level__progress" cx="50" cy="50" r="45"></circle>
+                  <circle class="level__background level__background--form" cx="50" cy="50" r="45"></circle>
+                  <circle class="level__progress level__progress--form" cx="50" cy="50" r="45"></circle>
                 </svg>
               </div>
               <div class="profile__photo">
@@ -143,7 +143,7 @@
       </section>
       <section class="plans">
         <div class="plans__container container">
-          <h2 class="plans__title title title--medium">Мои планы:</h2>
+          <h2 class="plans__title title">Мои планы:</h2>
           <ol class="plans__list journey">
             <li class="journey__item">
               <h3 class="journey__name">Франция, Италия</h3>
@@ -170,7 +170,7 @@
       </section>
       <section class="add-plan">
         <div class="add-plan__container container">
-          <h2 class="add-plan__title title title--medium">Добавить план:</h2>
+          <h2 class="add-plan__title title">Добавить план:</h2>
           <ul class="add-plan__indicator indicator">
             <li class="indicator__item"></li>
             <li class="indicator__item"></li>
@@ -180,7 +180,7 @@
             <ol class="add-plan__order steps">
               <li class="steps__item">
                 <div class="steps__heading">
-                  <h3 class="steps__title title title--small">Шаг 1.<br> Даты пребывания</h3>
+                  <h3 class="steps__title title">Шаг 1.<br> Даты пребывания</h3>
                   <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                   <ul class="add-plan__indicator indicator indicator--inner">
                     <li class="indicator__item">Даты</li>
@@ -209,7 +209,7 @@
                   </div>
                   <div class="stay-period__calendar calendar">
                     <div class="calendar__slider">
-                      <p class="calendar__date title title--small">Март 2019
+                      <p class="calendar__date title">Март 2019
                         <button class="calendar__control calendar__control--back button" type="button" aria-label="Переключить на предыдущий месяц"></button>
                         <button class="calendar__control calendar__control--forward button" type="button" aria-label="Переключить на следующий месяц"></button>
                       </p>
@@ -306,7 +306,7 @@
               </li>
               <li class="steps__item">
                 <div class="steps__heading">
-                  <h3 class="steps__title title title--small">Шаг 2.<br> Маршрут</h3>
+                  <h3 class="steps__title title">Шаг 2.<br> Маршрут</h3>
                   <ul class="add-plan__indicator indicator indicator--inner">
                     <li class="indicator__item">Даты</li>
                     <li class="indicator__item">Маршрут</li>
@@ -402,7 +402,7 @@
               </li>
               <li class="steps__item">
                 <div class="steps__heading">
-                  <h3 class="steps__title title title--small">Шаг 3.<br> Развлечения</h3>
+                  <h3 class="steps__title title">Шаг 3.<br> Развлечения</h3>
                   <p class="steps__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <ul class="add-plan__indicator indicator indicator--inner">
                     <li class="indicator__item">Даты</li>

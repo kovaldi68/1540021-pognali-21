@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--opened">
+    <header class="page-header page-header--opened page-header--nojs">
       <div class="page-header__container container">
         <a class="page-header__logo">
-          <img src="img/logo-mobile-blue@1x.png" alt="Логотип сайта Погнали" width="96" height="15">
+          <img src="img/logo-mobile-white@1x.png" alt="Логотип сайта Погнали" width="96" height="15">
         </a>
-        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
+        <button class="page-header__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
+        <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__site site-navigation">
             <li class="site-navigation__item">
               <a href="index.html">О сервисе</a>
@@ -115,22 +115,25 @@
       </section>
       <section class="about-service">
           <div class="about-service__container container">
-            <h2 class="about-service__title title title--medium">О сервисе</h2>
-            <p class="about-service__text">Любое путешествие веселее с попутчиками, которые на&nbsp;одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <h2 class="about-service__title title title--idx-medium">О сервисе</h2>
+            <p class="about-service__text">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
             <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
             <a class="about-service__button button button--primary" href="#">Подробнее</a>
           </div>
       </section>
       <section class="directions">
         <div class="directions__container container">
-          <h2 class="directions__title title title--medium">Направления</h2>
-          <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <h2 class="directions__title title title--idx-medium">Направления</h2>
+          <p class="directions__text">Мы не продаем туры<br> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться<br> и чем можно там заняться.</p>
           <ul class="directions__list countries">
             <li class="countries__item">
               <div class="countries__photo">
                 <img class="countries__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото пляжа в Таиланде">
               </div>
               <div class="countries__data">
+                <div class="countries__flag">
+                  <img src="img/flag-thailand.svg" alt="Флаг Тайланда">
+                </div>
                 <div class="countries__info">
                   <h3 class="countries__name">Таиланд</h3>
                   <p class="countries__slogan">Джунгли зовут!</p>
@@ -143,6 +146,9 @@
                 <img class="countries__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Фото пешеходной улицы во Франции">
               </div>
               <div class="countries__data">
+                <div class="countries__flag">
+                  <img src="img/flag-france.svg" alt="Флаг Франции">
+                </div>
                 <div class="countries__info">
                   <h3 class="countries__name">Франция</h3>
                   <p class="countries__slogan">Трэ бьен, манифик</p>
@@ -155,6 +161,9 @@
                 <img class="countries__image" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Вид с реки на набережную Праги">
               </div>
               <div class="countries__data">
+                <div class="countries__flag">
+                  <img src="img/flag-czech.svg" alt="Флаг Чехии">
+                </div>
                 <div class="countries__info">
                   <h3 class="countries__name">Чехия</h3>
                   <p class="countries__slogan">Закоулки старой Европы</p>
@@ -168,15 +177,17 @@
       </section>
       <section class="companions">
         <div class="companions__container container">
-          <h2 class="companions__title title title--medium">Попутчики</h2>
-          <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="companions__text companions__text--bold">Теперь можно легко найти единомышленников!</p>
+          <h2 class="companions__title title title--idx-medium">Попутчики</h2>
+          <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.</p>
+          <p class="companions__text companions__text--bold">Теперь можно легко<br> найти единомышленников!</p>
           <ul class="companions__list">
             <li class="companions__item traveller-profile">
-              <img class="traveller-profile__photo" src="img/firsova-mobile@1x.jpg" alt="Фото попутчика" width="270" height="270">
+              <div class="traveller-profile__photo">
+                <img class="traveller-profile__img" src="img/firsova-tablet@1x.jpg" alt="Фото попутчика" width="270" height="270">
+              </div>
               <div class="traveller-profile__level level level--index">
                 <div class="level__text level__text--index">
-                  <span class="level__number level__number--index">80</span>
+                  <span class="level__number level__number--index">99</span>
                   <span class="level__word level__word--index">level</span>
                 </div>
                 <svg>
@@ -185,7 +196,6 @@
                 </svg>
               </div>
               <div class="traveller-profile__info">
-                <h3 class="traveller-profile__name">Таня Фирсова</h3>
                 <ul class="traveller-profile__flags flags">
                   <li class="flags__item">
                     <img src="img/flag-sri-lanka.svg" alt="Флаг Шри-Ланка" width="35" height="25">
@@ -200,6 +210,7 @@
                     <span class="visually-hidden">Сейшелы</span>
                   </li>
                 </ul>
+                <h3 class="traveller-profile__name">Таня Фирсова</h3>
                 <ul class="traveller-profile__tags hashtags">
                   <li class="hashtags__item">#ЗОЖ</li>
                   <li class="hashtags__item">#ПП</li>
@@ -255,7 +266,9 @@
               </div>
             </li>
             <li class="companions__item traveller-profile">
-              <img class="traveller-profile__photo" src="img/demin-mobile@1x.jpg" alt="Фото попутчика" width="270" height="270">
+              <div class="traveller-profile__photo">
+                <img class="traveller-profile__img" src="img/demin-tablet@1x.jpg" alt="Фото попутчика" width="270" height="270">
+              </div>
               <div class="traveller-profile__level level level--index">
                 <div class="level__text level__text--index">
                   <span class="level__number level__number--index">80</span>
@@ -267,7 +280,6 @@
                 </svg>
               </div>
               <div class="traveller-profile__info ">
-                <h3 class="traveller-profile__name">Петя Демин</h3>
                 <ul class="traveller-profile__flags flags">
                   <li class="flags__item">
                     <img src="img/flag-belgium.svg" alt="Флаг Бельгия" width="35" height="25">
@@ -278,6 +290,7 @@
                     <span class="visually-hidden">Чехия</span>
                   </li>
                 </ul>
+                <h3 class="traveller-profile__name">Петя Демин</h3>
                 <ul class="traveller-profile__tags hashtags">
                   <li class="hashtags__item">#бургер</li>
                   <li class="hashtags__item">#бар</li>
@@ -337,7 +350,7 @@
       </section>
       <section class="tariffs">
         <div class="tariffs__container container">
-          <h2 class="tariffs__title title title--medium">Добавьте свой профиль</h2>
+          <h2 class="tariffs__title title title--idx-medium">Добавьте свой профиль</h2>
           <ol class="tariffs__list">
             <li class="tariffs__item">
               <span class="tariffs__service">Базовое размещение</span>
@@ -357,15 +370,17 @@
       </section>
       <section class="feedback">
         <div class="feedback__container container">
-          <h2 class="feedback__title title title--medium">Заинтересовались?</h2>
+          <h2 class="feedback__title title title--idx-medium">Заинтересовались?</h2>
           <p class="feedback__text">
-            Зарегистрируйтесь,<br>это быстро и бесплатно!<br>
+            Зарегистрируйтесь,<br>это быстро и бесплатно!<br class="tablet">
             Уже зарегистрированы? Тогда<br> скорее <a class="feedback__text-link" href="#">авторизуйтесь</a>.
           </p>
           <form class="feedback__form" action="https://echo.htmlacademy.ru">
             <label aria-label="Форма регистрации">
               <input class="feedback__field" type="text" placeholder="E-mail">
-              <button class="feedback__button button button--primary" type="submit" aria-label="Нажать, чтобы зарегистрироваться"></button>
+              <button class="feedback__button button button--primary" type="submit" aria-label="Нажать, чтобы зарегистрироваться">
+                <span>Регистрация</span>
+              </button>
             </label>
           </form>
           <p class="feedback__auth-text">
@@ -378,12 +393,10 @@
         </div>
       </section>
       <section class="location">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <div class="location__container container">
-          <div class="location__address">
-            <p class="location__text">ул. Большая<br> Конюшенная, 19/8</p>
-            <a class="location__route button button--primary" href="https://goo.gl/maps/tbB92Bt9W4jRW9zB9">Проложить маршрут</a>
-          </div>
+        <h2 class="location__title visually-hidden">Как до нас добраться</h2>
+        <div class="location__address">
+          <p class="location__text">ул. Большая<br> Конюшенная, 19/8</p>
+          <a class="location__route button button--primary" href="https://goo.gl/maps/tbB92Bt9W4jRW9zB9">Проложить маршрут</a>
         </div>
         <div class="location__map"></div>
       </section>

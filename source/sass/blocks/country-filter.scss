@@ -51,6 +51,7 @@
 }
 
 .country-filter__toggle {
+  margin-left: auto;
   width: 16px;
   height: 16px;
   padding: 0;
@@ -76,6 +77,13 @@
       display: none;
     }
 
+    .country-filter__continents {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      order: -1;
+    }
+
     &--expanded {
       padding-bottom: 79px;
 
@@ -87,12 +95,6 @@
       .country-filter__table {
         display: table;
       }
-
-      .country-filter__continents {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -100,6 +102,7 @@
     display: none;
     font-size: 20px;
     line-height: 20px;
+    order: -2;
   }
 
   .country-filter__button {
@@ -118,6 +121,10 @@
 
     &--expanded {
       padding-bottom: 102px;
+
+      .country-filter__toggle {
+        display: none;
+      }
     }
 
     .country-filter__list {

@@ -1,9 +1,9 @@
 @keyframes show-level {
   from {
-    stroke-dashoffset: 288;
+    stroke-dasharray: 0, calc(2 * 3.14 * 26);
   }
 
   to {
-    stroke-dashoffset: 60;
+    stroke-dasharray: calc(3.14 * 26 * 50 / 50);
   }
 }

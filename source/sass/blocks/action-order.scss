@@ -4,16 +4,32 @@
 
 .action-order__list {
   @include list-reset;
+  counter-reset: action-counter;
 }
 
 .action-order__item {
+  position: relative;
+  counter-increment: action-counter;
   padding: 22px 96px 22px 24px;
+  margin-top: -10px;
   color: $blue-dark-basic;
+  min-height: 90px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
+  &::after {
+    content: counter(action-counter);
+    position: absolute;
+    top: 22px;
+    right: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white-basic;
+  }
 
   &:nth-child(4n+1) {
     background-color: $orange-special;
@@ -41,7 +57,20 @@
   }
 
   .action-order__item {
-    padding: 22px 96px 61px 24px;
+    margin-top: 0;
+    padding: 31px 140px 61px 33px;
+    font-size: 24px;
+    line-height: 24px;
+    min-height: 140px;
+    border-radius: 0;
+
+    &::after {
+      top: auto;
+      bottom: 22px;
+      left: 34px;
+      font-size: 30px;
+      line-height: 30px;
+    }
 
     &:nth-child(odd) {
       width: calc(50% + 25px);
@@ -51,30 +80,67 @@
       width: 50%;
       margin-left: -25px;
     }
+
+    &:nth-child(4n+1) {
+      border-top-left-radius: 20px;
+    }
+
+    &:nth-child(4n+2) {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &:nth-child(4n+3) {
+      border-bottom-left-radius: 20px;
+    }
+
+    &:nth-child(4n+4) {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .action-order__item {
-    padding: 22px 96px 30px 24px;
+    padding: 22px 96px 30px 30px;
+    min-height: auto;
+
+    &::after {
+      top: 29px;
+      bottom: auto;
+      left: auto;
+      right: 62px;
+      font-size: 24px;
+      line-height: 24px;
+    }
 
     &:nth-child(4n+1) {
       width: calc(25% + 15px);
+      border-bottom-left-radius: 20px;
     }
 
     &:nth-child(4n+2) {
       width: calc(25% + 45px);
       margin-left: -30px;
+      border-bottom-left-radius: 20px;
     }
 
     &:nth-child(4n+3) {
       width: calc(25% + 45px);
       margin-left: -30px;
+      border-top-left-radius: 20px;
     }
 
     &:nth-child(4n+4) {
       width: calc(25% - 15px);
       margin-left: -30px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+      &::after {
+        right: 33px;
+      }
     }
   }
 }

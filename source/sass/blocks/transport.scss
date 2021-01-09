@@ -3,8 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 230px;
-  margin: 0 auto;
 
   &--rounded {
     justify-content: flex-start;
@@ -12,12 +10,12 @@
 }
 
 .transport__item {
-  width: 32px;
-  height: 32px;
+  width: 23px;
+  height: 22px;
   margin-right: 13px;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 

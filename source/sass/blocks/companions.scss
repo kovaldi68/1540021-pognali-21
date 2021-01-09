@@ -1,17 +1,60 @@
 .companions {
-  padding-top: 102px;
+  margin-top: -34px;
+  padding-top: 68px;
   padding-bottom: 31px;
   background-color: $blue-dark-main;
+  @include section-border;
+}
+
+.companions__container {
+  position: relative;
+  padding-top: 34px;
+  background-image: url("../../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: -14px 298px;
+  background-size: 71px 71px;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 113px;
+    height: 132px;
+    background-color: $blue-decor-items;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: 143px;
+    height: 143px;
+    background-image: url("../../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 .companions__title {
+  padding-left: 25px;
   margin-bottom: 19px;
 }
 
 .companions__text {
   margin-bottom: 25px;
+  padding-left: 25px;
+  width: 217px;
   font-weight: 300;
   color: $white-basic;
+
+  br {
+    display: none;
+  }
 
   &--bold {
     margin-bottom: 54px;
@@ -34,25 +77,53 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 208px;
+    margin-top: -67px;
+    padding-top: 138px;
     padding-bottom: 87px;
   }
 
   .companions__container {
     padding: 0 75px;
+    padding-top: 70px;
+    background-image: url("../../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 40px 355px;
+    background-size: 143px 143px;
+    border-radius: 5px;
+
+    &::before {
+      top: 0;
+      left: 40px;
+      width: 212px;
+      height: 212px;
+    }
+
+    &::after {
+      top: 0;
+      right: 75px;
+      width: 285px;
+      height: 285px;
+      background-image: url("../../img/rogovaya-back-desktop@1x.png");
+    }
   }
 
   .companions__title {
     margin-bottom: 55px;
+    padding-left: 0;
     font-size: 45px;
     line-height: 45px;
   }
 
   .companions__text {
+    margin-bottom: 39px;
+    padding-left: 0;
     width: 427px;
     font-size: 28px;
     line-height: 34px;
-    margin-bottom: 39px;
+
+    br {
+      display: block;
+    }
 
     &--bold {
       width: 260px;
@@ -81,7 +152,8 @@
 
 @media (min-width: $desktop-width) {
   .companions {
-    padding-top: 231px;
+    margin-top: -101px;
+    padding-top: 171px;
     padding-bottom: 134px;
   }
 
@@ -90,6 +162,17 @@
     grid-template-columns: 50% 50%;
     padding-left: 130px;
     padding-right: 60px;
+    background-position: 547px 64px;
+
+    &::before {
+      top: 0;
+      left: 60px;
+    }
+
+    &::after {
+      top: 316px;
+      left: 190px;
+    }
   }
 
   .companions__title {

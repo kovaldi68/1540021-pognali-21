@@ -1,7 +1,10 @@
 .page-footer {
+  margin-top: -110px;
   padding-top: 38px;
   padding-bottom: 19px;
   background-color: $white-basic;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .page-footer__img {
@@ -25,6 +28,8 @@
   .page-footer {
     padding-top: 46px;
     padding-bottom: 32px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
   }
 
   .page-footer__container {
