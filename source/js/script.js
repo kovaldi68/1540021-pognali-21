@@ -7,7 +7,7 @@ const progressBar = document.querySelector(".level__progress");
 const radius = progressBar.r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
 const trackDrop = document.querySelector(".track__dropdown");
-const dropOpener = document.querySelector(".track__choose-button");
+const dropOpener = document.querySelector(".track__button--choose");
 const dropCloser = document.querySelector(".dropdown__button");
 
 //header

@@ -6,123 +6,21 @@
 .track__item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   position: relative;
   margin-bottom: 22px;
 
-  .state-button {
-    justify-content: flex-start;
-    overflow: hidden;
-    padding: 12px 10px;
-    width: 168px;
-    color: $blue-light-text;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    border: 1px solid $grey-border;
-    border-radius: 4px;
-    white-space: nowrap;
-
-    &::before{
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 14px;
-      width: 12px;
-      height: 16px;
-      background-image: url("../../img/show-more-down.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      transform: translateY(-50%);
-      opacity: 0.3;
-      z-index: 2;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 2px;
-      right: 5px;
-      width: 52px;
-      height: 90%;
-      text-align: right;
-      background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
-      pointer-events: none;
-    }
-  }
-
-  .close-button {
+  &::before {
+    content: "";
     position: absolute;
-    width: 21px;
-    height: 21px;
-    top: 0;
-    right: 0;
-    background-color: $grey-basic;
-    background-image: url("../../img/menu-close.svg");
-    background-size: 9px;
-    background-position: center;
-    background-repeat: no-repeat;
+    top: 50%;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+    background: none;
+    background-color: $blue-light-text;
     border-radius: 50%;
-    transform: translate(50%, -50%);
-  }
-
-  &--choose {
-    .state-button {
-      width: 100%;
-      padding: 12px 10px;
-      border: 1px solid $grey-border;
-      border-radius: 4px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 49px;
-        bottom: auto;
-        width: 8px;
-        height: 8px;
-        background: none;
-        border: 1px solid $grey-border;
-        border-radius: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-
-  &--add {
-    .state-button {
-      width: 100%;
-      padding: 12px 10px;
-      border-radius: 4px;
-      border: none;
-      background-color: $grey-basic;
-
-      &::before{
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        width: 14px;
-        height: 14px;
-        background-image: url("../../img/show-more-plus.svg");
-        z-index: 1;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 49px;
-        bottom: auto;
-        width: 8px;
-        height: 8px;
-        background: none;
-        border: 1px solid $grey-border;
-        border-radius: 50%;
-        transform: translateY(-50%);
-      }
-    }
+    transform: translateY( -50%);
+    z-index: 1;
   }
 
   &::after {
@@ -132,7 +30,7 @@
     right: 22%;
     width: 8px;
     height: 10px;
-    background-image: url("../../img/small-arrow.svg");
+    background-image: url("../img/small-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.3;
@@ -145,33 +43,143 @@
       display: none;
     }
   }
+
+  &--choose {
+    &::before {
+      background: none;
+      border: 1px solid $grey-border;
+    }
+  }
+
+  &--add {
+    &::before {
+      background: none;
+      border: 1px solid $grey-border;
+    }
+  }
+}
+
+.track__button {
+  padding: 12px 10px;
+  width: 168px;
+  color: $blue-light-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: 1px solid $grey-border;
+  border-radius: 4px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    width: 16px;
+    height: 12px;
+    background-image: url("../img/show-more-down.svg");
+    background-size: 16px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  span {
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      right: 0;
+      width: 52px;
+      height: 100%;
+      text-align: right;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
+      pointer-events: none;
+    }
+  }
+
+  &--close {
+    position: absolute;
+    padding: 0;
+    width: 21px;
+    height: 21px;
+    top: 0;
+    right: 0;
+    background-color: $grey-basic;
+    background-image: url("../img/menu-close.svg");
+    background-size: 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  &--choose {
+    width: 100%;
+    border: 1px solid $grey-border;
+    border-radius: 4px;
+
+    span {
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+
+  &--add {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    background-color: $grey-basic;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      width: 14px;
+      height: 14px;
+      background-image: url("../img/qty-plus.svg");
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    span {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 .track__flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 52px;
-  padding: 8px;
   border: 1px solid $grey-border;
   border-left: none;
   border-radius: 4px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background: none;
-    background-color: $blue-light-text;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+  img {
+    display: block;
+    width: 35px;
+    height: 24px;
   }
-}
-
-.track__flag img {
-  display: block;
-  margin: 0;
 }
 
 .track__dropdown {
@@ -198,35 +206,65 @@
       width: 1px;
       height: 110%;
       background-color: $grey-lines;
-      z-index: 1;
     }
   }
 
   .track__item {
+    align-items: center;
     margin-bottom: 16px;
 
-    .state-button {
-      justify-content: flex-start;
-      width: 369px;
-      margin-right: 52px;
-      padding: 27px 26px 23px 26px;
-      font-size: 20px;
-      line-height: 20px;
+    &::before {
+      right: 135px;
+      width: 14px;
+      height: 14px;
+    }
 
-      &::before{
-        right: 28px;
-        width: 17px;
-        height: 20px;
+    &::after {
+      display: none;
+    }
+
+    &--choose {
+      &::before {
+        background: none;
+        background-color: $white-basic;
+        border: 1px solid $grey-border;
       }
     }
 
-    .close-button {
+    &--add {
+      &::before {
+        background: none;
+        background-color: $grey-basic;
+        border: 1px solid $grey-border;
+      }
+    }
+  }
+
+  .track__button {
+    justify-content: flex-start;
+    width: 369px;
+    margin-right: 52px;
+    padding: 25px 26px 23px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+
+    &::before{
+      right: 28px;
+      width: 20px;
+      height: 17px;
+      background-size: 20px 17px;
+    }
+
+    &--close {
+      margin: 0;
+      padding: 0;
       width: 22px;
       height: 24px;
       top: 50%;
       right: 0;
       background-color: transparent;
-      background-image: url("../../img/menu-close.svg");
+      background-image: url("../img/menu-close.svg");
       background-size: 22px 24px;
       border-radius: 0;
       transform: translateY(-50%);
@@ -234,33 +272,28 @@
     }
 
     &--choose {
-      .state-button {
-        &::after {
-          right: 10px;
-          width: 14px;
-          height: 14px;
-        }
+      &::after {
+        right: 10px;
+        width: 14px;
+        height: 14px;
       }
     }
 
     &--add {
-      .state-button {
-        &::before{
-          right: 25px;
-          width: 21px;
-          height: 21px;
-        }
+      background-color: $grey-dark-form;
 
-        &::after {
-          right: 10px;
-          width: 14px;
-          height: 14px;
-        }
+      &::before{
+        right: 25px;
+        width: 21px;
+        height: 21px;
+        background-size: 21px 21px;
       }
-    }
 
-    &::after {
-      display: none;
+      &::after {
+        right: 10px;
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 
@@ -271,12 +304,9 @@
     margin-right: 25px;
     border: none;
 
-    &::after {
-      top: 50%;
-      left: -33px;
-      width: 14px;
-      height: 14px;
-      transform: translateY(-50%);
+    img {
+      width: 70px;
+      height: 47px;
     }
   }
 }
@@ -293,24 +323,35 @@
   .track__item {
     margin-bottom: 16px;
 
-    .state-button {
-      width: 730px;
-      margin-right: 83px;
-
-      &::before{
-        right: 24px;
-        width: 24px;
-        height: 22px;
-      }
+    &::before {
+      right: 220px;
     }
 
-    .close-button {
+    &::after {
+      display: none;
+    }
+  }
+
+  .track__button {
+    width: 730px;
+    margin-right: 85px;
+
+    &::before{
+      right: 24px;
+      width: 24px;
+      height: 22px;
+      background-size: 24px 22px;
+    }
+
+    &--close {
+      margin: 0;
+      padding: 0;
       width: 22px;
       height: 24px;
       top: 50%;
       right: 0;
       background-color: transparent;
-      background-image: url("../../img/menu-close.svg");
+      background-image: url("../img/menu-close.svg");
       background-size: 22px 24px;
       border-radius: 0;
       transform: translateY(-50%);
@@ -318,33 +359,27 @@
     }
 
     &--choose {
-      .state-button {
-        &::after {
-          right: 10px;
-          width: 14px;
-          height: 14px;
-        }
+      &::after {
+        right: 10px;
+        width: 14px;
+        height: 14px;
       }
     }
 
     &--add {
-      .state-button {
-        &::before{
-          right: 25px;
-          width: 21px;
-          height: 21px;
-        }
+      background-color: $grey-basic;
 
-        &::after {
-          right: 10px;
-          width: 14px;
-          height: 14px;
-        }
+      &::before{
+        right: 25px;
+        width: 21px;
+        height: 21px;
       }
-    }
 
-    &::after {
-      display: none;
+      &::after {
+        right: 10px;
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 

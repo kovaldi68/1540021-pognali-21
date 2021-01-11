@@ -1,9 +1,8 @@
 .companions {
-  margin-top: -34px;
+  @include section-bottom-border;
   padding-top: 68px;
   padding-bottom: 31px;
   background-color: $blue-dark-main;
-  @include section-bottom-border;
 }
 
 .companions__container {
@@ -77,7 +76,6 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    margin-top: -67px;
     padding-top: 138px;
     padding-bottom: 87px;
   }
@@ -152,7 +150,6 @@
 
 @media (min-width: $desktop-width) {
   .companions {
-    margin-top: -101px;
     padding-top: 171px;
     padding-bottom: 134px;
   }

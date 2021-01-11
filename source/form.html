@@ -260,7 +260,7 @@
                         <td class="calendar__cell calendar__cell--disabled">26</td>
                         <td class="calendar__cell calendar__cell--disabled">27</td>
                         <td class="calendar__cell calendar__cell--disabled">28</td>
-                        <td class="calendar__cell calendar__cell--disabled">1</td>
+                        <td class="calendar__cell calendar__cell--disabled">1<span class="calendar__first-day">мар</span></td>
                       </tr>
                       <tr class="calendar__table-row">
                         <td class="calendar__cell calendar__cell--disabled">2</td>
@@ -293,15 +293,15 @@
                         <td class="calendar__cell calendar__cell--disabled">23</td>
                         <td class="calendar__cell calendar__cell--disabled">24</td>
                         <td class="calendar__cell calendar__cell--disabled">25</td>
-                        <td class="calendar__cell calendar__cell--chosen">26</td>
+                        <td class="calendar__cell calendar__cell--chosen">26<p class="calendar__day-in">Заезд</p></td>
                         <td class="calendar__cell calendar__cell--chosen">27</td>
-                        <td class="calendar__cell calendar__cell--chosen">28</td>
+                        <td class="calendar__cell calendar__cell--chosen">28<p class="calendar__day-out">Выезд</p></td>
                         <td class="calendar__cell calendar__cell--enabled">29</td>
                       </tr>
                       <tr class="calendar__table-row">
                         <td class="calendar__cell calendar__cell--enabled">30</td>
                         <td class="calendar__cell calendar__cell--enabled">31</td>
-                        <td class="calendar__cell calendar__cell--enabled">1</td>
+                        <td class="calendar__cell calendar__cell--enabled">1<span class="calendar__first-day">апр</span></td>
                         <td class="calendar__cell calendar__cell--enabled">2</td>
                         <td class="calendar__cell calendar__cell--enabled">3</td>
                         <td class="calendar__cell calendar__cell--enabled">4</td>
@@ -325,22 +325,22 @@
                 <div class="steps__content track">
                   <ul class="track__list">
                     <li class="track__item">
-                      <button class="track__button button state-button" type="button">Босния и Герцеговина</button>
+                      <button class="track__button button" type="button"><span>Босния и Герцеговина</span></button>
                       <div class="track__flag">
-                        <img src="img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины">
+                        <img src="img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="70" height="47">
                       </div>
-                      <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button track__button--close button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item">
-                      <button class="track__button button state-button" type="button"">Чехия</button>
+                      <button class="track__button button" type="button"><span>Чехия</span></button>
                       <div class="track__flag">
-                        <img src="img/flag-czech.svg" alt="Флаг Чехии">
+                        <img src="img/flag-czech.svg" alt="Флаг Чехии" width="70" height="47">
                       </div>
-                      <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button track__button--close button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item track__item--choose">
-                      <button class="track__choose-button button state-button" type="button"">Выберите страну</button>
-                      <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button track__button--choose button" type="button"><span>Выберите страну</span></button>
+                      <button class="track__button track__button--close button" type="button" aria-label="Удалить из списка"></button>
                       <div class="track__dropdown dropdown">
                         <form class="dropdown__form">
                           <h2 class="dropdown__title title">Выберите страну</h2>
@@ -401,7 +401,7 @@
                       </div>
                     </li>
                     <li class="track__item track__item--add">
-                      <button class="track__add-button button state-button" type="button">Добавить страну</button>
+                      <button class="track__button track__button--add button" type="button"><span>Добавить страну</span></button>
                     </li>
                   </ul>
                 </div>
@@ -432,7 +432,7 @@
                       <div class="route__icon">
                         <img src="img/flag-czech.svg" alt="Флаг Чехии">
                       </div>
-                      <textarea class="route__description" name="todo-list" id="czech-todo" cols="30" rows="3" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <textarea class="route__description" name="todo-list" id="czech-todo" cols="30" rows="3" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
                     </li>
                   </ul>
                 </div>

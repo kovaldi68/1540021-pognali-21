@@ -250,3 +250,21 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .level__number {
+    &--form {
+      color: $white-basic;
+
+      &::after {
+        background-color: $white-basic;;
+      }
+    }
+  }
+
+  .level__word {
+    &--form {
+      color: $white-basic;
+    }
+  }
+}

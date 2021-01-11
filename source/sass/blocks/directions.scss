@@ -1,9 +1,8 @@
 .directions {
-  margin-top: -30px;
+  @include section-bottom-border;
   padding-top: 101px;
   padding-bottom: 34px;
   background-color: $grey-basic;
-  @include section-bottom-border;
 }
 
 .directions__title {
@@ -21,7 +20,6 @@
 
 @media (min-width: $tablet-width) {
   .directions {
-    margin-top: -76px;
     padding-top: 149px;
     padding-bottom: 80px;
   }
@@ -78,7 +76,6 @@
 
 @media (min-width: $desktop-width) {
   .directions {
-    margin-top: -88px;
     padding-top: 249px;
     padding-bottom: 138px;
   }

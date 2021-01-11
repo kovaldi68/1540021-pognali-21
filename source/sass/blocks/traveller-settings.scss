@@ -30,6 +30,6 @@
   .traveller-settings__form {
     position: relative;
     margin-top: -259px;
-    z-index: 110;
+    z-index: $z-index-traveller-settings;
   }
 }

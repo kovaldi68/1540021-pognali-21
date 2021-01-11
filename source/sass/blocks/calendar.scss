@@ -77,11 +77,19 @@
     position: absolute;
     top: -1px;
     left: -1px;
-    width: 100%;
-    height: 100%;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
     border: 2px solid $orange-cell;
+    z-index: 1;
   }
 }
+
+.calendar__first-day,
+.calendar__day-in,
+.calendar__day-out {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .calendar__date {
@@ -113,8 +121,21 @@
 
   .calendar__cell {
     padding: 25px 15px;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--disabled {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &:hover::before {
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border: 4px solid $orange-cell;
+    }
   }
 }
 
@@ -125,5 +146,35 @@
 
   .calendar__table-head {
     padding-bottom: 19px;
+  }
+
+  .calendar__cell {
+    padding: 15px;
+    height: 72px;
+    text-align: left;
+    vertical-align: top;
+
+    &--chosen {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &--enabled {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  .calendar__first-day {
+    display: inline;
+    margin-left: 8px;
+  }
+
+  .calendar__day-in,
+  .calendar__day-out {
+    display: block;
+    margin-top: 9px;
   }
 }
