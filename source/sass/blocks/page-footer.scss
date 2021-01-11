@@ -33,6 +33,10 @@
     padding-bottom: 32px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
+
+    &--upper {
+      margin-top: -60px;
+    }
   }
 
   .page-footer__container {

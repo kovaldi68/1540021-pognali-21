@@ -19,7 +19,7 @@
   .add-plan {
     margin-top: -42px;
     padding-top: 53px;
-    padding-bottom: 119px;
+    padding-bottom: 123px;
   }
 
   .add-plan__container {
@@ -34,6 +34,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .add-plan {
+    margin-top: -42px;
+    padding-top: 108px;
+    padding-bottom: 130px;
+  }
+
   .add-plan__title {
     margin-top: -57px;
     margin-left: 70px;
