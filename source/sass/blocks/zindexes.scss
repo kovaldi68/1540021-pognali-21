@@ -18,11 +18,6 @@
   z-index: 20;
 }
 
-.page-footer {
-  position: relative;
-  z-index: 20;
-}
-
 .tariffs {
   position: relative;
   z-index: 30;
@@ -43,8 +38,33 @@
   z-index: 60;
 }
 
+.traveller-settings {
+  position: relative;
+  z-index: 60;
+}
+
+.plans {
+  position: relative;
+  z-index: 70;
+}
+
+.add-plan {
+  position: relative;
+  z-index: 80;
+}
+
+.page-footer {
+  position: relative;
+  z-index: 100;
+}
+
 .page-header {
   &--opened {
     z-index: 100;
+  }
+
+  &--upper {
+    position: relative;
+    z-index: 100
   }
 }

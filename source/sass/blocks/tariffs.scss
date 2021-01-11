@@ -3,7 +3,7 @@
   padding-top: 106px;
   padding-bottom: 38px;
   background-color: $grey-mobile;
-  @include section-border;
+  @include section-bottom-border;
 }
 
 .tariffs__container {
@@ -12,8 +12,7 @@
 }
 
 .tariffs__title {
-  position: relative;
-  margin-bottom: 56px;
+  margin-bottom: 43px;
   width: 107px;
 }
 
@@ -21,7 +20,7 @@
   @include list-reset;
   position: relative;
   counter-reset: tariff-counter;
-  margin-bottom: 46px;
+  margin-bottom: 31px;
   border-bottom: 1px solid $grey-lines;
 
   &::before {
@@ -93,6 +92,64 @@
   font-weight: 700;
   line-height: 16px;
   color: $blue-light-business;
+}
+
+.tariffs__modal {
+  display: none;
+  position: absolute;
+  top: -64px;
+  left: 0;
+  right: 0;
+  margin: 0 25px;
+  background-color: $white-basic;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+  z-index: 50;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.tariffs__modal-wrapper {
+  padding: 34px 25px;
+}
+
+.tariffs__modal-title {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.tariffs__modal-list {
+  @include list-reset;
+  border-top: 1px solid rgba($black-basic, 0.05);
+  border-bottom: 1px solid rgba($black-basic, 0.05);
+}
+
+.tariffs__modal-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 11px 0 10px 0;
+  font-weight: 300;
+  color: $grey-special;
+  border-bottom: 1px solid rgba($black-basic, 0.05);
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.tariffs__modal-button {
+  padding: 21px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: $blue-light-text;
+  text-transform: uppercase;
+  background-color: $grey-tariffs;
 }
 
 @media (min-width: $tablet-width) {
@@ -189,6 +246,37 @@
       transform: translateY(-50%);
     }
   }
+
+  .tariffs__modal {
+    top: -74px;
+    left: 0;
+    right: 0;
+    margin: 0 40px;
+    box-shadow: 0px 4px 22px rgba(29, 46, 91, 0.18);
+  }
+
+  .tariffs__modal-wrapper {
+    padding: 54px 93px 52px 90px;
+  }
+
+  .tariffs__modal-title {
+    margin-bottom: 47px;
+  }
+
+  .tariffs__modal-item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 0 13px 0;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .tariffs__modal-button {
+    padding: 42px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -203,7 +291,7 @@
   }
 
   .tariffs__title {
-    margin-bottom: 153px;
+    margin-bottom: 134px;
   }
 
   .tariffs__list {
@@ -234,5 +322,12 @@
 
   .tariffs__link {
     padding-left: 90px;
+  }
+
+  .tariffs__modal {
+    top: -8px;
+    left: 0;
+    right: 0;
+    margin: 0 327px 0 363px;
   }
 }

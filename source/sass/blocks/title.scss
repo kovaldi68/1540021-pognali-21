@@ -1,15 +1,8 @@
 .title {
   margin: 0;
-
-  &--small {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    color: $blue-light-text;
-  }
+  font-weight: 700;
 
   &--idx-medium {
-    font-weight: 700;
     font-size: 24px;
     line-height: 24px;
     color: $orange-special;
@@ -20,20 +13,55 @@
     }
   }
 
+  &--form-small {
+    font-size: 20px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+  }
+
+  &--form-medium {
+    font-size: 24px;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &--form-large {
+    font-size: 36px;
+    line-height: 36px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+
+  &--small {
+    font-size: 20px;
+    line-height: 20px;
+    color: $blue-light-text;
+  }
+
   &--large {
-    font-weight: 700;
     font-size: 30px;
     line-height: 30px;
   }
 
   &--larger {
-    font-weight: 700;
     font-size: 36px;
     line-height: 36px;
   }
 
   &--largest {
-    font-weight: 700;
     font-size: 45px;
     line-height: 45px;
   }

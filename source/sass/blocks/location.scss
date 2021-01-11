@@ -1,13 +1,13 @@
 .location {
   margin-top: -32px;
   background-color: $yellow-main;
-  @include section-border;
+  @include section-bottom-border;
 }
 
 .location__address {
   padding: 63px 25px 35px 25px;
   background-color: $yellow-main;
-  @include section-border;
+  @include section-bottom-border;
 }
 
 .location__text {

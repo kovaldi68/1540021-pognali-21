@@ -1,4 +1,5 @@
 .traveller-settings {
+  margin-top: -30px;
   padding-top: 54px;
   padding-bottom: 63px;
   background-color: $grey-basic;
@@ -6,6 +7,7 @@
 
 @media (min-width: $tablet-width) {
   .traveller-settings {
+    margin-top: -60px;
     padding-bottom: 89px;
     padding-top: 126px;
   }
@@ -27,7 +29,7 @@
 
   .traveller-settings__form {
     position: relative;
-    margin-top: -320px;
-    z-index: 10;
+    margin-top: -259px;
+    z-index: 110;
   }
 }

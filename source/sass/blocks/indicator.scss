@@ -1,5 +1,8 @@
 .indicator {
   @include list-reset;
+  position: absolute;
+  top: 12px;
+  right: 43px;
   display: flex;
   flex-wrap: wrap;
 
@@ -12,7 +15,13 @@
   margin-right: 16px;
   width: 5px;
   height: 5px;
+  background-color: $blue-light-text;
+  opacity: 0.3;
   border-radius: 50%;
+
+  &--active {
+    opacity: 1;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -20,6 +29,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .indicator {
+    top: 15px;
+    right: 73px;
+  }
+
   .indicator__item {
     width: 6px;
     height: 6px;
@@ -33,13 +47,40 @@
 
     &--inner {
       display: block;
+      position: static;
       color: $black-basic;
       font-size: 20px;
       line-height: 24px;
       text-transform: uppercase;
 
+      .indicator__text {
+        color: $black-basic;
+      }
+
       .indicator__item {
+        position: relative;
         margin-bottom: 27px;
+        padding-left: 42px;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        opacity: 0.6;
+
+        &--active {
+          opacity: 1;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          background-color: $blue-light-text;
+          border-radius: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }

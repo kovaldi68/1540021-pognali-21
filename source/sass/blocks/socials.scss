@@ -3,10 +3,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
 
-.socials--colored .socials__item {
-  margin-right: 0;
+  &--colored {
+    .socials__item {
+      width: 45px;
+      height: 45px;
+      margin-right: 0;
+    }
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
 }
 
 .socials__item {

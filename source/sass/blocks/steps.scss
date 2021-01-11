@@ -7,6 +7,10 @@
   padding: 24px 25px;
   background-color: $white-basic;
   border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .steps__title {
@@ -14,8 +18,11 @@
 }
 
 .steps__description {
-  margin-bottom: 22px;
   color: $grey-special;
+}
+
+.steps__heading {
+  margin-bottom: 21px;
 }
 
 .steps__content {
@@ -23,7 +30,11 @@
 }
 
 .steps__button {
+  width: 100%;
+
   &--back {
+    margin-top: 13px;
+    color: $blue-light-text;
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
@@ -46,9 +57,12 @@
 
   .steps__description {
     width: 505px;
-    margin-bottom: 38px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .steps__heading {
+    margin-bottom: 34px;
   }
 
   .steps__content {
@@ -64,12 +78,31 @@
     text-transform: none;
     border-radius: 20px;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 33px;
+      right: 37px;
+      width: 14px;
+      height: 16px;
+      background-image: url(../../img/triangle-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
     &--back {
       justify-content: flex-end;
       width: 247px;
       font-weight: 700;
       font-size: 24px;
       line-height: 22px;
+
+      &::after {
+        top: 31px;
+        left: 27px;
+        right: auto;
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -81,13 +114,31 @@
     border-radius: 60px;
   }
 
+  .steps__heading {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-right: 47px;
+    margin-bottom: 55px;
+  }
+
   .steps__title {
+    grid-column: 1/2;
     margin-bottom: 33px;
+
+    br {
+      display: none;
+    }
   }
 
   .steps__description {
+    grid-column: 1/2;
     width: 581px;
-    margin-bottom: 55px;
+  }
+
+  .steps__indicator {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-left: auto;
   }
 
   .steps__content {

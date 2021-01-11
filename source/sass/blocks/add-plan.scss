@@ -1,7 +1,13 @@
 .add-plan {
+  margin-top: -29px;
   padding-top: 30px;
   padding-bottom: 72px;
   background-color: $grey-darken-form;
+  @include section-top-border
+}
+
+.add-plan__container {
+  position: relative;
 }
 
 .add-plan__title {
@@ -11,6 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .add-plan {
+    margin-top: -42px;
     padding-top: 53px;
     padding-bottom: 119px;
   }
@@ -28,6 +35,7 @@
 
 @media (min-width: $desktop-width) {
   .add-plan__title {
+    margin-top: -57px;
     margin-left: 70px;
   }
 

@@ -5,10 +5,37 @@
 .route__item {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  position: relative;
   margin-bottom: 27px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -11px;
+    width: 11px;
+    height: 2px;
+    background-color: $blue-light-text;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -11px;
+    width: 2px;
+    height: 284px;
+    background-color: $blue-light-text;
+  }
 
   &:last-child {
     margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -16,20 +43,34 @@
   position: relative;
   display: inline-block;
   margin-bottom: 18px;
+  padding-left: 11px;
   width: 185px;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: none;
+    background-color: $blue-light-text;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &::after {
     content: "";
     position: absolute;
     bottom: 2px;
-    right: 5px;
+    right: 0;
     width: 40px;
     height: 90%;
     text-align: right;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 30%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%);
     pointer-events: none;
   }
 }
@@ -49,21 +90,37 @@
 .route__icon {
   width: 35px;
   height: 24px;
-}
-
-.steps__button {
-  width: 220px;
+  margin-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
   .route__list {
     padding-top: 36px;
+    border-top: 1px solid $grey-lines;
   }
 
   .route__item {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 53px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: auto;
+      right: 0;
+      width: 14px;
+      height: 14px;
+      background-color: $blue-light-text;
+      border-radius: 50%;
+      }
+
+    &::after {
+      top: 23px;
+      left: auto;
+      right: 6px;
+      width: 2px;
+      height: 248px;
+    }
   }
 
   .route__name {
@@ -73,6 +130,10 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .route__description {
@@ -85,6 +146,7 @@
   .route__icon {
     width: 70px;
     height: 47px;
+    margin-bottom: 30px;
   }
 }
 
@@ -93,8 +155,22 @@
     padding-top: 80px;
   }
 
+  .route__item {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 23px;
+      left: auto;
+      right: 225px;
+      height: 120%;
+    }
+  }
+
   .route__name {
     margin-right: 85px;
+    padding: 0;
     width: 730px;
   }
 
@@ -103,5 +179,22 @@
     padding: 26px 22px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .route__icon {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -48px;
+      right: auto;
+      width: 14px;
+      height: 14px;
+      background-color: $blue-light-text;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
