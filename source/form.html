@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--opened page-header--nojs">
+    <header class="page-header page-header--nojs page-header--upper">
       <div class="page-header__container container">
         <a class="page-header__logo" href="index.html">
           <img src="img/logo-mobile-blue@1x.png" alt="Логотип сайта Погнали" width="96" height="15">
@@ -76,7 +76,7 @@
             </a>
           </li>
         </ul>
-        <h1 class="page-header__title title">Направления</h1>
+        <h1 class="page-header__title title title--form-large">Направления</h1>
       </div>
     </header>
 
@@ -143,7 +143,7 @@
       </section>
       <section class="plans">
         <div class="plans__container container">
-          <h2 class="plans__title title">Мои планы:</h2>
+          <h2 class="plans__title title title--form-medium">Мои планы:</h2>
           <ol class="plans__list journey">
             <li class="journey__item">
               <h3 class="journey__name">Франция, Италия</h3>
@@ -170,9 +170,9 @@
       </section>
       <section class="add-plan">
         <div class="add-plan__container container">
-          <h2 class="add-plan__title title">Добавить план:</h2>
+          <h2 class="add-plan__title title title--form-medium">Добавить план:</h2>
           <ul class="add-plan__indicator indicator">
-            <li class="indicator__item"></li>
+            <li class="indicator__item indicator__item--active"></li>
             <li class="indicator__item"></li>
             <li class="indicator__item"></li>
           </ul>
@@ -180,23 +180,31 @@
             <ol class="add-plan__order steps">
               <li class="steps__item">
                 <div class="steps__heading">
-                  <h3 class="steps__title title">Шаг 1.<br> Даты пребывания</h3>
+                  <h3 class="steps__title title title--form-small">Шаг 1.<br> Даты пребывания</h3>
                   <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-                  <ul class="add-plan__indicator indicator indicator--inner">
-                    <li class="indicator__item">Даты</li>
-                    <li class="indicator__item">Маршрут</li>
-                    <li class="indicator__item">Развлечения</li>
+                  <ul class="steps__indicator indicator indicator--inner">
+                    <li class="indicator__item indicator__item--active">
+                      <span class="indicator__text">Даты</span>
+                    </li>
+                    <li class="indicator__item">
+                      <span class="indicator__text">Маршрут</span>
+                    </li>
+                    <li class="indicator__item">
+                      <span class="indicator__text">Развлечения</span>
+                    </li>
                   </ul>
                 </div>
                 <div class="steps__content stay-period">
-                  <div class="stay-period__input trip-input">
+                  <div class="stay-period__input stay-period__input--fellow-number trip-input">
                     <label class="trip-input__label" for="ppl-num">Ищу попутчиков:</label>
+                    <span class="trip-input__unit">чел.</span>
                     <input class="trip-input__pick" type="number" value="2" id="ppl-num">
                     <button class="trip-input__button trip-input__button--less button button--less" type="button" aria-label="Уменьшить количество на 1"></button>
                     <button class="trip-input__button trip-input__button--more button button--more" type="button" aria-label="Увеличить количество на 1"></button>
                   </div>
                   <div class="stay-period__input stay-period__input--duration trip-input">
                     <label class="trip-input__label" for="duration">Длительность:</label>
+                    <span class="trip-input__unit">дн.</span>
                     <input class="trip-input__pick" type="number" value="3" id="duration">
                     <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1"></button>
                     <button class="trip-input__button trip-input__button--more button" type="button" aria-label="Увеличить количество на 1"></button>
@@ -252,7 +260,7 @@
                         <td class="calendar__cell calendar__cell--disabled">26</td>
                         <td class="calendar__cell calendar__cell--disabled">27</td>
                         <td class="calendar__cell calendar__cell--disabled">28</td>
-                        <td class="calendar__cell calendar__cell--disabled">1</td>
+                        <td class="calendar__cell calendar__cell--disabled">1<span class="calendar__first-day">мар</span></td>
                       </tr>
                       <tr class="calendar__table-row">
                         <td class="calendar__cell calendar__cell--disabled">2</td>
@@ -285,15 +293,15 @@
                         <td class="calendar__cell calendar__cell--disabled">23</td>
                         <td class="calendar__cell calendar__cell--disabled">24</td>
                         <td class="calendar__cell calendar__cell--disabled">25</td>
-                        <td class="calendar__cell calendar__cell--chosen">26</td>
+                        <td class="calendar__cell calendar__cell--chosen">26<p class="calendar__day-in">Заезд</p></td>
                         <td class="calendar__cell calendar__cell--chosen">27</td>
-                        <td class="calendar__cell calendar__cell--chosen">28</td>
+                        <td class="calendar__cell calendar__cell--chosen">28<p class="calendar__day-out">Выезд</p></td>
                         <td class="calendar__cell calendar__cell--enabled">29</td>
                       </tr>
                       <tr class="calendar__table-row">
                         <td class="calendar__cell calendar__cell--enabled">30</td>
                         <td class="calendar__cell calendar__cell--enabled">31</td>
-                        <td class="calendar__cell calendar__cell--enabled">1</td>
+                        <td class="calendar__cell calendar__cell--enabled">1<span class="calendar__first-day">апр</span></td>
                         <td class="calendar__cell calendar__cell--enabled">2</td>
                         <td class="calendar__cell calendar__cell--enabled">3</td>
                         <td class="calendar__cell calendar__cell--enabled">4</td>
@@ -306,10 +314,10 @@
               </li>
               <li class="steps__item">
                 <div class="steps__heading">
-                  <h3 class="steps__title title">Шаг 2.<br> Маршрут</h3>
-                  <ul class="add-plan__indicator indicator indicator--inner">
+                  <h3 class="steps__title title title--form-small">Шаг 2.<br> Маршрут</h3>
+                  <ul class="steps__indicator indicator indicator--inner">
                     <li class="indicator__item">Даты</li>
-                    <li class="indicator__item">Маршрут</li>
+                    <li class="indicator__item indicator__item--active">Маршрут</li>
                     <li class="indicator__item">Развлечения</li>
                   </ul>
                   <p class="steps__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
@@ -317,22 +325,22 @@
                 <div class="steps__content track">
                   <ul class="track__list">
                     <li class="track__item">
-                      <button class="track__button button pick-button" type="button">Босния и Герцеговина</button>
+                      <button class="track__button button" type="button"><span>Босния и Герцеговина</span></button>
                       <div class="track__flag">
-                        <img src="img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины">
+                        <img src="img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="70" height="47">
                       </div>
-                      <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button track__button--close button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item">
-                      <button class="track__button button pick-button" type="button"">Чехия</button>
+                      <button class="track__button button" type="button"><span>Чехия</span></button>
                       <div class="track__flag">
-                        <img src="img/flag-czech.svg" alt="Флаг Чехии">
+                        <img src="img/flag-czech.svg" alt="Флаг Чехии" width="70" height="47">
                       </div>
-                      <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button track__button--close button" type="button" aria-label="Удалить из списка"></button>
                     </li>
                     <li class="track__item track__item--choose">
-                      <button class="track__button button pick-button" type="button"">Выберите страну</button>
-                      <button class="track__button button close-button" type="button" aria-label="Удалить из списка"></button>
+                      <button class="track__button track__button--choose button" type="button"><span>Выберите страну</span></button>
+                      <button class="track__button track__button--close button" type="button" aria-label="Удалить из списка"></button>
                       <div class="track__dropdown dropdown">
                         <form class="dropdown__form">
                           <h2 class="dropdown__title title">Выберите страну</h2>
@@ -393,7 +401,7 @@
                       </div>
                     </li>
                     <li class="track__item track__item--add">
-                      <button class="track__button button add-button" type="button">Добавить страну</button>
+                      <button class="track__button track__button--add button" type="button"><span>Добавить страну</span></button>
                     </li>
                   </ul>
                 </div>
@@ -402,12 +410,12 @@
               </li>
               <li class="steps__item">
                 <div class="steps__heading">
-                  <h3 class="steps__title title">Шаг 3.<br> Развлечения</h3>
+                  <h3 class="steps__title title title--form-small">Шаг 3.<br> Развлечения</h3>
                   <p class="steps__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-                  <ul class="add-plan__indicator indicator indicator--inner">
+                  <ul class="steps__indicator indicator indicator--inner">
                     <li class="indicator__item">Даты</li>
                     <li class="indicator__item">Маршрут</li>
-                    <li class="indicator__item">Развлечения</li>
+                    <li class="indicator__item indicator__item--active">Развлечения</li>
                   </ul>
                 </div>
                 <div class="steps__content route">
@@ -424,7 +432,7 @@
                       <div class="route__icon">
                         <img src="img/flag-czech.svg" alt="Флаг Чехии">
                       </div>
-                      <textarea class="route__description" name="todo-list" id="czech-todo" cols="30" rows="3" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                      <textarea class="route__description" name="todo-list" id="czech-todo" cols="30" rows="3" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
                     </li>
                   </ul>
                 </div>
@@ -437,10 +445,10 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--upper">
       <div class="page-footer__container container">
         <p class="page-footer__logo">
-          <img class="page-footer__img" src="img/logo-pognali-mobile-blue.svg" alt="Логотип сайта Погнали" width="96" height="15">
+          <img class="page-footer__img" src="img/logo-mobile-blue@1x.png" alt="Логотип сайта Погнали" width="96" height="15">
         </p>
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="page-footer__social socials socials--colored">
@@ -485,5 +493,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

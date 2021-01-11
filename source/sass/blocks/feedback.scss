@@ -1,9 +1,8 @@
 .feedback {
-  margin-top: -33px;
+  @include section-bottom-border;
   padding-top: 105px;
   padding-bottom: 29px;
   background-color: $blue-dark-main;
-  @include section-border;
 }
 
 .feedback__title {
@@ -105,7 +104,6 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    margin-top: -57px;
     padding-top: 133px;
     padding-bottom: 77px;
   }
@@ -198,7 +196,6 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    margin-top: -99px;
     padding-top: 208px;
     padding-bottom: 103px;
   }

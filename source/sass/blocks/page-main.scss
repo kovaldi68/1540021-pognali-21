@@ -1,5 +1,68 @@
 .page-main {
+  position: relative;
   background-color: $grey-basic;
+}
+
+.page-main__promo {
+  position: relative;
+  z-index: $z-index-promo;
+}
+
+.page-main__about-service {
+  position: relative;
+  z-index: $z-index-about-service;
+}
+
+.page-main__directions {
+  position: relative;
+  margin-top: -30px;
+  z-index: $z-index-directions;
+}
+
+.page-main__companions {
+  position: relative;
+  margin-top: -34px;
+  z-index: $z-index-companions;
+}
+
+.page-main__tariffs {
+  position: relative;
+  z-index: $z-index-tariffs-mobile;
+}
+
+.page-main__feedback {
+  position: relative;
+  margin-top: -33px;
+  z-index: $z-index-feedback;
+}
+
+.page-main__location {
+  position: relative;
+  margin-top: -32px;
+  z-index: $z-index-location;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__directions {
+    margin-top: -76px;
+  }
+
+  .page-main__companions {
+    margin-top: -67px;
+  }
+
+  .page-main__tariffs {
+    z-index: $z-index-tariffs;
+    margin-top: -61px;
+  }
+
+  .page-main__feedback {
+    margin-top: -57px;
+  }
+
+  .page-main__location {
+    margin-top: -54px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -11,5 +74,29 @@
         flex-direction: row-reverse;
       }
     }
+  }
+
+  .page-main__about-service {
+    margin-top: -60px;
+  }
+
+  .page-main__directions {
+    margin-top: -88px;
+  }
+
+  .page-main__companions {
+    margin-top: -101px;
+  }
+
+  .page-main__tariffs {
+    margin-top: -68px;
+  }
+
+  .page-main__feedback {
+    margin-top: -99px;
+  }
+
+  .page-main__location {
+    margin-top: -61px;
   }
 }

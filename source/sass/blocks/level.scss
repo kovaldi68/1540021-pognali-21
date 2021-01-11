@@ -2,18 +2,23 @@
   position: relative;
 
   &--index {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
 
     svg {
-      width: 56px;
-      height: 56px;
+      width: 60px;
+      height: 60px;
     }
   }
 
   &--form {
     width: 100px;
     height: 100px;
+
+    svg {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &--catalog {
@@ -114,32 +119,13 @@
   }
 }
 
-.level__graph {
-  &--index {
-    width: 56px;
-    height: 56px;
-  }
-
-  &--form {
-    width: 100px;
-    height: 100px;
-  }
-
-  &--catalog {
-    width: 46px;
-    height: 46px;
-  }
-}
-
 .level__background {
   fill: none;
-  stroke-width: 3px;
-  stroke: transparent;
 
   &--index {
-    r: 26px;
-    cx: 28px;
-    cy: 28px;
+    r: 30px;
+    cx: 30px;
+    cy: 30px;
     fill: rgba($black-basic, 0.6);
   }
 
@@ -153,29 +139,24 @@
 .level__progress {
   fill: none;
   stroke: $orange-special;
+  stroke-width: 3px;
   stroke-linecap: round;
   transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-  animation: show-level 2s ease-in-out;
-
-  &--form {
-    stroke-width: 3px;
-    stroke-dasharray: 288;
-  }
+  transform-origin: center;
+  animation: stroke-dashoffset 2s ease-in-out;
+  stroke-dasharray: 0 0;
 
   &--index {
-    r: 26px;
-    cx: 28px;
-    cy: 28px;
+    r: 28px;
+    cx: 30px;
+    cy: 30px;
     stroke-width: 4px;
-    stroke-dasharray: calc(3.14 * 26 * 50 / 50), calc((2 * 3.14 * 26) - (3.14 * 26 * 50 / 50));  //3,14 - Число Пи, 26 - Радиус окружности, числитель в дроби - предполагаемый левел путешественника
   }
 
   &--catalog {
     r: 21px;
     cx: 23px;
     cy: 23px;
-    stroke-width: 3px;
   }
 }
 
@@ -250,6 +231,12 @@
   }
 
   .level__progress {
+    &--index {
+      r: 28px;
+      cx: 30px;
+      cy: 30px;
+    }
+
     &--form {
       r: 42px;
       cx: 47px;
@@ -260,6 +247,24 @@
       r: 21px;
       cx: 23px;
       cy: 23px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .level__number {
+    &--form {
+      color: $white-basic;
+
+      &::after {
+        background-color: $white-basic;;
+      }
+    }
+  }
+
+  .level__word {
+    &--form {
+      color: $white-basic;
     }
   }
 }

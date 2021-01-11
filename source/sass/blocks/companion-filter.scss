@@ -30,12 +30,28 @@
 }
 
 .companion-filter__heading {
+  position: relative;
   margin: 0;
   margin-bottom: 17px;
+  padding-right: 10px;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    background-image: url("../../img/dropdown.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
 }
 
 .companion-filter__button {
