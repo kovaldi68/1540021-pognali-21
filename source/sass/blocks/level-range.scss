@@ -1,6 +1,22 @@
 .level-range {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 11px;
+    background-color: $white-basic;
+    background-image: url("../../img/decor-line.svg");
+    background-position: center;
+    background-size: 16px 1px;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .level-range__input {
@@ -31,12 +47,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .level-range {
+    &::before {
+      width: 21px;
+      height: 15px;
+      background-size: 21px 1px;
+    }
+  }
+
   .level-range__input {
     width: 74px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .level-range {
+    &::before {
+      width: 20px;
+      height: 14px;
+      background-size: 20px 1px;
+    }
+  }
+
   .level-range__input {
     width: 96px;
   }

@@ -54,6 +54,10 @@
   }
 }
 
+.companion-filter__level-range {
+  margin-bottom: 24px;
+}
+
 .companion-filter__button {
   width: 100%;
   padding: 14px 20px 15px;
@@ -92,6 +96,20 @@
     line-height: 20px;
     width: 20%;
     margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .companion-filter__level-range {
+    margin-left: auto;
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  .companion-filter__range {
+    width: 275px;
   }
 }
 
@@ -112,6 +130,10 @@
     padding: 46px 45px 48px 48px;
   }
 
+  .companion-filter__wrapper {
+    margin-bottom: 43px;
+  }
+
   .companion-filter__item {
     display: block;
   }
@@ -123,5 +145,17 @@
   .companion-filter__heading {
     margin-bottom: 27px;
     width: auto;
+
+    &::after {
+      display: inline;
+    }
+  }
+
+  .companion-filter__level-range {
+    margin-bottom: 31px;
+  }
+
+  .companion-filter__range {
+    width: 100%;
   }
 }

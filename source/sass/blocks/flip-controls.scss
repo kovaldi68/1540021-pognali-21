@@ -1,0 +1,27 @@
+.flip-controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flip-controls__button {
+  width: 135px;
+  height: 51px;
+  background: $white-basic url("../img/triangle-arrow-left.svg");
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid $grey-basic;
+  background-position: calc(50% + 10px) center;
+
+  &--next {
+    transform: rotate(-180deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .flip-controls__button {
+    width: 61px;
+    height: 100px;
+    border: 0;
+  }
+}

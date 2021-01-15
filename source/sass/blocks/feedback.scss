@@ -33,6 +33,10 @@
   padding: 22px 25px;
   width: 220px;
   height: 62px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgba($grey-special, 0.3);
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -138,6 +142,8 @@
 
   .feedback__field {
     padding: 40px 36px;
+    font-size: 24px;
+    line-height: 24px;
     width: 536px;
 
     &::placeholder {
@@ -219,11 +225,6 @@
   .feedback__field {
     padding: 41px 36px 40px 36px;
     width: 850px;
-
-    &::placeholder {
-      font-size: 24px;
-      line-height: 24px;
-    }
   }
 
   .feedback__button {

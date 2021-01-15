@@ -2,6 +2,11 @@
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+
+  &--catalog {
+    width: 220px;
+    margin-left: 25px;
+  }
 }
 
 .alphabet__table-cell {
@@ -38,7 +43,11 @@
     width: 346px;
 
     &--catalog {
-      margin-right: 100px;
+      margin-left: 0;
+      margin-right: auto;
+      margin-top: 63px;
+      margin-bottom: 80px;
+      width: 396px;
     }
   }
 
@@ -49,13 +58,15 @@
     line-height: 20px;
 
     &--catalog {
+      padding: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
       font-size: 60px;
       line-height: 60px;
       font-weight: 700;
       color: rgba($blue-dark-main, 0.3);
       background-color: transparent;
       border: none;
-      padding: 0;
     }
 
     &--chosen {
