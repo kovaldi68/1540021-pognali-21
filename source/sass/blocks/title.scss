@@ -2,6 +2,16 @@
   margin: 0;
   font-weight: 700;
 
+  &--small {
+    font-size: 20px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
   &--idx-medium {
     font-size: 24px;
     line-height: 24px;
@@ -11,17 +21,6 @@
       font-size: 45px;
       line-height: 45px;
     }
-  }
-
-  &--form-small {
-    font-size: 20px;
-    line-height: 20px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
-    }
-
   }
 
   &--form-medium {
@@ -34,7 +33,7 @@
     }
   }
 
-  &--form-large {
+  &--large {
     font-size: 36px;
     line-height: 36px;
 
@@ -42,27 +41,5 @@
       font-size: 60px;
       line-height: 60px;
     }
-  }
-
-
-  &--small {
-    font-size: 20px;
-    line-height: 20px;
-    color: $blue-light-text;
-  }
-
-  &--large {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  &--larger {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  &--largest {
-    font-size: 45px;
-    line-height: 45px;
   }
 }

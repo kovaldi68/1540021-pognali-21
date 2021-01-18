@@ -1,12 +1,51 @@
 .transport {
+  &--rounded {
+    .transport__list {
+      justify-content: flex-start;
+    }
+
+    .transport__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1px;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      background-color: $grey-basic;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+
+      &--plane {
+        background-image: url("../img/plane.svg");
+        background-size: 14px 16px;
+      }
+
+      &--car {
+        background-image: url("../img/bus.svg");
+        background-size: 13px 16px;
+      }
+
+      &--cycle {
+        background-image: url("../img/bike.svg");
+        background-size: 15px 17px;
+      }
+
+      &--walk {
+        background-image: url("../img/run.svg");
+        background-size: 13px 17px;
+      }
+    }
+  }
+}
+
+.transport__list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  &--rounded {
-    justify-content: flex-start;
-  }
 }
 
 .transport__item {
@@ -19,19 +58,44 @@
   }
 }
 
-.transport--rounded .transport__item {
-  margin-right: 1px;
-  background-color: $grey-basic;
-  border-radius: 50%;
-}
-
 @media (min-width: $tablet-width) {
   .transport {
     &--rounded {
-      flex-direction: column;
-      align-items: flex-end;
-      width: auto;
-      margin: 0;
+      .transport__list {
+        flex-direction: column;
+        align-items: flex-end;
+        width: auto;
+        margin: 0;
+      }
+
+      .transport__item {
+        margin-right: 0;
+        width: 27px;
+        height: 27px;
+        background-color: transparent;
+        border-radius: 0;
+        margin-bottom: 7px;
+
+        &--plane {
+          background-size: 22px 22px;
+        }
+
+        &--car {
+          background-size: 18px 20px;
+        }
+
+        &--cycle {
+          background-size: 25px 25px;
+        }
+
+        &--walk {
+          background-size: 22px 24px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
@@ -39,7 +103,26 @@
 @media (min-width: $desktop-width) {
   .transport {
     &--rounded {
-      flex-direction: row;
+      .transport__list {
+        flex-direction: row;
+      }
+
+      .transport__item {
+        margin-right: 7px;
+        margin-bottom: 0;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }

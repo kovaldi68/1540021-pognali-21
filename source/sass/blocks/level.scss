@@ -24,6 +24,11 @@
   &--catalog {
     width: 46px;
     height: 46px;
+
+    svg {
+      width: 46px;
+      height: 46px;
+    }
   }
 }
 
@@ -33,21 +38,9 @@
   flex-direction: column;
   position: absolute;
   text-align: center;
-
-  &--index {
-    top: 8px;
-    left: 15px;
-  }
-
-  &--form {
-    top: 19px;
-    left: 30px;
-  }
-
-  &--catalog {
-    top: 11px;
-    left: 11px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .level__number {
@@ -86,11 +79,13 @@
       top: 24px;
       left: -2px;
       width: 30px;
+      height: 1px;
       background-color: rgba($white-basic, 0.3);
     }
   }
 
   &--catalog {
+    font-weight: 700;
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 0;
@@ -154,7 +149,7 @@
   }
 
   &--catalog {
-    r: 21px;
+    r: 20px;
     cx: 23px;
     cy: 23px;
   }
@@ -173,39 +168,41 @@
     }
 
     &--catalog {
-      width: 46px;
-      height: 46px;
-    }
-  }
+      width: 60px;
+      height: 60px;
 
-  .level__text {
-    &--form {
-      left: 27px;
-    }
-
-    &--catalog {
-      top: 11px;
-      left: 11px;
+      svg {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 
   .level__number {
     &--catalog {
+      margin-bottom: 1px;
+
       &::after {
-        content: "";
-        position: absolute;
-        top: 39px;
-        left: -5px;
-        width: 51px;
+        display: inline;
+        top: 23px;
+        left: -2px;
+        width: 31px;
         height: 1px;
-        background-color: rgba($grey-special, 0.3);
+        background-color: rgba($grey-special, 0.1);
       }
     }
   }
 
   .level__word {
     &--form {
-      display: block;
+      display: inline;
+    }
+
+    &--catalog {
+      display: inline;
+      font-size: 14px;
+      line-height: 14px;
+      color: rgba($black-basic, 0.4);
     }
   }
 
@@ -224,9 +221,9 @@
     }
 
     &--catalog {
-      r: 21px;
-      cx: 23px;
-      cy: 23px;
+      r: 27px;
+      cx: 30px;
+      cy: 30px;
     }
   }
 
@@ -244,9 +241,9 @@
     }
 
     &--catalog {
-      r: 21px;
-      cx: 23px;
-      cy: 23px;
+      r: 27px;
+      cx: 30px;
+      cy: 30px;
     }
   }
 }
@@ -257,7 +254,7 @@
       color: $white-basic;
 
       &::after {
-        background-color: $white-basic;;
+        background-color: $white-basic;
       }
     }
   }

@@ -5,22 +5,43 @@
     "photo name name"
     "photo likes likes"
     "tags tags tags"
+    "heading-states heading-states heading-states"
     "states states states"
+    "heading-transport heading-transport heading-level"
     "transport transport level"
     "button button button";
   padding: 15px 20px 23px 20px;
+  position: relative;
   background-color: $white-basic;
   border-radius: 20px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 6px;
+    height: 6px;
+    background-color: $orange-indicator;
+    border-radius: 50%;
+  }
+
+  &--online {
+    &::before {
+      background-color: $green-online;
+    }
+  }
 }
 
 .user-card__photo {
+  grid-area: photo;
   display: block;
+  margin-left: -2px;
+  margin-bottom: 13px;
   overflow: hidden;
   width: 70px;
   height: 70px;
-  grid-area: photo;
-  margin-left: -2px;
-  margin-bottom: 13px;
   border-radius: 50%;
 
   img {
@@ -30,38 +51,96 @@
   }
 }
 
+.user-card__name {
+  grid-area: name;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  width: 50%;
+}
+
 .user-card__heading {
-  display: inline-block;
-  margin-bottom: 10px;
+  font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   color: $grey-special;
-}
+  background-color: $white-basic;
 
-.user-card__name {
-  grid-area: name;
-  margin-bottom: 12px;
+  span {
+    position: relative;
+    background-color: $white-basic;
+    padding-right: 10px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: 50%;
+      left: -100%;
+      background-color: $grey-basic;
+    }
+  }
+
+  &--states {
+    grid-area: heading-states;
+    margin-bottom: 19px;
+
+    span {
+      margin-left: -5px;
+      padding-left: 11px;
+    }
+  }
+
+  &--transport {
+    grid-area: heading-transport;
+
+    span {
+      margin-left: -6px;
+      padding-left: 12px;
+    }
+  }
+
+  &--level {
+    grid-area: heading-level;
+
+    span {
+      margin-right: 10px;
+      padding-left: 14px;
+    }
+  }
 }
 
 .user-card__likes {
   grid-area: likes;
+  margin-left: 16px;
+  margin-bottom: 10px;
 }
 
 .user-card__tag-list {
   grid-area: tags;
+  margin-left: 6px;
+  margin-bottom: 16px;
 }
 
 .user-card__states {
   grid-area: states;
+  margin-left: 6px;
+  margin-bottom: 12px;
 }
 
-.user-card__transportation {
+.user-card__transport {
   grid-area: transport;
-  margin-left: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 6px;
 }
 
 .user-card__level {
   grid-area: level;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  margin-left: auto;
 }
 
 .user-card__button {
@@ -75,44 +154,101 @@
       "photo name name transport"
       "photo tags tags transport"
       "photo button likes level"
+      "heading-states heading-states heading-states heading-states"
       "states states states states";
     padding: 33px 25px 26px 35px;
+
+    &::before {
+      display: none;
+    }
+
+    &--online {
+      .user-card__name {
+        span {
+          &::before {
+            background-color: $green-online;
+          }
+        }
+      }
+    }
   }
 
   .user-card__photo {
     margin-left: 0;
+    margin-right: 29px;
     width: 190px;
     height: 190px;
     border-radius: 20px;
   }
 
   .user-card__name {
+    margin-left: 4px;
+    margin-right: auto;
+    padding-right: 25px;
+    width: 100%;
     font-size: 30px;
     line-height: 30px;
+
+    span {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: -22px;
+        width: 8px;
+        height: 8px;
+        background-color: $orange-indicator;
+        border-radius: 50%;
+        transform: translateX(100%);
+      }
+    }
   }
 
   .user-card__heading {
-    display: inline-block;
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 16px;
-    color: $grey-special;
+    margin-left: 0;
+
+    &::before {
+      left: -84px;
+    }
+
+    &--states {
+      grid-area: heading-states;
+      margin-bottom: 19px;
+      margin-left: 39px;
+    }
+
+    &--transport {
+      display: none;
+    }
+
+    &--level {
+      display: none;
+    }
   }
 
   .user-card__likes {
     grid-area: likes;
+    align-self: flex-start;
+    margin-left: -24px;
   }
 
   .user-card__tag-list {
     grid-area: tags;
+    margin-left: 7px;
+    margin-bottom: 46px;
   }
 
   .user-card__states {
     grid-area: states;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
-  .user-card__transportation {
+  .user-card__transport {
     grid-area: transport;
+    margin: auto;
 
     span {
       display: none;
@@ -121,11 +257,15 @@
 
   .user-card__level {
     grid-area: level;
+    margin: auto;
   }
 
   .user-card__button {
     grid-area: button;
-    align-self: center;
+    align-self: flex-start;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -133,53 +273,86 @@
   .user-card {
     grid-template-columns: 285px 204px 186px 166px 110px;
     grid-template-areas:
-      "photo name name states ."
-      "photo tags tags states ."
+      "photo name name states states"
+      "photo tags tags states states"
       "photo button likes transport level";
     padding: 0;
   }
 
   .user-card__photo {
     margin-bottom: 0;
+    margin-right: 0;
     width: 285px;
     height: 285px;
     border-radius: 20px;
   }
 
   .user-card__name {
+    margin-top: 46px;
+    margin-bottom: 20px;
+    margin-left: 62px;
     font-size: 30px;
     line-height: 30px;
-  }
 
-  .user-card__heading {
-    display: inline-block;
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 16px;
-    color: $grey-special;
+    span {
+      position: relative;
+
+      &::before {
+        top: 15px;
+        left: -32px;
+        right: auto;
+        transform: translateX(100%);
+      }
+    }
   }
 
   .user-card__likes {
     grid-area: likes;
+    margin-left: 8px;
   }
 
   .user-card__tag-list {
     grid-area: tags;
+    margin-left: 62px;
+    margin-bottom: 45px;
+  }
+
+  .user-card__heading {
+    margin-left: 0;
+
+    &--states {
+      display: none;
+    }
+
+    &--transport {
+      display: none;
+    }
+
+    &--level {
+      display: none;
+    }
   }
 
   .user-card__states {
     grid-area: states;
+    margin-top: 49px;
   }
 
-  .user-card__transportation {
+  .user-card__transport {
     grid-area: transport;
+    margin: 0;
+    margin-top: 14px;
   }
 
   .user-card__level {
     grid-area: level;
+    margin-top: -4px;
+    margin-bottom: 42px;
+    margin-right: 43px;
   }
 
   .user-card__button {
     grid-area: button;
+    margin-left: 62px;
   }
 }

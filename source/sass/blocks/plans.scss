@@ -1,9 +1,9 @@
 .plans {
+  @include section-top-border;
   margin-top: -29px;
   padding-top: 28px;
   padding-bottom: 59px;
   background-color: $grey-dark-form;
-  @include section-top-border
 }
 
 .plans__title {

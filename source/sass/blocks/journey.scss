@@ -12,7 +12,7 @@
   border-radius: 10px;
 
   &::after {
-    content: counter(journey-counter)".";
+    content: counter(journey-counter);
     position: absolute;
     top: 24px;
     left: 25px;

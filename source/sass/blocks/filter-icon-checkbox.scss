@@ -6,7 +6,9 @@
 }
 
 .filter-icon-checkbox__item {
-  margin-right: 1px;
+  margin-right: 2px;
+  width: 32px;
+  height: 32px;
 
   :last-child {
     margin-right: 0;
@@ -14,34 +16,30 @@
 }
 
 .filter-icon-checkbox__label {
-  display: inline-block;
-  width: 33px;
-  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: $white-basic;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--plane {
-    background-image: url("../../img/transport-icon-plane.svg");
-  }
-
-  &--car {
-    background-image: url("../../img/transport-icon-bus.svg");
-  }
-
-  &--cycle {
-    background-image: url("../../img/transport-icon-bicycle.svg");
-  }
-
-  &--walk {
-    background-image: url("../../img/transport-icon-run.svg");
-  }
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
+  .filter-icon-checkbox__item {
+    margin-right: 2px;
+    width: 43px;
+    height: 43px;
+  }
+
   .filter-icon-checkbox__label {
     width: 43px;
     height: 43px;
+
+    svg {
+      width: 23px;
+      height: 22px;
+    }
   }
 }

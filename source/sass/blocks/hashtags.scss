@@ -7,7 +7,6 @@
 
   &--left {
     justify-content: flex-start;
-    margin-bottom: 16px;
   }
 }
 
@@ -27,5 +26,9 @@
     font-size: 20px;
     line-height: 23px;
     width: 223px;
+  }
+
+  .hashtags__item {
+    margin-right: 7px;
   }
 }

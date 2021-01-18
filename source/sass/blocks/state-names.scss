@@ -5,6 +5,8 @@
   border-top: none;
 
   &--catalog {
+    width: 220px;
+    margin-left: 25px;
     padding: 14px 0;
     border: none;
   }
@@ -15,22 +17,33 @@
   color: $grey-special;
 }
 
+.state-names__link {
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey-special;
+}
+
 @media (min-width: $tablet-width) {
   .state-names {
     padding: 37px 28px 33px 26px;
-    font-size: 20px;
-    line-height: 20px;
     border: none;
     border-left: 1px solid rgba($grey-calendar, 0.5);
 
     &--catalog {
+      margin: 0;
       padding: 0;
+      width: 156px;
       font-size: 20px;
       line-height: 30px;
       border: none;
 
       .state-names__item {
         margin: 0;
+      }
+
+      .state-names__link {
+        font-size: 20px;
+        line-height: 30px;
       }
     }
   }
@@ -41,6 +54,11 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .state-names__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
