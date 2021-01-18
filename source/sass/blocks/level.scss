@@ -202,7 +202,7 @@
       display: inline;
       font-size: 14px;
       line-height: 14px;
-      color: rgba($black-basic, 0.4)
+      color: rgba($black-basic, 0.4);
     }
   }
 
@@ -221,9 +221,9 @@
     }
 
     &--catalog {
-      r: 21px;
-      cx: 23px;
-      cy: 23px;
+      r: 27px;
+      cx: 30px;
+      cy: 30px;
     }
   }
 
@@ -254,7 +254,7 @@
       color: $white-basic;
 
       &::after {
-        background-color: $white-basic;;
+        background-color: $white-basic;
       }
     }
   }

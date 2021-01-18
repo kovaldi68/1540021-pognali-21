@@ -2,6 +2,14 @@
   @include list-reset;
 }
 
+.filter-checkbox__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .filter-checkbox__label {
   position: relative;
   padding-left: 27px;
@@ -26,7 +34,7 @@
 
 .filter-checkbox__tag:checked + .filter-checkbox__label::before {
   background-image: url("../../img/tick.svg");
-  background-size: 8px 8px;
+  background-size: 8px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -38,11 +46,27 @@
   }
 
   .filter-checkbox__item {
+    margin-bottom: 0;
     width: 33%;
   }
 
   .filter-checkbox__label {
+    padding-left: 36px;
     font-size: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+
+    svg {
+      width: 23px;
+      height: 22px;
+    }
+  }
+
+  .filter-checkbox__tag:checked + .filter-checkbox__label::before {
+    background-size: 11px;
   }
 }
 
@@ -53,5 +77,6 @@
 
   .filter-checkbox__item {
     width: auto;
+    margin-bottom: 16px;
   }
 }

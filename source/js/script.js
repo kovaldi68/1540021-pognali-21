@@ -7,13 +7,31 @@ const progressBars = document.querySelectorAll(".level__progress");
 const trackDrop = document.querySelector(".track__dropdown");
 const dropOpener = document.querySelector(".track__button--choose");
 const dropCloser = document.querySelector(".dropdown__button");
+const countryFilter = document.querySelector(".country-filter__inner")
+const countryfilterToggle = document.querySelector(".country-filter__toggle")
+const countryfilterCloser = document.querySelector(".country-filter__button")
+const mediaDesktop = window.matchMedia('(min-width: 1440px)')
 
-console.log(progressBars)
+//filter
+
+if (countryFilter) {
+  countryfilterCloser.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    countryFilter.classList.remove("country-filter__inner--expanded")
+  });
+
+  countryfilterToggle.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    countryFilter.classList.toggle("country-filter__inner--expanded")
+  });
+}
+
 //header
 
 header.classList.remove("page-header--nojs");
 
 headerToggle.addEventListener("click", function(evt) {
+  evt.preventDefault();
   const headerHeight = header.offsetHeight;
 
   if (header.classList.contains("page-header--opened")) {
@@ -21,7 +39,12 @@ headerToggle.addEventListener("click", function(evt) {
     document.body.style.paddingTop = 0;
   } else {
     header.classList.add("page-header--opened")
-    document.body.style.paddingTop = '${headerHeight}px';
+
+    if (mediaDesktop.matches) {
+      document.body.style.paddingTop = 0;
+    } else {
+      document.body.style.paddingTop = `${headerHeight}px`;
+    }
   }
 });
 
@@ -54,7 +77,7 @@ function setProgress(element) {
   const circumference = 2 * Math.PI * radius;
   const percent = element.dataset.level;
 
-  element.style.strokeDasharray = '${circumference}';
+  element.style.strokeDasharray = `${circumference}`;
 
   const offset = circumference - circumference * percent / 100;
   element.style.strokeDashoffset = offset;

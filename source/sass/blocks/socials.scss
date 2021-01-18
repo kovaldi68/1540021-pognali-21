@@ -19,6 +19,9 @@
 }
 
 .socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 27px;
 
   &:last-child {
@@ -38,15 +41,40 @@
         height: 62px;
       }
 
-      svg {
-        width: 62px;
-        height: 62px;
+      .socials__link {
+        svg {
+          width: 62px;
+          height: 62px;
+        }
       }
     }
   }
 
   .socials__item {
     margin-right: 34px;
+  }
+
+  .socials__link {
+    &--facebook {
+      svg {
+        width: 14px;
+        height: 28px;
+      }
+    }
+
+    &--vkontakte {
+      svg {
+        width: 31px;
+        height: 16px;
+      }
+    }
+
+    &--instagram {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 }
 

@@ -50,6 +50,10 @@
     margin-bottom: 46px;
   }
 
+  .result__item {
+    margin-bottom: 40px;
+  }
+
   .result__button {
     margin-bottom: 51px;
     font-size: 20px;
@@ -68,6 +72,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 25px 35px 25px 28px;
   }
 }
 
@@ -82,6 +87,10 @@
     margin-bottom: 62px;
   }
 
+  .result__item {
+    margin-bottom: 30px;
+  }
+
   .result__container {
     width: auto;
     padding: 0;
@@ -90,5 +99,13 @@
 
   .result__button {
     margin-bottom: 71px;
+  }
+
+  .result__pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 41px 25px 29px;
   }
 }

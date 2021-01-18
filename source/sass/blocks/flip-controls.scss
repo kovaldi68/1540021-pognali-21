@@ -20,8 +20,10 @@
 
 @media (min-width: $tablet-width) {
   .flip-controls__button {
-    width: 61px;
-    height: 100px;
+    width: 13px;
+    height: 20px;
     border: 0;
+    background-position: center;
+    margin-left: 29px;
   }
 }

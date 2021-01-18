@@ -1,9 +1,9 @@
 .add-plan {
+  @include section-top-border;
   margin-top: -29px;
   padding-top: 30px;
   padding-bottom: 72px;
   background-color: $grey-darken-form;
-  @include section-top-border
 }
 
 .add-plan__container {

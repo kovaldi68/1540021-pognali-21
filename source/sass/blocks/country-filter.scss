@@ -23,6 +23,7 @@
     .country-filter__list {
       display: block;
     }
+
     .country-filter__button {
       display: inline-flex;
     }
@@ -258,6 +259,10 @@
       .country-filter__list {
         display: none;
       }
+
+      .country-filter__toggle {
+        display: none;
+      }
     }
   }
 
@@ -278,6 +283,7 @@
   }
 
   .country-filter__toggle {
-    display: none;
+    display: flex;
+    margin-right: 59px;
   }
 }

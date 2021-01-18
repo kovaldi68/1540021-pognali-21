@@ -14,6 +14,7 @@
   position: relative;
   background-color: $white-basic;
   border-radius: 20px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -58,37 +59,55 @@
 }
 
 .user-card__heading {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  margin-left: 6px;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   color: $grey-special;
+  background-color: $white-basic;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 270px;
-    height: 1px;
-    top: 50%;
-    left: -26px;
-    background-color: $grey-basic;
+  span {
+    position: relative;
+    background-color: $white-basic;
+    padding-right: 10px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: 50%;
+      left: -100%;
+      background-color: $grey-basic;
+    }
   }
 
   &--states {
     grid-area: heading-states;
     margin-bottom: 19px;
+
+    span {
+      margin-left: -5px;
+      padding-left: 11px;
+    }
   }
 
   &--transport {
     grid-area: heading-transport;
+
+    span {
+      margin-left: -6px;
+      padding-left: 12px;
+    }
   }
 
   &--level {
     grid-area: heading-level;
+
+    span {
+      margin-right: 10px;
+      padding-left: 14px;
+    }
   }
 }
 
@@ -107,6 +126,7 @@
 .user-card__states {
   grid-area: states;
   margin-left: 6px;
+  margin-bottom: 12px;
 }
 
 .user-card__transport {
@@ -120,6 +140,7 @@
   grid-area: level;
   margin-top: 10px;
   margin-bottom: 14px;
+  margin-left: auto;
 }
 
 .user-card__button {
@@ -143,8 +164,10 @@
 
     &--online {
       .user-card__name {
-        &::before {
-          background-color: $green-online;
+        span {
+          &::before {
+            background-color: $green-online;
+          }
         }
       }
     }
@@ -159,28 +182,26 @@
   }
 
   .user-card__name {
-    position: relative;
     margin-left: 4px;
     margin-right: auto;
-    width: auto;
+    padding-right: 25px;
+    width: 100%;
     font-size: 30px;
     line-height: 30px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: -22px;
-      width: 8px;
-      height: 8px;
-      background-color: $orange-indicator;
-      border-radius: 50%;
-      transform: translate(100%, -100%);
-    }
+    span {
+      position: relative;
 
-    &--online {
       &::before {
-        background-color: $green-online;
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: -22px;
+        width: 8px;
+        height: 8px;
+        background-color: $orange-indicator;
+        border-radius: 50%;
+        transform: translateX(100%);
       }
     }
   }
@@ -189,14 +210,13 @@
     margin-left: 0;
 
     &::before {
-      width: 688px;
       left: -84px;
     }
 
     &--states {
       grid-area: heading-states;
       margin-bottom: 19px;
-      margin-left: 50px;
+      margin-left: 39px;
     }
 
     &--transport {
@@ -211,7 +231,7 @@
   .user-card__likes {
     grid-area: likes;
     align-self: flex-start;
-    margin-left: -23px;
+    margin-left: -24px;
   }
 
   .user-card__tag-list {
@@ -223,6 +243,7 @@
   .user-card__states {
     grid-area: states;
     margin-left: 0;
+    margin-bottom: 0;
   }
 
   .user-card__transport {
@@ -273,11 +294,15 @@
     font-size: 30px;
     line-height: 30px;
 
-    &::before {
-      top: 50%;
-      left: -18px;
-      right: auto;
-      transform: translate(-100%, -100%);
+    span {
+      position: relative;
+
+      &::before {
+        top: 15px;
+        left: -32px;
+        right: auto;
+        transform: translateX(100%);
+      }
     }
   }
 
