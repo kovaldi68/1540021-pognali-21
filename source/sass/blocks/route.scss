@@ -85,6 +85,24 @@
   color: $grey-special;
   border: 1px solid $grey-border;
   border-radius: 4px;
+  outline: none;
+
+  &::placeholder {
+    color: rgba($grey-special, 0.3);
+  }
+
+  &:hover {
+    border: 1px solid $grey-input-hover;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid $blue-dark-basic;
+
+    &::placeholder {
+      color: $grey-special;
+    }
+  }
 }
 
 .route__icon {

@@ -17,6 +17,11 @@
   line-height: 18px;
   text-align: center;
   border: 1px solid $grey-border;
+  cursor: pointer;
+
+  a {
+    color: $blue-light-text;
+  }
 
   &--catalog {
     background-color: $white-basic;
@@ -31,6 +36,15 @@
     color: $white-basic;
     background-color: $blue-light-text;
     border: 1px solid $blue-light-text;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $grey-input-hover;
+  }
+
+  &:active {
+    background-color: $grey-basic;
   }
 }
 
@@ -67,15 +81,35 @@
       color: rgba($blue-dark-main, 0.3);
       background-color: transparent;
       border: none;
+
+      span {
+        &:hover,
+        &:focus,
+        &:active {
+          color: $blue-dark-main;
+        }
+      }
     }
 
     &--chosen {
-      color: $white-basic;
       background-color: $blue-light-text;
+
+      a {
+        color: $white-basic;
+      }
     }
 
     &--chosen-second {
       color: $blue-dark-main;
+    }
+
+    &:active {
+      background-color: $blue-light-text;
+      border: 1px solid $blue-light-text;
+
+      a {
+        color: $white-basic;
+      }
     }
   }
 }
@@ -119,10 +153,6 @@
       border: none;
     }
 
-    &--catalog {
-      color: $blue-dark-main;
-    }
-
     span {
       display: block;
       margin-bottom: 30px;
@@ -136,5 +166,14 @@
     font-size: 20px;
     line-height: 30px;
     color: $grey-special;
+
+    &:hover,
+    &:focus {
+      color: $blue-light-text;
+    }
+
+    &:active {
+      color: rgba($blue-light-text, 0.3);
+    }
   }
 }

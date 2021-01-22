@@ -18,6 +18,21 @@
   &--current {
     background-color: $yellow-main;
   }
+
+  &:not(.pagination__item--current):hover,
+  &:not(.pagination__item--current):focus {
+    .pagination__link {
+      color: rgba($blue-light-text, 0.6);
+    }
+  }
+
+  &:active {
+    background-color: $yellow-main;
+
+    .pagination__link {
+      color: $blue-light-text;
+    }
+  }
 }
 
 .pagination__link {

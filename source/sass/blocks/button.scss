@@ -20,27 +20,10 @@
     background-color: $yellow-main;
     border-radius: 10px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      right: 22px;
-      width: 14px;
-      height: 16px;
-      background-image: url("../../img/triangle-arrow-right.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
     @media (min-width: $tablet-width) {
       font-size: 24px;
       line-height: 24px;
       padding: 29px 74px 27px 33px;
-
-      &::after {
-        top: 34px;
-        right: 33px;
-      }
     }
   }
 
@@ -55,5 +38,14 @@
     color: $blue-light-text;
     background-color: $yellow-main;
     border-radius: 25px;
+
+    &:hover,
+    &:focus {
+      background-color: $yellow-dark;
+    }
+
+    &:active {
+      color: rgba($blue-light-text, 0.3);
+    }
   }
 }

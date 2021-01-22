@@ -21,6 +21,15 @@
   font-size: 16px;
   line-height: 22px;
   color: $grey-special;
+
+  &:hover,
+  &:focus {
+    color: $blue-light-text;
+  }
+
+  &:active {
+    color: rgba($blue-light-text, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

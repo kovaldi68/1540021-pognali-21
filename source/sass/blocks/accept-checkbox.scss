@@ -24,6 +24,13 @@
     border-radius: 4px;
     transform: translateY(-50%);
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 1px solid $grey-input-hover;
+    }
+  }
 }
 
 .accept-checkbox__box:checked + .accept-checkbox__text::before {
@@ -31,6 +38,13 @@
   background-size: 8px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.accept-checkbox__box:disabled + .accept-checkbox__text::before,
+.accept-checkbox__box:disabled:checked + .accept-checkbox__text::before {
+  background-image: url("../../img/tick-disabled.svg");
+  background-color: $grey-decor;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {

@@ -52,6 +52,15 @@
     background-repeat: no-repeat;
     transform: translateY(-50%);
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companion-filter__level-range {
@@ -64,6 +73,16 @@
   color: $blue-dark-basic;
   background-color: $white-basic;
   line-height: 17px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 6px rgba($black-basic, 0.14);
+  }
+
+  &:active {
+    background-color: $yellow-dark-border;
+    color: rgba($blue-dark-basic, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

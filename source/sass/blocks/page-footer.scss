@@ -12,10 +12,11 @@
   }
 }
 
-.page-footer__img {
-  display: block;
+.page-footer__logo {
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 40px;
+  width: 96px;
+  height: 15px;
 }
 
 .page-footer__social {
@@ -48,8 +49,15 @@
     align-items: center;
   }
 
-  .page-footer__img {
+  .page-footer__logo {
     margin: 0;
+    width: 164px;
+    height: 42px;
+
+    img {
+      width: 164px;
+      height: 42px;
+    }
   }
 
   .page-footer__social {
@@ -61,5 +69,15 @@
   .page-footer {
     padding-top: 47px;
     padding-bottom: 43px;
+  }
+
+  .page-footer__logo {
+    width: 200px;
+    height: 55px;
+
+    img {
+      width: 200px;
+      height: 55px;
+    }
   }
 }

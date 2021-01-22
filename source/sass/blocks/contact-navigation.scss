@@ -27,6 +27,15 @@
   text-transform: uppercase;
   color: $blue-dark-main;
 
+  &:hover,
+  &:focus {
+    color: $yellow-dark;
+  }
+
+  &:active {
+    color: rgba($yellow-main, 0.3);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -45,12 +54,38 @@
       background-image: url("../../img/contacts-phone.svg");
       background-size: 18px 17px;
     }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-image: url("../img/contacts-phone-hover.svg");
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/contacts-phone-active.svg");
+      }
+    }
   }
 
   &--mail {
     &::before {
       background-image: url("../../img/contacts-mail.svg");
       background-size: 19px 13px;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-image: url("../img/contacts-mail-hover.svg");
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/contacts-mail-active.svg");
+      }
     }
   }
 }

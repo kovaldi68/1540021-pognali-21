@@ -29,10 +29,15 @@
     right: 0;
     width: 100px;
     height: 100px;
-    background-image: url("../../img/rates@1x.png");
+    background-image: url("../img/rates@1x.png");
+    background-size: 100px;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rates@2x.png");
+    }
   }
 }
 
@@ -91,6 +96,15 @@
   font-weight: 700;
   line-height: 16px;
   color: $blue-light-business;
+
+  &:hover,
+  &:focus {
+    color: rgba($blue-light-business, 0.7);
+  }
+
+  &:active {
+    color: rgba($blue-light-business, 0.3);
+  }
 }
 
 .tariffs__modal {
@@ -149,6 +163,16 @@
   color: $blue-light-text;
   text-transform: uppercase;
   background-color: $grey-tariffs;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $grey-basic;
+  }
+
+  &:active {
+    color: rgba($blue-light-text, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -237,10 +261,25 @@
       left: 0;
       width: 68px;
       height: 68px;
-      background-image: url("../../img/business.svg");
+      background-image: url("../img/business.svg");
+      background-color: $grey-decor;
+      border-radius: 50%;
       background-repeat: no-repeat;
       background-position: center;
       transform: translateY(-50%);
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-image: url("../img/business-hover.svg");
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/business-active.svg");
+      }
     }
   }
 
@@ -295,8 +334,13 @@
       right: 3px;
       width: 198px;
       height: 198px;
-      background-image: url("../../img/rates-desktop.png");
+      background-image: url("../img/rates-desktop.png");
+      background-size: 198px;
       transform: translateY(-50%);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/rates-desktop@2x.png");
+      }
     }
 
     &::after {
