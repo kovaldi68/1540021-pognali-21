@@ -5,9 +5,6 @@
     }
 
     .transport__item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-right: 1px;
       width: 32px;
       height: 32px;
@@ -18,24 +15,45 @@
       background-position: center;
       cursor: pointer;
 
+      &:hover {
+        .transport__tooltip-text {
+          visibility: visible;
+        }
+      }
+    }
+
+    .transport__tooltip-text {
+      top: auto;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      padding: 20px 20px 16px 20px;
+      color: $white-basic;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      background-color: $blue-dark-transport;
+      border-radius: 4px;
+      z-index: 5;
+      transform: translateX(-50%);
+      box-shadow: none;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        top: auto;
+        bottom: -14px;
+        left: 50%;
+        border: 7px solid transparent;
+        border-top: 7px solid $blue-dark-transport;
+        transform: translateX(-50%);
+      }
+
       &--plane {
-        background-image: url("../img/plane.svg");
-        background-size: 14px 16px;
-      }
+        margin-left: 55px;
 
-      &--car {
-        background-image: url("../img/bus.svg");
-        background-size: 13px 16px;
-      }
-
-      &--cycle {
-        background-image: url("../img/bike.svg");
-        background-size: 15px 17px;
-      }
-
-      &--walk {
-        background-image: url("../img/run.svg");
-        background-size: 13px 17px;
+        &::after {
+          left: 10%;
+        }
       }
     }
   }
@@ -49,12 +67,55 @@
 }
 
 .transport__item {
-  width: 23px;
-  height: 22px;
-  margin-right: 13px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    .transport__tooltip-text {
+      visibility: visible;
+    }
+  }
+
+  &--active {
+    path {
+      opacity: 1;
+    }
+  }
+}
+
+.transport__tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  padding: 20px 20px 16px 20px;
+  color: $white-basic;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: $blue-dark-transport;
+  border-radius: 4px;
+  z-index: 5;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 9px rgba($white-basic, 0.16);
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    border: 7px solid transparent;
+    border-bottom: 7px solid $blue-dark-transport;
+    transform: translateX(-50%);
   }
 }
 
@@ -76,26 +137,59 @@
         border-radius: 0;
         margin-bottom: 7px;
 
-        &--plane {
-          background-size: 22px 22px;
-        }
-
-        &--car {
-          background-size: 18px 20px;
-        }
-
-        &--cycle {
-          background-size: 25px 25px;
-        }
-
-        &--walk {
-          background-size: 22px 24px;
-        }
-
         &:last-child {
           margin-bottom: 0;
         }
+
+        .transport__tooltip-text {
+          bottom: 50%;
+          left: -6px;
+          transform: translate(-100%, 50%);
+
+          &::after {
+            bottom: 50%;
+            left: auto;
+            right: -14px;
+            border: 7px solid transparent;
+            border-left: 7px solid $blue-dark-transport;
+            transform: translateY(50%);
+          }
+
+          &--plane {
+            margin-left: 0;
+
+            &::after {
+              left: auto;
+            }
+          }
+        }
       }
+    }
+  }
+
+  .transport__item {
+    margin-right: 8px;
+  }
+
+  .transport__icon {
+    &--plane {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--car {
+      width: 18px;
+      height: 20px;
+    }
+
+    &--cycle {
+      width: 25px;
+      height: 25px;
+    }
+
+    &--walk {
+      width: 24px;
+      height: 24px;
     }
   }
 }
@@ -114,13 +208,51 @@
         height: 25px;
         background-color: transparent;
 
-        svg {
-          width: 22px;
-          height: 22px;
-        }
-
         &:last-child {
           margin-right: 0;
+        }
+
+        .transport__tooltip-text {
+          top: calc(100% + 6px);
+          bottom: auto;
+          left: 50%;
+          transform: translate(-50%);
+
+          &::after {
+            top: -14px;
+            bottom: auto;
+            left: 50%;
+            right: auto;
+            border: 7px solid transparent;
+            border-bottom: 7px solid $blue-dark-transport;
+            transform: translateX(-50%);
+          }
+
+          &--plane {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .transport__icon {
+        &--plane {
+          width: 23px;
+          height: 23px;
+        }
+
+        &--car {
+          width: 20px;
+          height: 20px;
+        }
+
+        &--cycle {
+          width: 25px;
+          height: 25px;
+        }
+
+        &--walk {
+          width: 25px;
+          height: 25px;
         }
       }
     }

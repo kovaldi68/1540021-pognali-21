@@ -22,10 +22,24 @@
   width: 100%;
   padding: 26px;
   line-height: 18px;
-  color: rgba($grey-special, 0.6);
+  color: $grey-special;
   border: 1px solid $grey-border;
   border-radius: 10px;
   background-color: $grey-basic;
+  outline: none;
+
+  ::placeholder {
+    color: rgba($grey-special, 0.6);
+  }
+
+  &:hover {
+    border-color: $grey-border-hover;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $blue-dark-basic;
+  }
 }
 
 @media (min-width: $tablet-width) {

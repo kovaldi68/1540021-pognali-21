@@ -4,7 +4,30 @@
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-copyright-decor;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -12,5 +35,11 @@
     margin-right: 23px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .copyright__link {
+    &::before {
+      display: none;
+    }
   }
 }

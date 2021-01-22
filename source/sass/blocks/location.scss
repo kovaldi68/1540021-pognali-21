@@ -26,7 +26,7 @@
     width: 45px;
     height: 45px;
     background-color: $blue-dark-icon;
-    background-image: url("../../img/contacts-location.svg");
+    background-image: url("../img/contacts-location.svg");
     background-size: 18px 17px;
     background-repeat: no-repeat;
     background-position: center;
@@ -36,10 +36,41 @@
 
 .location__route {
   display: inline-block;
+  position: relative;
   width: 100%;
   padding: 19px 22px;
   text-align: left;
   border: 3px solid $blue-dark-main;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 14px;
+    height: 16px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white-basic;
+    background-color: $blue-dark-main;
+
+    &::after {
+      background-image: url("../img/triangle-arrow-right-white.svg");
+    }
+  }
+
+  &:active {
+    color: rgba($white-basic, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .location__map {
@@ -48,10 +79,14 @@
   margin-top: -52px;
   width: 320px;
   height: 424px;
-  background-image: url("../../img/map-mobile@1x.jpg");
+  background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   z-index: $z-index-location-map;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -84,12 +119,21 @@
     font-size: 24px;
     line-height: 24px;
     text-align: left;
+
+    &::after {
+      top: 34px;
+      right: 33px;
+    }
   }
 
   .location__map {
     width: 768px;
     height: 581px;
-    background-image: url("../../img/map-tablet@1x.jpg");
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -116,6 +160,10 @@
   .location__map {
     width: 1440px;
     height: 584px;
-    background-image: url("../../img/map-desktop@1x.jpg");
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

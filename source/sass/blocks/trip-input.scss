@@ -32,6 +32,16 @@
   color: $blue-light-text;
   border: 1px solid $grey-border;
   border-radius: 4px;
+  outline: none;
+
+  &:hover {
+    border-color: $grey-input-hover;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $blue-dark-basic;
+  }
 }
 
 .trip-input__pick::-webkit-outer-spin-button,
@@ -42,22 +52,34 @@
 
 .trip-input__button {
   position: absolute;
-  bottom: 0;
-  width: 43px;
-  height: 43px;
-  background-position: center center;
+  bottom: 15px;
+  width: 14px;
+  height: 14px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 14px 14px;
-  opacity: 0.3;
+  outline: none;
+  z-index: 1;
 
   &--less {
-    left: 0;
-    background-image: url("../../img/qty-minus-mobile.svg");
+    left: 14px;
   }
 
   &--more {
-    right: 0;
-    background-image: url("../../img/qty-plus-mobile.svg");
+    right: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    line {
+      stroke: $grey-qty-btn-hover;
+    }
+  }
+
+  &:active {
+    line {
+      stroke: $grey-basic-form;
+    }
   }
 }
 
@@ -85,16 +107,21 @@
   }
 
   .trip-input__button {
-    width: 70px;
-    height: 70px;
-    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    bottom: 26px;
 
     &--less {
-      background-image: url("../../img/qty-minus.svg");
+      left: 23px;
     }
 
     &--more {
-      background-image: url("../../img/qty-plus.svg");
+      right: 23px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -125,11 +152,11 @@
 
   .trip-input__button {
     &--less {
-      left: 222px;
+      left: 245px;
     }
 
     &--more {
-      left: 331px;
+      right: 120px;
     }
   }
 }

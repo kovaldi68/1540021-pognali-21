@@ -32,6 +32,18 @@
       background-color: $green-online;
     }
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 9px rgba($black-basic, 0.16);
+
+    .user-card__photo {
+      img {
+        transform: scale(1.05);
+        transition: $transition-time ease-out transform;
+      }
+    }
+  }
 }
 
 .user-card__photo {
@@ -56,6 +68,19 @@
   margin-left: 16px;
   margin-bottom: 8px;
   width: 50%;
+}
+
+.user-card__name-link {
+  color: $blue-light-text;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .user-card__heading {
@@ -163,11 +188,9 @@
     }
 
     &--online {
-      .user-card__name {
-        span {
-          &::before {
-            background-color: $green-online;
-          }
+      .user-card__name-link {
+        &::before {
+          background-color: $green-online;
         }
       }
     }
@@ -188,21 +211,21 @@
     width: 100%;
     font-size: 30px;
     line-height: 30px;
+  }
 
-    span {
-      position: relative;
+  .user-card__name-link {
+    position: relative;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 15px;
-        right: -22px;
-        width: 8px;
-        height: 8px;
-        background-color: $orange-indicator;
-        border-radius: 50%;
-        transform: translateX(100%);
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: -22px;
+      width: 8px;
+      height: 8px;
+      background-color: $orange-indicator;
+      border-radius: 50%;
+      transform: translateX(100%);
     }
   }
 
@@ -215,7 +238,8 @@
 
     &--states {
       grid-area: heading-states;
-      margin-bottom: 19px;
+      margin-top: 13px;
+      margin-bottom: 18px;
       margin-left: 39px;
     }
 
@@ -249,10 +273,6 @@
   .user-card__transport {
     grid-area: transport;
     margin: auto;
-
-    span {
-      display: none;
-    }
   }
 
   .user-card__level {
@@ -291,18 +311,20 @@
     margin-top: 46px;
     margin-bottom: 20px;
     margin-left: 62px;
+    padding-right: 0;
+    width: auto;
     font-size: 30px;
     line-height: 30px;
+  }
 
-    span {
-      position: relative;
+  .user-card__name-link {
+    position: relative;
 
-      &::before {
-        top: 15px;
-        left: -32px;
-        right: auto;
-        transform: translateX(100%);
-      }
+    &::before {
+      top: 15px;
+      left: -32px;
+      right: auto;
+      transform: translateX(100%);
     }
   }
 
@@ -347,7 +369,7 @@
   .user-card__level {
     grid-area: level;
     margin-top: -4px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     margin-right: 43px;
   }
 

@@ -33,28 +33,46 @@
 }
 
 .user-list__link {
-  display: block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 
   &--tel {
     background-color: $orange-special;
-    background-image: url("../img/topmenu-phone.svg");
-    background-size: 18px 18px;
+
+    &:hover,
+    &:focus {
+      background-color: $orange-hover;
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--mail {
     background-color: $yellow-dark;
-    background-image: url("../img/topmenu-mail.svg");
-    background-size: 18px 16px;
+
+    &:hover,
+    &:focus {
+      background-color: $orange-special;
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--auth {
     padding: 10px;
-    color: $blue-dark-main;
+    color: $blue-dark-basic;
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
@@ -64,6 +82,15 @@
     background-color: $yellow-main;
     border-radius: 25px;
     height: auto;
+
+    &:hover,
+    &:focus {
+      background-color: $yellow-dark;
+    }
+
+    &:active {
+      color: rgba($blue-dark-basic, 0.3);
+    }
   }
 }
 

@@ -43,7 +43,7 @@
     position: absolute;
     width: 10px;
     height: 1px;
-    background-color: $white-basic;
+    background-color: rgba($white-basic, 0.3);
   }
 
   &::before {
@@ -52,6 +52,21 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: $white-basic;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: rgba($white-basic, 0.1);
+    }
   }
 }
 

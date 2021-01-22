@@ -13,19 +13,27 @@
   width: 31px;
   height: 31px;
   border-radius: 50%;
+  background-color: $grey-basic;
 
-  &:hover {
+  .likes__icon {
+    &--active {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
     background: $grey-decor;
 
-    svg {
+    .likes__icon {
       g {
-        opacity: 0.6;
+        opacity: 0.5;
       }
     }
   }
 
   &:active {
-    svg {
+    .likes__icon {
       g {
         opacity: 0.1;
       }
@@ -35,36 +43,27 @@
   &--liked {
     background-color: $orange-like-back;
 
-    svg {
-      fill: $red-like;
+    .likes__icon {
+      display: none;
 
-      g {
-        opacity: 1;
-
-        path {
-          fill: $red-like;
-        }
+      &--active {
+        display: inline-block;
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $orange-like-back-hover;
-
-      svg {
-        g {
-          opacity: 1;
-        }
-      }
     }
 
     &:active {
-      svg {
-        g {
-          opacity: 1;
+      .likes__icon {
+        &--active {
+          g {
+            opacity: 0.3;
+          }
         }
       }
-
-      opacity: 0.6;
     }
   }
 }
@@ -79,5 +78,11 @@
     position: static;
     width: 50px;
     height: 50px;
+  }
+
+
+  .likes__icon {
+    width: 20px;
+    height: 20px;
   }
 }

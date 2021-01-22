@@ -7,11 +7,25 @@
 
 .continents__item {
   margin-bottom: 9px;
-  text-transform: uppercase;
-  color: rgba($blue-dark-main, 0.3);
+
+  .continents__link {
+    text-transform: uppercase;
+    color: rgba($blue-dark-main, 0.3);
+
+    &:hover,
+    &:focus {
+      color: rgba($blue-dark-main, 0.6);
+    }
+
+    &:active {
+      color: rgba($blue-dark-main, 1);
+    }
+  }
 
   &--active {
-    color: $blue-dark-main;
+    .continents__link {
+      color: $blue-dark-main;
+    }
   }
 
   &:last-child {

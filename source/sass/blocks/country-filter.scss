@@ -52,6 +52,7 @@
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -87,6 +88,15 @@
   color: $blue-dark-main;
   background-color: $grey-close-button;
   border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $grey-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .country-filter__button-icon {
@@ -103,9 +113,10 @@
 .country-filter__toggle {
   position: relative;
   margin-left: auto;
+  padding: 0;
   width: 17px;
   height: 3px;
-  padding: 0;
+  color: $blue-dark-main;
 
   &::before {
     content: "";
@@ -122,6 +133,15 @@
 
   span {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

@@ -81,13 +81,18 @@
     &::after {
       content: "";
       position: absolute;
-      top: 33px;
-      right: 37px;
-      width: 14px;
-      height: 16px;
       background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
       background-position: center;
+      width: 14px;
+      height: 16px;
+    }
+
+    &--forward {
+      &::after {
+        top: 33px;
+        right: 37px;
+      }
     }
 
     &--back {
@@ -100,8 +105,17 @@
       &::after {
         top: 31px;
         left: 27px;
-        right: auto;
         transform: rotate(180deg);
+      }
+
+      &:active {
+        color: rgba($blue-light-text, 0.3);
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
       }
     }
   }

@@ -17,7 +17,6 @@
     width: 8px;
     height: 8px;
     background: none;
-    background-color: $blue-light-text;
     border-radius: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -44,16 +43,22 @@
     }
   }
 
+  &--selected {
+    &::before {
+      background-color: $blue-light-text;
+    }
+  }
+
   &--choose {
     &::before {
-      background: none;
+      background-color: $white-basic;
       border: 1px solid $grey-border;
     }
   }
 
   &--add {
     &::before {
-      background: none;
+      background-color: $grey-basic;
       border: 1px solid $grey-border;
     }
   }
@@ -110,8 +115,8 @@
     padding: 0;
     width: 21px;
     height: 21px;
-    top: 0;
-    right: 0;
+    top: 2px;
+    right: 1px;
     background-color: $grey-basic;
     background-image: url("../img/menu-close.svg");
     background-size: 9px;
@@ -125,6 +130,15 @@
     &::after {
       display: none;
     }
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/menu-close-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/menu-close-active.svg");
+    }
   }
 
   &--choose {
@@ -134,8 +148,13 @@
 
     span {
       &::after {
-        width: 50%;
+        width: 40%;
       }
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $grey-input-hover;
     }
   }
 
@@ -143,7 +162,6 @@
     width: 100%;
     border-radius: 4px;
     border: none;
-    background-color: $grey-basic;
 
     &::before {
       content: "";
@@ -153,6 +171,7 @@
       width: 14px;
       height: 14px;
       background-image: url("../img/qty-plus.svg");
+      background-size: 14px;
       opacity: 0.6;
       z-index: 1;
     }
@@ -160,6 +179,21 @@
     span {
       &::after {
         display: none;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $grey-dark-form;
+
+      &::before {
+        background-image: url("../img/qty-plus-hover.svg");
+      }
+    }
+
+    &:active {
+      &::before {
+        background-image: url("../img/qty-plus-active.svg");
       }
     }
   }
@@ -222,22 +256,6 @@
     &::after {
       display: none;
     }
-
-    &--choose {
-      &::before {
-        background: none;
-        background-color: $white-basic;
-        border: 1px solid $grey-border;
-      }
-    }
-
-    &--add {
-      &::before {
-        background: none;
-        background-color: $grey-basic;
-        border: 1px solid $grey-border;
-      }
-    }
   }
 
   .track__button {
@@ -264,11 +282,9 @@
       top: 50%;
       right: 0;
       background-color: transparent;
-      background-image: url("../img/menu-close.svg");
       background-size: 22px 24px;
       border-radius: 0;
       transform: translateY(-50%);
-      opacity: 0.5;
     }
 
     &--choose {
@@ -280,13 +296,11 @@
     }
 
     &--add {
-      background-color: $grey-dark-form;
-
       &::before {
         right: 25px;
-        width: 21px;
-        height: 21px;
-        background-size: 21px 21px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
       }
 
       &::after {
@@ -352,34 +366,6 @@
       right: 0;
       background-color: transparent;
       background-image: url("../img/menu-close.svg");
-      background-size: 22px 24px;
-      border-radius: 0;
-      transform: translateY(-50%);
-      opacity: 0.5;
-    }
-
-    &--choose {
-      &::after {
-        right: 10px;
-        width: 14px;
-        height: 14px;
-      }
-    }
-
-    &--add {
-      background-color: $grey-basic;
-
-      &::before {
-        right: 25px;
-        width: 21px;
-        height: 21px;
-      }
-
-      &::after {
-        right: 10px;
-        width: 14px;
-        height: 14px;
-      }
     }
   }
 

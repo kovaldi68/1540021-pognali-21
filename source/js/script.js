@@ -10,6 +10,7 @@ const dropCloser = document.querySelector(".dropdown__button");
 const countryFilter = document.querySelector(".country-filter__inner")
 const countryfilterToggle = document.querySelector(".country-filter__toggle")
 const countryfilterCloser = document.querySelector(".country-filter__button")
+const countrytitleToggle = document.querySelector(".country-filter__title")
 const mediaDesktop = window.matchMedia('(min-width: 1440px)')
 
 //filter
@@ -21,6 +22,11 @@ if (countryFilter) {
   });
 
   countryfilterToggle.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    countryFilter.classList.toggle("country-filter__inner--expanded")
+  });
+
+  countrytitleToggle.addEventListener("click", function(evt) {
     evt.preventDefault();
     countryFilter.classList.toggle("country-filter__inner--expanded")
   });

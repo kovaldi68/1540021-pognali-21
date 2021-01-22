@@ -22,4 +22,15 @@
   background-color: $blue-light-text;
   transform: translateX(-50%);
   cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.46) translateX(-35%);
+    transition: all $transition-time ease-in-out;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px rgba($black-basic, 0.24);
+  }
 }
