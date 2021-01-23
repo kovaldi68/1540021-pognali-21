@@ -4,6 +4,11 @@
   position: relative;
 }
 
+.trip-input__wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .trip-input__label {
   display: inline-block;
   margin-right: auto;
@@ -133,6 +138,10 @@
     border-top: none;
   }
 
+  .trip-input__wrapper {
+    width: auto;
+  }
+
   .trip-input__pick {
     width: 180px;
     padding: 22px 70px;
@@ -148,15 +157,5 @@
     width: 164px;
     margin-bottom: 0;
     margin-right: 57px;
-  }
-
-  .trip-input__button {
-    &--less {
-      left: 245px;
-    }
-
-    &--more {
-      right: 120px;
-    }
   }
 }

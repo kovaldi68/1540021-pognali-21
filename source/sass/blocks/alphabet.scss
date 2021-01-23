@@ -38,8 +38,8 @@
     border: 1px solid $blue-light-text;
   }
 
-  &:hover,
-  &:focus {
+  &:not(.alphabet__table-cell--catalog):hover,
+  &:not(.alphabet__table-cell--catalog):focus {
     border: 1px solid $grey-input-hover;
   }
 
@@ -103,7 +103,7 @@
       color: $blue-dark-main;
     }
 
-    &:active {
+    &:not(.alphabet__table-cell--catalog):active {
       background-color: $blue-light-text;
       border: 1px solid $blue-light-text;
 

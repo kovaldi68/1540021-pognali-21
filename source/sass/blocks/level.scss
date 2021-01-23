@@ -24,11 +24,6 @@
   &--catalog {
     width: 46px;
     height: 46px;
-
-    svg {
-      width: 46px;
-      height: 46px;
-    }
   }
 }
 
@@ -123,12 +118,6 @@
     cy: 30px;
     fill: rgba($black-basic, 0.6);
   }
-
-  &--catalog {
-    r: 21px;
-    cx: 23px;
-    cy: 23px;
-  }
 }
 
 .level__progress {
@@ -146,12 +135,6 @@
     cx: 30px;
     cy: 30px;
     stroke-width: 4px;
-  }
-
-  &--catalog {
-    r: 20px;
-    cx: 23px;
-    cy: 23px;
   }
 }
 

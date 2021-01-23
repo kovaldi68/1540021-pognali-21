@@ -1,6 +1,6 @@
 .countries {
   @include list-reset;
-  margin-bottom: 27px;
+  margin-bottom: 8px;
 }
 
 .countries__item {
@@ -136,8 +136,8 @@
 
   .countries__data {
     display: block;
-    flex-grow: 1;
     margin-top: 0;
+    width: calc(100% - 186px);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -189,5 +189,11 @@
 
   .countries__data {
     padding-bottom: 21px;
+  }
+
+  .countries__slogan {
+    br {
+      display: none;
+    }
   }
 }

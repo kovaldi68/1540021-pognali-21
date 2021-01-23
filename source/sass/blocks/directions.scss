@@ -1,6 +1,6 @@
 .directions {
   @include section-bottom-border;
-  padding-top: 101px;
+  padding-top: 100px;
   padding-bottom: 34px;
   background-color: $grey-basic;
 }
@@ -13,7 +13,7 @@
 .directions__text {
   padding-left: 25px;
   margin-bottom: 60px;
-  width: 216px;
+  width: 220px;
   font-weight: 300;
   color: $grey-special;
 }

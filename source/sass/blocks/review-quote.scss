@@ -12,7 +12,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  font-style: normal;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +23,11 @@
     margin-bottom: 45px;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .review-quote__author {
+    font-size: 21px;
+    line-height: 25px;
   }
 }
 

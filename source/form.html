@@ -9,14 +9,14 @@
   <body class="page__body">
     <header class="page-header page-header--nojs page-header--upper">
       <div class="page-header__container container">
-        <a class="page-header__logo page-header__logo--white">
+        <a class="page-header__logo page-header__logo--white" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
             <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сайта Погнали" width="96" height="15">
           </picture>
         </a>
-        <a class="page-header__logo page-header__logo--blue">
+        <a class="page-header__logo page-header__logo--blue" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -117,7 +117,7 @@
                 </div>
                 <svg width="100" height="100">
                   <circle class="level__background level__background--form" cx="50" cy="50" r="45"></circle>
-                  <circle class="level__progress level__progress--form" cx="50" cy="50" r="45"></circle>
+                  <circle class="level__progress level__progress--form" cx="50" cy="50" r="45" data-level="80"></circle>
                 </svg>
               </div>
               <div class="profile__photo">
@@ -251,38 +251,42 @@
                   <div class="stay-period__input stay-period__input--fellow-number trip-input">
                     <label class="trip-input__label" for="ppl-num">Ищу попутчиков:</label>
                     <span class="trip-input__unit">чел.</span>
-                    <input class="trip-input__pick" type="number" value="2" id="ppl-num">
-                    <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1">
-                      <svg width="14" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="1" x2="20" y2="1" stroke="#CCCCCC" stroke-width="2"/>
-                      </svg>
-                    </button>
-                    <button class="trip-input__button trip-input__button--more button button--more" type="button" aria-label="Увеличить количество на 1">
-                      <svg width="14" height="14" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="4" y1="9.97229" x2="24" y2="9.97229" stroke="#CCCCCC" stroke-width="2"/>
-                        <line x1="14" y1="19.7223" x2="14" y2="0.277845" stroke="#CCCCCC" stroke-width="2"/>
-                      </svg>
-                    </button>
+                    <div class="trip-input__wrapper">
+                      <input class="trip-input__pick" type="number" value="2" id="ppl-num">
+                      <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1">
+                        <svg width="14" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line y1="1" x2="20" y2="1" stroke="#CCCCCC" stroke-width="2"/>
+                        </svg>
+                      </button>
+                      <button class="trip-input__button trip-input__button--more button button--more" type="button" aria-label="Увеличить количество на 1">
+                        <svg width="14" height="14" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line x1="4" y1="9.97229" x2="24" y2="9.97229" stroke="#CCCCCC" stroke-width="2"/>
+                          <line x1="14" y1="19.7223" x2="14" y2="0.277845" stroke="#CCCCCC" stroke-width="2"/>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                   <div class="stay-period__input stay-period__input--duration trip-input">
                     <label class="trip-input__label" for="duration">Длительность:</label>
                     <span class="trip-input__unit">дн.</span>
-                    <input class="trip-input__pick" type="number" value="3" id="duration">
-                    <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1">
-                      <svg width="14" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="1" x2="20" y2="1" stroke="#CCCCCC" stroke-width="2"/>
-                      </svg>
-                    </button>
-                    <button class="trip-input__button trip-input__button--more button" type="button" aria-label="Увеличить количество на 1">
-                      <svg width="14" height="14" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="4" y1="9.97229" x2="24" y2="9.97229" stroke="#CCCCCC" stroke-width="2"/>
-                        <line x1="14" y1="19.7223" x2="14" y2="0.277845" stroke="#CCCCCC" stroke-width="2"/>
-                      </svg>
-                    </button>
+                    <div class="trip-input__wrapper">
+                      <input class="trip-input__pick" type="number" value="3" id="duration">
+                      <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1">
+                        <svg width="14" height="2" viewBox="0 0 20 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line y1="1" x2="20" y2="1" stroke="#CCCCCC" stroke-width="2"/>
+                        </svg>
+                      </button>
+                      <button class="trip-input__button trip-input__button--more button" type="button" aria-label="Увеличить количество на 1">
+                        <svg width="14" height="14" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <line x1="4" y1="9.97229" x2="24" y2="9.97229" stroke="#CCCCCC" stroke-width="2"/>
+                          <line x1="14" y1="19.7223" x2="14" y2="0.277845" stroke="#CCCCCC" stroke-width="2"/>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                   <div class="stay-period__accept-checkbox accept-checkbox">
                     <label class="accept-checkbox__ticket">
-                      <input class="accept-checkbox__box visually-hidden" type="checkbox">
+                      <input class="accept-checkbox__box visually-hidden" type="checkbox" checked>
                       <span class="accept-checkbox__text">Можно с детьми</span>
                     </label>
                   </div>
@@ -568,7 +572,7 @@
                       <div class="route__icon">
                         <img src="img/flag-bosnia.svg" alt="Боснии">
                       </div>
-                      <textarea class="route__description" name="todo-list" id="bosnia-todo" cols="30" rows="3" placeholder="План действий"></textarea>
+                      <textarea class="route__description route__description--alert" name="todo-list" id="bosnia-todo" cols="30" rows="3" placeholder="План действий"></textarea>
                     </li>
                     <li class="route__item">
                       <label class="route__name" for="czech-todo">Чехия</label>

@@ -12,7 +12,7 @@
 
     .page-header__user-list {
       display: flex;
-      margin-bottom: 66px;
+      margin-bottom: 64px;
       width: 100%;
     }
 
@@ -23,8 +23,8 @@
 
     .page-header__main-nav {
       display: block;
-      margin-bottom: 51px;
-      margin-top: 76px;
+      margin-bottom: 54px;
+      margin-top: 71px;
       width: 100%;
     }
 
@@ -42,7 +42,7 @@
 
     .page-header__social {
       display: flex;
-      width: 100%;
+      margin-left: 85px;
     }
 
     .page-header__toggle {
@@ -66,7 +66,7 @@
 
     .page-header__user-list {
       display: flex;
-      margin-bottom: 66px;
+      margin-bottom: 64px;
       width: 100%;
     }
 
@@ -77,8 +77,8 @@
 
     .page-header__main-nav {
       display: block;
-      margin-bottom: 51px;
-      margin-top: 74px;
+      margin-bottom: 54px;
+      margin-top: 71px;
       width: 100%;
     }
 
@@ -96,7 +96,7 @@
 
     .page-header__social {
       display: flex;
-      width: 100%;
+      margin-left: 85px;
     }
 
     .page-header__toggle {
@@ -190,9 +190,9 @@
       }
 
       .page-header__main-nav {
-        margin-top: 94px;
-        margin-bottom: 169px;
-        padding-left: 59px;
+        margin-top: 89px;
+        margin-bottom: 156px;
+        padding-left: 54px;
         width: auto;
       }
 
@@ -206,11 +206,12 @@
       .page-header__contacts {
         width: 100%;
         margin-bottom: 149px;
-        padding-left: 59px;
+        padding-left: 55px;
       }
 
       .page-header__social {
-        padding-left: 83px;
+        margin-left: 82px;
+        padding-left: 0;
         width: auto;
       }
     }
@@ -228,9 +229,10 @@
       }
 
       .page-header__main-nav {
-        margin-top: 94px;
-        margin-bottom: 169px;
-        padding-left: 59px;
+        margin-top: 89px;
+        margin-bottom: 156px;
+        padding-left: 54px;
+        width: auto;
       }
 
       .page-header__user-list {
@@ -243,11 +245,12 @@
       .page-header__contacts {
         width: 100%;
         margin-bottom: 149px;
-        padding-left: 59px;
+        padding-left: 55px;
       }
 
       .page-header__social {
-        padding-left: 83px;
+        margin-left: 82px;
+        padding-left: 0;
         width: auto;
       }
 
@@ -261,6 +264,7 @@
   .page-header__logo {
     width: 166px;
     height: 42px;
+    margin-right: 166px;
     margin-bottom: 0;
     order: -3;
 

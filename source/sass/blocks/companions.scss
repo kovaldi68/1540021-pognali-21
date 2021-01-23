@@ -54,9 +54,9 @@
 }
 
 .companions__text {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 25px;
-  width: 217px;
+  width: 240px;
   font-weight: 300;
   color: $white-basic;
 
@@ -164,7 +164,7 @@
     margin-right: 50px;
     margin-bottom: 10px;
 
-    &:last-child {
+    &:nth-child(2n+2) {
       margin-right: 0;
     }
   }
@@ -220,15 +220,13 @@
 
   .companions__item {
     margin-right: 60px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   .companions__button {
     grid-row: 4/5;
     grid-column: 1/2;
+    align-self: flex-end;
     width: 275px;
+    max-height: 80px;
   }
 }

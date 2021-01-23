@@ -84,27 +84,28 @@
 }
 
 .user-card__heading {
+  position: relative;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   color: $grey-special;
   background-color: $white-basic;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    top: 50%;
+    left: -100%;
+    background-color: $grey-basic;
+  }
+
   span {
     position: relative;
     background-color: $white-basic;
     padding-right: 10px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100vw;
-      height: 1px;
-      top: 50%;
-      left: -100%;
-      background-color: $grey-basic;
-    }
+    z-index: 2;
   }
 
   &--states {
@@ -297,6 +298,7 @@
       "photo tags tags states states"
       "photo button likes transport level";
     padding: 0;
+    overflow: unset;
   }
 
   .user-card__photo {
@@ -304,7 +306,9 @@
     margin-right: 0;
     width: 285px;
     height: 285px;
-    border-radius: 20px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .user-card__name {

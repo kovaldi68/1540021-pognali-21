@@ -32,8 +32,11 @@
 .steps__button {
   width: 100%;
 
+  &--forward {
+    margin-bottom: 13px;
+  }
+
   &--back {
-    margin-top: 13px;
     color: $blue-light-text;
     font-weight: 700;
     font-size: 17px;
@@ -72,7 +75,7 @@
   .steps__button {
     justify-content: flex-start;
     width: 286px;
-    padding: 29px 33px 27px 33px;
+    padding: 29px 55px 27px 33px;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
@@ -80,15 +83,17 @@
 
     &::after {
       content: "";
+      width: 14px;
+      height: 16px;
       position: absolute;
       background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
       background-position: center;
-      width: 14px;
-      height: 16px;
     }
 
     &--forward {
+      margin-bottom: 0;
+
       &::after {
         top: 33px;
         right: 37px;
@@ -97,6 +102,8 @@
 
     &--back {
       justify-content: flex-end;
+      padding-right: 1px;
+      padding-left: 78px;
       width: 247px;
       font-weight: 700;
       font-size: 24px;
@@ -104,7 +111,7 @@
 
       &::after {
         top: 31px;
-        left: 27px;
+        left: 65px;
         transform: rotate(180deg);
       }
 

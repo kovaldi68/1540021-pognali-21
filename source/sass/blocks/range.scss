@@ -27,7 +27,7 @@
   &:hover,
   &:focus {
     transform: scale(1.46) translateX(-35%);
-    transition: all $transition-time ease-in-out;
+    transition: all $transition-time-low ease-in-out;
   }
 
   &:active {
