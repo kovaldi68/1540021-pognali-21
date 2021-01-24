@@ -12,20 +12,6 @@ const countryfilterToggle = document.querySelector(".country-filter__toggle");
 const countryfilterCloser = document.querySelector(".country-filter__button");
 const countrytitleToggle = document.querySelector(".country-filter__title");
 const mediaDesktop = window.matchMedia("(min-width: 1440px)");
-const companionFilter = document.querySelectorAll(".companion-filter__item")
-const companionHeading = document.querySelectorAll(".companion-filter__heading")
-
-
-//companion-filter
-
-// if (companionFilter) {
-//   companionHeading.forEach(a => {
-//     a.addEventListener("click", function(el) {
-//       el.classList.toggle("companion-filter__item--hidden")
-//     });
-//   });
-// }
-
 
 //filter
 
