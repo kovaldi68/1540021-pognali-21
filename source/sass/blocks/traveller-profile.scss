@@ -2,11 +2,9 @@
   position: relative;
 
   &--online {
-    .traveller-profile__name {
-      span {
-        &::before {
-          background-color: $green-online;
-        }
+    .traveller-profile__name-link {
+      &::before {
+        background-color: $green-online;
       }
     }
   }
@@ -107,30 +105,35 @@
 
   .traveller-profile__info {
     padding: 31px 20px 27px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .traveller-profile__name {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
     font-size: 24px;
     line-height: 22px;
+  }
 
-    span {
-      &::before {
-        top: 10px;
-        left: -22px;
-        width: 8px;
-        height: 8px;
-      }
+  .traveller-profile__name-link {
+    &::before {
+      top: 12px;
+      left: -22px;
+      width: 8px;
+      height: 8px;
     }
   }
 
   .traveller-profile__tags {
-    margin-bottom: 24px;
+    margin: 0 6px;
+    margin-bottom: 21px;
   }
 
   .traveller-profile__photo {
     width: 285px;
     height: 285px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
     img {
       width: 285px;

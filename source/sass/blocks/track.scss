@@ -74,6 +74,7 @@
   text-transform: uppercase;
   border: 1px solid $grey-border;
   border-radius: 4px;
+  letter-spacing: 0.09em;
 
   &::before {
     content: "";
@@ -250,7 +251,7 @@
     margin-bottom: 16px;
 
     &::before {
-      right: 135px;
+      right: 134px;
       width: 14px;
       height: 14px;
     }
@@ -267,7 +268,7 @@
     padding: 25px 26px 23px 26px;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.1em;
 
     &::before {
       right: 28px;
@@ -298,6 +299,9 @@
     }
 
     &--add {
+      padding-top: 21px;
+      padding-bottom: 29px;
+
       &::before {
         right: 25px;
         width: 20px;
@@ -323,6 +327,12 @@
     img {
       width: 70px;
       height: 47px;
+    }
+  }
+
+  .track__dropdown {
+    &--opened {
+      top: -2px;
     }
   }
 }

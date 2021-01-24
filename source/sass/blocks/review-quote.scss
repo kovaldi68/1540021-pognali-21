@@ -32,6 +32,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review-quote__text {
+    margin-bottom: 42px;
+  }
+
   .review-quote__author {
     font-size: 21px;
     line-height: 25px;

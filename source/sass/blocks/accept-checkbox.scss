@@ -61,6 +61,10 @@
     }
   }
 
+  .accept-checkbox__ticket {
+    letter-spacing: 0.12em;
+  }
+
   .accept-checkbox__box:checked + .accept-checkbox__text::before {
     background-size: 11px;
   }

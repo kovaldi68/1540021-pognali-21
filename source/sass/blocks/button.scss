@@ -37,13 +37,14 @@
       font-size: 24px;
       line-height: 24px;
       padding: 29px 74px 27px 33px;
+      border-radius: 20px;
 
       &::after {
-        top: 33px;
+        top: 34px;
         right: 35px;
-        width: 14px;
-        height: 14px;
-        background-size: 14px;
+        width: 13px;
+        height: 13px;
+        background-size: 13px;
       }
     }
   }

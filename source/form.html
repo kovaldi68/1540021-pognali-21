@@ -115,9 +115,9 @@
                   <span class="level__number level__number--form">80</span>
                   <span class="level__word level__word--form">level</span>
                 </div>
-                <svg width="100" height="100">
+                <svg width="105" height="105">
                   <circle class="level__background level__background--form" cx="50" cy="50" r="45"></circle>
-                  <circle class="level__progress level__progress--form" cx="50" cy="50" r="45" data-level="80"></circle>
+                  <circle class="level__progress level__progress--form" cx="50" cy="50" r="48" data-level="80"></circle>
                 </svg>
               </div>
               <div class="profile__photo">
@@ -203,7 +203,7 @@
               <div class="journey__options">
                 <p class="journey__fellow-number">3 попутчика</p>
                 <p class="journey__dates">
-                  <time datetime="03-26">26 мар</time> - <time datetime="03-29">29 мар</time>
+                  <time datetime="03-26">26 мар</time> &mdash;&mdash; <time datetime="03-29">29 мар</time>
                 </p>
                 <a href="#" class="journey__change">Изменить</a>
               </div>
@@ -213,7 +213,7 @@
               <div class="journey__options">
                 <p class="journey__fellow-number">1 попутчик</p>
                 <p class="journey__dates">
-                  <time datetime="07-01">1 июл</time> - <time datetime="07-15">15 июл</time>
+                  <time datetime="07-01">1 июл</time> &mdash;&mdash; <time datetime="07-15">15 июл</time>
                 </p>
                 <a href="#" class="journey__change">Изменить</a>
               </div>
@@ -231,10 +231,10 @@
           </ul>
           <form class="add-plan__form" action="https://echo.htmlacademy.ru">
             <ol class="add-plan__order steps">
-              <li class="steps__item">
+              <li class="steps__item steps__item--first-step">
                 <div class="steps__heading">
                   <h3 class="steps__title title title--small">Шаг 1.<br> Даты пребывания</h3>
-                  <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                  <p class="steps__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                   <ul class="steps__indicator indicator indicator--inner">
                     <li class="indicator__item indicator__item--active">
                       <span class="indicator__text">Даты</span>
@@ -250,7 +250,7 @@
                 <div class="steps__content stay-period">
                   <div class="stay-period__input stay-period__input--fellow-number trip-input">
                     <label class="trip-input__label" for="ppl-num">Ищу попутчиков:</label>
-                    <span class="trip-input__unit">чел.</span>
+                    <span class="trip-input__unit trip-input__unit--ppl">чел.</span>
                     <div class="trip-input__wrapper">
                       <input class="trip-input__pick" type="number" value="2" id="ppl-num">
                       <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1">
@@ -268,7 +268,7 @@
                   </div>
                   <div class="stay-period__input stay-period__input--duration trip-input">
                     <label class="trip-input__label" for="duration">Длительность:</label>
-                    <span class="trip-input__unit">дн.</span>
+                    <span class="trip-input__unit trip-input__unit--days">дн.</span>
                     <div class="trip-input__wrapper">
                       <input class="trip-input__pick" type="number" value="3" id="duration">
                       <button class="trip-input__button trip-input__button--less button" type="button" aria-label="Уменьшить количество на 1">
@@ -387,7 +387,7 @@
                 </div>
                 <button class="steps__button steps__button--forward button button--secondary" type="button">Следующий шаг</button>
               </li>
-              <li class="steps__item">
+              <li class="steps__item steps__item--second-step">
                 <div class="steps__heading">
                   <h3 class="steps__title title title--small">Шаг 2.<br> Маршрут</h3>
                   <ul class="steps__indicator indicator indicator--inner">
@@ -395,7 +395,7 @@
                     <li class="indicator__item indicator__item--active">Маршрут</li>
                     <li class="indicator__item">Развлечения</li>
                   </ul>
-                  <p class="steps__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                  <p class="steps__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
                 </div>
                 <div class="steps__content track">
                   <ul class="track__list">
@@ -497,13 +497,13 @@
                                   <a href="#">Ш</a>
                                 </td>
                                 <td class="alphabet__table-cell">
-                                  <a href="#">Щ</a>
-                                </td>
-                                <td class="alphabet__table-cell">
                                   <a href="#">Э</a>
                                 </td>
                                 <td class="alphabet__table-cell">
                                   <a href="#">Ю</a>
+                                </td>
+                                <td class="alphabet__table-cell">
+                                  <a href="#">Я</a>
                                 </td>
                               </tr>
                             </table>
@@ -555,10 +555,10 @@
                 <button class="steps__button steps__button--forward button button--secondary" type="button">Следующий шаг</button>
                 <button class="steps__button steps__button--back button" type="button">На шаг назад</button>
               </li>
-              <li class="steps__item">
+              <li class="steps__item steps__item--third-step">
                 <div class="steps__heading">
                   <h3 class="steps__title title title--small">Шаг 3.<br> Развлечения</h3>
-                  <p class="steps__description">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  <p class="steps__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <ul class="steps__indicator indicator indicator--inner">
                     <li class="indicator__item">Даты</li>
                     <li class="indicator__item">Маршрут</li>

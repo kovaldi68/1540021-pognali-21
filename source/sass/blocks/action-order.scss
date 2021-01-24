@@ -49,6 +49,10 @@
     border-bottom-left-radius: 10px;
     min-height: 80px;
   }
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -104,7 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .action-order__item {
-    padding: 22px 96px 30px 30px;
+    padding: 27px 96px 31px 31px;
     min-height: auto;
 
     &::after {
@@ -142,6 +146,10 @@
       &::after {
         right: 33px;
       }
+    }
+
+    br {
+      display: block;
     }
   }
 }

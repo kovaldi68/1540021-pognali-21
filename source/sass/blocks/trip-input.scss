@@ -16,6 +16,7 @@
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
+  letter-spacing: 0.09em;
 }
 
 .trip-input__unit {
@@ -90,19 +91,26 @@
 
 @media (min-width: $tablet-width) {
   .trip-input {
-    padding-top: 25px;
+    padding-top: 24px;
     border-top: 1px solid $grey-lines;
   }
 
   .trip-input__unit {
+    margin-right: 3px;
     font-size: 20px;
     line-height: 18px;
+    letter-spacing: 0.08em;
+
+    &--days {
+      margin-right: -4px;
+    }
   }
 
   .trip-input__label {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 18px;
+    letter-spacing: 0.1em;
   }
 
   .trip-input__pick {

@@ -1,7 +1,7 @@
 .add-plan {
   @include section-top-border;
   margin-top: -29px;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 72px;
   background-color: $grey-darken-form;
 }
@@ -20,6 +20,8 @@
     margin-top: -42px;
     padding-top: 53px;
     padding-bottom: 123px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
   }
 
   .add-plan__container {
@@ -27,7 +29,7 @@
   }
 
   .add-plan__title {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
     font-size: 36px;
     line-height: 36px;
   }

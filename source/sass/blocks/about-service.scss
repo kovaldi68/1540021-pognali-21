@@ -33,6 +33,10 @@
     margin: 0;
     font-weight: 700;
   }
+
+  br {
+    display: none;
+  }
 }
 
 .about-service__button {
@@ -101,7 +105,11 @@
     &--bold {
       font-size: 21px;
       line-height: 25px;
-      margin-bottom: 52px;
+      margin-bottom: 54px;
+    }
+
+    br {
+      display: block;
     }
   }
 
@@ -115,7 +123,7 @@
 
 @media (min-width: $desktop-width) {
   .about-service {
-    padding-top: 131px;
+    padding-top: 152px;
     background-color: $blue-dark-main;
   }
 
@@ -133,7 +141,7 @@
     }
 
     &::after {
-      top: auto;
+      top: -6px;
       bottom: 0;
       right: 60px;
       width: 630px;
@@ -148,16 +156,20 @@
   }
 
   .about-service__title {
-    margin-bottom: 57px;
+    margin-bottom: 60px;
   }
 
   .about-service__text {
     width: 619px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 
     &--bold {
       width: 425px;
       margin-bottom: 85px;
+    }
+
+    br {
+      display: none;
     }
   }
 }

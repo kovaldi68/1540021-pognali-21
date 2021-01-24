@@ -21,7 +21,7 @@
 @media (min-width: $tablet-width) {
   .directions {
     padding-top: 149px;
-    padding-bottom: 80px;
+    padding-bottom: 83px;
   }
 
   .directions__container {
@@ -77,12 +77,19 @@
       z-index: -1;
     }
   }
+
+  .directions__button {
+    &::after {
+      top: 37px;
+      right: 30px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .directions {
     padding-top: 249px;
-    padding-bottom: 138px;
+    padding-bottom: 140px;
   }
 
   .directions__container {
@@ -101,7 +108,7 @@
   .directions__title {
     grid-row: 1/2;
     grid-column: 2/3;
-    margin-bottom: 58px;
+    margin-bottom: 60px;
     margin-left: 110px;
   }
 
@@ -109,8 +116,8 @@
     max-width: 378px;
     grid-row: 2/3;
     grid-column: 2/3;
-    margin-bottom: 98px;
-    margin-left: 110px;
+    margin-bottom: 100px;
+    margin-left: 112px;
   }
 
   .directions__list {
@@ -126,7 +133,13 @@
   .directions__button {
     grid-row: 3/4;
     grid-column: 2/3;
+    margin-left: 113px;
+    padding: 28px 74px 28px 32px;
     width: 275px;
-    margin-left: 110px;
+
+    &::after {
+      top: 36px;
+      right: 32px;
+    }
   }
 }
