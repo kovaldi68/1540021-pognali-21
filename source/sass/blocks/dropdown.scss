@@ -18,7 +18,10 @@
 }
 
 .dropdown__title {
-  padding: 14px 17px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 17px;
+  padding-right: 17px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -87,6 +90,7 @@
     padding: 25px 24px;
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: 0.1em;
   }
 
   .dropdown__wrapper {

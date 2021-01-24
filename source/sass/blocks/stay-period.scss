@@ -8,12 +8,12 @@
   margin-bottom: 20px;
 
   &--duration {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 }
 
 .stay-period__accept-checkbox {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -27,7 +27,7 @@
   }
 
   .stay-period__accept-checkbox {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     order: 1;
   }
 
@@ -45,6 +45,11 @@
 
   .stay-period__input {
     width: 50%;
+    margin-bottom: 10px;
+
+    &--duration {
+      margin-bottom: 34px;
+    }
   }
 
   .stay-period__accept-checkbox {

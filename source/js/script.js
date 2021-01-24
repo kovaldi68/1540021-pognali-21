@@ -7,11 +7,11 @@ const progressBars = document.querySelectorAll(".level__progress");
 const trackDrop = document.querySelector(".track__dropdown");
 const dropOpener = document.querySelector(".track__button--choose");
 const dropCloser = document.querySelector(".dropdown__button");
-const countryFilter = document.querySelector(".country-filter__inner")
-const countryfilterToggle = document.querySelector(".country-filter__toggle")
-const countryfilterCloser = document.querySelector(".country-filter__button")
-const countrytitleToggle = document.querySelector(".country-filter__title")
-const mediaDesktop = window.matchMedia('(min-width: 1440px)')
+const countryFilter = document.querySelector(".country-filter__inner");
+const countryfilterToggle = document.querySelector(".country-filter__toggle");
+const countryfilterCloser = document.querySelector(".country-filter__button");
+const countrytitleToggle = document.querySelector(".country-filter__title");
+const mediaDesktop = window.matchMedia("(min-width: 1440px)");
 
 //filter
 
@@ -45,16 +45,23 @@ headerToggle.addEventListener("click", function(evt) {
     document.body.style.paddingTop = 0;
   } else {
     header.classList.add("page-header--opened")
-
-    if (mediaDesktop.matches) {
-      document.body.style.paddingTop = 0;
-    } else {
-      document.body.style.paddingTop = `${headerHeight}px`;
-    }
+    document.body.style.paddingTop = `${headerHeight}px`;
   }
 });
 
+const closeHeader = () => {
+  if (window.matchMedia(mediaDesktop).matches) {
+    document.body.style.paddingTop = 0;
+    header.classList.remove("page-header--opened")
+  }
+}
+
+window.addEventListener("resize", () => {
+  closeHeader();
+})
+
 //business-modal
+
 if (businessLink) {
   businessLink.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -76,7 +83,7 @@ if (businessLink) {
   });
 };
 
-//progress-bar
+//level
 
 function setProgress(element) {
   const radius = element.r.baseVal.value;

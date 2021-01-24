@@ -1,12 +1,12 @@
 .promo {
-  padding-top: 60px;
+  padding-top: 44px;
   background-color: $blue-dark-basic;
 }
 
 .promo__container {
   background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
   background-size: 192px 255px, 320px 477px;
-  background-position: 80px 128px, 0 -94px;
+  background-position: 80px 131px, 0 -94px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -15,12 +15,14 @@
 }
 
 .promo__review {
-  margin-bottom: 29px;
+  margin: 0;
+  margin-bottom: 41px;
+  margin-left: 24px;
 }
 
 .promo__slogan {
   width: 238px;
-  margin: 0 auto 245px auto;
+  margin: 0 auto 246px auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -30,7 +32,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding-top: 72px;
+    padding-top: 55px;
     padding-bottom: 96px;
     background-color: $blue-dark;
   }
@@ -38,7 +40,7 @@
   .promo__container {
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-size: 372px 451px, 1479px 612px;
-    background-position: 285px 233px, center 213px;
+    background-position: 285px 246px, center 213px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -52,7 +54,7 @@
   }
 
   .promo__slogan {
-    margin-bottom: 86px;
+    margin-bottom: 88px;
     width: 399px;
     font-size: 60px;
     line-height: 70px;
@@ -62,16 +64,18 @@
 @media (min-width: $desktop-width) {
   .promo {
     @include section-bottom-border;
+    padding-top: 56px;
     padding-bottom: 123px;
     background-color: $blue-dark-basic;
     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
     background-size: 431px 640px, 1800px 750px;
-    background-position: center bottom, center center;
+    background-position: 604px -2px, -181px -114px;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/traveller-illustration-desktop@2x.png"), url("../img/globe-back-desktop@2x.jpg");
     }
+    z-index: $z-index-promo;
   }
 
   .promo__container {
@@ -81,12 +85,12 @@
   }
 
   .promo__review {
-    margin: 111px 23px 0 0;
+    margin: 50px 21px 0 0;
   }
 
   .promo__slogan {
     width: 418px;
-    margin: 99px 548px 101px 67px;
+    margin: 37px auto 105px 67px;
     text-align: left;
   }
 }

@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 15px;
 
   &--expanded {
@@ -169,7 +169,8 @@
 
       .country-filter__list {
         display: block;
-        margin-top: 77px;
+        margin-right: 22px;
+        margin-top: 57px;
       }
 
       .country-filter__button {
@@ -224,6 +225,7 @@
     margin-right: 18px;
     width: 22px;
     height: 24px;
+    background-size: 22px 24px;
   }
 
   .country-filter__continents {
@@ -270,7 +272,7 @@
     padding: 62px 0 56px 0;
 
     &--expanded {
-      padding-bottom: 102px;
+      padding-bottom: 150px;
 
       .country-filter__title {
         margin-bottom: 0;

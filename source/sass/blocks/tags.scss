@@ -48,11 +48,12 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    transform: translate(-50%, 95px);
+    letter-spacing: 0.1em;
+    transform: translate(-50%, 93px);
   }
 
   .tags__text {
-    padding: 29px 40px 20px 40px;
+    padding: 34px 40px 15px 40px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -60,7 +61,7 @@
 
 @media (min-width: $desktop-width) {
   .tags__heading {
-    left: 22px;
-    transform: translate(0, 95px);
+    left: 20px;
+    transform: translate(0, 94px);
   }
 }

@@ -103,7 +103,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -24px;
+      top: -28px;
       width: 68px;
       height: 68px;
     }
@@ -116,6 +116,7 @@
 
     &--mail {
       &::before {
+        top: -27px;
         background-size: 28px 19px;
       }
     }

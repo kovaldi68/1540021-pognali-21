@@ -1,7 +1,7 @@
 .feedback {
   @include section-bottom-border;
-  padding-top: 105px;
-  padding-bottom: 29px;
+  padding-top: 104px;
+  padding-bottom: 40px;
   background-color: $blue-dark-main;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .feedback__text {
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   font-weight: 300;
   text-align: center;
   color: $white-basic;
@@ -40,7 +40,7 @@
 }
 
 .feedback__field {
-  padding: 22px 25px;
+  padding: 15px 22px;
   width: 220px;
   height: 62px;
   font-weight: 700;
@@ -76,11 +76,19 @@
     }
   }
 
-  &:invalid {
+  &--error {
+    color: $red-error;
     border: 4px solid transparent;
 
-    &::placeholder {
+    &:focus,
+    &:active {
       color: $red-error;
+      background-color: $white-basic;
+      border: 4px solid transparent;
+
+      &::placeholder {
+        color: $red-error;
+      }
     }
   }
 }
@@ -88,7 +96,7 @@
 .feedback__button {
   position: absolute;
   top: 0;
-  right: 10px;
+  right: 0;
   width: 60px;
   height: 62px;
 
@@ -98,7 +106,7 @@
 }
 
 .feedback__auth-text {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-weight: 300;
   text-align: center;
   color: $white-basic;
@@ -179,8 +187,8 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding-top: 133px;
-    padding-bottom: 77px;
+    padding-top: 130px;
+    padding-bottom: 79px;
   }
 
   .feedback__container {
@@ -194,7 +202,7 @@
   }
 
   .feedback__text {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
     font-size: 28px;
     line-height: 32px;
 
@@ -208,7 +216,7 @@
   }
 
   .feedback__form {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .feedback__field {
@@ -216,6 +224,8 @@
     font-size: 24px;
     line-height: 24px;
     width: 536px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
     &::placeholder {
       font-size: 24px;
@@ -231,9 +241,11 @@
   }
 
   .feedback__auth-text {
+    margin-left: 2px;
     margin-bottom: 64px;
     font-size: 28px;
     line-height: 30px;
+    letter-spacing: 0.01em;
 
     br {
       display: none;
@@ -271,8 +283,8 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding-top: 208px;
-    padding-bottom: 103px;
+    padding-top: 205px;
+    padding-bottom: 134px;
   }
 
   .feedback__container {
@@ -284,7 +296,7 @@
   }
 
   .feedback__text {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .feedback__form {
@@ -297,7 +309,7 @@
   }
 
   .feedback__button {
-    padding: 41px 282px 40px 42px;
+    padding: 41px 288px 40px 36px;
 
     span {
       display: inline;
@@ -317,7 +329,7 @@
   }
 
   .feedback__auth-text {
-    margin-bottom: 77px;
+    margin-bottom: 74px;
     font-size: 28px;
     line-height: 30px;
   }
@@ -325,13 +337,30 @@
   .feedback__contacts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 154px;
   }
 
   .feedback__link {
+    padding-left: 121px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+
     &--tel {
       margin-bottom: 0;
       margin-right: 110px;
+
+      &::before {
+        background-size: 36px 34px;
+      }
+    }
+
+    &--mail {
+      &::before {
+        background-size: 37px 25px;
+      }
     }
   }
 }

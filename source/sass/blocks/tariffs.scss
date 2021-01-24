@@ -1,6 +1,6 @@
 .tariffs {
   @include section-bottom-border;
-  padding-top: 53px;
+  padding-top: 52px;
   padding-bottom: 38px;
   background-color: $grey-basic;
 }
@@ -11,7 +11,7 @@
 }
 
 .tariffs__title {
-  margin-bottom: 43px;
+  margin-bottom: 40px;
   width: 107px;
 }
 
@@ -19,7 +19,7 @@
   @include list-reset;
   position: relative;
   counter-reset: tariff-counter;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
   border-bottom: 1px solid $grey-lines;
 
   &::before {
@@ -47,7 +47,7 @@
   flex-direction: column;
   position: relative;
   counter-increment: tariff-counter;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-bottom: 15px;
   font-weight: 300;
   line-height: 16px;
@@ -177,8 +177,8 @@
 
 @media (min-width: $tablet-width) {
   .tariffs {
-    padding-top: 135px;
-    padding-bottom: 45px;
+    padding-top: 130px;
+    padding-bottom: 46px;
   }
 
   .tariffs__container {
@@ -202,12 +202,12 @@
   }
 
   .tariffs__list {
-    margin-bottom: 59px;
+    margin-bottom: 56px;
 
     &::before {
       top: auto;
       bottom: -119px;
-      right: 49px;
+      right: 45px;
     }
 
     &::after {
@@ -315,8 +315,8 @@
 
 @media (min-width: $desktop-width) {
   .tariffs {
-    padding-top: 175px;
-    padding-bottom: 187px;
+    padding-top: 171px;
+    padding-bottom: 148px;
   }
 
   .tariffs__container {
@@ -328,10 +328,12 @@
   }
 
   .tariffs__list {
+    margin-bottom: 57px;
+
     &::before {
-      top: 50%;
+      top: 51%;
       bottom: auto;
-      right: 3px;
+      right: 0px;
       width: 198px;
       height: 198px;
       background-image: url("../img/rates-desktop.png");

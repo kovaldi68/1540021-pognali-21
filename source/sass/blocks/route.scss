@@ -7,13 +7,13 @@
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 
   &::before {
     content: "";
     position: absolute;
     top: 9px;
-    left: -11px;
+    left: -13px;
     width: 11px;
     height: 2px;
     background-color: $blue-light-text;
@@ -24,7 +24,7 @@
     content: "";
     position: absolute;
     top: 9px;
-    left: -11px;
+    left: -14px;
     width: 2px;
     height: 284px;
     background-color: $blue-light-text;
@@ -54,8 +54,8 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: none;
     background-color: $blue-light-text;
     border-radius: 50%;
@@ -78,7 +78,7 @@
 .route__description {
   width: 220px;
   height: 220px;
-  padding: 10px 14px;
+  padding: 8px 13px;
   font-size: 16px;
   line-height: 22px;
   resize: none;
@@ -113,7 +113,7 @@
 
 @media (min-width: $tablet-width) {
   .route__list {
-    padding-top: 36px;
+    padding-top: 29px;
     border-top: 1px solid $grey-lines;
   }
 
@@ -145,6 +145,7 @@
     width: 430px;
     margin-bottom: 38px;
     padding-right: 109px;
+    padding-left: 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
@@ -171,7 +172,7 @@
 
 @media (min-width: $desktop-width) {
   .route__list {
-    padding-top: 80px;
+    padding-top: 95px;
   }
 
   .route__item {
@@ -194,7 +195,7 @@
 
   .route__description {
     width: 730px;
-    padding: 26px 22px;
+    padding: 22px 22px;
     font-size: 20px;
     line-height: 20px;
   }

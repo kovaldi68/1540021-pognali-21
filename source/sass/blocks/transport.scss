@@ -25,7 +25,7 @@
     .transport__tooltip-text {
       top: auto;
       bottom: calc(100% + 10px);
-      left: 50%;
+      left: 70%;
       padding: 20px 20px 16px 20px;
       color: $white-basic;
       font-size: 20px;
@@ -45,7 +45,7 @@
         left: 50%;
         border: 7px solid transparent;
         border-top: 7px solid $blue-dark-transport;
-        transform: translateX(-50%);
+        transform: translateX(-70%);
       }
 
       &--plane {
@@ -73,7 +73,7 @@
   align-items: center;
   width: 25px;
   height: 25px;
-  margin-right: 6px;
+  margin-right: 8px;
 
   &:last-child {
     margin-right: 0;

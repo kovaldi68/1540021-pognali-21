@@ -1,6 +1,6 @@
 .companions {
   @include section-bottom-border;
-  padding-top: 68px;
+  padding-top: 66px;
   padding-bottom: 31px;
   background-color: $blue-dark-main;
 }
@@ -54,9 +54,9 @@
 }
 
 .companions__text {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 25px;
-  width: 217px;
+  width: 240px;
   font-weight: 300;
   color: $white-basic;
 
@@ -65,7 +65,7 @@
   }
 
   &--bold {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
     font-weight: 700;
   }
 }
@@ -90,7 +90,7 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 138px;
+    padding-top: 135px;
     padding-bottom: 87px;
   }
 
@@ -150,21 +150,21 @@
       width: 260px;
       font-size: 21px;
       line-height: 24px;
-      margin-bottom: 59px;
+      margin-bottom: 62px;
     }
   }
 
   .companions__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 29px;
+    margin-bottom: 71px;
   }
 
   .companions__item {
     margin-right: 50px;
     margin-bottom: 10px;
 
-    &:last-child {
+    &:nth-child(2n+2) {
       margin-right: 0;
     }
   }
@@ -172,24 +172,25 @@
 
 @media (min-width: $desktop-width) {
   .companions {
-    padding-top: 171px;
-    padding-bottom: 134px;
+    padding-top: 162px;
+    padding-bottom: 120px;
   }
 
   .companions__container {
     display: grid;
     grid-template-columns: 620px auto;
+    padding-top: 76px;
     padding-left: 130px;
     padding-right: 60px;
-    background-position: 547px 64px;
+    background-position: 547px 78px;
 
     &::before {
-      top: 0;
+      top: 13px;
       left: 60px;
     }
 
     &::after {
-      top: 316px;
+      top: 328px;
       left: 190px;
     }
   }
@@ -197,18 +198,19 @@
   .companions__title {
     grid-row: 1/2;
     grid-column: 1/2;
-    margin-bottom: 55px;
+    margin-top: -7px;
+    margin-bottom: 44px;
   }
 
   .companions__text {
     grid-row: 2/3;
     grid-column: 1/2;
-    margin-bottom: 42px;
+    margin-bottom: 24px;
 
     &--bold {
       grid-row: 3/4;
       grid-column: 1/2;
-      margin-bottom: 85px;
+      margin-bottom: 71px;
     }
   }
 
@@ -222,13 +224,14 @@
     margin-right: 60px;
 
     &:last-child {
-      margin-right: 0;
+      margin-bottom: 10px;
     }
   }
 
   .companions__button {
     grid-row: 4/5;
     grid-column: 1/2;
-    width: 275px;
+    width: 280px;
+    max-height: 80px;
   }
 }

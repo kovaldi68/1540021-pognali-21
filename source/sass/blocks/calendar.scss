@@ -1,6 +1,8 @@
 .calendar__date {
   position: relative;
   padding: 11px 62px;
+  font-size: 20px;
+  line-height: 20px;
   text-align: center;
   border-top: 1px solid $grey-calendar;
   border-bottom: 1px solid $grey-calendar;
@@ -14,6 +16,8 @@
   background-size: 15px 21px;
   background-position: center center;
   background-repeat: no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
 
   &--back {
     left: 0;
@@ -21,7 +25,7 @@
 
   &--forward {
     right: 0;
-    transform: rotate(-180deg);
+    transform: translateY(-50%) scale(-1);
   }
 
   &:hover,
@@ -32,6 +36,10 @@
   &:active {
     background-image: url("../img/arrow-back-icon-mobile-active.svg");
   }
+}
+
+.calendar__slider {
+  margin-bottom: 19px;
 }
 
 .calendar__table {
@@ -76,12 +84,14 @@
   }
 
   &--chosen {
+    padding-top: 2px;
     font-weight: 500;
     color: $white-basic;
     background-color: $blue-light-text;
   }
 
   &--enabled {
+    padding-top: 2px;
     font-weight: 500;
     background-color: $grey-basic;
   }
@@ -108,7 +118,7 @@
 @media (min-width: $tablet-width) {
   .calendar__date {
     margin-bottom: 39px;
-    padding: 27px 62px 23px 62px;
+    padding: 25px 62px 24px 62px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -116,7 +126,15 @@
   .calendar__control {
     width: 30px;
     height: 36px;
-    background-size: 30px 36px;
+    background-size: 30px 40px;
+
+    &--back {
+      left: 12px;
+    }
+
+    &--forward {
+      right: 11px;
+    }
   }
 
   .calendar__title {
@@ -143,6 +161,14 @@
       line-height: 18px;
     }
 
+    &--chosen {
+      padding-top: 14px;
+    }
+
+    &--enabled {
+      padding-top: 21px;
+    }
+
     &:hover::before {
       top: -2px;
       left: -2px;
@@ -155,15 +181,36 @@
 
 @media (min-width: $desktop-width) {
   .calendar__date {
-    margin-bottom: 18px;
+    margin-bottom: 0;
+  }
+
+  .calendar__control {
+    width: 16px;
+    height: 28px;
+    background-size: 28px 34px;
+
+    &--back {
+      left: 0;
+    }
+
+    &--forward {
+      right: 0;
+    }
+  }
+
+  .calendar__slider {
+    margin-bottom: 15px;
   }
 
   .calendar__table-head {
+    padding-left: 15px;
     padding-bottom: 19px;
+    text-align: left;
   }
 
   .calendar__cell {
     padding: 15px;
+    padding-top: 7px;
     height: 72px;
     text-align: left;
     vertical-align: top;

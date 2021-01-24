@@ -4,23 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--nojs">
       <div class="page-header__container container">
-        <a class="page-header__logo page-header__logo--white">
+        <a class="page-header__logo page-header__logo--white" href="index.html">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-            <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сайта Погнали" width="96" height="15">
+            <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип сайта Погнали" width="100" height="15">
           </picture>
         </a>
-        <a class="page-header__logo page-header__logo--blue">
+        <a class="page-header__logo page-header__logo--blue" href="index.html">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта Погнали" width="96" height="15">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта Погнали" width="100" height="15">
           </picture>
         </a>
         <button class="page-header__toggle button" type="button" aria-label="Открыть или закрыть меню"></button>
@@ -106,7 +112,7 @@
       <h1 class="visually-hidden">Сайт по поиску попутчиков для путешествий Погнали</h1>
       <section class="page-main__promo promo">
         <div class="promo__container container">
-          <p class="promo__slogan">В путешествие с крутыми попутчиками</p>
+          <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
           <ul class="promo__user user-list user-list--promo">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--auth" href="blank.html">Авторизация</a>
@@ -138,8 +144,8 @@
             <ol class="action-order__list">
               <li class="action-order__item">Выберите направление</li>
               <li class="action-order__item">Изучите идеи путешественников</li>
-              <li class="action-order__item">Находите тех, кто похож на вас</li>
-              <li class="action-order__item">Путешествуйте вместе</li>
+              <li class="action-order__item">Находите тех,<br> кто похож на вас</li>
+              <li class="action-order__item">Путешествуйте вместе!</li>
             </ol>
           </div>
         </div>
@@ -147,8 +153,8 @@
       <section class="page-main__about-service about-service">
           <div class="about-service__container container">
             <h2 class="about-service__title title title--idx-medium">О сервисе</h2>
-            <p class="about-service__text">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-            <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <p class="about-service__text">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий<br> и черпайте вдохновение<br> в чужих.</p>
+            <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу &mdash; скорее зовите в совместный трип!</p>
             <a class="about-service__button button button--primary" href="#">Подробнее</a>
           </div>
       </section>
@@ -160,6 +166,8 @@
             <li class="countries__item">
               <div class="countries__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.jpg.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
                   <img class="countries__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Фото пляжа в Таиланде">
                 </picture>
@@ -178,6 +186,8 @@
             <li class="countries__item">
               <div class="countries__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.jpg.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
                   <img class="countries__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="Фото пешеходной улицы во Франции">
                 </picture>
@@ -196,6 +206,8 @@
             <li class="countries__item">
               <div class="countries__photo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.jpg.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                   <img class="countries__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Вид с реки на набережную Праги">
                 </picture>
@@ -206,7 +218,7 @@
                 </div>
                 <div class="countries__info">
                   <h3 class="countries__name">Чехия</h3>
-                  <p class="countries__slogan">Закоулки старой Европы</p>
+                  <p class="countries__slogan">Закоулки<br> старой Европы</p>
                 </div>
                 <span class="countries__likes">5326</span>
               </div>
@@ -445,12 +457,12 @@
         <div class="feedback__container container">
           <h2 class="feedback__title title title--idx-medium">Заинтересовались?</h2>
           <p class="feedback__text">
-            Зарегистрируйтесь,<br>это быстро и бесплатно!<br class="tablet">
+            Зарегистрируйтесь,<br> это быстро и бесплатно!<br class="tablet">
             Уже зарегистрированы? Тогда<br> скорее <a class="feedback__text-link" href="#">авторизуйтесь</a>.
           </p>
           <form class="feedback__form" action="https://echo.htmlacademy.ru">
             <label aria-label="Форма регистрации">
-              <input class="feedback__field" type="text" placeholder="E-mail">
+              <input class="feedback__field feedback__field--error" type="text" placeholder="E-mail">
               <button class="feedback__button button button--primary" type="submit" aria-label="Нажать, чтобы зарегистрироваться">
                 <span>Регистрация</span>
               </button>
@@ -468,8 +480,10 @@
       <section class="page-main__location location">
         <h2 class="location__title visually-hidden">Как до нас добраться</h2>
         <div class="location__address">
-          <p class="location__text">ул. Большая<br> Конюшенная, 19/8</p>
-          <a class="location__route button button--primary" href="https://goo.gl/maps/tbB92Bt9W4jRW9zB9">Проложить маршрут</a>
+          <div class="location__container container">
+            <p class="location__text">ул. Большая<br> Конюшенная, 19/8</p>
+            <a class="location__route button button--primary" href="https://goo.gl/maps/tbB92Bt9W4jRW9zB9">Проложить маршрут</a>
+          </div>
         </div>
         <div class="location__map"></div>
       </section>
@@ -478,6 +492,9 @@
       <div class="page-footer__container container">
         <div class="page-footer__logo">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
             <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта Погнали" width="96" height="15">

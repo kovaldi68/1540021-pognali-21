@@ -10,7 +10,7 @@
 .action-order__item {
   position: relative;
   counter-increment: action-counter;
-  padding: 22px 96px 22px 24px;
+  padding: 21px 104px 22px 24px;
   margin-top: -10px;
   color: $blue-dark-basic;
   min-height: 90px;
@@ -47,6 +47,11 @@
     background-color: $yellow-main;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    min-height: 80px;
+  }
+
+  br {
+    display: none;
   }
 }
 
@@ -58,7 +63,7 @@
 
   .action-order__item {
     margin-top: 0;
-    padding: 31px 140px 61px 33px;
+    padding: 27px 150px 61px 33px;
     font-size: 24px;
     line-height: 24px;
     min-height: 140px;
@@ -103,7 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .action-order__item {
-    padding: 22px 96px 30px 30px;
+    padding: 27px 96px 31px 31px;
     min-height: auto;
 
     &::after {
@@ -141,6 +146,10 @@
       &::after {
         right: 33px;
       }
+    }
+
+    br {
+      display: block;
     }
   }
 }

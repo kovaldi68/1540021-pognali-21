@@ -7,12 +7,12 @@
 
   &--nojs {
     padding-top: 25px;
-    padding-bottom: 41px;
+    padding-bottom: 35px;
     background-color: $white-basic;
 
     .page-header__user-list {
       display: flex;
-      margin-bottom: 66px;
+      margin-bottom: 64px;
       width: 100%;
     }
 
@@ -23,8 +23,8 @@
 
     .page-header__main-nav {
       display: block;
-      margin-bottom: 51px;
-      margin-top: 76px;
+      margin-bottom: 54px;
+      margin-top: 71px;
       width: 100%;
     }
 
@@ -42,7 +42,7 @@
 
     .page-header__social {
       display: flex;
-      width: 100%;
+      margin-left: 85px;
     }
 
     .page-header__toggle {
@@ -60,13 +60,13 @@
     left: 0;
     right: 0;
     padding-top: 25px;
-    padding-bottom: 41px;
+    padding-bottom: 35px;
     background-color: $white-basic;
     z-index: $z-index-page-header;
 
     .page-header__user-list {
       display: flex;
-      margin-bottom: 66px;
+      margin-bottom: 64px;
       width: 100%;
     }
 
@@ -77,8 +77,8 @@
 
     .page-header__main-nav {
       display: block;
-      margin-bottom: 51px;
-      margin-top: 74px;
+      margin-bottom: 54px;
+      margin-top: 71px;
       width: 100%;
     }
 
@@ -96,7 +96,7 @@
 
     .page-header__social {
       display: flex;
-      width: 100%;
+      margin-left: 85px;
     }
 
     .page-header__toggle {
@@ -114,7 +114,8 @@
   }
 
   &--upper {
-    @include section-bottom-border;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     z-index: $z-index-page-header-upper;
   }
 }
@@ -154,17 +155,23 @@
 .page-header__title {
   position: relative;
   color: $white-basic;
-  margin-top: 60px;
+  margin-top: 56px;
+  margin-bottom: 5px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -14px;
+    bottom: -17px;
     left: 0;
     width: 100%;
     height: 5px;
     background-color: $orange-special;
     border-radius: 4px;
+  }
+
+  &--catalog {
+    margin-top: 57px;
+    margin-bottom: 3px;
   }
 }
 
@@ -190,9 +197,9 @@
       }
 
       .page-header__main-nav {
-        margin-top: 94px;
-        margin-bottom: 169px;
-        padding-left: 59px;
+        margin-top: 89px;
+        margin-bottom: 156px;
+        padding-left: 54px;
         width: auto;
       }
 
@@ -206,11 +213,12 @@
       .page-header__contacts {
         width: 100%;
         margin-bottom: 149px;
-        padding-left: 59px;
+        padding-left: 55px;
       }
 
       .page-header__social {
-        padding-left: 83px;
+        margin-left: 82px;
+        padding-left: 0;
         width: auto;
       }
     }
@@ -228,9 +236,10 @@
       }
 
       .page-header__main-nav {
-        margin-top: 94px;
-        margin-bottom: 169px;
-        padding-left: 59px;
+        margin-top: 89px;
+        margin-bottom: 156px;
+        padding-left: 54px;
+        width: auto;
       }
 
       .page-header__user-list {
@@ -243,11 +252,12 @@
       .page-header__contacts {
         width: 100%;
         margin-bottom: 149px;
-        padding-left: 59px;
+        padding-left: 55px;
       }
 
       .page-header__social {
-        padding-left: 83px;
+        margin-left: 82px;
+        padding-left: 0;
         width: auto;
       }
 
@@ -256,11 +266,17 @@
         height: 22px;
       }
     }
+
+    &--upper {
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+    }
   }
 
   .page-header__logo {
     width: 166px;
     height: 42px;
+    margin-right: 166px;
     margin-bottom: 0;
     order: -3;
 
@@ -281,21 +297,23 @@
   }
 
   .page-header__title {
-    margin-top: 134px;
-    margin-bottom: 54px;
+    margin-top: 131px;
+    margin-bottom: 57px;
     margin-left: 35px;
     font-size: 60px;
     line-height: 60px;
 
     &::after {
-      bottom: -68px;
+      bottom: -70px;
     }
 
     &--catalog {
-      margin-bottom: 76px;
+      margin-top: 128px;
+      margin-bottom: 59px;
 
       &::after {
-        bottom: -90px;
+        bottom: -75px;
+        height: 8px;
       }
     }
   }
@@ -305,7 +323,8 @@
     position: relative;
     align-self: flex-end;
     margin-left: auto;
-    margin-bottom: 85px;
+    margin-right: 34px;
+    margin-bottom: 75px;
     padding-right: 60px;
     color: $white-basic;
     font-weight: 700;
@@ -338,7 +357,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 49px;
+    padding-top: 48px;
     padding-bottom: 12px;
     background-color: $blue-dark-basic;
 
@@ -465,19 +484,24 @@
 
   .page-header__title {
     margin-left: 64px;
-    margin-bottom: 56px;
-    margin-top: 124px;
+    margin-bottom: 61px;
+    margin-top: 120px;
 
     &::after {
-      bottom: -70px;
+      bottom: -73px;
     }
 
     &--catalog {
-      margin-bottom: 75px;
+      margin-bottom: 58px;
 
       &::after {
-        bottom: -89px;
+        bottom: -76px;
       }
     }
+  }
+
+  .page-header__link {
+    margin-right: 63px;
+    margin-bottom: 74px;
   }
 }
