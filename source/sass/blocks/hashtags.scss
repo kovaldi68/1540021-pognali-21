@@ -7,6 +7,10 @@
 
   &--left {
     justify-content: flex-start;
+
+    .hashtags__item {
+      font-size: 15px;
+    }
   }
 }
 
@@ -23,13 +27,17 @@
 
 @media (min-width: $tablet-width) {
   .hashtags {
-    font-size: 20px;
-    line-height: 23px;
     width: 233px;
+
+    &--left {
+      .hashtags__item {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
   }
 
   .hashtags__item {
     margin-right: 5px;
-    margin-bottom: 6px;
   }
 }

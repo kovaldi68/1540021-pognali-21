@@ -45,6 +45,11 @@
 
   .stay-period__input {
     width: 50%;
+    margin-bottom: 10px;
+
+    &--duration {
+      margin-bottom: 34px;
+    }
   }
 
   .stay-period__accept-checkbox {

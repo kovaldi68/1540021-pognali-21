@@ -118,7 +118,7 @@
 @media (min-width: $tablet-width) {
   .calendar__date {
     margin-bottom: 39px;
-    padding: 23px 62px 25px 62px;
+    padding: 25px 62px 24px 62px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -181,15 +181,36 @@
 
 @media (min-width: $desktop-width) {
   .calendar__date {
-    margin-bottom: 18px;
+    margin-bottom: 0;
+  }
+
+  .calendar__control {
+    width: 16px;
+    height: 28px;
+    background-size: 28px 34px;
+
+    &--back {
+      left: 0;
+    }
+
+    &--forward {
+      right: 0;
+    }
+  }
+
+  .calendar__slider {
+    margin-bottom: 15px;
   }
 
   .calendar__table-head {
+    padding-left: 15px;
     padding-bottom: 19px;
+    text-align: left;
   }
 
   .calendar__cell {
     padding: 15px;
+    padding-top: 7px;
     height: 72px;
     text-align: left;
     vertical-align: top;

@@ -168,6 +168,11 @@
     background-color: $orange-special;
     border-radius: 4px;
   }
+
+  &--catalog {
+    margin-top: 57px;
+    margin-bottom: 3px;
+  }
 }
 
 .page-header__link {
@@ -303,10 +308,12 @@
     }
 
     &--catalog {
-      margin-bottom: 76px;
+      margin-top: 128px;
+      margin-bottom: 59px;
 
       &::after {
-        bottom: -90px;
+        bottom: -75px;
+        height: 8px;
       }
     }
   }
@@ -316,7 +323,8 @@
     position: relative;
     align-self: flex-end;
     margin-left: auto;
-    margin-bottom: 85px;
+    margin-right: 34px;
+    margin-bottom: 75px;
     padding-right: 60px;
     color: $white-basic;
     font-weight: 700;
@@ -476,19 +484,24 @@
 
   .page-header__title {
     margin-left: 64px;
-    margin-bottom: 56px;
-    margin-top: 124px;
+    margin-bottom: 61px;
+    margin-top: 120px;
 
     &::after {
-      bottom: -70px;
+      bottom: -73px;
     }
 
     &--catalog {
-      margin-bottom: 75px;
+      margin-bottom: 58px;
 
       &::after {
-        bottom: -89px;
+        bottom: -76px;
       }
     }
+  }
+
+  .page-header__link {
+    margin-right: 63px;
+    margin-bottom: 74px;
   }
 }

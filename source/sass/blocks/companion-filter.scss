@@ -1,6 +1,6 @@
 .companion-filter {
+  margin-bottom: 28px;
   padding-top: 21px;
-  padding-bottom: 28px;
   background-color: $grey-basic;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .companion-filter__wrapper {
-  margin-bottom: 7px;
+  margin-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -21,18 +21,33 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
+  letter-spacing: 0.02em;
 }
 
 .companion-filter__item {
   padding-top: 12px;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
   border-top: 1px solid $yellow-dark-border;
+
+  &--hidden {
+    .companion-filter__heading {
+      margin-bottom: 0;
+
+      &:after {
+        transform: rotate(0deg);
+      }
+    }
+
+    .companion-filter__list {
+      display: none;
+    }
+  }
 }
 
 .companion-filter__heading {
   position: relative;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   padding-right: 10px;
   font-size: 16px;
   font-weight: 700;
@@ -43,14 +58,14 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 8px;
     right: 0;
     width: 10px;
     height: 6px;
     background-image: url("../../img/dropdown.svg");
     background-position: center;
     background-repeat: no-repeat;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
   }
 
   &:hover,
@@ -69,7 +84,7 @@
 
 .companion-filter__button {
   width: 100%;
-  padding: 14px 20px 15px;
+  padding: 14px 20px 12px;
   color: $blue-dark-basic;
   background-color: $white-basic;
   line-height: 17px;
@@ -86,24 +101,60 @@
 }
 
 @media (min-width: $tablet-width) {
+  .companion-filter {
+    margin-bottom: 41px;
+    padding-top: 41px;
+  }
+
   .companion-filter__body {
-    padding: 37px 36px 37px 35px;
+    padding: 35px 36px 37px 35px;
   }
 
   .companion-filter__wrapper {
-    margin-bottom: 0;
+    margin-bottom: 33px;
     padding: 0;
   }
 
   .companion-filter__item {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 14px;
+
+    &:nth-child(2) {
+      padding-top: 30px;
+      border-top: 1px solid $yellow-dark-border;
+    }
+
+    &:nth-child(5) {
+      .companion-filter__heading {
+        padding-top: 23px;
+      }
+    }
+
+    &:nth-child(6) {
+      align-items: center;
+      padding-bottom: 41px;
+      border-bottom: 1px solid $yellow-dark-border;
+
+      .companion-filter__heading {
+        padding-top: 12px;
+      }
+    }
+
+    &--hidden {
+      .companion-filter__list {
+        display: flex;
+      }
+    }
   }
 
   .companion-filter__title {
+    margin-bottom: 39px;
     font-size: 30px;
     line-height: 30px;
+    letter-spacing: 0;
   }
 
   .companion-filter__list {
@@ -111,10 +162,11 @@
   }
 
   .companion-filter__heading {
+    margin-bottom: 0;
+    padding-top: 7px;
     font-size: 20px;
     line-height: 20px;
     width: 20%;
-    margin-bottom: 0;
 
     &::after {
       display: none;
@@ -128,7 +180,15 @@
   }
 
   .companion-filter__range {
+    margin-left: 5px;
     width: 275px;
+  }
+
+  .companion-filter__button {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -150,11 +210,49 @@
   }
 
   .companion-filter__wrapper {
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 
   .companion-filter__item {
     display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:nth-child(2) {
+      padding-top: 10px;
+      border-top: none;
+    }
+
+    &:nth-child(5) {
+      .companion-filter__heading {
+        padding-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    &:nth-child(6) {
+      padding-bottom: 41px;
+      border-bottom: none;
+
+      .companion-filter__heading {
+        margin-bottom: 17px;
+        padding-top: 0;
+      }
+    }
+
+    &--hidden {
+      .companion-filter__heading {
+        margin-bottom: 0;
+      }
+
+      .companion-filter__list {
+        display: none;
+      }
+    }
+  }
+
+  .companion-filter__title {
+    margin-bottom: 23px;
   }
 
   .companion-filter__list {
@@ -162,8 +260,9 @@
   }
 
   .companion-filter__heading {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     width: auto;
+    padding-top: 0;
 
     &::after {
       display: inline;
@@ -171,10 +270,11 @@
   }
 
   .companion-filter__level-range {
-    margin-bottom: 31px;
+    margin-bottom: 39px;
   }
 
   .companion-filter__range {
+    margin-left: 0;
     width: 100%;
   }
 }

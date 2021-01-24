@@ -224,7 +224,7 @@
     }
 
     &--catalog {
-      r: 27px;
+      r: 28px;
       cx: 30px;
       cy: 30px;
     }
@@ -232,6 +232,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .level {
+    &--form {
+      width: 95px;
+      height: 95px;
+
+      svg {
+        width: 95px;
+        height: 95px;
+      }
+    }
+  }
+
   .level__number {
     &--form {
       color: $white-basic;
@@ -245,6 +257,22 @@
   .level__word {
     &--form {
       color: $white-basic;
+    }
+  }
+
+  .level__progress {
+    &--form {
+      r: 45px;
+      cx: 47px;
+      cy: 47px;
+    }
+  }
+
+  .level__background {
+    &--form {
+      r: 42px;
+      cx: 47px;
+      cy: 47px;
     }
   }
 }

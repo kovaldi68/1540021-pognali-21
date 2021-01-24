@@ -142,8 +142,12 @@
 @media (min-width: $desktop-width) {
   .trip-input {
     align-items: center;
-    padding-top: 56px;
+    padding-top: 27px;
     border-top: none;
+
+    &--days {
+      padding-top: 0;
+    }
   }
 
   .trip-input__wrapper {
@@ -162,8 +166,9 @@
   }
 
   .trip-input__label {
-    width: 164px;
+    width: 200px;
     margin-bottom: 0;
-    margin-right: 57px;
+    margin-right: 21px;
+    letter-spacing: 0;
   }
 }

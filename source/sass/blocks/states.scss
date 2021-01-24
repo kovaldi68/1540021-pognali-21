@@ -5,7 +5,7 @@
 .states__item {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 15px;
   line-height: 16px;
@@ -31,7 +31,7 @@
 
   .states__item {
     margin-bottom: 0;
-    margin-right: 25px;
+    margin-right: 28px;
     font-size: 20px;
     line-height: 20px;
 
@@ -64,5 +64,9 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .states__flag {
+    margin-right: 15px;
   }
 }

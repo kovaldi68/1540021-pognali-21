@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-bottom: 11px;
 }
 
 .filter-icon-checkbox__item {
@@ -67,6 +68,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .filter-icon-checkbox {
+    padding-top: 9px;
+    padding-bottom: 17px;
+  }
+
   .filter-icon-checkbox__item {
     margin-right: 2px;
     width: 43px;

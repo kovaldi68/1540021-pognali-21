@@ -802,7 +802,7 @@
         <div class="companion-filter__body">
           <div class="companion-filter__wrapper">
             <h2 class="companion-filter__title title">Подберите идеального попутчика</h2>
-            <div class="companion-filter__item">
+            <div class="companion-filter__item companion-filter__item--hidden">
               <h3 class="companion-filter__heading">Хобби</h3>
               <ul class="companion-filter__list filter-checkbox">
                 <li class="filter-checkbox__item">
@@ -836,7 +836,7 @@
                 </li>
               </ul>
             </div>
-            <div class="companion-filter__item">
+            <div class="companion-filter__item companion-filter__item--hidden">
               <h3 class="companion-filter__heading">Еда</h3>
               <ul class="companion-filter__list filter-checkbox">
                 <li class="filter-checkbox__item">
@@ -920,10 +920,10 @@
               </div>
               <div class="companion-filter__range range">
                 <div class="range__scale">
-                  <div class="range__bar" style="width: 70%; margin-left: 30%"></div>
+                  <div class="range__bar"></div>
                 </div>
-                <div id="element-toggle-min" class="range__toggle toggle toggle-min" tabindex="0" style="left: 30%" aria-label="Ползунок минимального левела"></div>
-                <div id="element-toggle-max" class="range__toggle toggle toggle-max" tabindex="0" style="left: 100%" aria-label="Ползунок максимального левела"></div>
+                <div id="element-toggle-min" class="range__toggle toggle range__toggle--min" tabindex="0" aria-label="Ползунок минимального левела"></div>
+                <div id="element-toggle-max" class="range__toggle toggle range__toggle--max" tabindex="0" aria-label="Ползунок максимального левела"></div>
               </div>
             </div>
           </div>
@@ -933,7 +933,7 @@
       <section class="page-main__result result">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="result__list">
-          <li class="result__item user-card">
+          <li class="result__item user-card user-card--firsova">
             <a class="user-card__photo" href="#">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
@@ -1058,7 +1058,7 @@
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </li>
-          <li class="result__item user-card">
+          <li class="result__item user-card user-card--demin">
             <a class="user-card__photo" href="#">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
@@ -1174,7 +1174,7 @@
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </li>
-          <li class="result__item user-card">
+          <li class="result__item user-card user-card--smolov">
             <a class="user-card__photo" href="#">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
@@ -1296,7 +1296,7 @@
             </div>
             <a class="user-card__button button button--secondary" href="#">Позвать!</a>
           </li>
-          <li class="result__item user-card user-card--online">
+          <li class="result__item user-card user-card--rogovaya user-card--online">
             <a class="user-card__photo" href="#">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">

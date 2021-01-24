@@ -1,11 +1,11 @@
 .result {
-  padding-bottom: 76px;
+  padding-bottom: 70px;
   background-color: $grey-basic;
 }
 
 .result__list {
   @include list-reset;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .result__item {
@@ -44,7 +44,7 @@
 }
 
 .result__button-icon {
-  display: inline-block;
+  display: block;
   margin-right: 15px;
   width: 18px;
   height: 18px;
@@ -65,6 +65,14 @@
 
   .result__item {
     margin-bottom: 40px;
+
+    &:first-child {
+      margin-bottom: 42px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 41px;
+    }
   }
 
   .result__button {
@@ -85,7 +93,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 25px 35px 25px 28px;
+    padding: 25px 35px 16px 28px;
   }
 }
 
@@ -93,7 +101,7 @@
   .result {
     width: 951px;
     margin-right: 84px;
-    padding-bottom: 135px;
+    padding-bottom: 137px;
   }
 
   .result__list {
@@ -102,6 +110,14 @@
 
   .result__item {
     margin-bottom: 30px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 30px;
+    }
   }
 
   .result__container {
@@ -111,7 +127,9 @@
   }
 
   .result__button {
-    margin-bottom: 71px;
+    margin-left: calc(50%);
+    margin-bottom: 73px;
+    transform: translateX(-54%);
   }
 
   .result__pagination {
@@ -119,6 +137,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 25px 41px 25px 29px;
+    padding: 24px 41px 16px 29px;
   }
 }

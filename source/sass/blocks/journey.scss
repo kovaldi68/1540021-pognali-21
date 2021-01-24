@@ -138,7 +138,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 36px 42px;
+    margin-bottom: 16px;
+    padding-top: 36px;
+    padding-bottom: 38px;
+    padding-left: 42px;
+    padding-right: 40px;
 
     &::before {
       display: none;
@@ -153,17 +157,17 @@
 
   .journey__name {
     width: 523px;
-    padding-left: 52px;
+    padding-left: 53px;
     margin-bottom: 0;
-    margin-right: 60px;
+    margin-right: 62px;
   }
 
   .journey__fellow-number {
     width: 145px;
-    margin-right: 32px;
+    margin-right: 30px;
   }
 
   .journey__change {
-    margin-left: auto;
+    margin-left: 125px;
   }
 }

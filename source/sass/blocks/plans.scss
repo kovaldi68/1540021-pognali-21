@@ -34,12 +34,13 @@
 @media (min-width: $desktop-width) {
   .plans {
     margin-top: -56px;
-    padding-top: 54px;
-    padding-bottom: 120px;
+    padding-top: 51px;
+    padding-bottom: 107px;
   }
 
   .plans__title {
-    padding-bottom: 49px;
+    margin-bottom: 49px;
+    padding-left: 7px;
   }
 
   .plans__container {

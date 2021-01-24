@@ -9,6 +9,8 @@
 }
 
 .range__bar {
+  width: 64%;
+  margin-left: 33%;
   height: 2px;
   background-color: $blue-light-text;
 }
@@ -24,6 +26,14 @@
   cursor: pointer;
   outline: none;
 
+  &--min {
+    left: 33%;
+  }
+
+  &--min {
+    left: 97%;
+  }
+
   &:hover,
   &:focus {
     transform: scale(1.46) translateX(-35%);
@@ -32,5 +42,45 @@
 
   &:active {
     box-shadow: 0 3px 7px rgba($black-basic, 0.24);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range__bar {
+    width: 62%;
+    margin-left: 38%;
+  }
+
+  .range__toggle {
+    width: 13px;
+    height: 13px;
+
+    &--min {
+      left: 38%;
+    }
+
+    &--max {
+      left: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range__bar {
+    width: 62%;
+    margin-left: 35%;
+  }
+
+  .range__toggle {
+    width: 13px;
+    height: 13px;
+
+    &--min {
+      left: 35%;
+    }
+
+    &--max {
+      left: 97%;
+    }
   }
 }

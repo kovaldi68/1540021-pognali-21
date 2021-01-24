@@ -216,14 +216,57 @@
 @media (min-width: $desktop-width) {
   .steps__item {
     margin-bottom: 44px;
-    padding: 100px 160px;
+    padding-top: 98px;
+    padding-bottom: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
     border-radius: 60px;
+
+    &--first-step {
+      padding-bottom: 107px;
+
+      .steps__heading {
+        margin-bottom: 55px;
+      }
+
+      .steps__content {
+        margin-bottom: 50px;
+      }
+    }
+
+    &--second-step {
+      padding-bottom: 105px;
+
+      .steps__content {
+        margin-bottom: 52px;
+      }
+
+      .steps__button {
+        margin-right: 465px;
+
+        &--back {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &--third-step {
+      padding-bottom: 104px;
+
+      .steps__description {
+        width: 530px;
+      }
+
+      .steps__content {
+        margin-bottom: 54px;
+      }
+    }
   }
 
   .steps__heading {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding-right: 47px;
+    padding-right: 45px;
     margin-bottom: 55px;
   }
 
@@ -244,7 +287,8 @@
   .steps__indicator {
     grid-column: 2/3;
     grid-row: 1/3;
-    margin-left: auto;
+    padding-top: 8px;
+    padding-left: 134px;
   }
 
   .steps__content {
