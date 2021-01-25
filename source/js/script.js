@@ -56,8 +56,25 @@ const closeHeader = () => {
   }
 }
 
+const stickyHeader = () => {
+  const headerHeight = header.offsetHeight;
+  const offsetTop = window.pageYOffset;
+
+  if (offsetTop > 700) {
+    header.classList.add("page-header--fixed")
+    document.body.style.paddingTop = `${headerHeight}px`;
+  } else {
+    header.classList.remove("page-header--fixed")
+    document.body.style.paddingTop = 0;
+  }
+}
+
 window.addEventListener("resize", () => {
   closeHeader();
+})
+
+window.addEventListener("scroll", () => {
+  stickyHeader();
 })
 
 //business-modal

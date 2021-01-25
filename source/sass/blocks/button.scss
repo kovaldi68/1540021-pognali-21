@@ -20,6 +20,19 @@
     background-color: $yellow-main;
     border-radius: 10px;
 
+    &:hover,
+    &:focus {
+      background-color: $yellow-dark;
+    }
+
+    &:active {
+      color: rgba($blue-light-text, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
