@@ -238,11 +238,10 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 142px;
+      right: 140px;
       width: 1px;
       height: 110%;
-      background-color: $grey-lines;
-      background: linear-gradient(to top, $white-basic 0%, $grey-lines 20%);
+      background: $grey-lines linear-gradient(to top, $white-basic 0%, $grey-lines 20%);
     }
   }
 

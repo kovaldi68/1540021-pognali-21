@@ -33,7 +33,7 @@
     .companion-filter__heading {
       margin-bottom: 0;
 
-      &:after {
+      &::after {
         transform: rotate(0deg);
       }
     }
