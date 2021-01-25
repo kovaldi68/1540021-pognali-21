@@ -46,6 +46,11 @@
   }
 }
 
+.filter-icon-checkbox__tag:focus + .filter-icon-checkbox__label {
+  outline: 2px solid #666;
+  border-radius: 50%;
+}
+
 .filter-icon-checkbox__tag:checked + .filter-icon-checkbox__label {
   path {
     fill: $blue-light-text;
@@ -71,7 +76,7 @@
 @media (min-width: $tablet-width) {
   .filter-icon-checkbox {
     padding-top: 9px;
-    padding-bottom: 17px;
+    padding-bottom: 5px;
   }
 
   .filter-icon-checkbox__item {

@@ -28,34 +28,41 @@
   background-color: $white-basic;
   border-radius: 50%;
   cursor: pointer;
+  color: $grey-checkbox-icon-hover;
+
+  svg {
+    opacity: 0.7;
+  }
 
   &:hover,
   &:focus {
     box-shadow: 0 2px 6px rgba($blue-dark-basic, 0.17);
 
-    path {
-      fill: $grey-checkbox-icon-hover;
+    svg {
+      opacity: 1;
     }
   }
 
   &:active {
+    color: $blue-light-text;
     background-color: $grey-decor;
 
-    path {
-      fill: $blue-light-text;
+    svg {
       opacity: 0.1;
     }
   }
 }
 
 .transport-checkbox__tag:checked + .transport-checkbox__label {
-  path {
+  color: $blue-light-text;
+
+  svg {
     opacity: 1;
   }
 
   &:hover,
   &:focus {
-    path {
+    svg {
       opacity: 0.7;
     }
   }

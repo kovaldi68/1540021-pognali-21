@@ -48,13 +48,12 @@
     &--inner {
       display: block;
       position: static;
-      color: $black-basic;
-      font-size: 20px;
-      line-height: 24px;
       text-transform: uppercase;
       letter-spacing: 0.11em;
 
-      .indicator__text {
+      .indicator__link {
+        font-size: 20px;
+        line-height: 24px;
         color: $black-basic;
       }
 

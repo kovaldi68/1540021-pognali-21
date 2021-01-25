@@ -52,8 +52,17 @@
 
 .trip-input__pick::-webkit-outer-spin-button,
 .trip-input__pick::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
+}
+
+.trip-input__pick {
+  -moz-appearance: textfield;
+
+  &:hover,
+  &:focus {
+    -moz-appearance: number-input;
+  }
 }
 
 .trip-input__button {

@@ -17,9 +17,13 @@
     transform: rotate(-180deg);
   }
 
-  &:hover,
+  &:hover {
+    opacity: 0.6;
+  }
+
   &:focus {
     opacity: 0.6;
+    outline: 1px solid black;
   }
 
   &:active {

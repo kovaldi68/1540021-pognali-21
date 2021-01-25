@@ -15,60 +15,46 @@
   border-radius: 50%;
   background-color: $grey-basic;
 
-  .likes__icon {
-    &--active {
-      display: none;
-    }
+  path {
+    opacity: 0.3;
   }
 
   &:hover,
   &:focus {
     background: $grey-decor;
 
-    .likes__icon {
-      g {
-        opacity: 0.5;
-      }
+    path {
+      opacity: 0.5;
     }
   }
 
   &:active {
-    .likes__icon {
-      g {
-        opacity: 0.1;
-      }
+    path {
+      opacity: 0.1;
     }
   }
 
   &--liked {
     background-color: $orange-like-back;
 
-    .likes__icon {
-      display: none;
-
-      &--active {
-        display: inline-block;
-      }
+    path {
+      opacity: 1;
+      fill-rule: nonzero;
+      fill: #F02323;
     }
 
     &:hover,
     &:focus {
-      background: $orange-like-back-hover;
+      background-color: $orange-like-back-hover;
 
-      .likes__icon {
-        g {
-          opacity: 1;
-        }
+      path {
+        opacity: 1;
       }
     }
 
     &:active {
-      .likes__icon {
-        &--active {
-          g {
-            opacity: 0.3;
-          }
-        }
+      path{
+        opacity: 0.3;
       }
     }
   }

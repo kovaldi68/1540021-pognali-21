@@ -91,6 +91,11 @@
     z-index: 2;
   }
 
+  &:hover:not(.track__button--close):not(.track__button--add),
+  &:focus:not(.track__button--close):not(.track__button--add) {
+    border: 1px solid $grey-input-hover;
+  }
+
   span {
     position: relative;
     width: 100%;
@@ -151,11 +156,6 @@
       &::after {
         width: 40%;
       }
-    }
-
-    &:hover,
-    &:focus {
-      border: 1px solid $grey-input-hover;
     }
   }
 

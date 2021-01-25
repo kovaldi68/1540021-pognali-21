@@ -37,6 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .add-plan {
+    @include section-top-border;
     margin-top: -42px;
     padding-top: 109px;
     padding-bottom: 130px;

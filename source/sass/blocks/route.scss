@@ -103,6 +103,33 @@
       color: $grey-special;
     }
   }
+
+  &--alert {
+    border: 1px solid $red-error;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $red-error;
+    }
+  }
+
+  &--alert + .route__alert-message {
+    display: block;
+  }
+}
+
+.route__alert-message {
+  display: none;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  padding: 8px 13px;
+  width: calc(220px - 2px);
+  background-color: $orange-alert;
+  color: $red-error;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .route__icon {

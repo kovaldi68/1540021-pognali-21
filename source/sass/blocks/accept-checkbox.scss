@@ -31,18 +31,44 @@
       border: 1px solid $grey-input-hover;
     }
   }
+
+  &:active {
+    &::before {
+      border: none;
+      background-color: $grey-decor;
+    }
+  }
 }
 
-.accept-checkbox__box:checked + .accept-checkbox__text::before {
-  background-image: url("../../img/tick.svg");
-  background-size: 8px;
-  background-repeat: no-repeat;
-  background-position: center;
+.accept-checkbox__box:focus + .accept-checkbox__text {
+  &::before {
+    outline: 2px solid #666;
+    border-radius: 4px;
+  }
+}
+
+.accept-checkbox__box:checked + .accept-checkbox__text {
+  &::before {
+    background-image: url("../../img/tick.svg");
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:active {
+    &::before {
+      background-image: url("../../img/tick-disabled.svg");
+      background-color: $grey-decor;
+    }
+  }
 }
 
 .accept-checkbox__box:disabled + .accept-checkbox__text::before,
 .accept-checkbox__box:disabled:checked + .accept-checkbox__text::before {
   background-image: url("../../img/tick-disabled.svg");
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $grey-decor;
   border: none;
 }
