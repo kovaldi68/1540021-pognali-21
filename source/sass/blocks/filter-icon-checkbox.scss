@@ -30,7 +30,7 @@
   &:focus {
     box-shadow: 0 2px 6px rgba($blue-dark-basic, 0.17);
 
-    svg {
+    path {
       fill: $grey-checkbox-icon-hover;
       fill-opacity: 1;
     }
@@ -39,7 +39,7 @@
   &:active {
     background-color: $grey-decor;
 
-    svg {
+    path {
       fill: $blue-light-text;
       opacity: 0.1;
     }
@@ -47,14 +47,14 @@
 }
 
 .filter-icon-checkbox__tag:checked + .filter-icon-checkbox__label {
-  svg {
+  path {
     fill: $blue-light-text;
     opacity: 1;
   }
 
   &:hover,
   &:focus {
-    svg {
+    path {
       opacity: 0.7;
     }
   }
@@ -62,7 +62,7 @@
   &:active {
     background-color: $grey-decor;
 
-    svg {
+    path {
       opacity: 0.3;
     }
   }

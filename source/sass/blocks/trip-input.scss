@@ -78,13 +78,13 @@
   &:hover,
   &:focus {
     line {
-      stroke: $grey-qty-btn-hover;
+      opacity: 1;
     }
   }
 
   &:active {
     line {
-      stroke: $grey-basic-form;
+      opacity: 0.3;
     }
   }
 }

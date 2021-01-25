@@ -54,6 +54,12 @@
     &:hover,
     &:focus {
       background: $orange-like-back-hover;
+
+      .likes__icon {
+        g {
+          opacity: 1;
+        }
+      }
     }
 
     &:active {
