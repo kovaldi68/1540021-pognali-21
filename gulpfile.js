@@ -1,4 +1,3 @@
-
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -22,6 +21,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()

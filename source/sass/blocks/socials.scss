@@ -9,31 +9,24 @@
       width: 45px;
       height: 45px;
       margin-right: 0;
+      line-height: 11px;
+      background-color: $yellow-main;
+      border-radius: 50%;
+      cursor: pointer;
 
       &:hover,
       &:focus {
-        .socials__icon {
-          circle {
-            fill: $yellow-dark;
-          }
+        background-color: $yellow-dark;
 
-          path {
-            opacity: 1;
-          }
+        .socials__icon {
+          fill-opacity: 1;
         }
       }
 
       &:active {
         .socials__icon {
-          path {
-            opacity: 0.3;
-          }
+          fill-opacity: 0.3;
         }
-      }
-
-      svg {
-        width: 45px;
-        height: 45px;
       }
     }
   }
@@ -48,17 +41,13 @@
   &:hover,
   &:focus {
     .socials__icon {
-      path {
-        opacity: 0.6;
-      }
+      fill-opacity: 0.6;
     }
   }
 
   &:active {
     .socials__icon {
-      path {
-        opacity: 0.3;
-      }
+      fill-opacity: 0.3;
     }
   }
 
@@ -77,16 +66,6 @@
       .socials__item {
         width: 62px;
         height: 62px;
-      }
-
-      .socials__link {
-        width: 62px;
-        height: 62px;
-
-        svg {
-          width: 62px;
-          height: 62px;
-        }
       }
     }
   }

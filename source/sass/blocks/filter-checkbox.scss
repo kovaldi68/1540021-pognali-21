@@ -49,6 +49,14 @@
   background-position: center;
 }
 
+.filter-checkbox__tag:disabled + .filter-checkbox__label {
+  opacity: 0.3;
+}
+
+.filter-checkbox__tag:disabled:checked + .filter-checkbox__label {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .filter-checkbox {
     display: flex;

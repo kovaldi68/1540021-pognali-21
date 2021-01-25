@@ -171,7 +171,7 @@
         left: -2px;
         width: 31px;
         height: 1px;
-        background-color: rgba($grey-special, 0.1);
+        background-color: rgba($black-basic, 0.1);
       }
     }
   }
@@ -193,40 +193,6 @@
     &--catalog {
       width: 46px;
       height: 46px;
-    }
-  }
-
-  .level__background {
-    &--form {
-      r: 42px;
-      cx: 47px;
-      cy: 47px;
-    }
-
-    &--catalog {
-      r: 27px;
-      cx: 30px;
-      cy: 30px;
-    }
-  }
-
-  .level__progress {
-    &--index {
-      r: 28px;
-      cx: 30px;
-      cy: 30px;
-    }
-
-    &--form {
-      r: 42px;
-      cx: 47px;
-      cy: 47px;
-    }
-
-    &--catalog {
-      r: 28px;
-      cx: 30px;
-      cy: 30px;
     }
   }
 }
@@ -257,22 +223,6 @@
   .level__word {
     &--form {
       color: $white-basic;
-    }
-  }
-
-  .level__progress {
-    &--form {
-      r: 45px;
-      cx: 47px;
-      cy: 47px;
-    }
-  }
-
-  .level__background {
-    &--form {
-      r: 42px;
-      cx: 47px;
-      cy: 47px;
     }
   }
 }
