@@ -1,5 +1,6 @@
 .calendar__date {
   position: relative;
+  margin: 0;
   padding: 11px 62px;
   font-size: 20px;
   line-height: 20px;
@@ -75,6 +76,7 @@
   line-height: 18px;
   text-align: center;
   outline: none;
+  background-clip: padding-box;
 
   &--disabled {
     color: rgba($grey-special, 0.3);
@@ -239,6 +241,7 @@
   .calendar__day-in,
   .calendar__day-out {
     display: block;
+    margin: 0;
     margin-top: 9px;
   }
 }
