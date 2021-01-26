@@ -42,7 +42,7 @@
 
 .accept-checkbox__box:focus + .accept-checkbox__text {
   &::before {
-    outline: 2px solid #666;
+    outline: 2px solid $blue-dark;
     border-radius: 4px;
   }
 }

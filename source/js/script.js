@@ -15,9 +15,9 @@ const mediaDesktop = window.matchMedia("(min-width: 1440px)");
 
 //filter
 
-countryFilter.classList.remove("country-filter__inner--nojs");
-
 if (countryFilter) {
+  countryFilter.classList.remove("country-filter__inner--nojs");
+
   countryfilterCloser.addEventListener("click", function(evt) {
     evt.preventDefault();
     countryFilter.classList.remove("country-filter__inner--expanded")
@@ -58,18 +58,18 @@ const closeHeader = () => {
   }
 }
 
-// const stickyHeader = () => {
-//   const headerHeight = header.offsetHeight;
-//   const offsetTop = window.pageYOffset;
+const stickyHeader = () => {
+  const headerHeight = header.offsetHeight;
+  const offsetTop = window.pageYOffset;
 
-//   if (offsetTop > 700) {
-//     header.classList.add("page-header--fixed")
-//     document.body.style.paddingTop = `${headerHeight}px`;
-//   } else {
-//     header.classList.remove("page-header--fixed")
-//     document.body.style.paddingTop = 0;
-//   }
-// }
+  if (offsetTop > 700) {
+    header.classList.add("page-header--fixed")
+    document.body.style.paddingTop = `${headerHeight}px`;
+  } else {
+    header.classList.remove("page-header--fixed")
+    document.body.style.paddingTop = 0;
+  }
+}
 
 window.addEventListener("resize", () => {
   closeHeader();

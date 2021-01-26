@@ -40,7 +40,7 @@
     path {
       opacity: 1;
       fill-rule: nonzero;
-      fill: #F02323;
+      fill: $red-like;
     }
 
     &:hover,
@@ -53,7 +53,7 @@
     }
 
     &:active {
-      path{
+      path {
         opacity: 0.3;
       }
     }

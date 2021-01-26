@@ -191,6 +191,13 @@
     line-height: 23px;
   }
 
+  .route__alert-message {
+    padding: 18px 19px;
+    width: calc(500px - 2px);
+    font-size: 20px;
+    line-height: 23px;
+  }
+
   .route__icon {
     width: 70px;
     height: 47px;
@@ -224,7 +231,12 @@
   .route__description {
     width: 730px;
     padding: 22px 22px;
-    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .route__alert-message {
+    padding: 22px 22px;
+    width: calc(730px - 2px);
     line-height: 20px;
   }
 

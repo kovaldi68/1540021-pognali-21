@@ -39,6 +39,7 @@
   border: 1px solid $grey-border;
   border-radius: 4px;
   outline: none;
+  appearance: textfield;
 
   &:hover {
     border-color: $grey-input-hover;
@@ -52,17 +53,8 @@
 
 .trip-input__pick::-webkit-outer-spin-button,
 .trip-input__pick::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
-}
-
-.trip-input__pick {
-  -moz-appearance: textfield;
-
-  &:hover,
-  &:focus {
-    -moz-appearance: number-input;
-  }
 }
 
 .trip-input__button {
